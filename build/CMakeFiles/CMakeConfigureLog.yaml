@@ -24,7 +24,7 @@ events:
       The output was:
       0
       MSBuild version 17.9.8+b34f75857 for .NET Framework
-      Build started 03/10/2024 12:32:17.
+      Build started 03/10/2024 12:35:27.
       
       Project "D:\\gep repo\\The-Grill-Engine\\build\\CMakeFiles\\3.28.0-msvc1\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -53,7 +53,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.56
+      Time Elapsed 00:00:00.45
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -79,7 +79,7 @@ events:
       The output was:
       0
       MSBuild version 17.9.8+b34f75857 for .NET Framework
-      Build started 03/10/2024 12:32:17.
+      Build started 03/10/2024 12:35:28.
       
       Project "D:\\gep repo\\The-Grill-Engine\\build\\CMakeFiles\\3.28.0-msvc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
@@ -108,7 +108,7 @@ events:
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.42
+      Time Elapsed 00:00:00.44
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -127,8 +127,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "D:/gep repo/The-Grill-Engine/build/CMakeFiles/CMakeScratch/TryCompile-behfvk"
-      binary: "D:/gep repo/The-Grill-Engine/build/CMakeFiles/CMakeScratch/TryCompile-behfvk"
+      source: "D:/gep repo/The-Grill-Engine/build/CMakeFiles/CMakeScratch/TryCompile-ipi3dm"
+      binary: "D:/gep repo/The-Grill-Engine/build/CMakeFiles/CMakeScratch/TryCompile-ipi3dm"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
       CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -137,40 +137,40 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/gep repo/The-Grill-Engine/build/CMakeFiles/CMakeScratch/TryCompile-behfvk'
+        Change Dir: 'D:/gep repo/The-Grill-Engine/build/CMakeFiles/CMakeScratch/TryCompile-ipi3dm'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ab123.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_52331.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.9.8+b34f75857 for .NET Framework
-        Build started 03/10/2024 12:32:18.
+        Build started 03/10/2024 12:35:28.
         
-        Project "D:\\gep repo\\The-Grill-Engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-behfvk\\cmTC_ab123.vcxproj" on node 1 (default targets).
+        Project "D:\\gep repo\\The-Grill-Engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ipi3dm\\cmTC_52331.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_ab123.dir\\Debug\\".
+          Creating directory "cmTC_52331.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\gep repo\\The-Grill-Engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-behfvk\\Debug\\".
-          Creating directory "cmTC_ab123.dir\\Debug\\cmTC_ab123.tlog\\".
+          Creating directory "D:\\gep repo\\The-Grill-Engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ipi3dm\\Debug\\".
+          Creating directory "cmTC_52331.dir\\Debug\\cmTC_52331.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_ab123.dir\\Debug\\cmTC_ab123.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_ab123.dir\\Debug\\cmTC_ab123.tlog\\unsuccessfulbuild".
+          Creating "cmTC_52331.dir\\Debug\\cmTC_52331.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_52331.dir\\Debug\\cmTC_52331.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ab123.dir\\Debug\\\\" /Fd"cmTC_ab123.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_52331.dir\\Debug\\\\" /Fd"cmTC_52331.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33135 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ab123.dir\\Debug\\\\" /Fd"cmTC_ab123.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_52331.dir\\Debug\\\\" /Fd"cmTC_52331.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\gep repo\\The-Grill-Engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-behfvk\\Debug\\cmTC_ab123.exe" /INCREMENTAL /ILK:"cmTC_ab123.dir\\Debug\\cmTC_ab123.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/gep repo/The-Grill-Engine/build/CMakeFiles/CMakeScratch/TryCompile-behfvk/Debug/cmTC_ab123.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/gep repo/The-Grill-Engine/build/CMakeFiles/CMakeScratch/TryCompile-behfvk/Debug/cmTC_ab123.lib" /MACHINE:X64  /machine:x64 cmTC_ab123.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_ab123.vcxproj -> D:\\gep repo\\The-Grill-Engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-behfvk\\Debug\\cmTC_ab123.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\gep repo\\The-Grill-Engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ipi3dm\\Debug\\cmTC_52331.exe" /INCREMENTAL /ILK:"cmTC_52331.dir\\Debug\\cmTC_52331.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/gep repo/The-Grill-Engine/build/CMakeFiles/CMakeScratch/TryCompile-ipi3dm/Debug/cmTC_52331.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/gep repo/The-Grill-Engine/build/CMakeFiles/CMakeScratch/TryCompile-ipi3dm/Debug/cmTC_52331.lib" /MACHINE:X64  /machine:x64 cmTC_52331.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_52331.vcxproj -> D:\\gep repo\\The-Grill-Engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ipi3dm\\Debug\\cmTC_52331.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_ab123.dir\\Debug\\cmTC_ab123.tlog\\unsuccessfulbuild".
-          Touching "cmTC_ab123.dir\\Debug\\cmTC_ab123.tlog\\cmTC_ab123.lastbuildstate".
-        Done Building Project "D:\\gep repo\\The-Grill-Engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-behfvk\\cmTC_ab123.vcxproj" (default targets).
+          Deleting file "cmTC_52331.dir\\Debug\\cmTC_52331.tlog\\unsuccessfulbuild".
+          Touching "cmTC_52331.dir\\Debug\\cmTC_52331.tlog\\cmTC_52331.lastbuildstate".
+        Done Building Project "D:\\gep repo\\The-Grill-Engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ipi3dm\\cmTC_52331.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.40
+        Time Elapsed 00:00:00.41
         
       exitCode: 0
   -
@@ -182,8 +182,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "D:/gep repo/The-Grill-Engine/build/CMakeFiles/CMakeScratch/TryCompile-xwna2s"
-      binary: "D:/gep repo/The-Grill-Engine/build/CMakeFiles/CMakeScratch/TryCompile-xwna2s"
+      source: "D:/gep repo/The-Grill-Engine/build/CMakeFiles/CMakeScratch/TryCompile-gkj63j"
+      binary: "D:/gep repo/The-Grill-Engine/build/CMakeFiles/CMakeScratch/TryCompile-gkj63j"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
@@ -192,34 +192,34 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'D:/gep repo/The-Grill-Engine/build/CMakeFiles/CMakeScratch/TryCompile-xwna2s'
+        Change Dir: 'D:/gep repo/The-Grill-Engine/build/CMakeFiles/CMakeScratch/TryCompile-gkj63j'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_6ead7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ef875.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.9.8+b34f75857 for .NET Framework
-        Build started 03/10/2024 12:32:19.
+        Build started 03/10/2024 12:35:29.
         
-        Project "D:\\gep repo\\The-Grill-Engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xwna2s\\cmTC_6ead7.vcxproj" on node 1 (default targets).
+        Project "D:\\gep repo\\The-Grill-Engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gkj63j\\cmTC_ef875.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_6ead7.dir\\Debug\\".
+          Creating directory "cmTC_ef875.dir\\Debug\\".
           Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
-          Creating directory "D:\\gep repo\\The-Grill-Engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xwna2s\\Debug\\".
-          Creating directory "cmTC_6ead7.dir\\Debug\\cmTC_6ead7.tlog\\".
+          Creating directory "D:\\gep repo\\The-Grill-Engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gkj63j\\Debug\\".
+          Creating directory "cmTC_ef875.dir\\Debug\\cmTC_ef875.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_6ead7.dir\\Debug\\cmTC_6ead7.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_6ead7.dir\\Debug\\cmTC_6ead7.tlog\\unsuccessfulbuild".
+          Creating "cmTC_ef875.dir\\Debug\\cmTC_ef875.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_ef875.dir\\Debug\\cmTC_ef875.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6ead7.dir\\Debug\\\\" /Fd"cmTC_6ead7.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ef875.dir\\Debug\\\\" /Fd"cmTC_ef875.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33135 for x64
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6ead7.dir\\Debug\\\\" /Fd"cmTC_6ead7.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ef875.dir\\Debug\\\\" /Fd"cmTC_ef875.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /errorReport:queue "C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\share\\cmake-3.28\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\gep repo\\The-Grill-Engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xwna2s\\Debug\\cmTC_6ead7.exe" /INCREMENTAL /ILK:"cmTC_6ead7.dir\\Debug\\cmTC_6ead7.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/gep repo/The-Grill-Engine/build/CMakeFiles/CMakeScratch/TryCompile-xwna2s/Debug/cmTC_6ead7.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/gep repo/The-Grill-Engine/build/CMakeFiles/CMakeScratch/TryCompile-xwna2s/Debug/cmTC_6ead7.lib" /MACHINE:X64  /machine:x64 cmTC_6ead7.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_6ead7.vcxproj -> D:\\gep repo\\The-Grill-Engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xwna2s\\Debug\\cmTC_6ead7.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"D:\\gep repo\\The-Grill-Engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gkj63j\\Debug\\cmTC_ef875.exe" /INCREMENTAL /ILK:"cmTC_ef875.dir\\Debug\\cmTC_ef875.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/gep repo/The-Grill-Engine/build/CMakeFiles/CMakeScratch/TryCompile-gkj63j/Debug/cmTC_ef875.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/gep repo/The-Grill-Engine/build/CMakeFiles/CMakeScratch/TryCompile-gkj63j/Debug/cmTC_ef875.lib" /MACHINE:X64  /machine:x64 cmTC_ef875.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_ef875.vcxproj -> D:\\gep repo\\The-Grill-Engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gkj63j\\Debug\\cmTC_ef875.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_6ead7.dir\\Debug\\cmTC_6ead7.tlog\\unsuccessfulbuild".
-          Touching "cmTC_6ead7.dir\\Debug\\cmTC_6ead7.tlog\\cmTC_6ead7.lastbuildstate".
-        Done Building Project "D:\\gep repo\\The-Grill-Engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-xwna2s\\cmTC_6ead7.vcxproj" (default targets).
+          Deleting file "cmTC_ef875.dir\\Debug\\cmTC_ef875.tlog\\unsuccessfulbuild".
+          Touching "cmTC_ef875.dir\\Debug\\cmTC_ef875.tlog\\cmTC_ef875.lastbuildstate".
+        Done Building Project "D:\\gep repo\\The-Grill-Engine\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gkj63j\\cmTC_ef875.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
