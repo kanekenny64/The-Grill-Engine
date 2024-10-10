@@ -7,7 +7,10 @@ include_directories(
 )
 
 add_library(thegrill 
-	src/thegrill/dummy.cpp src/thegrill/dummy.h
+	src/thegrill/Core.cpp src/thegrill/Core.h
+	src/thegrill/thegrill.h
+	src/thegrill/Entity.cpp src/thegrill/Entity.h 
+	src/thegrill/Component.h
 )
 
 

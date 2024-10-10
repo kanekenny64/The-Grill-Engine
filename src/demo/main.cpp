@@ -1,11 +1,20 @@
-#include <thegrill/dummy.h>
+#include <thegrill/thegrill.h>
 #include <iostream>
+
+using namespace thegrill;
+
+struct Player : Component {
+	int m_dummy;
+};
 
 int main()
 {
-std::cout << "Hello World" << std::endl;
+	std::shared_ptr<Core> core = Core::initialize();
 
-dummy();
+	std::shared_ptr<Entity> entity = core->add_entity();
+	std::shared_ptr<Player> p = entity->add_component<Player>();
+
+	core->run();
 
 return 0;
-}
+}	
