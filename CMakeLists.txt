@@ -4,13 +4,15 @@ project(THEGRILL)
 
 include_directories(
 	src
+	contrib/include
 )
 
 add_library(thegrill 
 	src/thegrill/Core.cpp src/thegrill/Core.h
 	src/thegrill/thegrill.h
 	src/thegrill/Entity.cpp src/thegrill/Entity.h 
-	src/thegrill/Component.h
+	src/thegrill/Component.h src/thegrill/Component.cpp
+	src/thegrill/Transform.h
 )
 
 

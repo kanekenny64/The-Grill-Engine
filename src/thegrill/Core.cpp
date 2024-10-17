@@ -1,5 +1,6 @@
 #include "Core.h"
 #include "Entity.h"
+#include "Transform.h"
 #include <iostream>
 
 namespace thegrill {
@@ -17,16 +18,22 @@ namespace thegrill {
 	{
 		std::shared_ptr<Entity> rtn = std::make_shared<Entity>();
 		rtn->m_core = m_self;
-		std::cout << rtn->m_core.lock().get() << std::endl;
+		//std::cout << rtn->m_core.lock().get() << std::endl;
+		
+		rtn->add_component<Transform>();
+
 		m_entities.push_back(rtn);
 		return rtn;
 	}
 
 	void Core::run()
 	{
-		for (size_t i = 0; i < 5; i++)
+		for (size_t i = 0; i < 25; i++)
 		{
-			//TODO
+			for (size_t i = 0; i < m_entities.size(); i++)
+			{
+				m_entities.at(i)->tick();
+			}
 		}
 	}
 

@@ -12,6 +12,8 @@ namespace thegrill {
 		{
 			std::shared_ptr<T> rtn = std::make_shared<T>();
 
+			rtn->on_initialize();
+
 			m_components.push_back(rtn);
 
 			return rtn;
@@ -24,6 +26,8 @@ private:
 		std::weak_ptr<Core> m_core;
 
 		std::vector<std::shared_ptr<Component> > m_components;
+
+		void tick();
 	};
 
 }
