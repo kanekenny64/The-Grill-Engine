@@ -1,13 +1,34 @@
 #include "Core.h"
 #include "Entity.h"
 #include "Transform.h"
+#include <SDL2/SDL.h>
+#include <GL/glew.h>
 #include <iostream>
+
+#define WINDOW_WIDTH 1280
+#define WINDOW_HEIGHT 720
 
 namespace thegrill {
 
 
 	std::shared_ptr<Core> Core::initialize()
 	{
+		SDL_Window* window = SDL_CreateWindow("Triangle",
+			SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
+			WINDOW_WIDTH, WINDOW_HEIGHT,
+			SDL_WINDOW_RESIZABLE | SDL_WINDOW_OPENGL);
+
+
+		if (!SDL_GL_CreateContext(window))
+		{
+			throw std::exception();
+		}
+
+		if (glewInit() != GLEW_OK)
+		{
+			throw std::exception();
+		}
+
 		std::shared_ptr<Core> rtn = std::make_shared<Core>();
 		rtn->m_self = rtn;
 
