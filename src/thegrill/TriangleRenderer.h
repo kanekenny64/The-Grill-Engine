@@ -1,24 +1,22 @@
 #include "Component.h"
+#include "NonCopyable.h"
 #include <GL/glew.h>
-#include <GL/glew.h>
+
 
 namespace thegrill {
 
-	struct Mesh{};
-	struct Model{};
+	struct Mesh;
+	struct Model;
 
-	struct triangleRenderer : Component {
-
-	protected:
-		triangleRenderer(Mesh _mesh);
-		triangleRenderer(Model _model);
-
+	struct TriangleRenderer : Component, NonCopyable {
 	public:
-		triangleRenderer(const triangleRenderer&) = delete;
-		triangleRenderer& operator=(const triangleRenderer&) = delete;
+		TriangleRenderer(Mesh _mesh);
+		TriangleRenderer(Model _model);
 		void OnInit();
 
 	private:
+		TriangleRenderer(const TriangleRenderer&);
+		TriangleRenderer& operator=(const TriangleRenderer&);
 		GLuint programID;
 		GLuint vboID;
 		GLuint vbaID;

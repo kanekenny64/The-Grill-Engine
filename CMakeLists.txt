@@ -22,6 +22,7 @@ add_library(thegrill
 	src/thegrill/Mesh.h src/thegrill/Mesh.cpp
 	src/thegrill/Texture.h src/thegrill/Texture.cpp
 	src/thegrill/Shader.h src/thegrill/Shader.cpp
+	src/thegrill/NonCopyable.h
 )
 
 target_link_libraries(thegrill SDL2 glew32 OpenGL32)

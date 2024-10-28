@@ -3,110 +3,113 @@
 #include <stdexcept>
 #include <iostream>
 
-Mesh::Mesh()
-	: m_dirty(false), m_vboid(0), m_vaoid(0)
-{
-    std::cout << "mesh created" << std::endl;
-}
-
-void Mesh::add(const Face& _face)
-{
-	m_faces.push_back(_face);
-    m_dirty = true;
-}
-
-GLuint Mesh::vao_id()
-{
-    if (!m_faces.size())
+namespace thegrill {
+    Mesh::Mesh()
+        : m_dirty(false), m_vboid(0), m_vaoid(0)
     {
-        throw std::runtime_error("Model is empty");
+        std::cout << "mesh created" << std::endl;
     }
 
-    if (!m_vboid)
+    void Mesh::add(const Face& _face)
     {
-        glGenBuffers(1, &m_vboid);
+        m_faces.push_back(_face);
+        m_dirty = true;
+    }
+
+    GLuint Mesh::vao_id()
+    {
+        if (!m_faces.size())
+        {
+            throw std::runtime_error("Model is empty");
+        }
 
         if (!m_vboid)
         {
-            throw std::runtime_error("Failed to generate vertex buffer");
-        }
-    }
+            glGenBuffers(1, &m_vboid);
 
-    if (!m_vaoid)
-    {
-        glGenVertexArrays(1, &m_vaoid);
+            if (!m_vboid)
+            {
+                throw std::runtime_error("Failed to generate vertex buffer");
+            }
+        }
 
         if (!m_vaoid)
         {
-            throw std::runtime_error("Failed to generate vertex array");
+            glGenVertexArrays(1, &m_vaoid);
+
+            if (!m_vaoid)
+            {
+                throw std::runtime_error("Failed to generate vertex array");
+            }
         }
-    }
 
-    if (m_dirty)
-    {
-        std::vector<GLfloat> data;
-
-        for (size_t fi = 0; fi < m_faces.size(); ++fi)
+        if (m_dirty)
         {
-            data.push_back(m_faces[fi].a.position.x);
-            data.push_back(m_faces[fi].a.position.y);
-            data.push_back(m_faces[fi].a.position.z);
-            data.push_back(m_faces[fi].a.texcoord.x);
-            data.push_back(m_faces[fi].a.texcoord.y);
-            data.push_back(m_faces[fi].a.normal.x);
-            data.push_back(m_faces[fi].a.normal.y);
-            data.push_back(m_faces[fi].a.normal.z);
+            std::vector<GLfloat> data;
 
-            data.push_back(m_faces[fi].b.position.x);
-            data.push_back(m_faces[fi].b.position.y);
-            data.push_back(m_faces[fi].b.position.z);
-            data.push_back(m_faces[fi].b.texcoord.x);
-            data.push_back(m_faces[fi].b.texcoord.y);
-            data.push_back(m_faces[fi].b.normal.x);
-            data.push_back(m_faces[fi].b.normal.y);
-            data.push_back(m_faces[fi].b.normal.z);
+            for (size_t fi = 0; fi < m_faces.size(); ++fi)
+            {
+                data.push_back(m_faces[fi].a.position.x);
+                data.push_back(m_faces[fi].a.position.y);
+                data.push_back(m_faces[fi].a.position.z);
+                data.push_back(m_faces[fi].a.texcoord.x);
+                data.push_back(m_faces[fi].a.texcoord.y);
+                data.push_back(m_faces[fi].a.normal.x);
+                data.push_back(m_faces[fi].a.normal.y);
+                data.push_back(m_faces[fi].a.normal.z);
 
-            data.push_back(m_faces[fi].c.position.x);
-            data.push_back(m_faces[fi].c.position.y);
-            data.push_back(m_faces[fi].c.position.z);
-            data.push_back(m_faces[fi].c.texcoord.x);
-            data.push_back(m_faces[fi].c.texcoord.y);
-            data.push_back(m_faces[fi].c.normal.x);
-            data.push_back(m_faces[fi].c.normal.y);
-            data.push_back(m_faces[fi].c.normal.z);
+                data.push_back(m_faces[fi].b.position.x);
+                data.push_back(m_faces[fi].b.position.y);
+                data.push_back(m_faces[fi].b.position.z);
+                data.push_back(m_faces[fi].b.texcoord.x);
+                data.push_back(m_faces[fi].b.texcoord.y);
+                data.push_back(m_faces[fi].b.normal.x);
+                data.push_back(m_faces[fi].b.normal.y);
+                data.push_back(m_faces[fi].b.normal.z);
+
+                data.push_back(m_faces[fi].c.position.x);
+                data.push_back(m_faces[fi].c.position.y);
+                data.push_back(m_faces[fi].c.position.z);
+                data.push_back(m_faces[fi].c.texcoord.x);
+                data.push_back(m_faces[fi].c.texcoord.y);
+                data.push_back(m_faces[fi].c.normal.x);
+                data.push_back(m_faces[fi].c.normal.y);
+                data.push_back(m_faces[fi].c.normal.z);
+            }
+
+            glBindBuffer(GL_ARRAY_BUFFER, m_vboid);
+            glBufferData(GL_ARRAY_BUFFER, data.size() * sizeof(data.at(0)), &data.at(0), GL_STATIC_DRAW);
+            glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+            glBindVertexArray(m_vaoid);
+            glBindBuffer(GL_ARRAY_BUFFER, m_vboid);
+
+            glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE,
+                8 * sizeof(data.at(0)), (void*)0);
+
+            glEnableVertexAttribArray(0);
+
+            glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE,
+                8 * sizeof(data.at(0)), (void*)(3 * sizeof(GLfloat)));
+
+            glEnableVertexAttribArray(1);
+
+            glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE,
+                8 * sizeof(data.at(0)), (void*)(5 * sizeof(GLfloat)));
+
+            glEnableVertexAttribArray(2);
+
+            glBindVertexArray(0);
+            glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+            m_dirty = false;
         }
-
-        glBindBuffer(GL_ARRAY_BUFFER, m_vboid);
-        glBufferData(GL_ARRAY_BUFFER, data.size() * sizeof(data.at(0)), &data.at(0), GL_STATIC_DRAW);
-        glBindBuffer(GL_ARRAY_BUFFER, 0);
-
-        glBindVertexArray(m_vaoid);
-        glBindBuffer(GL_ARRAY_BUFFER, m_vboid);
-
-        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE,
-            8 * sizeof(data.at(0)), (void*)0);
-
-        glEnableVertexAttribArray(0);
-
-        glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE,
-            8 * sizeof(data.at(0)), (void*)(3 * sizeof(GLfloat)));
-
-        glEnableVertexAttribArray(1);
-
-        glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE,
-            8 * sizeof(data.at(0)), (void*)(5 * sizeof(GLfloat)));
-
-        glEnableVertexAttribArray(2);
-
-        glBindVertexArray(0);
-        glBindBuffer(GL_ARRAY_BUFFER, 0);
-
-        m_dirty = false;
+        return m_vaoid;
     }
-	return m_vaoid;
-}
 
-GLsizei Mesh::vertex_count() const
-{
-    return (GLsizei)m_faces.size() * 3;
+    GLsizei Mesh::vertex_count() const
+    {
+        return (GLsizei)m_faces.size() * 3;
+    }
+
 }

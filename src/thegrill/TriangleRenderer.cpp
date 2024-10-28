@@ -1,9 +1,10 @@
-#include "TriangleRenderer.h"
 #include "Mesh.h"
+#include "TriangleRenderer.h"
+
 
 namespace thegrill {
-	triangleRenderer::triangleRenderer(Mesh _mesh)
+	TriangleRenderer::TriangleRenderer(Mesh _mesh)
 	{
-
+		vboID = _mesh.vao_id();
 	}
 }
