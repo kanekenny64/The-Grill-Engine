@@ -10,8 +10,7 @@ namespace thegrill {
 
 	struct TriangleRenderer : Component, NonCopyable {
 	public:
-		TriangleRenderer(Mesh _mesh);
-		TriangleRenderer(Model _model);
+		TriangleRenderer();
 		void OnInit();
 
 	private:

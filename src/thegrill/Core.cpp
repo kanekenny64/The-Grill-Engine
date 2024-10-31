@@ -4,34 +4,21 @@
 #include <SDL2/SDL.h>
 #include <GL/glew.h>
 #include <iostream>
+#include "Window.h"
 
-#define WINDOW_WIDTH 1280
-#define WINDOW_HEIGHT 720
+
 
 namespace thegrill {
 
 
 	std::shared_ptr<Core> Core::initialize()
 	{
-		SDL_Window* window = SDL_CreateWindow("Triangle",
-			SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
-			WINDOW_WIDTH, WINDOW_HEIGHT,
-			SDL_WINDOW_RESIZABLE | SDL_WINDOW_OPENGL);
-
-
-		if (!SDL_GL_CreateContext(window))
-		{
-			throw std::exception();
-		}
-
-		if (glewInit() != GLEW_OK)
-		{
-			throw std::exception();
-		}
+		
 
 		std::shared_ptr<Core> rtn = std::make_shared<Core>();
+		rtn->m_window = std::make_shared<Window>();
 		rtn->m_self = rtn;
-
+		
 		return rtn;
 	}
 
@@ -47,14 +34,42 @@ namespace thegrill {
 		return rtn;
 	}
 
+	std::shared_ptr<Window> Core::window() const
+	{
+		return m_window;
+	}
+
 	void Core::run()
 	{
-		for (size_t i = 0; i < 25; i++)
-		{
+		bool quit = false;
+		while (!quit) {
+
+			SDL_Event event = { 0 };
+
+			while (SDL_PollEvent(&event))
+			{
+				if (event.type == SDL_QUIT)
+				{
+					quit = true;
+				}
+			}
+
 			for (size_t i = 0; i < m_entities.size(); i++)
 			{
 				m_entities.at(i)->tick();
 			}
+
+			//SDL_GL_ClearWindow(m_window->m_raw);
+
+			glClearColor(0.0f, 1.0f, 0.0f, 1.0f);
+			glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+			
+			for (size_t i = 0; i < m_entities.size(); i++)
+			{
+			//	m_entities.at(i)->render();
+			}
+
+			SDL_GL_SwapWindow(m_window->m_raw);
 		}
 	}
 
