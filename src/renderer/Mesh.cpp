@@ -3,7 +3,7 @@
 #include <stdexcept>
 #include <iostream>
 
-namespace thegrill {
+namespace renderer {
     Mesh::Mesh()
         : m_dirty(false), m_vboid(0), m_vaoid(0)
     {

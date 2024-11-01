@@ -1,12 +1,15 @@
 #include "Component.h"
 #include "NonCopyable.h"
-#include <GL/glew.h>
+
+
 
 
 namespace thegrill {
 
+	struct Shader;
 	struct Mesh;
 	struct Model;
+	
 
 	struct TriangleRenderer : Component, NonCopyable {
 	public:
@@ -16,12 +19,13 @@ namespace thegrill {
 	private:
 		TriangleRenderer(const TriangleRenderer&);
 		TriangleRenderer& operator=(const TriangleRenderer&);
-		GLuint programID;
-		GLuint vboID;
-		GLuint vbaID;
+		
 
 		void OnDisplay();
 
+		renderer::Mesh m_mesh;
+		renderer::Shader m_shader;
+		
 	};
 
 }

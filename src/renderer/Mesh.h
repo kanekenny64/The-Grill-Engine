@@ -7,7 +7,7 @@
 #include <GL/glew.h>
 
 #include <vector>
-namespace thegrill {
+namespace renderer {
 	struct Vertex {
 		glm::vec3 position;
 		glm::vec2 texcoord;
