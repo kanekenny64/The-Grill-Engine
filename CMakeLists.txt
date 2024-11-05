@@ -19,6 +19,7 @@ add_library(renderer
 	src/renderer/Mesh.h src/renderer/Mesh.cpp
 	src/renderer/Texture.h src/renderer/Texture.cpp
 	src/renderer/Shader.h src/renderer/Shader.cpp
+	src/renderer/Renderer.h
 	
 )
 

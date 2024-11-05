@@ -1,5 +1,6 @@
 #include "Component.h"
 #include "NonCopyable.h"
+#include "renderer/Renderer.h"
 
 
 
@@ -11,19 +12,17 @@ namespace thegrill {
 	struct Model;
 	
 
-	struct TriangleRenderer : Component, NonCopyable {
+	struct TriangleRenderer :public Component {
 	public:
 		TriangleRenderer();
 		void OnInit();
 
 	private:
-		TriangleRenderer(const TriangleRenderer&);
-		TriangleRenderer& operator=(const TriangleRenderer&);
 		
 
-		void OnDisplay();
+		void on_render();
 
-		renderer::Mesh m_mesh;
+		renderer::Model m_model;
 		renderer::Shader m_shader;
 		
 	};

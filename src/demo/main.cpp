@@ -1,4 +1,5 @@
 #include <thegrill/thegrill.h>
+
 #include <iostream>
 
 using namespace thegrill;
@@ -10,7 +11,7 @@ struct Player : Component {
 	}
 
 private:
-	int m_dummy;
+	int m_dummy = 1;
 
 	void on_tick() {
 		printf("Test::tick\n");
@@ -19,13 +20,15 @@ private:
 
 };
 
+#undef main
+
 int main()
 {
 	std::shared_ptr<Core> core = Core::initialize();
 
 	std::shared_ptr<Entity> entity = core->add_entity();
-	std::shared_ptr<Player> p = entity->add_component<Player>();
-	//std::shared_ptr<TriangleRenderer> p = entity->add_component<TriangleRenderer>();
+	entity->add_component<Player>();
+	entity ->add_component<TriangleRenderer>();
 	
 
 	core->run();

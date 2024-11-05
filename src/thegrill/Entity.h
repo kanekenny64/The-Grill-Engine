@@ -27,7 +27,8 @@ private:
 
 		std::vector<std::shared_ptr<Component> > m_components;
 
-		void tick();
+		void OnTick();
+		void OnRender();
 	};
 
 }

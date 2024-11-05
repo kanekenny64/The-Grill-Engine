@@ -143,5 +143,6 @@ namespace renderer {
 
 	};
 
-#endif // !SHADER_H
 }
+#endif // !SHADER_H
+

@@ -56,7 +56,7 @@ namespace thegrill {
 
 			for (size_t i = 0; i < m_entities.size(); i++)
 			{
-				m_entities.at(i)->tick();
+				m_entities.at(i)->OnTick();
 			}
 
 			//SDL_GL_ClearWindow(m_window->m_raw);
@@ -66,7 +66,7 @@ namespace thegrill {
 			
 			for (size_t i = 0; i < m_entities.size(); i++)
 			{
-			//	m_entities.at(i)->render();
+				m_entities.at(i)->OnRender();
 			}
 
 			SDL_GL_SwapWindow(m_window->m_raw);

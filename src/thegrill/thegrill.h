@@ -12,5 +12,6 @@ namespace thegrill {
 #include "Entity.h"
 #include "Component.h"
 #include "Transform.h"
+#include "TriangleRenderer.h"
 
 #endif // !1

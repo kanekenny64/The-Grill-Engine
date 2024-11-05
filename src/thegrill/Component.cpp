@@ -9,4 +9,8 @@ namespace thegrill {
 	void Component::tick() {
 		on_tick();
 	}
+
+	void Component::render(){
+		on_render();
+	}
 }
