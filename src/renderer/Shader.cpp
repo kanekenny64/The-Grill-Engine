@@ -127,6 +127,8 @@ namespace renderer {
 			glDeleteShader(vertexShaderId);
 			glDetachShader(programId, fragmentShaderId);
 			glDeleteShader(fragmentShaderId);
+
+		
 		}
 
 	}
@@ -185,6 +187,8 @@ namespace renderer {
 		if (!depth_testing) {
 			//glDisable(GL_DEPTH_TEST);
 		}
+		glBindVertexArray(0);
+		glUseProgram(0);
 		//print vertex shader
 	//	std::cout << "Fram Shader: " << fragmentShaderSrc << std::endl;
 	}

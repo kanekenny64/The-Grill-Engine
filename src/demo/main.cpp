@@ -14,8 +14,7 @@ private:
 	int m_dummy = 1;
 
 	void on_tick() {
-		printf("Test::tick\n");
-		
+		//printf("Test::Tick\n");
 	}
 
 };

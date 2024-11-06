@@ -24,6 +24,7 @@ namespace thegrill {
 
 		renderer::Model m_model;
 		renderer::Shader m_shader;
+		renderer::Texture m_tex;
 		
 	};
 

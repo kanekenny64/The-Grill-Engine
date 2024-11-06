@@ -58,36 +58,32 @@ namespace renderer {
 			"                                       ";
 
 		const GLchar* fragmentShaderSrc =
-			"uniform sampler2D in_Texture;"\
-			"uniform vec3 in_LightPos;"\
-			"uniform mat4 in_View; "\
+			"uniform sampler2D u_Texture;    " \
+			"varying vec2 v_TexCoord; " \
+			"varying vec3 v_Normal;"\
+			"varying vec3 v_FragPos;"\
 
-			"varying vec2 ex_TexCoord; "\
-			"varying vec3 ex_Normal;"\
-			"varying vec3 ex_FragPos;"\
+			"void main()               " \
+			"{                         " \
+			"vec4 tex = texture2D(u_Texture, v_TexCoord); " \
+			"vec3 lightPos = vec3(10, 10, 10);                         " \
+			"vec3 diffuseColor = vec3(1, 1, 1);                         " \
+			"                         " \
+			"vec3 N = normalize(v_Normal);                         " \
+			"vec3 lightDir = normalize(lightPos - v_FragPos);                         " \
+			"float diff = max(dot(N, lightDir), 0.0);                         " \
+			"vec3 diffuse = diffuseColor * diff;                         " \
+			"vec3 lighting = diffuse;                         " \
 
-			"void main()"\
-			"{"\
-			"vec4 tex = texture2D(in_Texture, ex_TexCoord); "\
+			" gl_FragColor =  tex; " \
+			"                         " \
 
-			"vec3 norm = normalize(ex_Normal); "\
-			"vec3 lightDir = normalize(in_LightPos - ex_FragPos);"\
+			"                         " \
+			"                         " \
+			"}                         " \
+			"                          ";
 
-			"float diff = max(dot(norm, lightDir), 0.0); "\
-			"vec3 diffuse = diff * vec3(1, 1, 1);"\
-
-			"vec4 viewPos = inverse(in_View) * vec4(0, 0, 0, 1); "\
-			"vec3 viewDir = normalize(viewPos - ex_FragPos);"\
-			"vec3 reflectDir = reflect(-lightDir, norm); "\
-			"float spec = pow(max(dot(viewDir, reflectDir), 0.0), 32);"\
-			"vec3 specular = spec * vec3(1, 1, 1); "\
-
-			"vec3 lighting = diffuse + specular; "\
-
-			"gl_FragColor = vec4(lighting, 1) * tex; "\
-			"}                                      "\
-			;
-
+		//vec4(lighting, 1) * [for line 78, diffuse lighting]
 
 		const GLchar* orthoVertexShaderSrc =
 			"attribute vec3 a_Position;            " \
