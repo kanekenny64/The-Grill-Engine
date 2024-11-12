@@ -59,14 +59,14 @@ namespace renderer {
 
 		const GLchar* fragmentShaderSrc =
 			"uniform sampler2D u_Texture;    " \
-			"varying vec2 v_TexCoord; " \
+			"varying vec2 ex_TexCoord;" \
 			"varying vec3 v_Normal;"\
 			"varying vec3 v_FragPos;"\
 
 			"void main()               " \
 			"{                         " \
-			"vec4 tex = texture2D(u_Texture, v_TexCoord); " \
-			"vec3 lightPos = vec3(10, 10, 10);                         " \
+			"vec4 tex = texture2D(u_Texture, ex_TexCoord); " \
+			"vec3 lightPos = vec3(-20, 10, -20);                         " \
 			"vec3 diffuseColor = vec3(1, 1, 1);                         " \
 			"                         " \
 			"vec3 N = normalize(v_Normal);                         " \
