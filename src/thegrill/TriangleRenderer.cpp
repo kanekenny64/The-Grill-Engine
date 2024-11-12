@@ -7,7 +7,7 @@
 
 namespace thegrill {
 	TriangleRenderer::TriangleRenderer():
-		m_shader(renderer::Shader(false)), m_model(renderer::Model("../models/CookedChickenBreast.obj")), m_tex(renderer::Texture("../textures/Whiskers_diffuse.png"))
+		m_shader(renderer::Shader(false)), m_model(renderer::Model("../models/CookedChickenBreast.obj")), m_tex(renderer::Texture("../textures/CookedChickenBreastAlbedo.png"))
 	{}
 	void TriangleRenderer::on_render()
 	{
@@ -30,7 +30,11 @@ namespace thegrill {
 		m_shader.setUniform("u_View", glm::inverse(view));
 
 		m_shader.setUniform("u_Texture", m_tex, 1);
+
+		//m_shader.setUniform("in_LightPos", glm::vec3(-20, 10, -20));
 		m_shader.draw(m_shader.programId, m_model.vao_id(), m_model.vertex_count(), true);
+
+
 		
 	}
 }

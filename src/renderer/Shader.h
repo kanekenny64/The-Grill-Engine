@@ -39,7 +39,6 @@ namespace renderer {
 			"attribute vec3 a_Position;            " \
 			"attribute vec3 a_Normal;"\
 			"attribute vec2 a_TexCoord;               " \
-			"               " \
 			"uniform mat4 u_Projection;"\
 			"uniform mat4 u_View; "	\
 			"uniform mat4 u_Model;"
@@ -48,42 +47,37 @@ namespace renderer {
 			"varying vec3 ex_FragPos;"\
 			"void main()                            " \
 			"{                                      " \
-			"  " \
-			"    " \
 			" gl_Position = u_Projection * u_View * u_Model * vec4(a_Position, 1.0);"\
 			" ex_TexCoord = a_TexCoord;"\
 			" ex_Normal = mat3(u_Model) * a_Normal;"\
 			" ex_FragPos = vec3(u_Model * vec4(a_Position, 1.0));"\
 			"}                                      " \
 			"                                       ";
-
+		//Using diffuse
 		const GLchar* fragmentShaderSrc =
 			"uniform sampler2D u_Texture;    " \
 			"varying vec2 ex_TexCoord;" \
-			"varying vec3 v_Normal;"\
-			"varying vec3 v_FragPos;"\
-
+			"varying vec3 ex_Normal;"\
+			"varying vec3 ex_FragPos;"\
 			"void main()               " \
 			"{                         " \
 			"vec4 tex = texture2D(u_Texture, ex_TexCoord); " \
-			"vec3 lightPos = vec3(-20, 10, -20);                         " \
+			"vec3 lightPos = vec3(-10, 0, -10);                         " \
 			"vec3 diffuseColor = vec3(1, 1, 1);                         " \
 			"                         " \
-			"vec3 N = normalize(v_Normal);                         " \
-			"vec3 lightDir = normalize(lightPos - v_FragPos);                         " \
+			"vec3 N = normalize(ex_Normal);                         " \
+			"vec3 lightDir = normalize(lightPos - ex_FragPos);                         " \
 			"float diff = max(dot(N, lightDir), 0.0);                         " \
 			"vec3 diffuse = diffuseColor * diff;                         " \
 			"vec3 lighting = diffuse;                         " \
-
-			" gl_FragColor =  tex; " \
+			" gl_FragColor =  vec4(lighting, 1) * tex; " \
 			"                         " \
-
 			"                         " \
 			"                         " \
 			"}                         " \
 			"                          ";
 
-		//vec4(lighting, 1) * [for line 78, diffuse lighting]
+		
 
 		const GLchar* orthoVertexShaderSrc =
 			"attribute vec3 a_Position;            " \
