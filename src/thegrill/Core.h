@@ -6,6 +6,7 @@ namespace thegrill
 {
 	struct Entity;
 	struct Window;
+	struct Resources;
 
 
 	struct Core
