@@ -13,5 +13,8 @@ namespace thegrill {
 #include "Component.h"
 #include "Transform.h"
 #include "TriangleRenderer.h"
+#include "Texture.h"
+#include "Model.h"
+#include "Resources.h"
 
 #endif // !1

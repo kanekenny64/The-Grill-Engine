@@ -24,11 +24,14 @@ private:
 int main()
 {
 	std::shared_ptr<Core> core = Core::initialize();
+	std::shared_ptr<Resources> resources = core->get_resources();
+	std::shared_ptr<Texture> tex = resources->load<Texture>("../textures/CookedChickenBreastAlbedo.png");
 
 	std::shared_ptr<Entity> entity = core->add_entity();
 	entity->add_component<Player>();
-	entity ->add_component<TriangleRenderer>();
+	std::shared_ptr<TriangleRenderer> r =entity ->add_component<TriangleRenderer>();
 	
+	r->set_texture(tex->getTexture());
 
 	core->run();
 

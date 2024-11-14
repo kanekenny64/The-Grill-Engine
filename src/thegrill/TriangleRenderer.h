@@ -1,6 +1,7 @@
 #include "Component.h"
 #include "NonCopyable.h"
 #include "renderer/Renderer.h"
+#include <memory>
 
 
 
@@ -17,6 +18,8 @@ namespace thegrill {
 		TriangleRenderer();
 		void OnInit();
 
+		void set_texture(std::shared_ptr<renderer::Texture> _tex);
+
 	private:
 		
 
@@ -24,7 +27,7 @@ namespace thegrill {
 
 		renderer::Model m_model;
 		renderer::Shader m_shader;
-		renderer::Texture m_tex;
+		std::shared_ptr<renderer::Texture> m_tex;
 		
 	};
 

@@ -151,10 +151,10 @@ namespace renderer {
 		glUseProgram(0);
 	}
 
-	void Shader::setUniform(std::string variable, Texture& value, int unit)
+	void Shader::setUniform(std::string variable, std::shared_ptr<renderer::Texture> value, int unit)
 	{
 		glActiveTexture(GL_TEXTURE0 + unit);
-		glBindTexture(GL_TEXTURE_2D, value.id());
+		glBindTexture(GL_TEXTURE_2D, value->id());
 		glUseProgram(programId);
 		glUniform1i(glGetUniformLocation(programId, variable.c_str()), unit);
 		glUseProgram(0);

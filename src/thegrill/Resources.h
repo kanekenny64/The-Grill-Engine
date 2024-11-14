@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include "Resource.h"
+#include <iostream>
 
 namespace thegrill {
 	struct Resources
@@ -9,6 +10,7 @@ namespace thegrill {
 		template <typename T>
 		std::shared_ptr<T> load(const std::string& _path)
 		{
+			
 			// Search for previously loaded resource
 			for (size_t i = 0; i < m_resources.size(); ++i)
 			{
@@ -26,8 +28,11 @@ namespace thegrill {
 			return rtn;
 		}
 
+		std::vector<std::shared_ptr<Resource> > getResources();
 
 	private:
 		std::vector<std::shared_ptr<Resource> > m_resources;
 	};
+
+
 }

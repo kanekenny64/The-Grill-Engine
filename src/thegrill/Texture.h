@@ -4,14 +4,20 @@
 namespace thegrill {
 	struct Texture : Resource
 	{
+		std::shared_ptr<renderer::Texture> getTexture();
 
-		void onLoad(const std::string& _path);
 	private:
-		std::shared_ptr<renderer::Texture>  m_raw;
+		void onLoad();
+		std::shared_ptr<renderer::Texture>  m_texture;
 	};
 
-	void Texture::onLoad(const std::string& _path) {
-		m_raw = std::make_shared<renderer::Texture>(_path);
+	inline std::shared_ptr<renderer::Texture> Texture::getTexture()
+	{
+		return m_texture;
+	}
+
+	void Texture::onLoad() {
+		m_texture = std::make_shared<renderer::Texture>(getPath());
 	}
 
 }

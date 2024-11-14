@@ -6,9 +6,13 @@
 
 
 namespace thegrill {
-	TriangleRenderer::TriangleRenderer():
-		m_shader(renderer::Shader(false)), m_model(renderer::Model("../models/CookedChickenBreast.obj")), m_tex(renderer::Texture("../textures/CookedChickenBreastAlbedo.png"))
+	TriangleRenderer::TriangleRenderer(): m_model("../models/CookedChickenBreast.obj"),
+		m_shader(renderer::Shader(false))
 	{}
+	void TriangleRenderer::set_texture(std::shared_ptr<renderer::Texture> _tex)
+	{
+		m_tex = _tex;
+	}
 	void TriangleRenderer::on_render()
 	{
 		glViewport(0, 0, 800.0f, 600.0f);

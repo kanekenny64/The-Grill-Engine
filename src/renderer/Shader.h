@@ -1,5 +1,6 @@
 #ifndef SHADER_H
 #define SHADER_H
+#include <memory>
 #include <GL/glew.h>
 #include <SDL2/SDL.h>
 #include <glm/glm.hpp>
@@ -19,7 +20,7 @@ namespace renderer {
 
 		void setUniform(std::string variable, glm::mat4 value);
 		void setUniform(std::string variable, glm::vec3 value);
-		void setUniform(std::string variable, Texture& value, int unit);
+		void setUniform(std::string variable, std::shared_ptr<renderer::Texture> value, int unit);
 		void setUniform(std::string variable, GLuint value, int unit);
 
 		void draw(GLuint _VAOID, GLuint _VBOID, GLsizei _size, bool depth_testing);

@@ -5,6 +5,7 @@
 #include <GL/glew.h>
 #include <iostream>
 #include "Window.h"
+#include "Resources.h"
 
 
 
@@ -37,6 +38,11 @@ namespace thegrill {
 	std::shared_ptr<Window> Core::window() const
 	{
 		return m_window;
+	}
+
+	std::shared_ptr<Resources> Core::get_resources()
+	{
+		return m_resources;
 	}
 
 	void Core::run()
