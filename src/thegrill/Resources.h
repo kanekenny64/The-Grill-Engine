@@ -17,7 +17,7 @@ namespace thegrill {
 				// Return it if found
 				if (m_resources.at(i)->getPath() == _path)
 				{
-					return m_resources.at(i);
+					return std::dynamic_pointer_cast<T>(m_resources.at(i));
 				}
 			}
 			// Create new instance, construct it and add to cache
