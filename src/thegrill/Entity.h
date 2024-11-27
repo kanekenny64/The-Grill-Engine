@@ -1,5 +1,6 @@
-#include <memory>
+ #include <memory>
 #include <vector>
+
 
 namespace thegrill {
 
@@ -7,6 +8,7 @@ namespace thegrill {
 	struct Component;
 
 	struct Entity {
+
 		template <typename T>
 		std::shared_ptr<T> add_component() 
 		{

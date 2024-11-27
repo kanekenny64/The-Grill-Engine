@@ -38,10 +38,12 @@ add_library(thegrill
 	src/thegrill/Resources.h src/thegrill/Resources.cpp
 	src/thegrill/Texture.h src/thegrill/Texture.cpp
 	src/thegrill/Model.h src/thegrill/Model.cpp
+	src/thegrill/SoundSource.h src/thegrill/SoundSource.cpp
+	
 	 
 )
 
-target_link_libraries(thegrill renderer)
+target_link_libraries(thegrill renderer OpenAL32)
 
 add_executable(demo
 	src/demo/main.cpp

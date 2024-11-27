@@ -2,7 +2,6 @@
 #include "Component.h"
 
 namespace thegrill {
-
 	Entity::~Entity() {
 
 	}

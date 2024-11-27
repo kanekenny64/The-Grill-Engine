@@ -19,7 +19,7 @@ namespace thegrill {
 		std::shared_ptr<Core> rtn = std::make_shared<Core>();
 		rtn->m_window = std::make_shared<Window>();
 		rtn->m_resources = std::make_shared<Resources>();
-
+		 
 		rtn->m_self = rtn;
 		
 		return rtn;
