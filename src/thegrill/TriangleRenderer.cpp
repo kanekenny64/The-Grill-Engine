@@ -4,6 +4,9 @@
 #include <iostream>
 #include <glm/ext.hpp>
 
+#include "Entity.h"
+#include "Transform.h"
+
 
 namespace thegrill {
 	TriangleRenderer::TriangleRenderer():
@@ -27,10 +30,11 @@ namespace thegrill {
 		glm::mat4 projection = glm::perspective(glm::radians(45.0f), 800.0f / 600.0f, 0.1f, 100.f);
 		m_shader.setUniform("u_Projection", projection);
 
-		glm::mat4 model(1.0f);
-		model = glm::translate(model, glm::vec3(0, 0, -15));
+		//glm::mat4 model(1.0f);
+		//model = glm::translate(model, glm::vec3(0, 0, -15));
 		//model = glm::scale(model, glm::vec3(1.5, 1.5, 1.5) );
-		m_shader.setUniform("u_Model", model);
+		//m_shader.setUniform("u_Model", model);
+		m_shader.setUniform("u_Model", get_entity()->get_transform()->get_model());
 
 		glm::mat4 view(1);
 		view = glm::translate(view, glm::vec3(0, 0, 1));

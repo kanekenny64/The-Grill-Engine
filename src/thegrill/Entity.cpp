@@ -2,6 +2,10 @@
 #include "Component.h"
 
 namespace thegrill {
+	std::shared_ptr<Transform> Entity::get_transform() const
+	{
+		return m_transform.lock();
+	}
 	Entity::~Entity() {
 
 	}

@@ -30,7 +30,7 @@ add_library(thegrill
 	src/thegrill/thegrill.h
 	src/thegrill/Entity.cpp src/thegrill/Entity.h 
 	src/thegrill/Component.h src/thegrill/Component.cpp
-	src/thegrill/Transform.h
+	src/thegrill/Transform.h src/thegrill/Transform.cpp
 	src/thegrill/TriangleRenderer.h src/thegrill/TriangleRenderer.cpp
 	src/thegrill/NonCopyable.h
 	src/thegrill/Window.h src/thegrill/Window.cpp
@@ -39,6 +39,7 @@ add_library(thegrill
 	src/thegrill/Texture.h src/thegrill/Texture.cpp
 	src/thegrill/Model.h src/thegrill/Model.cpp
 	src/thegrill/SoundSource.h src/thegrill/SoundSource.cpp
+	
 	
 	 
 )

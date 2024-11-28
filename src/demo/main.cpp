@@ -35,6 +35,8 @@ int main()
 	r->set_texture(tex->getTexture());
 	r->set_model(model->getModel());
 
+	entity->get_transform()-> m_position = glm::vec3(0, 0, -5);
+
 	core->run();
 
 return 0;

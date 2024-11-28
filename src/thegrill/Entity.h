@@ -6,6 +6,7 @@ namespace thegrill {
 
 	struct Core;
 	struct Component;
+	struct Transform;
 
 	struct Entity {
 
@@ -14,6 +15,8 @@ namespace thegrill {
 		{
 			std::shared_ptr<T> rtn = std::make_shared<T>();
 
+			rtn->m_entity = m_self;
+
 			rtn->on_initialize();
 
 			m_components.push_back(rtn);
@@ -21,11 +24,15 @@ namespace thegrill {
 			return rtn;
 		}
 
+		std::shared_ptr<Transform> get_transform() const;
+
 		~Entity();
 private:
 	friend struct thegrill::Core;
 
 		std::weak_ptr<Core> m_core;
+		std::weak_ptr<Entity> m_self;
+		std::weak_ptr<Transform> m_transform;
 
 		std::vector<std::shared_ptr<Component> > m_components;
 

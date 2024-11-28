@@ -1,4 +1,5 @@
 #include "Component.h"
+#include "Entity.h"
 
 namespace thegrill {
 
@@ -12,5 +13,10 @@ namespace thegrill {
 
 	void Component::render(){
 		on_render();
+	}
+
+	std::shared_ptr<Entity> Component::get_entity()
+	{
+		return m_entity.lock();
 	}
 }

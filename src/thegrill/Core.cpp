@@ -29,9 +29,11 @@ namespace thegrill {
 	{
 		std::shared_ptr<Entity> rtn = std::make_shared<Entity>();
 		rtn->m_core = m_self;
+		rtn->m_self = rtn;
 		//std::cout << rtn->m_core.lock().get() << std::endl;
 		
-		rtn->add_component<Transform>();
+
+		rtn->m_transform = rtn->add_component<Transform>();
 
 		m_entities.push_back(rtn);
 		return rtn;
