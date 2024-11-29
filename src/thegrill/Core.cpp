@@ -6,6 +6,7 @@
 #include <iostream>
 #include "Window.h"
 #include "Resources.h"
+#include "Input.h"
 
 
 
@@ -19,6 +20,7 @@ namespace thegrill {
 		std::shared_ptr<Core> rtn = std::make_shared<Core>();
 		rtn->m_window = std::make_shared<Window>();
 		rtn->m_resources = std::make_shared<Resources>();
+		rtn->m_input = std::make_shared<Input>();
 		 
 		rtn->m_self = rtn;
 		
@@ -49,6 +51,11 @@ namespace thegrill {
 		return m_resources;
 	}
 
+	std::shared_ptr<Input> Core::input()
+	{
+		return m_input;
+	}
+
 	void Core::run()
 	{
 		bool quit = false;
@@ -62,12 +69,20 @@ namespace thegrill {
 				{
 					quit = true;
 				}
+
+				//pass event to keyboard
+				
+
+				
 			}
 
 			for (size_t i = 0; i < m_entities.size(); i++)
 			{
 				m_entities.at(i)->OnTick();
 			}
+
+			//clear keyboard vectors
+			m_input->Update();
 
 			//SDL_GL_ClearWindow(m_window->m_raw);
 

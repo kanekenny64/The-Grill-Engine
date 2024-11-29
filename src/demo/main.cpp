@@ -14,7 +14,6 @@ private:
 	int m_dummy = 1;
 
 	void on_tick() {
-		//printf("Test::Tick\n");
 	}
 
 };
@@ -38,6 +37,8 @@ int main()
 	entity->get_transform()-> m_position = glm::vec3(0, 0, -5);
 
 	core->run();
+
+
 
 return 0;
 }	

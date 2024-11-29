@@ -39,6 +39,8 @@ add_library(thegrill
 	src/thegrill/Texture.h src/thegrill/Texture.cpp
 	src/thegrill/Model.h src/thegrill/Model.cpp
 	src/thegrill/SoundSource.h src/thegrill/SoundSource.cpp
+	src/thegrill/Input.h src/thegrill/Input.cpp
+	src/thegrill/Keyboard.h src/thegrill/Keyboard.cpp
 	
 	
 	 
