@@ -2,7 +2,8 @@
 
 namespace thegrill {
 
-	struct Core;
+
+	struct Input;
 
 	struct Keyboard {
 
@@ -16,9 +17,11 @@ namespace thegrill {
 		bool isKeyReleased(int key);
 		bool isKeyHeld(int key);
 
+		void KeyRelease(int key);
+
 
 	private:
-		friend struct thegrill::Core;
+		friend struct thegrill::Input;
 		std::vector<int> keys;
 		std::vector<int> pressedKeys;
 		std::vector<int> releasedKeys;

@@ -1,8 +1,7 @@
 #include "Core.h"
 #include "Entity.h"
 #include "Transform.h"
-#include <SDL2/SDL.h>
-#include <GL/glew.h>
+
 #include <iostream>
 #include "Window.h"
 #include "Resources.h"
@@ -61,28 +60,15 @@ namespace thegrill {
 		bool quit = false;
 		while (!quit) {
 
-			SDL_Event event = { 0 };
-
-			while (SDL_PollEvent(&event))
-			{
-				if (event.type == SDL_QUIT)
-				{
-					quit = true;
-				}
-
-				//pass event to keyboard
-				
-
-				
-			}
+			//clear keyboard vectors
+			quit = m_input->Update();
 
 			for (size_t i = 0; i < m_entities.size(); i++)
 			{
 				m_entities.at(i)->OnTick();
 			}
 
-			//clear keyboard vectors
-			m_input->Update();
+			
 
 			//SDL_GL_ClearWindow(m_window->m_raw);
 

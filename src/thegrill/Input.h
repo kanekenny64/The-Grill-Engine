@@ -1,4 +1,6 @@
 #include <memory>
+#include <SDL2/SDL.h>
+#include <GL/glew.h>
 
 
 namespace thegrill {
@@ -7,7 +9,7 @@ namespace thegrill {
 	{
 		Input();
 
-		void Update();
+		bool Update();
 
 		std::shared_ptr<Keyboard> keyboard() const;
 

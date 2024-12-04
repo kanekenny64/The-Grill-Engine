@@ -24,4 +24,9 @@ namespace thegrill {
 	{
 		return keys[key];
 	}
+	void Keyboard::KeyRelease(int key)
+	{
+		keys[key] = false;
+		releasedKeys[key] = true;
+	}
 }
