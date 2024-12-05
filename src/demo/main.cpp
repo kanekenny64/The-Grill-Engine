@@ -2,6 +2,8 @@
 
 #include <iostream>
 
+#include <iostream>
+
 using namespace thegrill;
 
 struct Player : Component {
@@ -14,9 +16,18 @@ private:
 	int m_dummy = 1;
 
 	void on_tick() {
+		//check if button is pressed
+		if (get_keyboard()->isKeyDown(SDL_SCANCODE_W)) {
+			//move forward
+			std::cout << "W is pressed" << std::endl;
+			get_entity()->get_transform()->m_position.z += 0.1f;
+			
+		}
 	}
 
 };
+
+
 
 #undef main
 

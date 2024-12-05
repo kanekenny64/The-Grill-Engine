@@ -25,8 +25,7 @@ namespace thegrill
 				m_keyboard->pressedKeys.push_back(event.key.keysym.sym);
 			}
 			else if (event.type == SDL_KEYUP) {
-				m_keyboard->keys[event.key.keysym.sym] = false;
-				m_keyboard->releasedKeys[event.key.keysym.sym] = true;
+				m_keyboard->releasedKeys.push_back(event.key.keysym.sym);
 			}
 		}
 

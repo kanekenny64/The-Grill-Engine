@@ -6,6 +6,10 @@ namespace thegrill {
 	{
 		return m_transform.lock();
 	}
+	std::shared_ptr<Core> Entity::get_core() const
+	{
+		return m_core.lock();
+	}
 	Entity::~Entity() {
 
 	}

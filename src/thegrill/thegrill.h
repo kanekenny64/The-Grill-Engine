@@ -16,5 +16,7 @@ namespace thegrill {
 #include "Texture.h"
 #include "Model.h"
 #include "Resources.h"
+#include "Input.h"
+#include "Keyboard.h"
 
 #endif // !1

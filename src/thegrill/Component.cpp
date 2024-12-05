@@ -1,5 +1,8 @@
 #include "Component.h"
 #include "Entity.h"
+#include "Core.h"
+#include "Input.h"
+
 
 namespace thegrill {
 
@@ -18,5 +21,9 @@ namespace thegrill {
 	std::shared_ptr<Entity> Component::get_entity()
 	{
 		return m_entity.lock();
+	}
+	std::shared_ptr<Keyboard> Component::get_keyboard()
+	{
+		return get_entity()->get_core()->input()->keyboard();
 	}
 }

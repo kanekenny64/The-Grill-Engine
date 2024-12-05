@@ -13,9 +13,9 @@ namespace thegrill {
 
 		void update();
 		
-		bool isKeyPressed(int key);
+		bool isKey(int key);
+		bool isKeyDown(int key);
 		bool isKeyReleased(int key);
-		bool isKeyHeld(int key);
 
 		void KeyRelease(int key);
 

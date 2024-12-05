@@ -7,7 +7,9 @@
 
 namespace thegrill {
 	struct Entity;
+	struct Keyboard;
 	struct Component
+		
 	{
 	public:
 		virtual void on_initialize();
@@ -18,7 +20,7 @@ namespace thegrill {
 		void render();
 
 		std::shared_ptr<Entity> get_entity();
-
+		std::shared_ptr<Keyboard> get_keyboard();
 
 	private:
 		friend struct thegrill::Entity;

@@ -26,6 +26,8 @@ namespace thegrill {
 
 		std::shared_ptr<Transform> get_transform() const;
 
+		std::shared_ptr<Core> get_core() const;
+
 		~Entity();
 private:
 	friend struct thegrill::Core;

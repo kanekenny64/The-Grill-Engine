@@ -10,23 +10,51 @@ namespace thegrill {
 		
 	}
 
-	bool Keyboard::isKeyPressed(int key)
+	bool Keyboard::isKey(int key)
 	{
-		return keys[key] && pressedKeys[key];
+		for (int i = 0; i < keys.size(); i++)
+		{
+			if (keys[i] == key)
+			{
+				return true;
+			}
+		}
+		return false;
+	}
+
+	bool Keyboard::isKeyDown(int key)
+	{
+		
+		for (int i = 0; i < pressedKeys.size(); i++)
+		{
+			if (pressedKeys[i] == key)
+			{
+				return true;
+			}
+	
+		}
+		return false;
 	}
 
 	bool Keyboard::isKeyReleased(int key)
 	{
-		return keys[key] && releasedKeys[key];
-	}
-
-	bool Keyboard::isKeyHeld(int key)
-	{
-		return keys[key];
+		for (int i = 0; i < releasedKeys.size(); i++)
+		{
+			if (releasedKeys[i] == key) {
+				return true;
+			}
+		}
+		return false;
 	}
 	void Keyboard::KeyRelease(int key)
 	{
-		keys[key] = false;
-		releasedKeys[key] = true;
+		for (int i = 0; i < keys.size(); i++)
+		{
+			if (keys[i] == key)
+			{
+				keys.erase(keys.begin() + i);
+				break;
+			}
+		}
 	}
 }
