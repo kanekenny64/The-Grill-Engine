@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-#include <iostream>
+
 
 using namespace thegrill;
 
@@ -41,6 +41,7 @@ int main()
 	std::shared_ptr<Entity> entity = core->add_entity();
 	entity->add_component<Player>();
 	std::shared_ptr<TriangleRenderer> r =entity ->add_component<TriangleRenderer>();
+	std::shared_ptr<SoundSource> sound = entity->add_component<SoundSource>();
 	
 	r->set_texture(tex->getTexture());
 	r->set_model(model->getModel());

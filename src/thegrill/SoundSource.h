@@ -2,21 +2,7 @@
 #include <memory>
 
 
-#include <AL/al.h>
-#include <AL/alc.h>
-
-#ifdef _WIN32
-#include <windows.h>
-#else
-#include <unistd.h>
-#endif
-
-#include <stdexcept>
-#include <vector>
-#include <string>
-
-#include "stb_vorbis.c"
-
+#include "SoundSystem.h"
 
 
 namespace thegrill {

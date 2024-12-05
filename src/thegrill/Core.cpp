@@ -6,6 +6,7 @@
 #include "Window.h"
 #include "Resources.h"
 #include "Input.h"
+#include "SoundSystem.h"
 
 
 
@@ -20,6 +21,7 @@ namespace thegrill {
 		rtn->m_window = std::make_shared<Window>();
 		rtn->m_resources = std::make_shared<Resources>();
 		rtn->m_input = std::make_shared<Input>();
+		rtn->m_sound_system = std::make_shared<SoundSystem>();
 		 
 		rtn->m_self = rtn;
 		
@@ -43,6 +45,11 @@ namespace thegrill {
 	std::shared_ptr<Window> Core::window() const
 	{
 		return m_window;
+	}
+
+	std::shared_ptr<SoundSystem> Core::sound_system()
+	{
+		return m_sound_system;
 	}
 
 	std::shared_ptr<Resources> Core::get_resources()

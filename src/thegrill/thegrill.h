@@ -18,5 +18,6 @@ namespace thegrill {
 #include "Resources.h"
 #include "Input.h"
 #include "Keyboard.h"
+#include "SoundSource.h"
 
 #endif // !1

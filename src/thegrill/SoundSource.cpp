@@ -5,32 +5,7 @@
 namespace thegrill {
     SoundSource::SoundSource()
     {
-        /*************************************************************************
-       * Initialization
-       *************************************************************************/
-        ALCdevice* device = alcOpenDevice(NULL);
-
-        if (!device)
-        {
-            throw std::runtime_error("Failed to open audio device");
-        }
-
-        ALCcontext* context = alcCreateContext(device, NULL);
-
-        if (!context)
-        {
-            alcCloseDevice(device);
-            throw std::runtime_error("Failed to create audio context");
-        }
-
-        if (!alcMakeContextCurrent(context))
-        {
-            alcDestroyContext(context);
-            alcCloseDevice(device);
-            throw std::runtime_error("Failed to make context current");
-        }
-
-        alListener3f(AL_POSITION, 0.0f, 0.0f, 0.0f);
+       
         //alListener3f(AL_VELOCITY, 0.0f, 0.0f, 0.0f);
 
           /*************************************************************************
@@ -86,8 +61,7 @@ namespace thegrill {
         alDeleteSources(1, &sourceId);
         alDeleteBuffers(1, &bufferId);
         alcMakeContextCurrent(NULL);
-        alcDestroyContext(context);
-        alcCloseDevice(device);
+        
     }
 
     void SoundSource::load_ogg(const std::string& _path, std::vector<unsigned char>& _buffer, ALenum& _format, ALsizei& _freq)
