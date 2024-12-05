@@ -17,7 +17,7 @@ private:
 
 	void on_tick() {
 		//check if button is pressed
-		if (get_keyboard()->isKeyDown(SDL_SCANCODE_W)) {
+		if (get_keyboard()->isKeyDown(119)) {
 			//move forward
 			std::cout << "W is pressed" << std::endl;
 			get_entity()->get_transform()->m_position.z += 0.1f;

@@ -60,15 +60,15 @@ namespace thegrill {
 		bool quit = false;
 		while (!quit) {
 
-			//clear keyboard vectors
-			quit = m_input->Update();
+			
 
 			for (size_t i = 0; i < m_entities.size(); i++)
 			{
 				m_entities.at(i)->OnTick();
 			}
 
-			
+			//clear keyboard vectors
+			quit = m_input->Update();
 
 			//SDL_GL_ClearWindow(m_window->m_raw);
 
