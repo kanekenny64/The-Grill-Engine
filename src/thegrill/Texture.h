@@ -17,7 +17,7 @@ namespace thegrill {
 	}
 
 	void Texture::onLoad() {
-		m_texture = std::make_shared<renderer::Texture>(getPath());
+		m_texture = std::make_shared<renderer::Texture>(getPath() + ".png");
 	}
 
 }

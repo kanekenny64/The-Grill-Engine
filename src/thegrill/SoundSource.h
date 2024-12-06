@@ -6,19 +6,22 @@
 
 
 namespace thegrill {
+	struct Audio;
 
 	struct SoundSource : public Component {
 		SoundSource();
 
+		void on_initialize();
 
-		void load_ogg(const std::string& _path, std::vector<unsigned char>& _buffer, ALenum& _format, ALsizei& _freq);
+		void setAudio(std::shared_ptr<Audio> _audio);
 
+		void on_tick();
+
+		void play();
 
 	private:
-
-		ALenum format = 0;
-		ALsizei freq = 0;
-		std::vector<unsigned char> bufferData;
+		std::shared_ptr<Audio> m_audio;
+		ALuint m_Id;
 	};
 
 }

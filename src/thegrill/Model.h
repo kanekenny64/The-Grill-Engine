@@ -16,7 +16,7 @@ namespace thegrill {
 	}
 
 	void Model::onLoad() {
-		m_raw = std::make_shared<renderer::Model>(getPath());
+		m_raw = std::make_shared<renderer::Model>(getPath() + ".obj");
 	}
 
 }

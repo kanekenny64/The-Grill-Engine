@@ -1,5 +1,6 @@
 #include "SoundSystem.h"
 
+
 thegrill::SoundSystem::SoundSystem()
 { /*************************************************************************
        * Initialization
@@ -31,6 +32,7 @@ thegrill::SoundSystem::SoundSystem()
 
 thegrill::SoundSystem::~SoundSystem()
 {
+    alcMakeContextCurrent(NULL);
     alcDestroyContext(context);
     alcCloseDevice(device);
 }

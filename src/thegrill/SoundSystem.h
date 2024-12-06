@@ -14,7 +14,7 @@
 #include <vector>
 #include <string>
 
-#include "stb_vorbis.c"
+
 
 namespace thegrill {
 	struct SoundSystem
