@@ -1,5 +1,7 @@
 #include "SoundSource.h"
 #include "Audio.h"
+#include "Entity.h"
+#include "Transform.h"
 
 
 namespace thegrill {
@@ -27,12 +29,15 @@ namespace thegrill {
     void SoundSource::on_tick()
     {
         int state = 0;
-            alGetSourcei(m_Id, AL_SOURCE_STATE, &state);
-            if (state != AL_PLAYING) {
-                play();
-            }
+        alSource3f(m_Id, AL_POSITION, get_entity()->get_transform()->getPosition().x, 
+            get_entity()->get_transform()->getPosition().y, 
+                get_entity()->get_transform()->getPosition().z);
+        alGetSourcei(m_Id, AL_SOURCE_STATE, &state);
+        if (state != AL_PLAYING) {
+            play();
+        }
 
-            //alSource3f(sourceId, AL_POSITION, 0.0f, 0.0f, 0.0f);
+            
 
 
     }

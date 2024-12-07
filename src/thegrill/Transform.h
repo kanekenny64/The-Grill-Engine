@@ -16,6 +16,8 @@ namespace thegrill {
 		glm::vec3 m_scale = { 1.0,1.0,1.0 };
 
 		glm::mat4 get_model() const;
+
+		glm::vec3 getPosition() const;
 	};
 
 	

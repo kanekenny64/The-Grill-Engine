@@ -19,7 +19,7 @@ namespace thegrill {
 		void tick();
 		void render();
 
-		std::shared_ptr<Entity> get_entity();
+		std::shared_ptr<Entity> get_entity() const;
 		std::shared_ptr<Keyboard> get_keyboard();
 
 	private:

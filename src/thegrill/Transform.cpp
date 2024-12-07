@@ -15,4 +15,9 @@ namespace thegrill {
 		return rtn;
 	}
 
+	glm::vec3 Transform::getPosition() const
+	{
+		return m_position;
+	}
+
 }

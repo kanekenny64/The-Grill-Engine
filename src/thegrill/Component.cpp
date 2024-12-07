@@ -18,7 +18,7 @@ namespace thegrill {
 		on_render();
 	}
 
-	std::shared_ptr<Entity> Component::get_entity()
+	std::shared_ptr<Entity> Component::get_entity() const
 	{
 		return m_entity.lock();
 	}
