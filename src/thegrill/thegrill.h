@@ -20,5 +20,7 @@ namespace thegrill {
 #include "Keyboard.h"
 #include "SoundSource.h"
 #include "Audio.h"
+#include "BoxCollider.h"
+#include "Rigidbody.h"
 
 #endif // !1

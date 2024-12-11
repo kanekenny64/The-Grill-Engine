@@ -5,6 +5,7 @@
 namespace thegrill {
 	struct BoxCollider : Component
 	{
+		void on_initialize();
 		bool colliding(const BoxCollider& _other);
 
 

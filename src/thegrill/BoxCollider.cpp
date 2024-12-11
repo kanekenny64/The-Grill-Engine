@@ -3,6 +3,11 @@
 #include "Transform.h"
 
 namespace thegrill {
+	void BoxCollider::on_initialize()
+	{
+		m_size = glm::vec3(1.0f);
+		m_offset = glm::vec3(0.0f);
+	}
 	bool BoxCollider::colliding(const BoxCollider& _other)
 	{
 
