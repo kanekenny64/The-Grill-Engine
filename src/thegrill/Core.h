@@ -28,6 +28,8 @@ namespace thegrill
 		template <typename T>
 		void find(std::vector<std::shared_ptr<T> >& _out)
 		{
+			_out.clear();
+
 			// Go through each Entity in Core.
 			for (size_t ei = 0; ei < m_entities.size(); ++ei)
 			{

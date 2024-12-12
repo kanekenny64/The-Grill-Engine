@@ -22,6 +22,10 @@ namespace thegrill {
 	private:
 		std::shared_ptr<Audio> m_audio;
 		ALuint m_Id;
+
+		bool looping = false;
+
+		float pitch = 1;
 	};
 
 }

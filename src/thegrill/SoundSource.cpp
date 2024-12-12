@@ -29,9 +29,9 @@ namespace thegrill {
     void SoundSource::on_tick()
     {
         int state = 0;
-        alSource3f(m_Id, AL_POSITION, get_entity()->get_transform()->getPosition().x, 
-            get_entity()->get_transform()->getPosition().y, 
-                get_entity()->get_transform()->getPosition().z);
+        alSource3f(m_Id, AL_POSITION, get_entity()->get_transform()->get_position().x,
+            get_entity()->get_transform()->get_position().y,
+                get_entity()->get_transform()->get_position().z);
         alGetSourcei(m_Id, AL_SOURCE_STATE, &state);
         if (state != AL_PLAYING) {
             play();

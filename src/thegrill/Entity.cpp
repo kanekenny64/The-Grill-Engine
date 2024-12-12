@@ -1,10 +1,15 @@
 #include "Entity.h"
 #include "Component.h"
+#include "Transform.h"
 
 namespace thegrill {
 	std::shared_ptr<Transform> Entity::get_transform() const
 	{
 		return m_transform.lock();
+	}
+	void Entity::set_position(glm::vec3 _position)
+	{
+		get_transform()->set_position(_position);
 	}
 	std::shared_ptr<Core> Entity::get_core() const
 	{

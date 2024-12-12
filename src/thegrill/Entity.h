@@ -1,5 +1,6 @@
  #include <memory>
 #include <vector>
+#include <glm/glm.hpp>
 
 
 namespace thegrill {
@@ -24,7 +25,41 @@ namespace thegrill {
 			return rtn;
 		}
 
+		template <typename T>
+		std::shared_ptr<T> get_component() const
+		{
+			for (auto& comp : m_components)
+			{
+				std::shared_ptr<T> rtn = std::dynamic_pointer_cast<T>(comp);
+
+				if (rtn)
+				{
+					return rtn;
+				}
+			}
+
+			throw std::runtime_error("Failed to find specified component");
+		}
+
+		template <typename T>
+		void get_components(std::vector<std::shared_ptr<T> >& _components) const
+		{
+			_components.clear();
+
+			for (auto& comp : m_components)
+			{
+				std::shared_ptr<T> cast = std::dynamic_pointer_cast<T>(comp);
+
+				if (cast)
+				{
+					_components.push_back(cast);
+				}
+			}
+		}
+
 		std::shared_ptr<Transform> get_transform() const;
+
+		void set_position(glm::vec3 _position);
 
 		std::shared_ptr<Core> get_core() const;
 

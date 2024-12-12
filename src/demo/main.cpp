@@ -20,7 +20,9 @@ private:
 		if (get_keyboard()->isKeyDown(119)) {
 			//move forward
 			std::cout << "W is pressed" << std::endl;
-			get_entity()->get_transform()->m_position.z += 0.1f;
+			glm::vec3 pos = get_entity()->get_transform()->get_position();
+			pos.z += 0.1f;
+			get_entity()->set_position(pos);
 			
 		}
 	}
@@ -53,18 +55,17 @@ int main()
 	r->set_texture(tex->getTexture());
 	r->set_model(model->getModel());
 
-	entity->get_transform()-> m_position = glm::vec3(0, 0, -15);
+	entity->set_position(glm::vec3(0, 0, -15));
 
 	//second player
 	std::shared_ptr<Entity> entity2 = core->add_entity();
-	entity2->add_component<Player>();
 	std::shared_ptr<TriangleRenderer> r2 = entity2->add_component<TriangleRenderer>();
 	std::shared_ptr<BoxCollider> collider2 = entity2->add_component<BoxCollider>();
 	std::shared_ptr<RigidBody> rigidBody2 = entity2->add_component<RigidBody>();
 	r2->set_texture(tex->getTexture());
 	r2->set_model(model->getModel());
 
-	entity2->get_transform()->m_position = glm::vec3(0, 1, -15);
+	entity2->set_position(glm::vec3(0, 1, -15));;
 
 
 	core->run();
