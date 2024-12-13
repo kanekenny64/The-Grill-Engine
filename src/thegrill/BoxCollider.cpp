@@ -7,7 +7,7 @@
 namespace thegrill {
 	void BoxCollider::on_initialize()
 	{
-		m_size = glm::vec3(1.0f);
+		m_size = glm::vec3(1.5f);
 		m_offset = glm::vec3(0.0f);
 		
 	}

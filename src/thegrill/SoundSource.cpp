@@ -24,6 +24,7 @@ namespace thegrill {
     void SoundSource::setAudio(std::shared_ptr<Audio> _audio)
     {
         m_audio = _audio;
+        alSourcei(m_Id, AL_BUFFER, m_audio->m_Id);
     }
 
     void SoundSource::on_tick()
@@ -48,7 +49,7 @@ namespace thegrill {
         /*************************************************************************
          * Play audio
          *************************************************************************/
-        alSourcei(m_Id, AL_BUFFER, m_audio->m_Id);
+        
         alSourcePlay(m_audio->m_Id);
     }
 

@@ -17,13 +17,36 @@ private:
 
 	void on_tick() {
 		//check if button is pressed
-		if (get_keyboard()->isKeyDown(119)) {
+		if (get_keyboard()->isKeyDown(KEY_W)) {
 			//move forward
 			std::cout << "W is pressed" << std::endl;
 			glm::vec3 pos = get_entity()->get_transform()->get_position();
 			pos.z += 0.1f;
 			get_entity()->set_position(pos);
 			
+		}
+		if (get_keyboard()->isKeyDown(KEY_S)) {
+			//move back
+			std::cout << "S is pressed" << std::endl;
+			glm::vec3 pos = get_entity()->get_transform()->get_position();
+			pos.z -= 0.1f;
+			get_entity()->set_position(pos);
+		}
+
+		if (get_keyboard()->isKeyDown(KEY_D)) {
+			//move back
+			std::cout << "S is pressed" << std::endl;
+			glm::vec3 pos = get_entity()->get_transform()->get_position();
+			pos.x += 0.1f;
+			get_entity()->set_position(pos);
+		}
+
+		if (get_keyboard()->isKeyDown(KEY_A)) {
+			//move left
+			std::cout << "A is pressed" << std::endl;
+			glm::vec3 pos = get_entity()->get_transform()->get_position();
+			pos.x -= 0.1f;
+			get_entity()->set_position(pos);
 		}
 	}
 
@@ -65,7 +88,7 @@ int main()
 	r2->set_texture(tex->getTexture());
 	r2->set_model(model->getModel());
 
-	entity2->set_position(glm::vec3(0, 1, -15));;
+	entity2->set_position(glm::vec3(5, 0, -15));;
 
 
 	core->run();
