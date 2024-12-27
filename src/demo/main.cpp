@@ -70,6 +70,7 @@ int main()
 	std::shared_ptr<SoundSource> Ssource = entity->add_component<SoundSource>();
 	std::shared_ptr<BoxCollider> collider = entity->add_component<BoxCollider>();
 	std::shared_ptr<RigidBody> rigidBody = entity->add_component<RigidBody>();
+	std::shared_ptr<Camera> camera = entity->add_component<Camera>();
 
 	Ssource->setAudio(sound);
 	Ssource->play();
@@ -78,7 +79,7 @@ int main()
 	r->set_texture(tex->getTexture());
 	r->set_model(model->getModel());
 
-	entity->set_position(glm::vec3(0, 0, -15));
+	entity->set_position(glm::vec3(0, 0, 5));
 
 	//second player
 	std::shared_ptr<Entity> entity2 = core->add_entity();

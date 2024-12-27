@@ -45,6 +45,7 @@ add_library(thegrill
 	src/thegrill/Audio.h src/thegrill/Audio.cpp
 	src/thegrill/BoxCollider.h src/thegrill/BoxCollider.cpp
 	src/thegrill/RigidBody.h src/thegrill/RigidBody.cpp
+	src/thegrill/Camera.h src/thegrill/Camera.cpp
 	
 	
 	 

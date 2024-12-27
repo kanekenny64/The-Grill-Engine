@@ -18,9 +18,11 @@ namespace thegrill {
 
 			rtn->m_entity = m_self;
 
+			m_components.push_back(rtn);
+
 			rtn->on_initialize();
 
-			m_components.push_back(rtn);
+			
 
 			return rtn;
 		}

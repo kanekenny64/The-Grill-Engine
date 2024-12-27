@@ -9,6 +9,7 @@ namespace thegrill
 	struct Resources;
 	struct Input;
 	struct SoundSystem;
+	struct Camera;
 
 
 	struct Core
@@ -23,6 +24,7 @@ namespace thegrill
 		std::shared_ptr<SoundSystem> sound_system();
 		std::shared_ptr<Resources> get_resources();
 		std::shared_ptr<Input> input();
+		std::shared_ptr<Camera> current_camera();
 
 
 		template <typename T>
@@ -51,12 +53,17 @@ namespace thegrill
 
 		 
 	private:
+		friend struct thegrill::Camera;
+
 		std::shared_ptr<Window> m_window;
 		std::shared_ptr<SoundSystem> m_sound_system;
 		std::shared_ptr<Input> m_input;
 		std::shared_ptr<Resources> m_resources;
 		std::vector<std::shared_ptr<Entity> > m_entities;
+		std::vector<std::shared_ptr<Camera> > m_cameras;
+		std::weak_ptr<Camera> m_current_cam;
 		std::weak_ptr<Core> m_self;
+		
 
 	};
 }

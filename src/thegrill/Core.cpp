@@ -62,6 +62,11 @@ namespace thegrill {
 		return m_input;
 	}
 
+	std::shared_ptr<Camera> Core::current_camera()
+	{
+		return m_current_cam.lock();
+	}
+
 	void Core::run()
 	{
 		bool quit = false;

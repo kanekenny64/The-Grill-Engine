@@ -22,5 +22,6 @@ namespace thegrill {
 #include "Audio.h"
 #include "BoxCollider.h"
 #include "Rigidbody.h"
+#include "Camera.h"
 
 #endif // !1

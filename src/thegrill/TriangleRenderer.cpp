@@ -6,7 +6,8 @@
 
 #include "Entity.h"
 #include "Transform.h"
-
+#include "Core.h"
+#include "Camera.h"
 
 namespace thegrill {
 	TriangleRenderer::TriangleRenderer():
@@ -37,7 +38,7 @@ namespace thegrill {
 		m_shader.setUniform("u_Model", get_entity()->get_transform()->get_model());
 
 		glm::mat4 view(1);
-		view = glm::translate(view, glm::vec3(0, 0, 1));
+		view = glm::translate(view, get_core()->current_camera()->get_transform()->get_position());
 		//view = glm::rotate(view, -40.0f, glm::vec3(1, 0, 0));
 		m_shader.setUniform("u_View", glm::inverse(view));
 

@@ -26,4 +26,14 @@ namespace thegrill {
 	{
 		return get_entity()->get_core()->input()->keyboard();
 	}
+
+	std::shared_ptr<Core> Component::get_core()
+	{
+		return get_entity()->get_core();
+	}
+
+	std::shared_ptr<Transform> Component::get_transform()
+	{
+		return get_entity()->get_transform();
+	}
 }
