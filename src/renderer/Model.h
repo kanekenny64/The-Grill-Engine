@@ -11,6 +11,23 @@
 namespace renderer {
     struct Model
     {
+        struct Face
+        {
+            Vertex a;
+            Vertex b;
+            Vertex c;
+        };
+
+        struct Vertex
+        {
+            Vertex();
+
+            glm::vec3 position;
+            glm::vec2 texcoord;
+            glm::vec3 normal;
+        };
+
+
         Model();
         Model(const std::string& _path);
 
@@ -21,23 +38,10 @@ namespace renderer {
         GLsizei vertex_count() const;
         GLuint vao_id();
 
+        std::vector<Model::Face> getFaces();
+
+
     private:
-        struct Vertex
-        {
-            Vertex();
-
-            glm::vec3 position;
-            glm::vec2 texcoord;
-            glm::vec3 normal;
-        };
-
-        struct Face
-        {
-            Vertex a;
-            Vertex b;
-            Vertex c;
-        };
-
         std::vector<Face> m_faces;
         GLuint m_vaoid;
         GLuint m_vboid;
@@ -328,6 +332,12 @@ namespace renderer{
         , texcoord(0, 0)
         , normal(0, 0, 0)
     { }
+
+
+    inline std::vector<Model::Face> Model::getFaces()
+	{
+		return m_faces;
+	}
 }
 
 
