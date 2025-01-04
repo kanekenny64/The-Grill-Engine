@@ -185,7 +185,11 @@ namespace renderer {
 
 		//disable depth testing for 2d
 		if (!depth_testing) {
-			//glDisable(GL_DEPTH_TEST);
+			glDisable(GL_DEPTH_TEST);
+		}
+		else
+		{
+			glEnable(GL_DEPTH_TEST);
 		}
 		glBindVertexArray(0);
 		glUseProgram(0);

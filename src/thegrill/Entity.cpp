@@ -32,4 +32,11 @@ namespace thegrill {
 			m_components.at(ci)->render();
 		}
 	}
+	void Entity::OnGUI()
+	{
+		for (size_t ci = 0; ci < m_components.size(); ci++)
+		{
+			m_components.at(ci)->gui();
+		}
+	}
 }

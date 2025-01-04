@@ -48,7 +48,7 @@ add_library(thegrill
 	src/thegrill/RigidBody.h src/thegrill/RigidBody.cpp
 	src/thegrill/MeshCollider.h src/thegrill/MeshCollider.cpp
 	src/thegrill/Camera.h src/thegrill/Camera.cpp
-	
+	src/thegrill/GUI.h src/thegrill/GUI.cpp
 	
 	 
 )

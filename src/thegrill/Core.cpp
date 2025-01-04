@@ -7,6 +7,7 @@
 #include "Resources.h"
 #include "Input.h"
 #include "SoundSystem.h"
+#include "GUI.h"
 
 
 
@@ -22,6 +23,7 @@ namespace thegrill {
 		rtn->m_resources = std::make_shared<Resources>();
 		rtn->m_input = std::make_shared<Input>();
 		rtn->m_sound_system = std::make_shared<SoundSystem>();
+		rtn->m_gui = std::make_shared<GUI>(rtn);
 		 
 		rtn->m_self = rtn;
 		
@@ -67,6 +69,11 @@ namespace thegrill {
 		return m_current_cam.lock();
 	}
 
+	std::shared_ptr<GUI> Core::gui()
+	{
+		return m_gui;
+	}
+
 	void Core::run()
 	{
 		bool quit = false;
@@ -93,6 +100,11 @@ namespace thegrill {
 			for (size_t i = 0; i < m_entities.size(); i++)
 			{
 				m_entities.at(i)->OnRender();
+			}
+
+			for (size_t i = 0; i < m_entities.size(); i++)
+			{
+				m_entities.at(i)->OnGUI();
 			}
 
 			SDL_GL_SwapWindow(m_window->m_raw);

@@ -10,6 +10,7 @@ namespace thegrill
 	struct Input;
 	struct SoundSystem;
 	struct Camera;
+	struct GUI;
 
 
 	struct Core
@@ -25,6 +26,7 @@ namespace thegrill
 		std::shared_ptr<Resources> get_resources();
 		std::shared_ptr<Input> input();
 		std::shared_ptr<Camera> current_camera();
+		std::shared_ptr<GUI> gui();
 
 
 		template <typename T>
@@ -61,6 +63,7 @@ namespace thegrill
 		std::shared_ptr<Resources> m_resources;
 		std::vector<std::shared_ptr<Entity> > m_entities;
 		std::vector<std::shared_ptr<Camera> > m_cameras;
+		std::shared_ptr<GUI> m_gui;
 		std::weak_ptr<Camera> m_current_cam;
 		std::weak_ptr<Core> m_self;
 		

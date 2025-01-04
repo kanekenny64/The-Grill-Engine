@@ -77,6 +77,7 @@ private:
 
 		void OnTick();
 		void OnRender();
+		void OnGUI();
 	};
 
 }

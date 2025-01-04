@@ -9,6 +9,7 @@ namespace thegrill {
 	void Component::on_initialize() { }
 	void Component::on_tick() { }
 	void Component::on_render() { }
+	void Component::on_gui() { }
 
 	void Component::tick() {
 		on_tick();
@@ -16,6 +17,10 @@ namespace thegrill {
 
 	void Component::render(){
 		on_render();
+	}
+
+	void Component::gui() { 
+		on_gui();
 	}
 
 	std::shared_ptr<Entity> Component::get_entity() const
@@ -35,5 +40,10 @@ namespace thegrill {
 	std::shared_ptr<Transform> Component::get_transform()
 	{
 		return get_entity()->get_transform();
+	}
+
+	std::shared_ptr<GUI> Component::get_gui()
+	{
+		return get_core()->gui();
 	}
 }
