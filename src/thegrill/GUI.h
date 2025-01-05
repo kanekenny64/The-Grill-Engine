@@ -20,8 +20,8 @@ namespace thegrill {
 		friend struct thegrill::Core;
 
 		std::shared_ptr<Core> m_core;
-		std::shared_ptr<renderer::Shader> mShader = std::make_shared<renderer::Shader>(true);
-		std::shared_ptr<renderer::Mesh> mRect = std::make_shared<renderer::Mesh>();
+		std::shared_ptr<renderer::Shader> mShader;
+		std::shared_ptr<renderer::Mesh> mRect;
 	};
 
 }

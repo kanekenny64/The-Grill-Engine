@@ -4,9 +4,11 @@
 
 namespace thegrill {
 
-	GUI::GUI(std::shared_ptr<Core> _core)
+	GUI::GUI(std::shared_ptr<Core> _core) : m_core(_core)
 	{
-		m_core = _core;
+		mShader = std::make_shared<renderer::Shader>(true);
+		mRect = std::make_shared<renderer::Mesh>();
+		
 		
 		renderer::Face face;
 		face.a.position = glm::vec3(1.0f, 0.0f, 0.0f);
@@ -42,9 +44,12 @@ namespace thegrill {
 		mShader->setUniform("u_Model", model);
 
 		glm::mat4 view(1);
-		mShader->setUniform("u_View", view);
 
-		mShader->setUniform("u_Texture", _tex, 1);
+		mShader->setUniform("in_LightPos", glm::vec3(1, 1, 1));
+
+		mShader->setUniform("in_View", view);
+
+		mShader->setUniform("in_Texture", _tex, 1);
 
 		mShader->draw(mShader->programId, mRect->vao_id(), mRect->vertex_count(), false);
 
