@@ -11,6 +11,4 @@ namespace thegrill {
 		std::shared_ptr<renderer::Texture>  m_texture;
 	};
 
-	
-
 }

@@ -2,6 +2,7 @@
 #include "Entity.h"
 #include "Core.h"
 #include "Input.h"
+#include "GUI.h"
 
 
 namespace thegrill {

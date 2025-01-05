@@ -1,5 +1,6 @@
 #include "GUI.h"
 #include <glm/ext.hpp>
+#include "renderer/Texture.h"
 
 namespace thegrill {
 
@@ -39,6 +40,9 @@ namespace thegrill {
 		model = glm::translate(model, glm::vec3(_x, _y, 0));
 		model = glm::scale(model, glm::vec3(_w, _h, 1));
 		mShader->setUniform("u_Model", model);
+
+		glm::mat4 view(1);
+		mShader->setUniform("u_View", view);
 
 		mShader->setUniform("u_Texture", _tex, 1);
 

@@ -1,4 +1,4 @@
-#include "Texture.h"
+
 #include "Renderer/Mesh.h"
 #include "Renderer/Shader.h"
 
@@ -6,6 +6,7 @@
 namespace thegrill {
 
 	struct Core;
+	struct Texture;
 
 	struct GUI
 	{

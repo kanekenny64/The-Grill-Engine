@@ -12,6 +12,11 @@ struct Player : Component {
 		printf("Test::initialize\n");
 	}
 
+	void on_gui() {
+
+		get_gui()->image(get_core()->get_resources()->load<thegrill::Texture>("textures/CookedChickenBreastAlbedo")->getTexture(), 20, 20, 400, 400);
+	}
+
 private:
 	int m_dummy = 1;
 

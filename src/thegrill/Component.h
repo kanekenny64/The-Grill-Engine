@@ -10,6 +10,7 @@ namespace thegrill {
 	struct Keyboard;
 	struct Core;
 	struct Transform;
+	struct GUI;
 
 	struct Component
 	{
