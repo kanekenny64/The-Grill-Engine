@@ -11,6 +11,7 @@ namespace thegrill {
 	struct Shader;
 	struct Mesh;
 	struct Model;
+
 	
 
 	struct TriangleRenderer :public Component {
@@ -29,6 +30,7 @@ namespace thegrill {
 		renderer::Shader m_shader;
 		std::shared_ptr<renderer::Texture> m_tex;
 		std::shared_ptr<renderer::Model> m_model;
+		
 	};
 
 }

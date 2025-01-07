@@ -62,12 +62,17 @@ namespace thegrill {
 	//Return 0 for no click, 1 for hover, 2 for click
 	int GUI::button(std::shared_ptr<renderer::Texture> _tex, float _x, float _y, float _w, float _h)
 	{
+
 		glm::vec2 mp = glm::vec2(m_core->input()->mouse()->getXPos(), m_core-> input()->mouse()->getYPos());
 
 		int height, width;
 		m_core->window()->getDimensions(width, height);
 
-		glm::mat4 projection = glm::ortho(0.0f, 800.0f, 0.0f, 800.0f, 0.0f, 1.0f);
+		//adjust position to centre 
+		/*_y = _y - _h / 2;
+		_x = _x - _w / 2;*/
+
+		glm::mat4 projection = glm::ortho(0.0f, float(width), 0.0f, float(height), 0.0f, 1.0f);
 		mShader->setUniform("u_Projection", projection);
 
 		glm::mat4 model(1.0f);
@@ -85,8 +90,13 @@ namespace thegrill {
 
 		mShader->draw(mShader->programId, mRect->vao_id(), mRect->vertex_count(), false);
 
+		//std::cout << "Mouse Pos: " << mp.x << " " << mp.y << std::endl;
+		//std::cout << "Button Pos: " << _x << " " << _y << std::endl;
+
 		//invert y axis
 		mp.y = height - mp.y;
+
+		
 
 		if (mp.x > _x && mp.x < _x + _w &&
 			mp.y > _y && mp.y < _y + _h)
