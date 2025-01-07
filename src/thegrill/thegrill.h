@@ -12,7 +12,7 @@ namespace thegrill {
 #include "Entity.h"
 #include "Component.h"
 #include "Transform.h"
-#include "TriangleRenderer.h"
+#include "ModelRenderer.h"
 #include "Texture.h"
 #include "Model.h"
 #include "Resources.h"

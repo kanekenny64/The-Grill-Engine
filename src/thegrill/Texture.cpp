@@ -2,7 +2,7 @@
 
 namespace thegrill
 {
-	std::shared_ptr<renderer::Texture> Texture::getTexture()
+	std::shared_ptr<renderer::Texture> Texture::get_texture()
 	{
 		return m_texture;
 	}

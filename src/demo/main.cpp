@@ -14,7 +14,7 @@ struct Player : Component {
 
 	void on_gui() {
 
-		get_gui()->button(get_core()->get_resources()->load<thegrill::Texture>("textures/CookedChickenBreastAlbedo")->getTexture(), 20, 20, 400, 400);
+		get_gui()->button(get_core()->get_resources()->load<thegrill::Texture>("textures/CookedChickenBreastAlbedo")->get_texture(), 20, 20, 400, 400);
 	}
 
 private:
@@ -71,7 +71,7 @@ int main()
 
 	std::shared_ptr<Entity> entity = core->add_entity();
 	entity->add_component<Player>();
-	std::shared_ptr<TriangleRenderer> r =entity ->add_component<TriangleRenderer>();
+	std::shared_ptr<ModelRenderer> r =entity ->add_component<ModelRenderer>();
 	std::shared_ptr<SoundSource> Ssource = entity->add_component<SoundSource>();
 	std::shared_ptr<BoxCollider> collider = entity->add_component<BoxCollider>();
 	std::shared_ptr<RigidBody> rigidBody = entity->add_component<RigidBody>();
@@ -81,18 +81,18 @@ int main()
 	Ssource->play();
 	
 	
-	r->set_texture(tex->getTexture());
-	r->set_model(model->getModel());
+	r->set_texture(tex->get_texture());
+	r->set_model(model->get_model());
 
 	entity->set_position(glm::vec3(0, 0, 5));
 
 	//second player
 	std::shared_ptr<Entity> entity2 = core->add_entity();
-	std::shared_ptr<TriangleRenderer> r2 = entity2->add_component<TriangleRenderer>();
+	std::shared_ptr<ModelRenderer> r2 = entity2->add_component<ModelRenderer>();
 	std::shared_ptr<BoxCollider> collider2 = entity2->add_component<BoxCollider>();
 	std::shared_ptr<RigidBody> rigidBody2 = entity2->add_component<RigidBody>();
-	r2->set_texture(tex->getTexture());
-	r2->set_model(model->getModel());
+	r2->set_texture(tex->get_texture());
+	r2->set_model(model->get_model());
 
 	entity2->set_position(glm::vec3(5, 0, -15));;
 

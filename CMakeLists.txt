@@ -31,7 +31,7 @@ add_library(thegrill
 	src/thegrill/Entity.cpp src/thegrill/Entity.h 
 	src/thegrill/Component.h src/thegrill/Component.cpp
 	src/thegrill/Transform.h src/thegrill/Transform.cpp
-	src/thegrill/TriangleRenderer.h src/thegrill/TriangleRenderer.cpp
+	src/thegrill/ModelRenderer.h src/thegrill/ModelRenderer.cpp
 	src/thegrill/NonCopyable.h
 	src/thegrill/Window.h src/thegrill/Window.cpp
 	src/thegrill/Resource.h src/thegrill/Resource.cpp

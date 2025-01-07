@@ -14,9 +14,9 @@ namespace thegrill {
 
 	
 
-	struct TriangleRenderer :public Component {
+	struct ModelRenderer :public Component {
 	public:
-		TriangleRenderer();
+		ModelRenderer();
 		void OnInit();
 
 		void set_texture(std::shared_ptr<renderer::Texture> _tex);

@@ -1,7 +1,7 @@
 #include "Model.h"
 
 namespace thegrill {
-	std::shared_ptr<renderer::Model> Model::getModel()
+	std::shared_ptr<renderer::Model> Model::get_model()
 	{
 		return m_raw;
 	}

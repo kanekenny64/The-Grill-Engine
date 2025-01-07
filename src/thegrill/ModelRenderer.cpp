@@ -1,6 +1,6 @@
 #include <renderer/Shader.h>
 #include <renderer/Mesh.h>
-#include "TriangleRenderer.h"
+#include "ModelRenderer.h"
 #include <iostream>
 #include <glm/ext.hpp>
 
@@ -11,18 +11,18 @@
 #include "Window.h"
 
 namespace thegrill {
-	TriangleRenderer::TriangleRenderer():
+	ModelRenderer::ModelRenderer():
 		m_shader(renderer::Shader(false))
 	{}
-	void TriangleRenderer::set_texture(std::shared_ptr<renderer::Texture> _tex)
+	void ModelRenderer::set_texture(std::shared_ptr<renderer::Texture> _tex)
 	{
 		m_tex = _tex;
 	}
-	void TriangleRenderer::set_model(std::shared_ptr<renderer::Model> _model)
+	void ModelRenderer::set_model(std::shared_ptr<renderer::Model> _model)
 	{
 		m_model = _model;
 	}
-	void TriangleRenderer::on_render()
+	void ModelRenderer::on_render()
 	{
 		int height, width;
 		get_entity()->get_core()->window()->getDimensions(width, height);
