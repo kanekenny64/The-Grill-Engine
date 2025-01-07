@@ -9,6 +9,8 @@
 
 namespace thegrill {
 	struct Keyboard;
+	struct Mouse;
+
 	struct Input
 	{
 		Input();
@@ -16,9 +18,11 @@ namespace thegrill {
 		bool Update();
 
 		std::shared_ptr<Keyboard> keyboard() const;
+		std::shared_ptr<Mouse> mouse() const;
 
 	private:
 		friend struct Core;
 		std::shared_ptr<Keyboard> m_keyboard;
+		std::shared_ptr<Mouse> m_mouse;
 	};
 }

@@ -9,9 +9,14 @@ namespace thegrill {
 		Window();
 		~Window();
 
+		void getDimensions(int& _w, int& _h);
+
 	private:
 		friend struct thegrill::Core;
 			SDL_Window* m_raw;
 			SDL_GLContext m_context;
+
+			int m_width;
+			int m_height;
 	};
 }

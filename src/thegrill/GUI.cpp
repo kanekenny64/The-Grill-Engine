@@ -1,6 +1,10 @@
 #include "GUI.h"
 #include <glm/ext.hpp>
 #include "renderer/Texture.h"
+#include "Core.h"
+#include "Input.h"
+#include "Mouse.h"
+#include "Window.h"
 
 namespace thegrill {
 
@@ -55,9 +59,51 @@ namespace thegrill {
 
 	}
 
-	bool GUI::button(std::shared_ptr<renderer::Texture> _tex, float _x, float _y, float _w, float _h)
+	//Return 0 for no click, 1 for hover, 2 for click
+	int GUI::button(std::shared_ptr<renderer::Texture> _tex, float _x, float _y, float _w, float _h)
 	{
-		return false;
+		glm::vec2 mp = glm::vec2(m_core->input()->mouse()->getXPos(), m_core-> input()->mouse()->getYPos());
+
+		int height, width;
+		m_core->window()->getDimensions(width, height);
+
+		glm::mat4 projection = glm::ortho(0.0f, 800.0f, 0.0f, 800.0f, 0.0f, 1.0f);
+		mShader->setUniform("u_Projection", projection);
+
+		glm::mat4 model(1.0f);
+		model = glm::translate(model, glm::vec3(_x, _y, 0));
+		model = glm::scale(model, glm::vec3(_w, _h, 1));
+		mShader->setUniform("u_Model", model);
+
+		glm::mat4 view(1);
+
+		mShader->setUniform("in_LightPos", glm::vec3(1, 1, 1));
+
+		mShader->setUniform("in_View", view);
+
+		mShader->setUniform("in_Texture", _tex, 1);
+
+		mShader->draw(mShader->programId, mRect->vao_id(), mRect->vertex_count(), false);
+
+		//invert y axis
+		mp.y = height - mp.y;
+
+		if (mp.x > _x && mp.x < _x + _w &&
+			mp.y > _y && mp.y < _y + _h)
+		{
+			//std::cout << "hover" << std::endl;
+			if (m_core->input()->mouse()->isButtonDown(SDL_BUTTON_LEFT))
+			{
+				std::cout << "Click" << std::endl;
+				return 2;
+			}
+			else
+			{
+				return 1;
+			}
+		}
+		//std::cout << "no hover" << std::endl;
+		return 0;
 	}
 
 } 

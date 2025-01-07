@@ -43,12 +43,14 @@ add_library(thegrill
 	src/thegrill/AudioListener.h src/thegrill/AudioListener.cpp
 	src/thegrill/Input.h src/thegrill/Input.cpp
 	src/thegrill/Keyboard.h src/thegrill/Keyboard.cpp
+	src/thegrill/Mouse.h src/thegrill/Mouse.cpp
 	src/thegrill/Audio.h src/thegrill/Audio.cpp
 	src/thegrill/BoxCollider.h src/thegrill/BoxCollider.cpp
 	src/thegrill/RigidBody.h src/thegrill/RigidBody.cpp
 	src/thegrill/MeshCollider.h src/thegrill/MeshCollider.cpp
 	src/thegrill/Camera.h src/thegrill/Camera.cpp
 	src/thegrill/GUI.h src/thegrill/GUI.cpp
+	src/thegrill/Mouse.h src/thegrill/Mouse.cpp
 	
 	 
 )

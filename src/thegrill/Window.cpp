@@ -5,12 +5,12 @@
 namespace thegrill {
 	Window::Window()
 	{
-		int winW = 800;
-		int winH = 600;
+		m_width = 800;
+		m_height = 600;
 
 		m_raw = SDL_CreateWindow("Triangle",
 			SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
-			winW, winH,
+			m_width, m_height,
 			SDL_WINDOW_RESIZABLE | SDL_WINDOW_OPENGL);
 
 
@@ -32,6 +32,12 @@ namespace thegrill {
 		SDL_GL_DeleteContext(m_context);
 		SDL_DestroyWindow(m_raw);
 		SDL_Quit;
+	}
+
+	void Window::getDimensions(int& _w, int& _h)
+	{
+		_w = m_width;
+		_h = m_height;
 	}
 
 }
