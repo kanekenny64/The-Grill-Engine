@@ -33,9 +33,13 @@ namespace thegrill {
 		
 		m_shader.setUniform("u_Model", get_entity()->get_transform()->get_model());
 
+		glm::vec3 camRot = get_core()->current_camera()->get_transform()->get_rotation();
+
 		glm::mat4 view(1);
 		view = glm::translate(view, get_core()->current_camera()->get_transform()->get_position());
-		//view = glm::rotate(view, -40.0f, glm::vec3(1, 0, 0));
+		view = glm::rotate(view, camRot.x, glm::vec3(1, 0, 0));
+		view = glm::rotate(view, camRot.y, glm::vec3(0, 1, 0));
+		view = glm::rotate(view, camRot.z, glm::vec3(0, 0, 1));
 		m_shader.setUniform("u_View", glm::inverse(view));
 
 		m_shader.setUniform("u_Texture", m_tex, 1);

@@ -24,6 +24,10 @@ namespace thegrill {
 			m_position = _position;
 		}
 
+		glm::vec3 get_rotation() {
+			return m_rotation;
+		}
+
 		std::shared_ptr<Entity> get_parent();
 		void set_parent(std::shared_ptr<Entity> _parent);
 
