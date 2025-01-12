@@ -11,6 +11,7 @@ namespace thegrill {
 	void Component::on_tick() { }
 	void Component::on_render() { }
 	void Component::on_gui() { }
+	void Component::on_destroy() { }
 
 	void Component::tick() {
 		on_tick();

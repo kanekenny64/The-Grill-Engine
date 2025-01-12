@@ -4,7 +4,6 @@
 namespace thegrill {
     void Audio::onLoad()
     {
-        //alListener3f(AL_VELOCITY, 0.0f, 0.0f, 0.0f);
 
          /*************************************************************************
       * Preparing buffer
@@ -17,36 +16,6 @@ namespace thegrill {
 
         alBufferData(m_Id, format, &bufferData.at(0),
             static_cast<ALsizei>(bufferData.size()), freq);
-
-       
-
-        
-
-//        /*************************************************************************
-//         * Tick
-//         *************************************************************************/
-//
-//        while (true)
-//        {
-//            int state = 0;
-//            alGetSourcei(sourceId_, AL_SOURCE_STATE, &state);
-//            if (state != AL_PLAYING) break;
-//
-//            //alListener3f(AL_POSITION, 0.0f, 0.0f, 0.0f);
-//
-//#ifdef _WIN32
-//            Sleep(10);
-//#else
-//            usleep(100 * 1000);
-//#endif
-//        }
-//
-//        /*************************************************************************
-//         * Cleanup
-//         *************************************************************************/
-//        alDeleteSources(1, &sourceId);
-//        
-//        alcMakeContextCurrent(NULL);
     }
 
 

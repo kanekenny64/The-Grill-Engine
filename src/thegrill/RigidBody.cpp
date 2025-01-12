@@ -31,7 +31,7 @@ namespace thegrill {
 					//output position of entity before collision
 					std::cout << "Position before collision: " << get_entity()->get_transform()->get_position().x << ", " << get_entity()->get_transform()->get_position().y << ", " << get_entity()->get_transform()->get_position().z << std::endl;
 					std::cout << "Colliding" << std::endl;
-					get_entity()->get_transform()->set_position(thisCollider[i]->getCollisionResponse(*colliders[j]) - thisCollider[i]->getOffset());
+					get_entity()->get_transform()->set_position(thisCollider[i]->get_collisionResponse(*colliders[j]) - thisCollider[i]->get_offset());
 					//output position of entity after collision
 					std::cout << "Position after collision: " << get_entity()->get_transform()->get_position().x << ", " << get_entity()->get_transform()->get_position().y << ", " << get_entity()->get_transform()->get_position().z << std::endl;
 				

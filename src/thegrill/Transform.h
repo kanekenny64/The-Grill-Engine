@@ -9,11 +9,14 @@
 
 
 namespace thegrill {
+
+	struct Entity;
+
 	struct Transform : Component
 	{
 		
 
-		glm::mat4 get_model() const;
+		glm::mat4 get_model() ;
 
 		glm::vec3 get_position() const;
 
@@ -21,10 +24,16 @@ namespace thegrill {
 			m_position = _position;
 		}
 
+		std::shared_ptr<Entity> get_parent();
+		void set_parent(std::shared_ptr<Entity> _parent);
+
+
 	private:
 		glm::vec3 m_position = { 0.0,0.0,-10.0 };
 		glm::vec3 m_rotation = { 0.0,0.0,0.0 };
 		glm::vec3 m_scale = { 1.0,1.0,1.0 };
+
+		std::weak_ptr<Entity> m_Parent;
 	};
 
 	

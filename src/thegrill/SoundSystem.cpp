@@ -27,12 +27,7 @@ thegrill::SoundSystem::SoundSystem()
         throw std::runtime_error("Failed to make context current");
     }
 
-	/*************************************************************************
-		 * Listener
-    *************************************************************************/
-    //set position of the listener to camera position
-
-    alListener3f(AL_POSITION, 0.0f, 0.0f, 0.0f);
+	
 }
 
 thegrill::SoundSystem::~SoundSystem()

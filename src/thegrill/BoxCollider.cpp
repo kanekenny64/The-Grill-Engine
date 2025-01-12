@@ -14,8 +14,8 @@ namespace thegrill {
 	bool BoxCollider::colliding(const BoxCollider& _other)
 	{
 		
-		glm::vec3 a = get_entity()->get_transform()->get_position() + getOffset();
-		glm::vec3 b = _other.get_entity()->get_transform()->get_position() + _other.getOffset();
+		glm::vec3 a = get_entity()->get_transform()->get_position() + get_offset();
+		glm::vec3 b = _other.get_entity()->get_transform()->get_position() + _other.get_offset();
 		glm::vec3 ahs = m_size / 2.0f;
 		glm::vec3 bhs = _other.m_size / 2.0f;
 
@@ -68,7 +68,7 @@ namespace thegrill {
 		return true;
 		
 	}
-	glm::vec3 BoxCollider::getCollisionResponse(const BoxCollider& _other)
+	glm::vec3 BoxCollider::get_collisionResponse(const BoxCollider& _other)
 	{
 		float amount = 0.1f;
 		float step = 0.1f;
@@ -120,5 +120,13 @@ namespace thegrill {
 		}
 		
 		return position;
+	}
+	void BoxCollider::set_offset(glm::vec3 _offset)
+	{
+		m_offset = _offset;
+	}
+	void BoxCollider::set_size(glm::vec3 _size)
+	{
+		m_size = _size;
 	}
 }

@@ -19,6 +19,7 @@ namespace thegrill {
 		virtual void on_tick();
 		virtual void on_render();
 		virtual void on_gui();
+		virtual void on_destroy();
 
 		void tick();
 		void render();

@@ -96,6 +96,15 @@ namespace thegrill {
 				m_entities.at(i)->OnTick();
 			}
 
+			for (size_t i = 0; i < m_entities.size(); i++)
+			{
+				if (m_entities.at(i)->alive == false)
+				{
+					m_entities.erase(m_entities.begin() + i);
+					i--;
+				}
+			}
+
 			//clear keyboard vectors
 			quit = m_input->Update();
 

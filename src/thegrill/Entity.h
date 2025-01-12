@@ -65,6 +65,8 @@ namespace thegrill {
 
 		std::shared_ptr<Core> get_core() const;
 
+		void destroy();
+
 		~Entity();
 private:
 	friend struct thegrill::Core;
@@ -78,6 +80,8 @@ private:
 		void OnTick();
 		void OnRender();
 		void OnGUI();
+
+		bool alive = true;
 	};
 
 }

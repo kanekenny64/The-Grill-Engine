@@ -2,6 +2,8 @@
 #include "Component.h"
 #include "Transform.h"
 
+#include <iostream>
+
 namespace thegrill {
 	std::shared_ptr<Transform> Entity::get_transform() const
 	{
@@ -15,8 +17,20 @@ namespace thegrill {
 	{
 		return m_core.lock();
 	}
-	Entity::~Entity() {
+	void Entity::destroy()
+	{
+		if (alive)
+		{
+			alive = false;
 
+			for (size_t ci = 0; ci < m_components.size(); ci++)
+			{
+				m_components.at(ci)->on_destroy();
+			}
+		}
+	}
+	Entity::~Entity() {
+		std::cout << "Entity Destroyed" << std::endl;
 	}
 
 	void Entity::OnTick() {
