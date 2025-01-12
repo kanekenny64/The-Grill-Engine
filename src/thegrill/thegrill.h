@@ -24,5 +24,7 @@ namespace thegrill {
 #include "Rigidbody.h"
 #include "Camera.h"
 #include "GUI.h"
+#include "AnimationController.h"
+#include "AnimationTrack.h"
 
 #endif // !1

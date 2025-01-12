@@ -78,7 +78,7 @@ int main()
 	std::shared_ptr<Camera> camera = entity->add_component<Camera>();
 
 	Ssource->setAudio(sound);
-	Ssource->play();
+	//Ssource->play();
 	
 	
 	r->set_texture(tex->get_texture());
@@ -91,6 +91,11 @@ int main()
 	std::shared_ptr<ModelRenderer> r2 = entity2->add_component<ModelRenderer>();
 	std::shared_ptr<BoxCollider> collider2 = entity2->add_component<BoxCollider>();
 	std::shared_ptr<RigidBody> rigidBody2 = entity2->add_component<RigidBody>();
+	std::shared_ptr<AnimationTrack> AnimTrack1 = entity2->add_component<AnimationTrack>();
+	std::shared_ptr<AnimationController> AnimController1 = entity2->add_component<AnimationController>();
+	AnimTrack1->create("models/guppy40001", 5);
+	AnimController1->set_track(AnimTrack1);
+	AnimController1->set_duration(10.5f);
 	r2->set_texture(tex->get_texture());
 	r2->set_model(model->get_model());
 

@@ -2,6 +2,8 @@
 #include "Entity.h"
 #include "Transform.h"
 
+#include "Timer.h"
+
 #include <iostream>
 #include "Window.h"
 #include "Resources.h"
@@ -74,12 +76,20 @@ namespace thegrill {
 		return m_gui;
 	}
 
+	float Core::DeltaTime()
+	{
+		return deltaTime;
+	}
+
 	void Core::run()
 	{
 		bool quit = false;
+		Timer timer;
+
 		while (!quit) {
 
-			
+			//calculate delta time
+			deltaTime = timer.elapsed();
 
 			for (size_t i = 0; i < m_entities.size(); i++)
 			{

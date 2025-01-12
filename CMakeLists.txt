@@ -31,6 +31,7 @@ add_library(thegrill
 	src/thegrill/Entity.cpp src/thegrill/Entity.h 
 	src/thegrill/Component.h src/thegrill/Component.cpp
 	src/thegrill/Transform.h src/thegrill/Transform.cpp
+	src/thegrill/Timer.h src/thegrill/Timer.cpp
 	src/thegrill/ModelRenderer.h src/thegrill/ModelRenderer.cpp
 	src/thegrill/NonCopyable.h
 	src/thegrill/Window.h src/thegrill/Window.cpp
@@ -51,6 +52,8 @@ add_library(thegrill
 	src/thegrill/Camera.h src/thegrill/Camera.cpp
 	src/thegrill/GUI.h src/thegrill/GUI.cpp
 	src/thegrill/Mouse.h src/thegrill/Mouse.cpp
+	src/thegrill/AnimationTrack.h src/thegrill/AnimationTrack.cpp
+	src/thegrill/AnimationController.h src/thegrill/AnimationController.cpp
 	
 	 
 )

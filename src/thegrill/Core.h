@@ -28,6 +28,8 @@ namespace thegrill
 		std::shared_ptr<Camera> current_camera();
 		std::shared_ptr<GUI> gui();
 
+		float DeltaTime();
+
 
 		template <typename T>
 		void find(std::vector<std::shared_ptr<T> >& _out)
@@ -67,6 +69,6 @@ namespace thegrill
 		std::weak_ptr<Camera> m_current_cam;
 		std::weak_ptr<Core> m_self;
 		
-
+		float deltaTime = 0.0f;
 	};
 }
