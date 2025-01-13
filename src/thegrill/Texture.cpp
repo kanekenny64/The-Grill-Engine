@@ -1,4 +1,5 @@
 #include "Texture.h"
+#include <iostream>
 
 namespace thegrill
 {
@@ -9,5 +10,10 @@ namespace thegrill
 
 	void Texture::onLoad() {
 		m_texture = std::make_shared<renderer::Texture>(getPath() + ".png");
+	}
+
+	void Texture::onUnload() {
+		std::cout << "Texture::onUnload()" << std::endl;
+		m_texture->unload();
 	}
 }

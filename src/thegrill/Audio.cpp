@@ -59,5 +59,10 @@ namespace thegrill {
         // Clean up the read data
         free(output);
 	}
+
+	void Audio::onUnload()
+	{
+		alDeleteBuffers(1, &m_Id);
+	}
     
 }

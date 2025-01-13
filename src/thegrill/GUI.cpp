@@ -63,10 +63,10 @@ namespace thegrill {
 	int GUI::button(std::shared_ptr<renderer::Texture> _tex, float _x, float _y, float _w, float _h)
 	{
 
-		glm::vec2 mp = glm::vec2(m_core->input()->mouse()->getXPos(), m_core-> input()->mouse()->getYPos());
+		glm::vec2 mp = glm::vec2(m_core.lock()->input()->mouse()->getXPos(), m_core.lock()->input()->mouse()->getYPos());
 
 		int height, width;
-		m_core->window()->getDimensions(width, height);
+		m_core.lock()->window()->getDimensions(width, height);
 
 		//adjust position to centre 
 		/*_y = _y - _h / 2;
@@ -102,7 +102,7 @@ namespace thegrill {
 			mp.y > _y && mp.y < _y + _h)
 		{
 			//std::cout << "hover" << std::endl;
-			if (m_core->input()->mouse()->isButtonDown(SDL_BUTTON_LEFT))
+			if (m_core.lock()->input()->mouse()->isButtonDown(SDL_BUTTON_LEFT))
 			{
 				std::cout << "Click" << std::endl;
 				return 2;

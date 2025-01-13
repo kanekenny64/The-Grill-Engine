@@ -14,6 +14,8 @@ namespace renderer {
 		~Texture();
 		GLuint id();
 
+		void unload();
+
 	private:
 
 		GLuint m_id;

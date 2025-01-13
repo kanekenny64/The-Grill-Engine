@@ -106,6 +106,8 @@ namespace thegrill {
 				}
 			}
 
+			m_resources->Update();
+
 			//clear keyboard vectors
 			quit = m_input->Update();
 
@@ -135,6 +137,8 @@ namespace thegrill {
 			{
 				m_entities.at(i)->OnGUI();
 			}
+
+
 
 			SDL_GL_SwapWindow(m_window->m_raw);
 		}

@@ -30,6 +30,8 @@ namespace thegrill {
 
 		std::vector<std::shared_ptr<Resource> > getResources();
 
+		void Update();
+
 	private:
 		std::vector<std::shared_ptr<Resource> > m_resources;
 	};

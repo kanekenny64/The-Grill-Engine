@@ -8,6 +8,7 @@ namespace thegrill {
 
 	private:
 		void onLoad();
+		void onUnload();
 		std::shared_ptr<renderer::Texture>  m_texture;
 	};
 

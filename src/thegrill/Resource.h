@@ -10,8 +10,13 @@ namespace thegrill {
 	private:
 		friend struct thegrill::Resources;
 		virtual void onLoad() = 0;
-		std::string m_path;
+		virtual void onUnload() = 0;
+
+		
 		void load();
+		void unload();
+
+		std::string m_path;
 	};
 
 

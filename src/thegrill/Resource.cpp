@@ -8,4 +8,8 @@ namespace thegrill {
 	void Resource::load() {
 		onLoad();
 	}
+
+	void Resource::unload() {
+		onUnload();
+	}
 }

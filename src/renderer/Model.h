@@ -40,6 +40,8 @@ namespace renderer {
 
         std::vector<Model::Face> getFaces();
 
+		void unload();
+
 
     private:
         std::vector<Face> m_faces;
@@ -337,6 +339,24 @@ namespace renderer{
     inline std::vector<Model::Face> Model::getFaces()
 	{
 		return m_faces;
+	}
+
+
+	inline void Model::unload()
+	{
+		if (m_vaoid)
+		{
+			glDeleteVertexArrays(1, &m_vaoid);
+			m_vaoid = 0;
+			m_dirty = true;
+		}
+
+		if (m_vboid)
+		{
+			glDeleteBuffers(1, &m_vboid);
+			m_vboid = 0;
+			m_dirty = true;
+		}
 	}
 }
 

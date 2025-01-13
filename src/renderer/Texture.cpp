@@ -63,4 +63,12 @@ namespace renderer {
 
 		return m_id;
 	}
+
+	void Texture::unload() {
+		if (m_id) {
+			glDeleteTextures(1, &m_id);
+			m_id = 0;
+			m_dirty = true;
+		}
+	}
 }

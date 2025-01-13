@@ -8,6 +8,7 @@ namespace thegrill {
 
 		void load_ogg(const std::string& _path, std::vector<unsigned char>& _buffer, ALenum& _format, ALsizei& _freq);
 		void onLoad();
+		void onUnload();
 
 		ALuint m_Id;
 	private:

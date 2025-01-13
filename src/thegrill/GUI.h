@@ -19,7 +19,7 @@ namespace thegrill {
 	private:
 		friend struct thegrill::Core;
 
-		std::shared_ptr<Core> m_core;
+		std::weak_ptr<Core> m_core;
 		std::shared_ptr<renderer::Shader> mShader;
 		std::shared_ptr<renderer::Mesh> mRect;
 	};

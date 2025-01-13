@@ -46,8 +46,5 @@ namespace thegrill {
 
 		//m_shader.setUniform("in_LightPos", glm::vec3(-20, 10, -20));
 		m_shader.draw(m_shader.programId, m_model->vao_id(), m_model->vertex_count(), true);
-
-
-		
 	}
 }
