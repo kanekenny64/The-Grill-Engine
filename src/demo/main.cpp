@@ -30,6 +30,7 @@ private:
 			//move forward
 			
 			std::cout << "W is pressed" << std::endl;
+			get_entity()->destroy();
 			glm::vec3 pos = get_entity()->get_transform()->get_position();
 			pos.z += 0.1f;
 			get_entity()->set_position(pos);
@@ -59,7 +60,27 @@ private:
 			get_entity()->set_position(pos);
 		}
 
-		std::cout << "Position: " << get_entity()->get_transform()->get_position().x << ", " << get_entity()->get_transform()->get_position().y << ", " << get_entity()->get_transform()->get_position().z << std::endl;
+		//std::cout << "Position: " << get_entity()->get_transform()->get_position().x << ", " << get_entity()->get_transform()->get_position().y << ", " << get_entity()->get_transform()->get_position().z << std::endl;
+	}
+
+};
+
+struct Child : Component {
+
+	void on_initialize() {
+		printf("Child::initialize\n");
+	}
+
+	void on_destroy() {
+		printf("Child::destroy\n");
+	}
+
+private:
+	
+
+	void on_tick() {
+		//std::cout << "Position: " << get_entity()->get_transform()->get_position().x << ", " << get_entity()->get_transform()->get_position().y << ", " << get_entity()->get_transform()->get_position().z << std::endl;
+
 	}
 
 };
@@ -102,13 +123,13 @@ int main()
 		std::shared_ptr<RigidBody> rigidBody2 = entity2->add_component<RigidBody>();
 		std::shared_ptr<AnimationTrack> AnimTrack1 = entity2->add_component<AnimationTrack>();
 		std::shared_ptr<AnimationController> AnimController1 = entity2->add_component<AnimationController>();
-		AnimTrack1->create("models/guppy40001", 4);
+		AnimTrack1->create("models/guppy40001", 2);
 		AnimController1->set_track(AnimTrack1);
 		AnimController1->set_duration(10.5f);
 		r2->set_texture(tex->get_texture());
 		r2->set_model(model->get_model());
 
-		
+		entity2->add_component<Child>();
 
 		entity2->set_position(glm::vec3(5, 0, -15));;
 

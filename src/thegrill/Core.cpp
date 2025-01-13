@@ -11,6 +11,7 @@
 #include "SoundSystem.h"
 #include "GUI.h"
 
+#include "Camera.h"
 
 
 namespace thegrill {
@@ -109,6 +110,15 @@ namespace thegrill {
 			quit = m_input->Update();
 
 			//SDL_GL_ClearWindow(m_window->m_raw);
+
+			//Before rendering, check for a valid camera component
+			if (!m_current_cam.lock()) {
+				std::cout << "No camera component found, adding one" << std::endl;
+				std::shared_ptr<Entity> entity = add_entity();
+				std::shared_ptr<Camera> camera = entity->add_component<Camera>();
+				m_current_cam = camera;
+				
+			}
 
 			glClearColor(0.0f, 1.0f, 0.0f, 1.0f);
 			glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);

@@ -37,4 +37,8 @@ namespace thegrill {
 	{
 		m_Parent = _parent;
 	}
+	void Transform::Move(glm::vec3 _amount)
+	{
+		m_position += _amount;
+	}
 }

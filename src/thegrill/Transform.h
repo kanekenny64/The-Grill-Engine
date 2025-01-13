@@ -14,8 +14,6 @@ namespace thegrill {
 
 	struct Transform : Component
 	{
-		
-
 		glm::mat4 get_model() ;
 
 		glm::vec3 get_position() const;
@@ -30,6 +28,8 @@ namespace thegrill {
 
 		std::shared_ptr<Entity> get_parent();
 		void set_parent(std::shared_ptr<Entity> _parent);
+
+		void Move(glm::vec3 _amount);
 
 
 	private:
