@@ -1,9 +1,10 @@
 #include "Component.h"
+#include "Collider.h"
 #include <glm/glm.hpp>
 
 
 namespace thegrill {
-	struct BoxCollider : Component
+	struct BoxCollider : Collider
 	{
 		void on_initialize();
 		bool colliding(const BoxCollider& _other);

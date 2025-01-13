@@ -46,6 +46,7 @@ add_library(thegrill
 	src/thegrill/Keyboard.h src/thegrill/Keyboard.cpp
 	src/thegrill/Mouse.h src/thegrill/Mouse.cpp
 	src/thegrill/Audio.h src/thegrill/Audio.cpp
+	src/thegrill/Collider.h src/thegrill/Collider.cpp
 	src/thegrill/BoxCollider.h src/thegrill/BoxCollider.cpp
 	src/thegrill/RigidBody.h src/thegrill/RigidBody.cpp
 	src/thegrill/MeshCollider.h src/thegrill/MeshCollider.cpp
@@ -54,6 +55,7 @@ add_library(thegrill
 	src/thegrill/Mouse.h src/thegrill/Mouse.cpp
 	src/thegrill/AnimationTrack.h src/thegrill/AnimationTrack.cpp
 	src/thegrill/AnimationController.h src/thegrill/AnimationController.cpp
+	src/thegrill/tribox3.h
 	
 	 
 )

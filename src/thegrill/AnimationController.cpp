@@ -31,7 +31,7 @@ namespace thegrill {
 		if (m_currentTime - m_lastTime >= timePerFrame)
 		{
 			m_currentFrame++;
-			std::cout << "Current Frame: " << m_currentFrame << std::endl;
+			//std::cout << "Current Frame: " << m_currentFrame << std::endl;
 			m_lastTime = m_currentTime;
 
 			if (looping) {

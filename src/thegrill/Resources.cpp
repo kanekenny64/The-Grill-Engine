@@ -9,10 +9,9 @@ namespace thegrill {
 	{
 		for (size_t i = 0; i < m_resources.size(); ++i)
 		{
-			std::cout << m_resources.at(i).use_count() <<  ": " << std::endl;
 			if (m_resources.at(i).use_count() == 1) {
 				
-				m_resources.at(i)->unload();
+				//m_resources.at(i)->unload();
 			}
 		}
 	}

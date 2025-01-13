@@ -74,6 +74,7 @@ namespace thegrill {
 		float step = 0.1f;
 		glm::vec3 position = get_entity()->get_transform()->get_position();
 
+		Transform& transform = *get_entity()->get_transform();
 
 		//position is not being used by the colliding function, it is using the entity's position instead
 		//the entities position is not being updated and the position variable is not used resulting in infinite loop 
@@ -84,8 +85,7 @@ namespace thegrill {
 			if (!colliding(_other)) break;
 
 			position.x +=  amount;
-			get_entity()->get_transform()->set_position(position);
-			position = get_entity()->get_transform()->get_position();
+			transform.set_position(position);
 			if (!colliding(_other)) break;
 			position.x -= amount;
 			position.x -= amount;

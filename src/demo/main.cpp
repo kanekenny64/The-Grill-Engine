@@ -29,7 +29,7 @@ private:
 			
 			std::cout << "W is pressed" << std::endl;
 			
-			glm::vec3 pos = get_entity()->get_transform()->get_position();
+			vec3 pos = get_entity()->get_transform()->get_position();
 			pos.z += 0.1f;
 			get_entity()->set_position(pos);
 			
@@ -37,7 +37,7 @@ private:
 		if (get_keyboard()->isKeyDown(KEY_S)) {
 			//move back
 			std::cout << "S is pressed" << std::endl;
-			glm::vec3 pos = get_entity()->get_transform()->get_position();
+			vec3 pos = get_entity()->get_transform()->get_position();
 			pos.z -= 0.1f;
 			get_entity()->set_position(pos);
 		}
@@ -45,7 +45,7 @@ private:
 		if (get_keyboard()->isKeyDown(KEY_D)) {
 			//move back
 			std::cout << "S is pressed" << std::endl;
-			glm::vec3 pos = get_entity()->get_transform()->get_position();
+			vec3 pos = get_entity()->get_transform()->get_position();
 			pos.x += 0.1f;
 			get_entity()->set_position(pos);
 		}
@@ -53,7 +53,7 @@ private:
 		if (get_keyboard()->isKeyDown(KEY_A)) {
 			//move left
 			std::cout << "A is pressed" << std::endl;
-			glm::vec3 pos = get_entity()->get_transform()->get_position();
+			vec3 pos = get_entity()->get_transform()->get_position();
 			pos.x -= 0.1f;
 			get_entity()->set_position(pos);
 		}
@@ -82,7 +82,7 @@ private:
 			//move left
 			get_entity()->destroy();
 			std::cout << "A is pressed" << std::endl;
-			glm::vec3 pos = get_entity()->get_transform()->get_position();
+			vec3 pos = get_entity()->get_transform()->get_position();
 			pos.x -= 0.1f;
 			get_entity()->set_position(pos);
 		}
@@ -120,7 +120,7 @@ int main()
 		r->set_texture(tex->get_texture());
 		r->set_model(model->get_model());
 
-		entity->set_position(glm::vec3(0, 0, 5));
+		entity->set_position(vec3(0, 0, 5));
 
 		//second player
 		std::shared_ptr<Entity> entity2 = core->add_entity();
@@ -129,7 +129,7 @@ int main()
 		std::shared_ptr<RigidBody> rigidBody2 = entity2->add_component<RigidBody>();
 		std::shared_ptr<AnimationTrack> AnimTrack1 = entity2->add_component<AnimationTrack>();
 		std::shared_ptr<AnimationController> AnimController1 = entity2->add_component<AnimationController>();
-		AnimTrack1->create("models/guppy40001", 8);
+		AnimTrack1->create("models/guppy40001", 48);
 		AnimController1->set_track(AnimTrack1);
 		AnimController1->set_duration(10.5f);
 		r2->set_texture(tex->get_texture());
@@ -137,9 +137,10 @@ int main()
 
 		entity2->add_component<Child>();
 
-		entity2->set_position(glm::vec3(5, 0, -15));;
+		entity2->set_position(vec3(5, 0, -15));;
 
-		entity2->get_transform()->set_parent(entity);
+		//entity2->get_transform()->set_parent(entity);
+
 	}
 	core->run();
 

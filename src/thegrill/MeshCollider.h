@@ -7,9 +7,14 @@
 
 namespace thegrill {
 
+	struct BoxCollider;
+
 	struct MeshCollider : Component
 	{
 		void on_initialize();
+		void on_tick();
+
+		bool colliding(const BoxCollider& _other);
 
 		std::vector<renderer::Model::Face> m_faces;
 	};

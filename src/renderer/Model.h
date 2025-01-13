@@ -38,7 +38,8 @@ namespace renderer {
         GLsizei vertex_count() const;
         GLuint vao_id();
 
-        std::vector<Model::Face> getFaces();
+        
+        std::vector<Model::Face>& getFaces();
 
 		void unload();
 
@@ -336,7 +337,7 @@ namespace renderer{
     { }
 
 
-    inline std::vector<Model::Face> Model::getFaces()
+    inline std::vector<Model::Face>& Model::getFaces()
 	{
 		return m_faces;
 	}
