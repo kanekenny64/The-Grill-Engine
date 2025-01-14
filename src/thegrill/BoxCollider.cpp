@@ -2,16 +2,29 @@
 #include "Entity.h"
 #include "Transform.h"
 #include "MeshCollider.h"
-#include <iostream>
+
 
 
 namespace thegrill {
+
+	/**
+	 * @brief Initializes the BoxCollider with a default size and offset.
+	 */
+
 	void BoxCollider::on_initialize()
 	{
 		m_size = glm::vec3(1.5f);
 		m_offset = glm::vec3(0.0f);
 		
 	}
+
+	/**
+	 * @brief Checks if this BoxCollider is colliding with another BoxCollider.
+	 *
+	 * @param _other The other BoxCollider to check collision against.
+	 * @return true if colliding, false otherwise.
+	 */
+
 	bool BoxCollider::colliding(const BoxCollider& _other)
 	{
 		
@@ -69,6 +82,14 @@ namespace thegrill {
 		return true;
 		
 	}
+
+	/**
+	 * @brief Calculates the collision response for this BoxCollider against another BoxCollider.
+	 *
+	 * @param _other Reference to the other BoxCollider to calculate the collision response against.
+	 * @return The new position after resolving the collision.
+	 */
+
 	glm::vec3 BoxCollider::get_collisionResponse(BoxCollider& _other)
 	{
 		float amount = 0.1f;
@@ -122,6 +143,14 @@ namespace thegrill {
 		
 		return position;
 	}
+
+	/**
+	 * @brief Calculates the collision response for this BoxCollider against a MeshCollider.
+	 *
+	 * @param _other Reference to the MeshCollider to calculate the collision response against.
+	 * @return The new position after resolving the collision.
+	 */
+
 	glm::vec3 BoxCollider::get_collisionResponse(MeshCollider& _other)
 	{
 		float amount = 0.1f;
