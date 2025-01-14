@@ -1,0 +1,36 @@
+\doxysection{Texture.\+h}
+\hypertarget{renderer_2_texture_8h_source}{}\label{renderer_2_texture_8h_source}\index{src/renderer/Texture.h@{src/renderer/Texture.h}}
+\mbox{\hyperlink{renderer_2_texture_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ TEXTURE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ TEXTURE\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <GL/glew.h>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacerenderer}{renderer}}\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structrenderer_1_1_texture_a66f7c9efa11fcd848bd2d1822ec7248f}{Texture}}\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structrenderer_1_1_texture_a5549be819cd15d08e411cb218316ea86}{Texture}}(\textcolor{keyword}{const}\ std::string\&\ \_path);}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structrenderer_1_1_texture_a5549be819cd15d08e411cb218316ea86}{Texture}}();}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structrenderer_1_1_texture_aed7f4f761281baa365e00c96a67c1e8a}{\string~Texture}}();}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ GLuint\ \mbox{\hyperlink{structrenderer_1_1_texture_aae1fedbcfd14f6c24927c6abab78742f}{id}}();}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structrenderer_1_1_texture_ab741e13e0f20b8ec7cc0443c9b5c620b}{unload}}();}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ GLuint\ m\_id;}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ m\_width;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ std::vector<unsigned\ char>\ m\_data;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ m\_height;}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ m\_dirty;}
+\DoxyCodeLine{00026\ \ \ \ \ \};}
+\DoxyCodeLine{00027\ \}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ }
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !TEXTURE\_H}}
+
+\end{DoxyCode}

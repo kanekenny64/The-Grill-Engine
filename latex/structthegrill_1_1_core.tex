@@ -1,0 +1,124 @@
+\doxysection{thegrill\+::Core Struct Reference}
+\hypertarget{structthegrill_1_1_core}{}\label{structthegrill_1_1_core}\index{thegrill::Core@{thegrill::Core}}
+
+
+{\ttfamily \#include $<$Core.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structthegrill_1_1_core_adc31313e6c0543ef1dec298eff3c211a}{run}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_entity}{Entity}} $>$ \mbox{\hyperlink{structthegrill_1_1_core_a522d882f9856a74d59de726c46767fc2}{add\+\_\+entity}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_window}{Window}} $>$ \mbox{\hyperlink{structthegrill_1_1_core_abec138913cbf650e41f555b3dd7a41b4}{window}} () const
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_sound_system}{Sound\+System}} $>$ \mbox{\hyperlink{structthegrill_1_1_core_ab6bf9d1162f503300c2190c4c64ac25f}{sound\+\_\+system}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_resources}{Resources}} $>$ \mbox{\hyperlink{structthegrill_1_1_core_a412d5251500e151762e793ae939d290f}{get\+\_\+resources}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_input}{Input}} $>$ \mbox{\hyperlink{structthegrill_1_1_core_a7f8c8107e3d1de804169dd4f2c3ca364}{input}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_camera}{Camera}} $>$ \mbox{\hyperlink{structthegrill_1_1_core_a75d7a4379256854384247b29892f6bea}{current\+\_\+camera}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ \mbox{\hyperlink{structthegrill_1_1_core_a501dacf59f9969d5113f08b57464262a}{gui}} ()
+\item 
+float \mbox{\hyperlink{structthegrill_1_1_core_abd61fe1003580a504ee4aa8cb5a938b7}{Delta\+Time}} ()
+\item 
+{\footnotesize template$<$typename T$>$ }\\void \mbox{\hyperlink{structthegrill_1_1_core_a40cb2b5c177d4c1f4a9315e94ed9f458}{find}} (std\+::vector$<$ std\+::shared\+\_\+ptr$<$ T $>$ $>$ \&\+\_\+out)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_core}{Core}} $>$ \mbox{\hyperlink{structthegrill_1_1_core_a330cfd79db5cb850f659473a8720b7a0}{initialize}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structthegrill_1_1_core_a086c6b9a86b2d619a96b8b1c3633cfa2}{thegrill\+::\+Camera}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structthegrill_1_1_core_a522d882f9856a74d59de726c46767fc2}\index{thegrill::Core@{thegrill::Core}!add\_entity@{add\_entity}}
+\index{add\_entity@{add\_entity}!thegrill::Core@{thegrill::Core}}
+\doxysubsubsection{\texorpdfstring{add\_entity()}{add\_entity()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_core_a522d882f9856a74d59de726c46767fc2} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_entity}{Entity}} $>$ thegrill\+::\+Core\+::add\+\_\+entity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structthegrill_1_1_core_a75d7a4379256854384247b29892f6bea}\index{thegrill::Core@{thegrill::Core}!current\_camera@{current\_camera}}
+\index{current\_camera@{current\_camera}!thegrill::Core@{thegrill::Core}}
+\doxysubsubsection{\texorpdfstring{current\_camera()}{current\_camera()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_core_a75d7a4379256854384247b29892f6bea} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_camera}{Camera}} $>$ thegrill\+::\+Core\+::current\+\_\+camera (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structthegrill_1_1_core_abd61fe1003580a504ee4aa8cb5a938b7}\index{thegrill::Core@{thegrill::Core}!DeltaTime@{DeltaTime}}
+\index{DeltaTime@{DeltaTime}!thegrill::Core@{thegrill::Core}}
+\doxysubsubsection{\texorpdfstring{DeltaTime()}{DeltaTime()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_core_abd61fe1003580a504ee4aa8cb5a938b7} 
+float thegrill\+::\+Core\+::\+Delta\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structthegrill_1_1_core_a40cb2b5c177d4c1f4a9315e94ed9f458}\index{thegrill::Core@{thegrill::Core}!find@{find}}
+\index{find@{find}!thegrill::Core@{thegrill::Core}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_core_a40cb2b5c177d4c1f4a9315e94ed9f458} 
+template$<$typename T$>$ \\
+void thegrill\+::\+Core\+::find (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ T $>$ $>$ \&}]{\+\_\+out}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structthegrill_1_1_core_a412d5251500e151762e793ae939d290f}\index{thegrill::Core@{thegrill::Core}!get\_resources@{get\_resources}}
+\index{get\_resources@{get\_resources}!thegrill::Core@{thegrill::Core}}
+\doxysubsubsection{\texorpdfstring{get\_resources()}{get\_resources()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_core_a412d5251500e151762e793ae939d290f} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_resources}{Resources}} $>$ thegrill\+::\+Core\+::get\+\_\+resources (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structthegrill_1_1_core_a501dacf59f9969d5113f08b57464262a}\index{thegrill::Core@{thegrill::Core}!gui@{gui}}
+\index{gui@{gui}!thegrill::Core@{thegrill::Core}}
+\doxysubsubsection{\texorpdfstring{gui()}{gui()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_core_a501dacf59f9969d5113f08b57464262a} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ thegrill\+::\+Core\+::gui (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structthegrill_1_1_core_a330cfd79db5cb850f659473a8720b7a0}\index{thegrill::Core@{thegrill::Core}!initialize@{initialize}}
+\index{initialize@{initialize}!thegrill::Core@{thegrill::Core}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_core_a330cfd79db5cb850f659473a8720b7a0} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_core}{Core}} $>$ thegrill\+::\+Core\+::initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{structthegrill_1_1_core_a7f8c8107e3d1de804169dd4f2c3ca364}\index{thegrill::Core@{thegrill::Core}!input@{input}}
+\index{input@{input}!thegrill::Core@{thegrill::Core}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_core_a7f8c8107e3d1de804169dd4f2c3ca364} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_input}{Input}} $>$ thegrill\+::\+Core\+::input (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structthegrill_1_1_core_adc31313e6c0543ef1dec298eff3c211a}\index{thegrill::Core@{thegrill::Core}!run@{run}}
+\index{run@{run}!thegrill::Core@{thegrill::Core}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_core_adc31313e6c0543ef1dec298eff3c211a} 
+void thegrill\+::\+Core\+::run (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structthegrill_1_1_core_ab6bf9d1162f503300c2190c4c64ac25f}\index{thegrill::Core@{thegrill::Core}!sound\_system@{sound\_system}}
+\index{sound\_system@{sound\_system}!thegrill::Core@{thegrill::Core}}
+\doxysubsubsection{\texorpdfstring{sound\_system()}{sound\_system()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_core_ab6bf9d1162f503300c2190c4c64ac25f} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_sound_system}{Sound\+System}} $>$ thegrill\+::\+Core\+::sound\+\_\+system (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structthegrill_1_1_core_abec138913cbf650e41f555b3dd7a41b4}\index{thegrill::Core@{thegrill::Core}!window@{window}}
+\index{window@{window}!thegrill::Core@{thegrill::Core}}
+\doxysubsubsection{\texorpdfstring{window()}{window()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_core_abec138913cbf650e41f555b3dd7a41b4} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_window}{Window}} $>$ thegrill\+::\+Core\+::window (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{structthegrill_1_1_core_a086c6b9a86b2d619a96b8b1c3633cfa2}\index{thegrill::Core@{thegrill::Core}!thegrill::Camera@{thegrill::Camera}}
+\index{thegrill::Camera@{thegrill::Camera}!thegrill::Core@{thegrill::Core}}
+\doxysubsubsection{\texorpdfstring{thegrill::Camera}{thegrill::Camera}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_core_a086c6b9a86b2d619a96b8b1c3633cfa2} 
+friend struct \mbox{\hyperlink{structthegrill_1_1_camera}{thegrill\+::\+Camera}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/thegrill/\mbox{\hyperlink{_core_8h}{Core.\+h}}\item 
+src/thegrill/\mbox{\hyperlink{_core_8cpp}{Core.\+cpp}}\end{DoxyCompactItemize}

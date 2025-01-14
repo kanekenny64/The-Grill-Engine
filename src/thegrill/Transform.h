@@ -16,15 +16,15 @@ namespace thegrill {
 	{
 		glm::mat4 get_model() ;
 
-		glm::vec3 get_position() const;
+		
 
 		void set_position(glm::vec3 _position) {
 			m_position = _position;
 		}
 
-		glm::vec3 get_rotation() {
-			return m_rotation;
-		}
+		glm::vec3 get_position();
+		glm::vec3 get_rotation();
+		glm::vec3 get_scale();
 
 		std::shared_ptr<Entity> get_parent();
 		void set_parent(std::shared_ptr<Entity> _parent);

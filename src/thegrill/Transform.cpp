@@ -23,10 +23,43 @@ namespace thegrill {
 		return rtn;
 	}
 
-	glm::vec3 Transform::get_position() const
+	glm::vec3 Transform::get_position()
 	{
-		return m_position;
+		if (auto Parent = m_Parent.lock())
+		{
+			return Parent->get_transform()->get_position() + m_position;
+		}
+		else
+		{
+			return m_position;
+		}
 	}
+
+	glm::vec3 Transform::get_rotation()
+	{
+		if (auto Parent = m_Parent.lock())
+		{
+			return Parent->get_transform()->get_rotation() + m_rotation;
+		}
+		else
+		{
+			return m_rotation;
+		}
+	}
+
+	glm::vec3 Transform::get_scale()
+	{
+		if (auto Parent = m_Parent.lock())
+		{
+			return Parent->get_transform()->get_scale() * m_scale;
+		}
+		else
+		{
+			return m_scale;
+		}
+	}
+
+
 
 	std::shared_ptr<Entity> Transform::get_parent() 
 	{

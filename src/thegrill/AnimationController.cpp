@@ -17,6 +17,9 @@ namespace thegrill {
 		
 	}
 
+	/**
+	 * @brief Initializes the AnimationController. This function retrieves the ModelRenderer component from the associated entity.
+	 */
 	void AnimationController::on_initialize()
 	{
 		
@@ -24,34 +27,37 @@ namespace thegrill {
 		m_lastTime = get_core()->DeltaTime();
 	}
 
+	/**
+	 * @brief Updates the AnimationController each tick. This function advances the animation based on the elapsed time.
+	 */
 	void AnimationController::on_tick()
 	{
-		m_currentTime += get_core()->DeltaTime();
+		m_currentTime += get_core()->DeltaTime(); ///< Update the current time with the delta time.
 
 		if (m_currentTime - m_lastTime >= timePerFrame)
 		{
-			m_currentFrame++;
-			//std::cout << "Current Frame: " << m_currentFrame << std::endl;
-			m_lastTime = m_currentTime;
+			m_currentFrame++; ///< Move to the next frame.
+			
+			m_lastTime = m_currentTime; ///< Update last time to current time.
 
 			if (looping) {
 				if (m_currentFrame >= m_track->m_keyFrames.size())
 				{
 					
-					m_currentFrame = 0;
+					m_currentFrame = 0; ///< Loop back to the first frame.
 				}
 			}
 			else {
 				if (m_currentFrame >= m_track->m_keyFrames.size())
 				{
-					m_currentFrame = m_track->m_keyFrames.size() - 1;
+					m_currentFrame = m_track->m_keyFrames.size() - 1; ///< Stay at the last frame.
 				}
 			}
 
 		}
 
 		
-		m_renderer->set_model(m_track->m_keyFrames[m_currentFrame]->get_model());
+		m_renderer->set_model(m_track->m_keyFrames[m_currentFrame]); ///< Set the model to the current frame's model.
 	}
 	void AnimationController::set_track(std::shared_ptr<AnimationTrack> _track)
 	{

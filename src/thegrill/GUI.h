@@ -13,8 +13,8 @@ namespace thegrill {
 		GUI(std::shared_ptr<Core> _core);
 		~GUI();
 
-		void image(std::shared_ptr<renderer::Texture> _tex, float _x, float _y, float _w, float _h);
-		int button(std::shared_ptr<renderer::Texture> _tex, float _x, float _y, float _w, float _h);
+		void image(std::shared_ptr<Texture> _tex, float _x, float _y, float _w, float _h);
+		int button(std::shared_ptr<Texture> _tex, float _x, float _y, float _w, float _h);
 
 	private:
 		friend struct thegrill::Core;

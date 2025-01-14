@@ -111,6 +111,8 @@ namespace thegrill {
 			//clear keyboard vectors
 			quit = m_input->Update();
 
+			window()->Update();
+
 			//SDL_GL_ClearWindow(m_window->m_raw);
 
 			//Before rendering, check for a valid camera component

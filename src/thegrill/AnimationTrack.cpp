@@ -10,12 +10,20 @@ namespace thegrill {
 		startFrame = 0;
 	}
 
+	/**
+	 * @brief Creates the animation track by loading keyframes from a specified path.
+	 *
+	 * This function takes the name of the first .obj file in the animation sequence and looks for the rest of the files
+	 * in the sequence based on Blender's default naming convention (e.g., example0001.obj, example0002.obj, etc.).
+	 *
+	 * @param _path The file path to the first model in the sequence.
+	 * @param _numFrames The total number of frames to create in the animation track.
+	 */
+
 	void AnimationTrack::create(const std::string& _path, int _numFrames)
 	{
-		//Takes in the name of the first .obj file in the animation then looks for the rest of the files in the sequence
-		//Naming convention uses Blender's default of example0001.obj, example0002.obj, example0003.obj, etc.
 
-		m_keyFrames.push_back(get_core()->get_resources()->load<Model>(_path));
+		m_keyFrames.push_back(get_core()->get_resources()->load<Model>(_path)); ///< Load the first model.
 
 
 		//find the first part of the file name without the number
@@ -43,7 +51,7 @@ namespace thegrill {
 
 			std::cout << newPath << std::endl;
 
-			m_keyFrames.push_back(get_core()->get_resources()->load<Model>(newPath));
+			m_keyFrames.push_back(get_core()->get_resources()->load<Model>(newPath)); ///< Load the subsequent models.
 		}
 	}
 

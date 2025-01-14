@@ -1,6 +1,7 @@
 #include "BoxCollider.h"
 #include "Entity.h"
 #include "Transform.h"
+#include "MeshCollider.h"
 #include <iostream>
 
 
@@ -68,7 +69,7 @@ namespace thegrill {
 		return true;
 		
 	}
-	glm::vec3 BoxCollider::get_collisionResponse(const BoxCollider& _other)
+	glm::vec3 BoxCollider::get_collisionResponse(BoxCollider& _other)
 	{
 		float amount = 0.1f;
 		float step = 0.1f;
@@ -89,36 +90,90 @@ namespace thegrill {
 			if (!colliding(_other)) break;
 			position.x -= amount;
 			position.x -= amount;
-			get_entity()->get_transform()->set_position(position);
-			position = get_entity()->get_transform()->get_position();
+			transform.set_position(position);
+			position = transform.get_position();
 			if (!colliding(_other)) break;
 			position.x += amount;
 			position.z += amount;
-			get_entity()->get_transform()->set_position(position);
-			position = get_entity()->get_transform()->get_position();
+			transform.set_position(position);
+			position = transform.get_position();
 			if (!colliding(_other)) break;
 			position.z -= amount;
 			position.z -= amount;
-			get_entity()->get_transform()->set_position(position);
-			position = get_entity()->get_transform()->get_position();
+			transform.set_position(position);
+			position = transform.get_position();
 			if (!colliding(_other)) break;
 			position.z += amount;
 			position.y += amount;
-			get_entity()->get_transform()->set_position(position);
-			position = get_entity()->get_transform()->get_position();
+			transform.set_position(position);
+			position = transform.get_position();
 			if (!colliding(_other)) break;
 			position.y -= amount;
 			position.y -= amount;
-			get_entity()->get_transform()->set_position(position);
-			position = get_entity()->get_transform()->get_position();
+			transform.set_position(position);
+			position = transform.get_position();
 			if (!colliding(_other)) break;
 			position.y += amount;
 			amount += step;
-			get_entity()->get_transform()->set_position(position);
-			position = get_entity()->get_transform()->get_position();
+			transform.set_position(position);
+			position = transform.get_position();
 
 		}
 		
+		return position;
+	}
+	glm::vec3 BoxCollider::get_collisionResponse(MeshCollider& _other)
+	{
+		float amount = 0.1f;
+		float step = 0.1f;
+		glm::vec3 position = get_entity()->get_transform()->get_position();
+
+		Transform& transform = *get_entity()->get_transform();
+
+		//position is not being used by the colliding function, it is using the entity's position instead
+		//the entities position is not being updated and the position variable is not used resulting in infinite loop 
+
+
+		while (true)
+		{
+			
+			if (!_other.colliding(*this)) break;
+
+			position.x += amount;
+			transform.set_position(position);
+			if (!_other.colliding(*this)) break;
+			position.x -= amount;
+			position.x -= amount;
+			transform.set_position(position);
+			position = transform.get_position();
+			if (!_other.colliding(*this)) break;
+			position.x += amount;
+			position.z += amount;
+			transform.set_position(position);
+			position = transform.get_position();
+			if (!_other.colliding(*this)) break;
+			position.z -= amount;
+			position.z -= amount;
+			transform.set_position(position);
+			position = transform.get_position();
+			if (!_other.colliding(*this)) break;
+			position.z += amount;
+			position.y += amount;
+			transform.set_position(position);
+			position = transform.get_position();
+			if (!_other.colliding(*this)) break;
+			position.y -= amount;
+			position.y -= amount;
+			transform.set_position(position);
+			position = transform.get_position();
+			if (!_other.colliding(*this)) break;
+			position.y += amount;
+			amount += step;
+			transform.set_position(position);
+			position = transform.get_position();
+
+		}
+
 		return position;
 	}
 	void BoxCollider::set_offset(glm::vec3 _offset)

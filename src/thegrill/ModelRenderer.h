@@ -11,6 +11,7 @@ namespace thegrill {
 	struct Shader;
 	struct Mesh;
 	struct Model;
+	struct Texture;
 
 	
 
@@ -19,8 +20,10 @@ namespace thegrill {
 		ModelRenderer();
 		void OnInit();
 
-		void set_texture(std::shared_ptr<renderer::Texture> _tex);
-		void set_model(std::shared_ptr<renderer::Model> _model);
+		void set_texture(std::shared_ptr<Texture> _tex);
+		void set_model(std::shared_ptr<Model> _model);
+
+		std::shared_ptr<renderer::Model> get_model() { return m_model; }
 	private:
 		
 

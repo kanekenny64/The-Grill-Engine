@@ -1,0 +1,123 @@
+\doxysection{renderer\+::Shader Struct Reference}
+\hypertarget{structrenderer_1_1_shader}{}\label{structrenderer_1_1_shader}\index{renderer::Shader@{renderer::Shader}}
+
+
+{\ttfamily \#include $<$Shader.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structrenderer_1_1_shader_a04da537e2d3df5307213f97e73027c5b}{Shader}} (bool \mbox{\hyperlink{structrenderer_1_1_shader_a162d442145ace58dec507d3b2b8377fd}{ortho}})
+\item 
+\mbox{\hyperlink{structrenderer_1_1_shader_a69c98d7086d47adbc4ab9da67158792c}{\texorpdfstring{$\sim$}{\string~}\+Shader}} ()
+\item 
+void \mbox{\hyperlink{structrenderer_1_1_shader_ae8a6645efc8c85b3bed88931922c4c34}{set\+Uniform}} (std\+::string variable, glm\+::mat4 value)
+\item 
+void \mbox{\hyperlink{structrenderer_1_1_shader_a871d4b535988622edab39b01c8bf7777}{set\+Uniform}} (std\+::string variable, glm\+::vec3 value)
+\item 
+void \mbox{\hyperlink{structrenderer_1_1_shader_a468e8a3d28f6b5e94a4f96adfe5a9c54}{set\+Uniform}} (std\+::string variable, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structrenderer_1_1_texture}{renderer\+::\+Texture}} $>$ value, int unit)
+\item 
+void \mbox{\hyperlink{structrenderer_1_1_shader_a133a059f8a097bcdb716e03b6c47e706}{set\+Uniform}} (std\+::string variable, GLuint value, int unit)
+\item 
+void \mbox{\hyperlink{structrenderer_1_1_shader_a83afddc554ed3fac821edf65147b2a11}{draw}} (GLuint \+\_\+\+VAOID, GLuint \+\_\+\+VBOID, GLsizei \+\_\+size, bool depth\+\_\+testing)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+GLuint \mbox{\hyperlink{structrenderer_1_1_shader_ac243a889aecc21165850784ebecb53b2}{program\+Id}}
+\item 
+GLint \mbox{\hyperlink{structrenderer_1_1_shader_a2340451d24672324fe9f3c08ce3d0e48}{model\+Loc}}
+\item 
+GLint \mbox{\hyperlink{structrenderer_1_1_shader_ae9e83969d87d19a9e661da50770697a7}{view\+Loc}}
+\item 
+GLint \mbox{\hyperlink{structrenderer_1_1_shader_adbe5abb7708933f3aca47c671b3e3c43}{projection\+Loc}}
+\item 
+bool \mbox{\hyperlink{structrenderer_1_1_shader_a162d442145ace58dec507d3b2b8377fd}{ortho}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structrenderer_1_1_shader_a04da537e2d3df5307213f97e73027c5b}\index{renderer::Shader@{renderer::Shader}!Shader@{Shader}}
+\index{Shader@{Shader}!renderer::Shader@{renderer::Shader}}
+\doxysubsubsection{\texorpdfstring{Shader()}{Shader()}}
+{\footnotesize\ttfamily \label{structrenderer_1_1_shader_a04da537e2d3df5307213f97e73027c5b} 
+renderer\+::\+Shader\+::\+Shader (\begin{DoxyParamCaption}\item[{bool}]{ortho}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structrenderer_1_1_shader_a69c98d7086d47adbc4ab9da67158792c}\index{renderer::Shader@{renderer::Shader}!````~Shader@{\texorpdfstring{$\sim$}{\string~}Shader}}
+\index{````~Shader@{\texorpdfstring{$\sim$}{\string~}Shader}!renderer::Shader@{renderer::Shader}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Shader()}{\string~Shader()}}
+{\footnotesize\ttfamily \label{structrenderer_1_1_shader_a69c98d7086d47adbc4ab9da67158792c} 
+renderer\+::\+Shader\+::\texorpdfstring{$\sim$}{\string~}\+Shader (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structrenderer_1_1_shader_a83afddc554ed3fac821edf65147b2a11}\index{renderer::Shader@{renderer::Shader}!draw@{draw}}
+\index{draw@{draw}!renderer::Shader@{renderer::Shader}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{structrenderer_1_1_shader_a83afddc554ed3fac821edf65147b2a11} 
+void renderer\+::\+Shader\+::draw (\begin{DoxyParamCaption}\item[{GLuint}]{\+\_\+\+VAOID}{, }\item[{GLuint}]{\+\_\+\+VBOID}{, }\item[{GLsizei}]{\+\_\+size}{, }\item[{bool}]{depth\+\_\+testing}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structrenderer_1_1_shader_ae8a6645efc8c85b3bed88931922c4c34}\index{renderer::Shader@{renderer::Shader}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!renderer::Shader@{renderer::Shader}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{structrenderer_1_1_shader_ae8a6645efc8c85b3bed88931922c4c34} 
+void renderer\+::\+Shader\+::set\+Uniform (\begin{DoxyParamCaption}\item[{std\+::string}]{variable}{, }\item[{glm\+::mat4}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structrenderer_1_1_shader_a871d4b535988622edab39b01c8bf7777}\index{renderer::Shader@{renderer::Shader}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!renderer::Shader@{renderer::Shader}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{structrenderer_1_1_shader_a871d4b535988622edab39b01c8bf7777} 
+void renderer\+::\+Shader\+::set\+Uniform (\begin{DoxyParamCaption}\item[{std\+::string}]{variable}{, }\item[{glm\+::vec3}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structrenderer_1_1_shader_a133a059f8a097bcdb716e03b6c47e706}\index{renderer::Shader@{renderer::Shader}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!renderer::Shader@{renderer::Shader}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{structrenderer_1_1_shader_a133a059f8a097bcdb716e03b6c47e706} 
+void renderer\+::\+Shader\+::set\+Uniform (\begin{DoxyParamCaption}\item[{std\+::string}]{variable}{, }\item[{GLuint}]{value}{, }\item[{int}]{unit}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structrenderer_1_1_shader_a468e8a3d28f6b5e94a4f96adfe5a9c54}\index{renderer::Shader@{renderer::Shader}!setUniform@{setUniform}}
+\index{setUniform@{setUniform}!renderer::Shader@{renderer::Shader}}
+\doxysubsubsection{\texorpdfstring{setUniform()}{setUniform()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{structrenderer_1_1_shader_a468e8a3d28f6b5e94a4f96adfe5a9c54} 
+void renderer\+::\+Shader\+::set\+Uniform (\begin{DoxyParamCaption}\item[{std\+::string}]{variable}{, }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structrenderer_1_1_texture}{renderer\+::\+Texture}} $>$}]{value}{, }\item[{int}]{unit}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structrenderer_1_1_shader_a2340451d24672324fe9f3c08ce3d0e48}\index{renderer::Shader@{renderer::Shader}!modelLoc@{modelLoc}}
+\index{modelLoc@{modelLoc}!renderer::Shader@{renderer::Shader}}
+\doxysubsubsection{\texorpdfstring{modelLoc}{modelLoc}}
+{\footnotesize\ttfamily \label{structrenderer_1_1_shader_a2340451d24672324fe9f3c08ce3d0e48} 
+GLint renderer\+::\+Shader\+::model\+Loc}
+
+\Hypertarget{structrenderer_1_1_shader_a162d442145ace58dec507d3b2b8377fd}\index{renderer::Shader@{renderer::Shader}!ortho@{ortho}}
+\index{ortho@{ortho}!renderer::Shader@{renderer::Shader}}
+\doxysubsubsection{\texorpdfstring{ortho}{ortho}}
+{\footnotesize\ttfamily \label{structrenderer_1_1_shader_a162d442145ace58dec507d3b2b8377fd} 
+bool renderer\+::\+Shader\+::ortho = false}
+
+\Hypertarget{structrenderer_1_1_shader_ac243a889aecc21165850784ebecb53b2}\index{renderer::Shader@{renderer::Shader}!programId@{programId}}
+\index{programId@{programId}!renderer::Shader@{renderer::Shader}}
+\doxysubsubsection{\texorpdfstring{programId}{programId}}
+{\footnotesize\ttfamily \label{structrenderer_1_1_shader_ac243a889aecc21165850784ebecb53b2} 
+GLuint renderer\+::\+Shader\+::program\+Id}
+
+\Hypertarget{structrenderer_1_1_shader_adbe5abb7708933f3aca47c671b3e3c43}\index{renderer::Shader@{renderer::Shader}!projectionLoc@{projectionLoc}}
+\index{projectionLoc@{projectionLoc}!renderer::Shader@{renderer::Shader}}
+\doxysubsubsection{\texorpdfstring{projectionLoc}{projectionLoc}}
+{\footnotesize\ttfamily \label{structrenderer_1_1_shader_adbe5abb7708933f3aca47c671b3e3c43} 
+GLint renderer\+::\+Shader\+::projection\+Loc}
+
+\Hypertarget{structrenderer_1_1_shader_ae9e83969d87d19a9e661da50770697a7}\index{renderer::Shader@{renderer::Shader}!viewLoc@{viewLoc}}
+\index{viewLoc@{viewLoc}!renderer::Shader@{renderer::Shader}}
+\doxysubsubsection{\texorpdfstring{viewLoc}{viewLoc}}
+{\footnotesize\ttfamily \label{structrenderer_1_1_shader_ae9e83969d87d19a9e661da50770697a7} 
+GLint renderer\+::\+Shader\+::view\+Loc}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/renderer/\mbox{\hyperlink{_shader_8h}{Shader.\+h}}\item 
+src/renderer/\mbox{\hyperlink{_shader_8cpp}{Shader.\+cpp}}\end{DoxyCompactItemize}

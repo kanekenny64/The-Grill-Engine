@@ -1,0 +1,33 @@
+\doxysection{GUI.\+h}
+\hypertarget{_g_u_i_8h_source}{}\label{_g_u_i_8h_source}\index{src/thegrill/GUI.h@{src/thegrill/GUI.h}}
+\mbox{\hyperlink{_g_u_i_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_mesh_8h}{Renderer/Mesh.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_shader_8h}{Renderer/Shader.h}}"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespacethegrill}{thegrill}}\ \{}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structthegrill_1_1_core}{Core}};}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structthegrill_1_1_texture}{Texture}};}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structthegrill_1_1_g_u_i_ac8e91d96ea6119f484fb70568f574edc}{GUI}}}
+\DoxyCodeLine{00012\ \ \ \ \ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structthegrill_1_1_g_u_i_ac8e91d96ea6119f484fb70568f574edc}{GUI}}(std::shared\_ptr<Core>\ \_core);}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structthegrill_1_1_g_u_i_a4f70b2c60b4306ea82ba3279653a6437}{\string~GUI}}();}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structthegrill_1_1_g_u_i_a60f90f92a2be068b898710aa60e6ea47}{image}}(std::shared\_ptr<Texture>\ \_tex,\ \textcolor{keywordtype}{float}\ \_x,\ \textcolor{keywordtype}{float}\ \_y,\ \textcolor{keywordtype}{float}\ \_w,\ \textcolor{keywordtype}{float}\ \_h);}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structthegrill_1_1_g_u_i_a6ab223fbda9bca79e688381b9419d2db}{button}}(std::shared\_ptr<Texture>\ \_tex,\ \textcolor{keywordtype}{float}\ \_x,\ \textcolor{keywordtype}{float}\ \_y,\ \textcolor{keywordtype}{float}\ \_w,\ \textcolor{keywordtype}{float}\ \_h);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structthegrill_1_1_core}{thegrill::Core}};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ std::weak\_ptr<Core>\ m\_core;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ std::shared\_ptr<renderer::Shader>\ mShader;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ std::shared\_ptr<renderer::Mesh>\ mRect;}
+\DoxyCodeLine{00025\ \ \ \ \ \};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \}}
+
+\end{DoxyCode}

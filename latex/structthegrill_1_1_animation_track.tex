@@ -1,0 +1,102 @@
+\doxysection{thegrill\+::Animation\+Track Struct Reference}
+\hypertarget{structthegrill_1_1_animation_track}{}\label{structthegrill_1_1_animation_track}\index{thegrill::AnimationTrack@{thegrill::AnimationTrack}}
+
+
+{\ttfamily \#include $<$Animation\+Track.\+h$>$}
+
+Inheritance diagram for thegrill\+::Animation\+Track\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structthegrill_1_1_animation_track}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structthegrill_1_1_animation_track_ae63bf416575443467b7ba9d18e003532}{Animation\+Track}} ()
+\item 
+\mbox{\hyperlink{structthegrill_1_1_animation_track_a08375d6bb1c8f71a797fd116c1c961de}{\texorpdfstring{$\sim$}{\string~}\+Animation\+Track}} ()=default
+\item 
+void \mbox{\hyperlink{structthegrill_1_1_animation_track_a8103906304b27cafe775bae2dd0e77bb}{create}} (const std\+::string \&\+\_\+path, int \+\_\+num\+Frames)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structthegrill_1_1_component}{thegrill\+::\+Component}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{structthegrill_1_1_component_a3bea71129c378ed65415b5b02ee890a6}{on\+\_\+initialize}} ()
+\item 
+virtual void \mbox{\hyperlink{structthegrill_1_1_component_ab2f4198b8755856e77eb0181754b290b}{on\+\_\+tick}} ()
+\item 
+virtual void \mbox{\hyperlink{structthegrill_1_1_component_a79a3c7b6cf9b91e1930335a4e40f3bcd}{on\+\_\+render}} ()
+\item 
+virtual void \mbox{\hyperlink{structthegrill_1_1_component_a413f6325ab19b1f736491631ae0b8b23}{on\+\_\+gui}} ()
+\item 
+virtual void \mbox{\hyperlink{structthegrill_1_1_component_a46ad55d544999dc701a971718fe62763}{on\+\_\+destroy}} ()
+\item 
+void \mbox{\hyperlink{structthegrill_1_1_component_a57bcf963c4117fcb7186b88b129c03c0}{tick}} ()
+\item 
+void \mbox{\hyperlink{structthegrill_1_1_component_a9c633af8c14b3b472bd4f2b7b9e1b947}{render}} ()
+\item 
+void \mbox{\hyperlink{structthegrill_1_1_component_a607b69880281b63ebce2692898fd04a2}{gui}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_entity}{Entity}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_acc754d2dc8e9915ebf5b5eb666409d51}{get\+\_\+entity}} () const
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_keyboard}{Keyboard}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a572dc42b03bbe17422671f03b334721f}{get\+\_\+keyboard}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_core}{Core}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a9336bcaea73cfe54b76200b54d454223}{get\+\_\+core}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_transform}{Transform}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a079f00434c0077e4356f45f2bdd92c17}{get\+\_\+transform}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a4b0f91fe01d2f5dbfe7a2da769cf4e53}{Component\+::get\+\_\+gui}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structthegrill_1_1_animation_track_a21221e0698276e618a4d2843ceed9735}{start\+Frame}}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_model}{Model}} $>$ $>$ \mbox{\hyperlink{structthegrill_1_1_animation_track_a0a7dfc38c94cd04dae48f17552208919}{m\+\_\+key\+Frames}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structthegrill_1_1_animation_track_ae63bf416575443467b7ba9d18e003532}\index{thegrill::AnimationTrack@{thegrill::AnimationTrack}!AnimationTrack@{AnimationTrack}}
+\index{AnimationTrack@{AnimationTrack}!thegrill::AnimationTrack@{thegrill::AnimationTrack}}
+\doxysubsubsection{\texorpdfstring{AnimationTrack()}{AnimationTrack()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_animation_track_ae63bf416575443467b7ba9d18e003532} 
+thegrill\+::\+Animation\+Track\+::\+Animation\+Track (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structthegrill_1_1_animation_track_a08375d6bb1c8f71a797fd116c1c961de}\index{thegrill::AnimationTrack@{thegrill::AnimationTrack}!````~AnimationTrack@{\texorpdfstring{$\sim$}{\string~}AnimationTrack}}
+\index{````~AnimationTrack@{\texorpdfstring{$\sim$}{\string~}AnimationTrack}!thegrill::AnimationTrack@{thegrill::AnimationTrack}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}AnimationTrack()}{\string~AnimationTrack()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_animation_track_a08375d6bb1c8f71a797fd116c1c961de} 
+thegrill\+::\+Animation\+Track\+::\texorpdfstring{$\sim$}{\string~}\+Animation\+Track (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structthegrill_1_1_animation_track_a8103906304b27cafe775bae2dd0e77bb}\index{thegrill::AnimationTrack@{thegrill::AnimationTrack}!create@{create}}
+\index{create@{create}!thegrill::AnimationTrack@{thegrill::AnimationTrack}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_animation_track_a8103906304b27cafe775bae2dd0e77bb} 
+void thegrill\+::\+Animation\+Track\+::create (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{\+\_\+path}{, }\item[{int}]{\+\_\+num\+Frames}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structthegrill_1_1_animation_track_a0a7dfc38c94cd04dae48f17552208919}\index{thegrill::AnimationTrack@{thegrill::AnimationTrack}!m\_keyFrames@{m\_keyFrames}}
+\index{m\_keyFrames@{m\_keyFrames}!thegrill::AnimationTrack@{thegrill::AnimationTrack}}
+\doxysubsubsection{\texorpdfstring{m\_keyFrames}{m\_keyFrames}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_animation_track_a0a7dfc38c94cd04dae48f17552208919} 
+std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{structthegrill_1_1_model}{Model}}$>$ $>$ thegrill\+::\+Animation\+Track\+::m\+\_\+key\+Frames}
+
+\Hypertarget{structthegrill_1_1_animation_track_a21221e0698276e618a4d2843ceed9735}\index{thegrill::AnimationTrack@{thegrill::AnimationTrack}!startFrame@{startFrame}}
+\index{startFrame@{startFrame}!thegrill::AnimationTrack@{thegrill::AnimationTrack}}
+\doxysubsubsection{\texorpdfstring{startFrame}{startFrame}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_animation_track_a21221e0698276e618a4d2843ceed9735} 
+int thegrill\+::\+Animation\+Track\+::start\+Frame}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/thegrill/\mbox{\hyperlink{_animation_track_8h}{Animation\+Track.\+h}}\item 
+src/thegrill/\mbox{\hyperlink{_animation_track_8cpp}{Animation\+Track.\+cpp}}\end{DoxyCompactItemize}

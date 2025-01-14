@@ -3,7 +3,8 @@
 #include "ModelRenderer.h"
 #include <iostream>
 #include <glm/ext.hpp>
-
+#include "Texture.h"
+#include "Model.h"
 #include "Entity.h"
 #include "Transform.h"
 #include "Core.h"
@@ -14,13 +15,13 @@ namespace thegrill {
 	ModelRenderer::ModelRenderer():
 		m_shader(renderer::Shader(false))
 	{}
-	void ModelRenderer::set_texture(std::shared_ptr<renderer::Texture> _tex)
+	void ModelRenderer::set_texture(std::shared_ptr<Texture> _tex)
 	{
-		m_tex = _tex;
+		m_tex = _tex->get_texture();
 	}
-	void ModelRenderer::set_model(std::shared_ptr<renderer::Model> _model)
+	void ModelRenderer::set_model(std::shared_ptr<Model> _model)
 	{
-		m_model = _model;
+		m_model = _model->get_model();
 	}
 	void ModelRenderer::on_render()
 	{
@@ -43,6 +44,8 @@ namespace thegrill {
 		m_shader.setUniform("u_View", glm::inverse(view));
 
 		m_shader.setUniform("u_Texture", m_tex, 1);
+
+		m_shader.setUniform("in_LightPos", glm::vec3(1, 10, 1));
 
 		//m_shader.setUniform("in_LightPos", glm::vec3(-20, 10, -20));
 		m_shader.draw(m_shader.programId, m_model->vao_id(), m_model->vertex_count(), true);

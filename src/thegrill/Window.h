@@ -9,6 +9,8 @@ namespace thegrill {
 		Window();
 		~Window();
 
+		void Update();
+
 		void getDimensions(int& _w, int& _h);
 
 	private:

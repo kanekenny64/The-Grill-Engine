@@ -1,0 +1,116 @@
+\doxysection{thegrill\+::Animation\+Controller Struct Reference}
+\hypertarget{structthegrill_1_1_animation_controller}{}\label{structthegrill_1_1_animation_controller}\index{thegrill::AnimationController@{thegrill::AnimationController}}
+
+
+The \doxylink{structthegrill_1_1_animation_controller}{Animation\+Controller} class is responsible for managing and controlling the playback of animation tracks.  
+
+
+
+
+{\ttfamily \#include $<$Animation\+Controller.\+h$>$}
+
+Inheritance diagram for thegrill\+::Animation\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{structthegrill_1_1_animation_controller}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structthegrill_1_1_animation_controller_ab24b2fd561d9e39db5555aae4f20b36b}{Animation\+Controller}} ()
+\item 
+void \mbox{\hyperlink{structthegrill_1_1_animation_controller_a99a865c8b8a9af0f97dc45c2c034bf85}{on\+\_\+initialize}} () override
+\item 
+void \mbox{\hyperlink{structthegrill_1_1_animation_controller_a0a17b97437953a31dde203fba8c772ec}{on\+\_\+tick}} ()
+\item 
+void \mbox{\hyperlink{structthegrill_1_1_animation_controller_aed66790be263ec794b701f378633a4fd}{set\+\_\+looping}} (bool \+\_\+looping)
+\item 
+void \mbox{\hyperlink{structthegrill_1_1_animation_controller_a8c16ec8887c1d0851ae8e238ee5875d7}{set\+\_\+track}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_animation_track}{Animation\+Track}} $>$ \+\_\+track)
+\item 
+void \mbox{\hyperlink{structthegrill_1_1_animation_controller_a019cc26dabc762b51607dfd5f74280d6}{set\+\_\+duration}} (float \+\_\+duration)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structthegrill_1_1_component}{thegrill\+::\+Component}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{structthegrill_1_1_component_a79a3c7b6cf9b91e1930335a4e40f3bcd}{on\+\_\+render}} ()
+\item 
+virtual void \mbox{\hyperlink{structthegrill_1_1_component_a413f6325ab19b1f736491631ae0b8b23}{on\+\_\+gui}} ()
+\item 
+virtual void \mbox{\hyperlink{structthegrill_1_1_component_a46ad55d544999dc701a971718fe62763}{on\+\_\+destroy}} ()
+\item 
+void \mbox{\hyperlink{structthegrill_1_1_component_a57bcf963c4117fcb7186b88b129c03c0}{tick}} ()
+\item 
+void \mbox{\hyperlink{structthegrill_1_1_component_a9c633af8c14b3b472bd4f2b7b9e1b947}{render}} ()
+\item 
+void \mbox{\hyperlink{structthegrill_1_1_component_a607b69880281b63ebce2692898fd04a2}{gui}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_entity}{Entity}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_acc754d2dc8e9915ebf5b5eb666409d51}{get\+\_\+entity}} () const
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_keyboard}{Keyboard}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a572dc42b03bbe17422671f03b334721f}{get\+\_\+keyboard}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_core}{Core}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a9336bcaea73cfe54b76200b54d454223}{get\+\_\+core}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_transform}{Transform}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a079f00434c0077e4356f45f2bdd92c17}{get\+\_\+transform}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a4b0f91fe01d2f5dbfe7a2da769cf4e53}{Component\+::get\+\_\+gui}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{structthegrill_1_1_animation_controller}{Animation\+Controller} class is responsible for managing and controlling the playback of animation tracks. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structthegrill_1_1_animation_controller_ab24b2fd561d9e39db5555aae4f20b36b}\index{thegrill::AnimationController@{thegrill::AnimationController}!AnimationController@{AnimationController}}
+\index{AnimationController@{AnimationController}!thegrill::AnimationController@{thegrill::AnimationController}}
+\doxysubsubsection{\texorpdfstring{AnimationController()}{AnimationController()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_animation_controller_ab24b2fd561d9e39db5555aae4f20b36b} 
+thegrill\+::\+Animation\+Controller\+::\+Animation\+Controller (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structthegrill_1_1_animation_controller_a99a865c8b8a9af0f97dc45c2c034bf85}\index{thegrill::AnimationController@{thegrill::AnimationController}!on\_initialize@{on\_initialize}}
+\index{on\_initialize@{on\_initialize}!thegrill::AnimationController@{thegrill::AnimationController}}
+\doxysubsubsection{\texorpdfstring{on\_initialize()}{on\_initialize()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_animation_controller_a99a865c8b8a9af0f97dc45c2c034bf85} 
+void thegrill\+::\+Animation\+Controller\+::on\+\_\+initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{structthegrill_1_1_component_a3bea71129c378ed65415b5b02ee890a6}{thegrill\+::\+Component}}.
+
+\Hypertarget{structthegrill_1_1_animation_controller_a0a17b97437953a31dde203fba8c772ec}\index{thegrill::AnimationController@{thegrill::AnimationController}!on\_tick@{on\_tick}}
+\index{on\_tick@{on\_tick}!thegrill::AnimationController@{thegrill::AnimationController}}
+\doxysubsubsection{\texorpdfstring{on\_tick()}{on\_tick()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_animation_controller_a0a17b97437953a31dde203fba8c772ec} 
+void thegrill\+::\+Animation\+Controller\+::on\+\_\+tick (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{structthegrill_1_1_component_ab2f4198b8755856e77eb0181754b290b}{thegrill\+::\+Component}}.
+
+\Hypertarget{structthegrill_1_1_animation_controller_a019cc26dabc762b51607dfd5f74280d6}\index{thegrill::AnimationController@{thegrill::AnimationController}!set\_duration@{set\_duration}}
+\index{set\_duration@{set\_duration}!thegrill::AnimationController@{thegrill::AnimationController}}
+\doxysubsubsection{\texorpdfstring{set\_duration()}{set\_duration()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_animation_controller_a019cc26dabc762b51607dfd5f74280d6} 
+void thegrill\+::\+Animation\+Controller\+::set\+\_\+duration (\begin{DoxyParamCaption}\item[{float}]{\+\_\+duration}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structthegrill_1_1_animation_controller_aed66790be263ec794b701f378633a4fd}\index{thegrill::AnimationController@{thegrill::AnimationController}!set\_looping@{set\_looping}}
+\index{set\_looping@{set\_looping}!thegrill::AnimationController@{thegrill::AnimationController}}
+\doxysubsubsection{\texorpdfstring{set\_looping()}{set\_looping()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_animation_controller_aed66790be263ec794b701f378633a4fd} 
+void thegrill\+::\+Animation\+Controller\+::set\+\_\+looping (\begin{DoxyParamCaption}\item[{bool}]{\+\_\+looping}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structthegrill_1_1_animation_controller_a8c16ec8887c1d0851ae8e238ee5875d7}\index{thegrill::AnimationController@{thegrill::AnimationController}!set\_track@{set\_track}}
+\index{set\_track@{set\_track}!thegrill::AnimationController@{thegrill::AnimationController}}
+\doxysubsubsection{\texorpdfstring{set\_track()}{set\_track()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_animation_controller_a8c16ec8887c1d0851ae8e238ee5875d7} 
+void thegrill\+::\+Animation\+Controller\+::set\+\_\+track (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_animation_track}{Animation\+Track}} $>$}]{\+\_\+track}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/thegrill/\mbox{\hyperlink{_animation_controller_8h}{Animation\+Controller.\+h}}\item 
+src/thegrill/\mbox{\hyperlink{_animation_controller_8cpp}{Animation\+Controller.\+cpp}}\end{DoxyCompactItemize}

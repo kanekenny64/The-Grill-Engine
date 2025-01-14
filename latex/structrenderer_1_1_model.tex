@@ -1,0 +1,99 @@
+\doxysection{renderer\+::Model Struct Reference}
+\hypertarget{structrenderer_1_1_model}{}\label{structrenderer_1_1_model}\index{renderer::Model@{renderer::Model}}
+
+
+{\ttfamily \#include $<$Model.\+h$>$}
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structrenderer_1_1_model_1_1_face}{Face}}
+\item 
+struct \mbox{\hyperlink{structrenderer_1_1_model_1_1_vertex}{Vertex}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structrenderer_1_1_model_a80846c43ca416ec2d3fda237f566757e}{Model}} ()
+\item 
+\mbox{\hyperlink{structrenderer_1_1_model_ad79a02767de43bb06b18d4ea34ee773a}{Model}} (const std\+::string \&\+\_\+path)
+\item 
+\mbox{\hyperlink{structrenderer_1_1_model_ab7088a9232fa0004f6dff8080f92d475}{Model}} (const \mbox{\hyperlink{structrenderer_1_1_model}{Model}} \&\+\_\+copy)
+\item 
+\mbox{\hyperlink{structrenderer_1_1_model}{Model}} \& \mbox{\hyperlink{structrenderer_1_1_model_a2efeb09e6fd05f38502f0e87494b8ff3}{operator=}} (const \mbox{\hyperlink{structrenderer_1_1_model}{Model}} \&\+\_\+assign)
+\item 
+virtual \mbox{\hyperlink{structrenderer_1_1_model_a51260a2458c67f5c3003d754883ef893}{\texorpdfstring{$\sim$}{\string~}\+Model}} ()
+\item 
+GLsizei \mbox{\hyperlink{structrenderer_1_1_model_a60788f37cf9eb1808297fc1d8a91a8ff}{vertex\+\_\+count}} () const
+\item 
+GLuint \mbox{\hyperlink{structrenderer_1_1_model_a85396948cc58a79ea3d46b438605d4e4}{vao\+\_\+id}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structrenderer_1_1_model_1_1_face}{Model\+::\+Face}} $>$ \& \mbox{\hyperlink{structrenderer_1_1_model_aeaa320ae23f6320577494c0d1cf812c7}{get\+Faces}} ()
+\item 
+void \mbox{\hyperlink{structrenderer_1_1_model_a10a2b23d497dcf3ffb7a03ae6ffc0901}{unload}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structrenderer_1_1_model_a80846c43ca416ec2d3fda237f566757e}\index{renderer::Model@{renderer::Model}!Model@{Model}}
+\index{Model@{Model}!renderer::Model@{renderer::Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{structrenderer_1_1_model_a80846c43ca416ec2d3fda237f566757e} 
+renderer\+::\+Model\+::\+Model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structrenderer_1_1_model_ad79a02767de43bb06b18d4ea34ee773a}\index{renderer::Model@{renderer::Model}!Model@{Model}}
+\index{Model@{Model}!renderer::Model@{renderer::Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{structrenderer_1_1_model_ad79a02767de43bb06b18d4ea34ee773a} 
+renderer\+::\+Model\+::\+Model (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{\+\_\+path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structrenderer_1_1_model_ab7088a9232fa0004f6dff8080f92d475}\index{renderer::Model@{renderer::Model}!Model@{Model}}
+\index{Model@{Model}!renderer::Model@{renderer::Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{structrenderer_1_1_model_ab7088a9232fa0004f6dff8080f92d475} 
+renderer\+::\+Model\+::\+Model (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structrenderer_1_1_model}{Model}} \&}]{\+\_\+copy}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structrenderer_1_1_model_a51260a2458c67f5c3003d754883ef893}\index{renderer::Model@{renderer::Model}!````~Model@{\texorpdfstring{$\sim$}{\string~}Model}}
+\index{````~Model@{\texorpdfstring{$\sim$}{\string~}Model}!renderer::Model@{renderer::Model}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Model()}{\string~Model()}}
+{\footnotesize\ttfamily \label{structrenderer_1_1_model_a51260a2458c67f5c3003d754883ef893} 
+renderer\+::\+Model\+::\texorpdfstring{$\sim$}{\string~}\+Model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structrenderer_1_1_model_aeaa320ae23f6320577494c0d1cf812c7}\index{renderer::Model@{renderer::Model}!getFaces@{getFaces}}
+\index{getFaces@{getFaces}!renderer::Model@{renderer::Model}}
+\doxysubsubsection{\texorpdfstring{getFaces()}{getFaces()}}
+{\footnotesize\ttfamily \label{structrenderer_1_1_model_aeaa320ae23f6320577494c0d1cf812c7} 
+std\+::vector$<$ \mbox{\hyperlink{structrenderer_1_1_model_1_1_face}{Model\+::\+Face}} $>$ \& renderer\+::\+Model\+::get\+Faces (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structrenderer_1_1_model_a2efeb09e6fd05f38502f0e87494b8ff3}\index{renderer::Model@{renderer::Model}!operator=@{operator=}}
+\index{operator=@{operator=}!renderer::Model@{renderer::Model}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{structrenderer_1_1_model_a2efeb09e6fd05f38502f0e87494b8ff3} 
+\mbox{\hyperlink{structrenderer_1_1_model}{Model}} \& renderer\+::\+Model\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structrenderer_1_1_model}{Model}} \&}]{\+\_\+assign}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structrenderer_1_1_model_a10a2b23d497dcf3ffb7a03ae6ffc0901}\index{renderer::Model@{renderer::Model}!unload@{unload}}
+\index{unload@{unload}!renderer::Model@{renderer::Model}}
+\doxysubsubsection{\texorpdfstring{unload()}{unload()}}
+{\footnotesize\ttfamily \label{structrenderer_1_1_model_a10a2b23d497dcf3ffb7a03ae6ffc0901} 
+void renderer\+::\+Model\+::unload (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structrenderer_1_1_model_a85396948cc58a79ea3d46b438605d4e4}\index{renderer::Model@{renderer::Model}!vao\_id@{vao\_id}}
+\index{vao\_id@{vao\_id}!renderer::Model@{renderer::Model}}
+\doxysubsubsection{\texorpdfstring{vao\_id()}{vao\_id()}}
+{\footnotesize\ttfamily \label{structrenderer_1_1_model_a85396948cc58a79ea3d46b438605d4e4} 
+GLuint renderer\+::\+Model\+::vao\+\_\+id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structrenderer_1_1_model_a60788f37cf9eb1808297fc1d8a91a8ff}\index{renderer::Model@{renderer::Model}!vertex\_count@{vertex\_count}}
+\index{vertex\_count@{vertex\_count}!renderer::Model@{renderer::Model}}
+\doxysubsubsection{\texorpdfstring{vertex\_count()}{vertex\_count()}}
+{\footnotesize\ttfamily \label{structrenderer_1_1_model_a60788f37cf9eb1808297fc1d8a91a8ff} 
+GLsizei renderer\+::\+Model\+::vertex\+\_\+count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/renderer/\mbox{\hyperlink{renderer_2_model_8h}{Model.\+h}}\end{DoxyCompactItemize}

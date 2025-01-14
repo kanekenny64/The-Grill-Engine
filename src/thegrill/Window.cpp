@@ -34,8 +34,15 @@ namespace thegrill {
 		SDL_Quit;
 	}
 
+	void Window::Update()
+	{
+		
+		glViewport(0, 0, m_width, m_height);
+	}
+
 	void Window::getDimensions(int& _w, int& _h)
 	{
+		SDL_GetWindowSize(m_raw, &m_width, &m_height);
 		_w = m_width;
 		_h = m_height;
 	}

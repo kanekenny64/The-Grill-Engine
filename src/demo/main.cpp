@@ -12,7 +12,7 @@ struct Player : Component {
 
 	void on_gui() {
 
-		get_gui()->button(get_core()->get_resources()->load<thegrill::Texture>("textures/CookedChickenBreastAlbedo")->get_texture(), 20, 20, 400, 400);
+		get_gui()->button(get_core()->get_resources()->load<thegrill::Texture>("textures/CookedChickenBreastAlbedo"), 20, 20, 400, 400);
 	}
 
 	void on_destroy() {
@@ -30,7 +30,7 @@ private:
 			std::cout << "W is pressed" << std::endl;
 			
 			vec3 pos = get_entity()->get_transform()->get_position();
-			pos.z += 0.1f;
+			pos.z += 0.5f;
 			get_entity()->set_position(pos);
 			
 		}
@@ -38,7 +38,7 @@ private:
 			//move back
 			std::cout << "S is pressed" << std::endl;
 			vec3 pos = get_entity()->get_transform()->get_position();
-			pos.z -= 0.1f;
+			pos.z -= 0.5f;
 			get_entity()->set_position(pos);
 		}
 
@@ -46,7 +46,7 @@ private:
 			//move back
 			std::cout << "S is pressed" << std::endl;
 			vec3 pos = get_entity()->get_transform()->get_position();
-			pos.x += 0.1f;
+			pos.x += 0.5f;
 			get_entity()->set_position(pos);
 		}
 
@@ -54,7 +54,7 @@ private:
 			//move left
 			std::cout << "A is pressed" << std::endl;
 			vec3 pos = get_entity()->get_transform()->get_position();
-			pos.x -= 0.1f;
+			pos.x -= 0.5f;
 			get_entity()->set_position(pos);
 		}
 
@@ -80,7 +80,7 @@ private:
 
 		if (get_keyboard()->isKeyDown(KEY_A)) {
 			//move left
-			get_entity()->destroy();
+			//get_entity()->destroy();
 			std::cout << "A is pressed" << std::endl;
 			vec3 pos = get_entity()->get_transform()->get_position();
 			pos.x -= 0.1f;
@@ -104,6 +104,8 @@ int main()
 		std::shared_ptr<Texture> tex = resources->load<Texture>("textures/CookedChickenBreastAlbedo");
 		std::shared_ptr<Model> model = resources->load<Model>("models/CookedChickenBreast");
 		std::shared_ptr<Audio> sound = resources->load<Audio>("audio/blue-blood-ogg-67848");
+		std::shared_ptr<Model> map = resources->load<Model>("models/re_hall_baked");
+		std::shared_ptr<Texture> maptex = resources->load<Texture>("textures/re_hall_diffuse");
 
 		std::shared_ptr<Entity> entity = core->add_entity();
 		entity->add_component<Player>();
@@ -117,8 +119,8 @@ int main()
 		//Ssource->play();
 
 
-		r->set_texture(tex->get_texture());
-		r->set_model(model->get_model());
+		r->set_texture(tex);
+		r->set_model(model);
 
 		entity->set_position(vec3(0, 0, 5));
 
@@ -129,18 +131,23 @@ int main()
 		std::shared_ptr<RigidBody> rigidBody2 = entity2->add_component<RigidBody>();
 		std::shared_ptr<AnimationTrack> AnimTrack1 = entity2->add_component<AnimationTrack>();
 		std::shared_ptr<AnimationController> AnimController1 = entity2->add_component<AnimationController>();
-		AnimTrack1->create("models/guppy40001", 48);
+		AnimTrack1->create("models/guppy40001", 8);
 		AnimController1->set_track(AnimTrack1);
 		AnimController1->set_duration(10.5f);
-		r2->set_texture(tex->get_texture());
-		r2->set_model(model->get_model());
+		r2->set_texture(tex);
+		r2->set_model(model);
 
 		entity2->add_component<Child>();
 
 		entity2->set_position(vec3(5, 0, -15));;
 
-		//entity2->get_transform()->set_parent(entity);
+		entity2->get_transform()->set_parent(entity);
 
+		std::shared_ptr<Entity> map1 = core->add_entity();
+		std::shared_ptr<ModelRenderer> r3 = map1->add_component<ModelRenderer>();
+		r3->set_texture(maptex);
+		r3->set_model(map);
+		std::shared_ptr<MeshCollider> mapcollider = map1->add_component<MeshCollider>();
 	}
 	core->run();
 

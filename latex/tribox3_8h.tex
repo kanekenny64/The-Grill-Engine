@@ -1,0 +1,242 @@
+\doxysection{src/thegrill/tribox3.h File Reference}
+\hypertarget{tribox3_8h}{}\label{tribox3_8h}\index{src/thegrill/tribox3.h@{src/thegrill/tribox3.h}}
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{tribox3_8h_a207fd5507206d307cd63f95374fcd00d}{X}}~0
+\item 
+\#define \mbox{\hyperlink{tribox3_8h_a798e4073d613ca5ba9618e1b3253df14}{Y}}~1
+\item 
+\#define \mbox{\hyperlink{tribox3_8h_a51591cf51bdd6c1f6015532422e7770e}{Z}}~2
+\item 
+\#define \mbox{\hyperlink{tribox3_8h_a275587ce22080c4c09deb818b1ce3564}{CROSS}}(dest,  v1,  v2)
+\item 
+\#define \mbox{\hyperlink{tribox3_8h_a7942047af87f6f42fe6880a4c7c842ae}{DOT}}(v1,  v2)
+\item 
+\#define \mbox{\hyperlink{tribox3_8h_a241dda3a0a43611f1187bdfebc3391d7}{SUB}}(dest,  v1,  v2)
+\item 
+\#define \mbox{\hyperlink{tribox3_8h_a27cf54160e51334c0f90ede5b9a30173}{FINDMINMAX}}(x0,  x1,  x2,  min,  max)
+\item 
+\#define \mbox{\hyperlink{tribox3_8h_aa455fd95e25e2df0f1cf93a2de985fd8}{AXISTEST\+\_\+\+X01}}(a,  b,  fa,  fb)
+\item 
+\#define \mbox{\hyperlink{tribox3_8h_a7f81d4a738f6ce0916cda8d449f1e757}{AXISTEST\+\_\+\+X2}}(a,  b,  fa,  fb)
+\item 
+\#define \mbox{\hyperlink{tribox3_8h_a2409651c6dcde598145e0434cc80f8cb}{AXISTEST\+\_\+\+Y02}}(a,  b,  fa,  fb)
+\item 
+\#define \mbox{\hyperlink{tribox3_8h_a77a3cf69f7cdf4e359d10a50a0498a75}{AXISTEST\+\_\+\+Y1}}(a,  b,  fa,  fb)
+\item 
+\#define \mbox{\hyperlink{tribox3_8h_a2f2534d1e427de530b66531a42a7af82}{AXISTEST\+\_\+\+Z12}}(a,  b,  fa,  fb)
+\item 
+\#define \mbox{\hyperlink{tribox3_8h_ae7c0544b51ee58f7b8891c5906d554ce}{AXISTEST\+\_\+\+Z0}}(a,  b,  fa,  fb)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{tribox3_8h_ad73e2347c99ef1bda7e767f069382087}{plane\+Box\+Overlap}} (float normal\mbox{[}3\mbox{]}, float vert\mbox{[}3\mbox{]}, float maxbox\mbox{[}3\mbox{]})
+\item 
+int \mbox{\hyperlink{tribox3_8h_a1d05ae6a2797f7196e4d253976e1c3ab}{tri\+Box\+Overlap}} (float boxcenter\mbox{[}3\mbox{]}, float boxhalfsize\mbox{[}3\mbox{]}, float triverts\mbox{[}3\mbox{]}\mbox{[}3\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{tribox3_8h_aa455fd95e25e2df0f1cf93a2de985fd8}\index{tribox3.h@{tribox3.h}!AXISTEST\_X01@{AXISTEST\_X01}}
+\index{AXISTEST\_X01@{AXISTEST\_X01}!tribox3.h@{tribox3.h}}
+\doxysubsubsection{\texorpdfstring{AXISTEST\_X01}{AXISTEST\_X01}}
+{\footnotesize\ttfamily \label{tribox3_8h_aa455fd95e25e2df0f1cf93a2de985fd8} 
+\#define AXISTEST\+\_\+\+X01(\begin{DoxyParamCaption}\item[{}]{a}{, }\item[{}]{b}{, }\item[{}]{fa}{, }\item[{}]{fb}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{float}\ p0\ =\ a\ *\ v0[\mbox{\hyperlink{tribox3_8h_a798e4073d613ca5ba9618e1b3253df14}{Y}}]\ -\/\ b\ *\ v0[\mbox{\hyperlink{tribox3_8h_a51591cf51bdd6c1f6015532422e7770e}{Z}}];\ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{float}\ p2\ =\ a\ *\ v2[\mbox{\hyperlink{tribox3_8h_a798e4073d613ca5ba9618e1b3253df14}{Y}}]\ -\/\ b\ *\ v2[\mbox{\hyperlink{tribox3_8h_a51591cf51bdd6c1f6015532422e7770e}{Z}}];\ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{float}\ min,\ max;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ if\ (p0\ <\ p2)\ \{\ min\ =\ p0;\ max\ =\ p2;\ \}\ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \{\ min\ =\ p2;\ max\ =\ p0;\ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{float}\ rad\ =\ fa\ *\ boxhalfsize[\mbox{\hyperlink{tribox3_8h_a798e4073d613ca5ba9618e1b3253df14}{Y}}]\ +\ fb\ *\ boxhalfsize[\mbox{\hyperlink{tribox3_8h_a51591cf51bdd6c1f6015532422e7770e}{Z}}];\ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ if\ (min\ >\ rad\ ||\ max\ <\ -\/rad)\ \textcolor{keywordflow}{return}\ 0;\ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{tribox3_8h_a7f81d4a738f6ce0916cda8d449f1e757}\index{tribox3.h@{tribox3.h}!AXISTEST\_X2@{AXISTEST\_X2}}
+\index{AXISTEST\_X2@{AXISTEST\_X2}!tribox3.h@{tribox3.h}}
+\doxysubsubsection{\texorpdfstring{AXISTEST\_X2}{AXISTEST\_X2}}
+{\footnotesize\ttfamily \label{tribox3_8h_a7f81d4a738f6ce0916cda8d449f1e757} 
+\#define AXISTEST\+\_\+\+X2(\begin{DoxyParamCaption}\item[{}]{a}{, }\item[{}]{b}{, }\item[{}]{fa}{, }\item[{}]{fb}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{float}\ p0\ =\ a\ *\ v0[\mbox{\hyperlink{tribox3_8h_a798e4073d613ca5ba9618e1b3253df14}{Y}}]\ -\/\ b\ *\ v0[\mbox{\hyperlink{tribox3_8h_a51591cf51bdd6c1f6015532422e7770e}{Z}}];\ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{float}\ p1\ =\ a\ *\ v1[\mbox{\hyperlink{tribox3_8h_a798e4073d613ca5ba9618e1b3253df14}{Y}}]\ -\/\ b\ *\ v1[\mbox{\hyperlink{tribox3_8h_a51591cf51bdd6c1f6015532422e7770e}{Z}}];\ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{float}\ min,\ max;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ if\ (p0\ <\ p1)\ \{\ min\ =\ p0;\ max\ =\ p1;\ \}\ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \{\ min\ =\ p1;\ max\ =\ p0;\ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{float}\ rad\ =\ fa\ *\ boxhalfsize[\mbox{\hyperlink{tribox3_8h_a798e4073d613ca5ba9618e1b3253df14}{Y}}]\ +\ fb\ *\ boxhalfsize[\mbox{\hyperlink{tribox3_8h_a51591cf51bdd6c1f6015532422e7770e}{Z}}];\ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ if\ (min\ >\ rad\ ||\ max\ <\ -\/rad)\ \textcolor{keywordflow}{return}\ 0;\ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{tribox3_8h_a2409651c6dcde598145e0434cc80f8cb}\index{tribox3.h@{tribox3.h}!AXISTEST\_Y02@{AXISTEST\_Y02}}
+\index{AXISTEST\_Y02@{AXISTEST\_Y02}!tribox3.h@{tribox3.h}}
+\doxysubsubsection{\texorpdfstring{AXISTEST\_Y02}{AXISTEST\_Y02}}
+{\footnotesize\ttfamily \label{tribox3_8h_a2409651c6dcde598145e0434cc80f8cb} 
+\#define AXISTEST\+\_\+\+Y02(\begin{DoxyParamCaption}\item[{}]{a}{, }\item[{}]{b}{, }\item[{}]{fa}{, }\item[{}]{fb}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{float}\ p0\ =\ -\/a\ *\ v0[\mbox{\hyperlink{tribox3_8h_a207fd5507206d307cd63f95374fcd00d}{X}}]\ +\ b\ *\ v0[\mbox{\hyperlink{tribox3_8h_a51591cf51bdd6c1f6015532422e7770e}{Z}}];\ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{float}\ p2\ =\ -\/a\ *\ v2[\mbox{\hyperlink{tribox3_8h_a207fd5507206d307cd63f95374fcd00d}{X}}]\ +\ b\ *\ v2[\mbox{\hyperlink{tribox3_8h_a51591cf51bdd6c1f6015532422e7770e}{Z}}];\ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{float}\ min,\ max;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ if\ (p0\ <\ p2)\ \{\ min\ =\ p0;\ max\ =\ p2;\ \}\ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \{\ min\ =\ p2;\ max\ =\ p0;\ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{float}\ rad\ =\ fa\ *\ boxhalfsize[\mbox{\hyperlink{tribox3_8h_a207fd5507206d307cd63f95374fcd00d}{X}}]\ +\ fb\ *\ boxhalfsize[\mbox{\hyperlink{tribox3_8h_a51591cf51bdd6c1f6015532422e7770e}{Z}}];\ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ if\ (min\ >\ rad\ ||\ max\ <\ -\/rad)\ \textcolor{keywordflow}{return}\ 0;\ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{tribox3_8h_a77a3cf69f7cdf4e359d10a50a0498a75}\index{tribox3.h@{tribox3.h}!AXISTEST\_Y1@{AXISTEST\_Y1}}
+\index{AXISTEST\_Y1@{AXISTEST\_Y1}!tribox3.h@{tribox3.h}}
+\doxysubsubsection{\texorpdfstring{AXISTEST\_Y1}{AXISTEST\_Y1}}
+{\footnotesize\ttfamily \label{tribox3_8h_a77a3cf69f7cdf4e359d10a50a0498a75} 
+\#define AXISTEST\+\_\+\+Y1(\begin{DoxyParamCaption}\item[{}]{a}{, }\item[{}]{b}{, }\item[{}]{fa}{, }\item[{}]{fb}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{float}\ p0\ =\ -\/a\ *\ v0[\mbox{\hyperlink{tribox3_8h_a207fd5507206d307cd63f95374fcd00d}{X}}]\ +\ b\ *\ v0[\mbox{\hyperlink{tribox3_8h_a51591cf51bdd6c1f6015532422e7770e}{Z}}];\ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{float}\ p1\ =\ -\/a\ *\ v1[\mbox{\hyperlink{tribox3_8h_a207fd5507206d307cd63f95374fcd00d}{X}}]\ +\ b\ *\ v1[\mbox{\hyperlink{tribox3_8h_a51591cf51bdd6c1f6015532422e7770e}{Z}}];\ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{float}\ min,\ max;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ if\ (p0\ <\ p1)\ \{\ min\ =\ p0;\ max\ =\ p1;\ \}\ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \{\ min\ =\ p1;\ max\ =\ p0;\ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{float}\ rad\ =\ fa\ *\ boxhalfsize[\mbox{\hyperlink{tribox3_8h_a207fd5507206d307cd63f95374fcd00d}{X}}]\ +\ fb\ *\ boxhalfsize[\mbox{\hyperlink{tribox3_8h_a51591cf51bdd6c1f6015532422e7770e}{Z}}];\ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ if\ (min\ >\ rad\ ||\ max\ <\ -\/rad)\ \textcolor{keywordflow}{return}\ 0;\ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{tribox3_8h_ae7c0544b51ee58f7b8891c5906d554ce}\index{tribox3.h@{tribox3.h}!AXISTEST\_Z0@{AXISTEST\_Z0}}
+\index{AXISTEST\_Z0@{AXISTEST\_Z0}!tribox3.h@{tribox3.h}}
+\doxysubsubsection{\texorpdfstring{AXISTEST\_Z0}{AXISTEST\_Z0}}
+{\footnotesize\ttfamily \label{tribox3_8h_ae7c0544b51ee58f7b8891c5906d554ce} 
+\#define AXISTEST\+\_\+\+Z0(\begin{DoxyParamCaption}\item[{}]{a}{, }\item[{}]{b}{, }\item[{}]{fa}{, }\item[{}]{fb}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{float}\ p0\ =\ a\ *\ v0[\mbox{\hyperlink{tribox3_8h_a207fd5507206d307cd63f95374fcd00d}{X}}]\ -\/\ b\ *\ v0[\mbox{\hyperlink{tribox3_8h_a798e4073d613ca5ba9618e1b3253df14}{Y}}];\ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{float}\ p1\ =\ a\ *\ v1[\mbox{\hyperlink{tribox3_8h_a207fd5507206d307cd63f95374fcd00d}{X}}]\ -\/\ b\ *\ v1[\mbox{\hyperlink{tribox3_8h_a798e4073d613ca5ba9618e1b3253df14}{Y}}];\ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{float}\ min,\ max;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ if\ (p0\ <\ p1)\ \{\ min\ =\ p0;\ max\ =\ p1;\ \}\ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \{\ min\ =\ p1;\ max\ =\ p0;\ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{float}\ rad\ =\ fa\ *\ boxhalfsize[\mbox{\hyperlink{tribox3_8h_a207fd5507206d307cd63f95374fcd00d}{X}}]\ +\ fb\ *\ boxhalfsize[\mbox{\hyperlink{tribox3_8h_a798e4073d613ca5ba9618e1b3253df14}{Y}}];\ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ if\ (min\ >\ rad\ ||\ max\ <\ -\/rad)\ \textcolor{keywordflow}{return}\ 0;\ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{tribox3_8h_a2f2534d1e427de530b66531a42a7af82}\index{tribox3.h@{tribox3.h}!AXISTEST\_Z12@{AXISTEST\_Z12}}
+\index{AXISTEST\_Z12@{AXISTEST\_Z12}!tribox3.h@{tribox3.h}}
+\doxysubsubsection{\texorpdfstring{AXISTEST\_Z12}{AXISTEST\_Z12}}
+{\footnotesize\ttfamily \label{tribox3_8h_a2f2534d1e427de530b66531a42a7af82} 
+\#define AXISTEST\+\_\+\+Z12(\begin{DoxyParamCaption}\item[{}]{a}{, }\item[{}]{b}{, }\item[{}]{fa}{, }\item[{}]{fb}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{float}\ p1\ =\ a\ *\ v1[\mbox{\hyperlink{tribox3_8h_a207fd5507206d307cd63f95374fcd00d}{X}}]\ -\/\ b\ *\ v1[\mbox{\hyperlink{tribox3_8h_a798e4073d613ca5ba9618e1b3253df14}{Y}}];\ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{float}\ p2\ =\ a\ *\ v2[\mbox{\hyperlink{tribox3_8h_a207fd5507206d307cd63f95374fcd00d}{X}}]\ -\/\ b\ *\ v2[\mbox{\hyperlink{tribox3_8h_a798e4073d613ca5ba9618e1b3253df14}{Y}}];\ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{float}\ min,\ max;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ if\ (p2\ <\ p1)\ \{\ min\ =\ p2;\ max\ =\ p1;\ \}\ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{else}\ \{\ min\ =\ p1;\ max\ =\ p2;\ \}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{float}\ rad\ =\ fa\ *\ boxhalfsize[\mbox{\hyperlink{tribox3_8h_a207fd5507206d307cd63f95374fcd00d}{X}}]\ +\ fb\ *\ boxhalfsize[\mbox{\hyperlink{tribox3_8h_a798e4073d613ca5ba9618e1b3253df14}{Y}}];\ \ \ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ if\ (min\ >\ rad\ ||\ max\ <\ -\/rad)\ \textcolor{keywordflow}{return}\ 0;\ \ \ \ \ \ \ \(\backslash\)}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{tribox3_8h_a275587ce22080c4c09deb818b1ce3564}\index{tribox3.h@{tribox3.h}!CROSS@{CROSS}}
+\index{CROSS@{CROSS}!tribox3.h@{tribox3.h}}
+\doxysubsubsection{\texorpdfstring{CROSS}{CROSS}}
+{\footnotesize\ttfamily \label{tribox3_8h_a275587ce22080c4c09deb818b1ce3564} 
+\#define CROSS(\begin{DoxyParamCaption}\item[{}]{dest}{, }\item[{}]{v1}{, }\item[{}]{v2}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ dest[0]\ =\ v1[1]\ *\ v2[2]\ -\/\ v1[2]\ *\ v2[1];\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ dest[1]\ =\ v1[2]\ *\ v2[0]\ -\/\ v1[0]\ *\ v2[2];\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ dest[2]\ =\ v1[0]\ *\ v2[1]\ -\/\ v1[1]\ *\ v2[0];}
+
+\end{DoxyCode}
+\Hypertarget{tribox3_8h_a7942047af87f6f42fe6880a4c7c842ae}\index{tribox3.h@{tribox3.h}!DOT@{DOT}}
+\index{DOT@{DOT}!tribox3.h@{tribox3.h}}
+\doxysubsubsection{\texorpdfstring{DOT}{DOT}}
+{\footnotesize\ttfamily \label{tribox3_8h_a7942047af87f6f42fe6880a4c7c842ae} 
+\#define DOT(\begin{DoxyParamCaption}\item[{}]{v1}{, }\item[{}]{v2}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{(v1[0]\ *\ v2[0]\ +\ v1[1]\ *\ v2[1]\ +\ v1[2]\ *\ v2[2])}
+
+\end{DoxyCode}
+\Hypertarget{tribox3_8h_a27cf54160e51334c0f90ede5b9a30173}\index{tribox3.h@{tribox3.h}!FINDMINMAX@{FINDMINMAX}}
+\index{FINDMINMAX@{FINDMINMAX}!tribox3.h@{tribox3.h}}
+\doxysubsubsection{\texorpdfstring{FINDMINMAX}{FINDMINMAX}}
+{\footnotesize\ttfamily \label{tribox3_8h_a27cf54160e51334c0f90ede5b9a30173} 
+\#define FINDMINMAX(\begin{DoxyParamCaption}\item[{}]{x0}{, }\item[{}]{x1}{, }\item[{}]{x2}{, }\item[{}]{min}{, }\item[{}]{max}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ min\ =\ max\ =\ x0;\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ if\ (x1\ <\ min)\ min\ =\ x1;\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ if\ (x1\ >\ max)\ max\ =\ x1;\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ if\ (x2\ <\ min)\ min\ =\ x2;\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ if\ (x2\ >\ max)\ max\ =\ x2;}
+
+\end{DoxyCode}
+\Hypertarget{tribox3_8h_a241dda3a0a43611f1187bdfebc3391d7}\index{tribox3.h@{tribox3.h}!SUB@{SUB}}
+\index{SUB@{SUB}!tribox3.h@{tribox3.h}}
+\doxysubsubsection{\texorpdfstring{SUB}{SUB}}
+{\footnotesize\ttfamily \label{tribox3_8h_a241dda3a0a43611f1187bdfebc3391d7} 
+\#define SUB(\begin{DoxyParamCaption}\item[{}]{dest}{, }\item[{}]{v1}{, }\item[{}]{v2}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ dest[0]\ =\ v1[0]\ -\/\ v2[0];\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ dest[1]\ =\ v1[1]\ -\/\ v2[1];\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ dest[2]\ =\ v1[2]\ -\/\ v2[2];}
+
+\end{DoxyCode}
+\Hypertarget{tribox3_8h_a207fd5507206d307cd63f95374fcd00d}\index{tribox3.h@{tribox3.h}!X@{X}}
+\index{X@{X}!tribox3.h@{tribox3.h}}
+\doxysubsubsection{\texorpdfstring{X}{X}}
+{\footnotesize\ttfamily \label{tribox3_8h_a207fd5507206d307cd63f95374fcd00d} 
+\#define X~0}
+
+\Hypertarget{tribox3_8h_a798e4073d613ca5ba9618e1b3253df14}\index{tribox3.h@{tribox3.h}!Y@{Y}}
+\index{Y@{Y}!tribox3.h@{tribox3.h}}
+\doxysubsubsection{\texorpdfstring{Y}{Y}}
+{\footnotesize\ttfamily \label{tribox3_8h_a798e4073d613ca5ba9618e1b3253df14} 
+\#define Y~1}
+
+\Hypertarget{tribox3_8h_a51591cf51bdd6c1f6015532422e7770e}\index{tribox3.h@{tribox3.h}!Z@{Z}}
+\index{Z@{Z}!tribox3.h@{tribox3.h}}
+\doxysubsubsection{\texorpdfstring{Z}{Z}}
+{\footnotesize\ttfamily \label{tribox3_8h_a51591cf51bdd6c1f6015532422e7770e} 
+\#define Z~2}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{tribox3_8h_ad73e2347c99ef1bda7e767f069382087}\index{tribox3.h@{tribox3.h}!planeBoxOverlap@{planeBoxOverlap}}
+\index{planeBoxOverlap@{planeBoxOverlap}!tribox3.h@{tribox3.h}}
+\doxysubsubsection{\texorpdfstring{planeBoxOverlap()}{planeBoxOverlap()}}
+{\footnotesize\ttfamily \label{tribox3_8h_ad73e2347c99ef1bda7e767f069382087} 
+int plane\+Box\+Overlap (\begin{DoxyParamCaption}\item[{float}]{normal}{\mbox{[}3\mbox{]}, }\item[{float}]{vert}{\mbox{[}3\mbox{]}, }\item[{float}]{maxbox}{\mbox{[}3\mbox{]}}\end{DoxyParamCaption})}
+
+\Hypertarget{tribox3_8h_a1d05ae6a2797f7196e4d253976e1c3ab}\index{tribox3.h@{tribox3.h}!triBoxOverlap@{triBoxOverlap}}
+\index{triBoxOverlap@{triBoxOverlap}!tribox3.h@{tribox3.h}}
+\doxysubsubsection{\texorpdfstring{triBoxOverlap()}{triBoxOverlap()}}
+{\footnotesize\ttfamily \label{tribox3_8h_a1d05ae6a2797f7196e4d253976e1c3ab} 
+int tri\+Box\+Overlap (\begin{DoxyParamCaption}\item[{float}]{boxcenter}{\mbox{[}3\mbox{]}, }\item[{float}]{boxhalfsize}{\mbox{[}3\mbox{]}, }\item[{float}]{triverts}{\mbox{[}3\mbox{]}\mbox{[}3\mbox{]}}\end{DoxyParamCaption})}
+

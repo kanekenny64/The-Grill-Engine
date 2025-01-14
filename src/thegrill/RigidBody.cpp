@@ -57,7 +57,8 @@ namespace thegrill {
 
 				if ( thisMeshColliders[i]->colliding(*worldBoxColliders[j]))
 				{
-
+					std::cout << "Collision with mesh" << std::endl;
+					worldBoxColliders[j]->get_entity()->get_transform()->set_position(worldBoxColliders[j]->get_collisionResponse(*thisMeshColliders[i]));
 				}
 			}
 		}

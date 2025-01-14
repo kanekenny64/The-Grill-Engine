@@ -1,7 +1,11 @@
 #include "Component.h"
-#include "SoundSystem.h"
+
 
 namespace thegrill {
+
+	/**
+	 * @brief The Audio Listener is a component used to control where audio is heard from.
+	 */
 
 	struct AudioListener : public Component {
 		AudioListener();

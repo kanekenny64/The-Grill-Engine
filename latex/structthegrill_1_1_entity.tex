@@ -1,0 +1,102 @@
+\doxysection{thegrill\+::Entity Struct Reference}
+\hypertarget{structthegrill_1_1_entity}{}\label{structthegrill_1_1_entity}\index{thegrill::Entity@{thegrill::Entity}}
+
+
+{\ttfamily \#include $<$Entity.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T$>$ }\\std\+::shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{structthegrill_1_1_entity_a31ef5d9668aaf5e624f132395184819c}{add\+\_\+component}} ()
+\item 
+{\footnotesize template$<$typename T$>$ }\\std\+::shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{structthegrill_1_1_entity_a599b17c8234e05d335621e444e10b83c}{get\+\_\+component}} () const
+\item 
+{\footnotesize template$<$typename T$>$ }\\void \mbox{\hyperlink{structthegrill_1_1_entity_a0d61abf56f3729a63cbd180bcc2386f3}{get\+\_\+components}} (std\+::vector$<$ std\+::shared\+\_\+ptr$<$ T $>$ $>$ \&\+\_\+components) const
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_transform}{Transform}} $>$ \mbox{\hyperlink{structthegrill_1_1_entity_a92870fc2e8ce382d2717367608cf70b0}{get\+\_\+transform}} () const
+\item 
+void \mbox{\hyperlink{structthegrill_1_1_entity_ac3cba6c9588b671ef967141e47c1dfd0}{set\+\_\+position}} (glm\+::vec3 \+\_\+position)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_core}{Core}} $>$ \mbox{\hyperlink{structthegrill_1_1_entity_af82a7443a4db2494a9a9665183bffb4d}{get\+\_\+core}} () const
+\item 
+void \mbox{\hyperlink{structthegrill_1_1_entity_a746454f26a1d4fa0182ec0b918df04c1}{destroy}} ()
+\item 
+\mbox{\hyperlink{structthegrill_1_1_entity_a083955b7d9e901c1a62386d205dd942b}{\texorpdfstring{$\sim$}{\string~}\+Entity}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structthegrill_1_1_entity_a08ef93418f4fc32cef2ffb3b72f6bd26}{thegrill\+::\+Core}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{structthegrill_1_1_entity_a083955b7d9e901c1a62386d205dd942b}\index{thegrill::Entity@{thegrill::Entity}!````~Entity@{\texorpdfstring{$\sim$}{\string~}Entity}}
+\index{````~Entity@{\texorpdfstring{$\sim$}{\string~}Entity}!thegrill::Entity@{thegrill::Entity}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Entity()}{\string~Entity()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_entity_a083955b7d9e901c1a62386d205dd942b} 
+thegrill\+::\+Entity\+::\texorpdfstring{$\sim$}{\string~}\+Entity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structthegrill_1_1_entity_a31ef5d9668aaf5e624f132395184819c}\index{thegrill::Entity@{thegrill::Entity}!add\_component@{add\_component}}
+\index{add\_component@{add\_component}!thegrill::Entity@{thegrill::Entity}}
+\doxysubsubsection{\texorpdfstring{add\_component()}{add\_component()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_entity_a31ef5d9668aaf5e624f132395184819c} 
+template$<$typename T$>$ \\
+std\+::shared\+\_\+ptr$<$ T $>$ thegrill\+::\+Entity\+::add\+\_\+component (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structthegrill_1_1_entity_a746454f26a1d4fa0182ec0b918df04c1}\index{thegrill::Entity@{thegrill::Entity}!destroy@{destroy}}
+\index{destroy@{destroy}!thegrill::Entity@{thegrill::Entity}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_entity_a746454f26a1d4fa0182ec0b918df04c1} 
+void thegrill\+::\+Entity\+::destroy (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structthegrill_1_1_entity_a599b17c8234e05d335621e444e10b83c}\index{thegrill::Entity@{thegrill::Entity}!get\_component@{get\_component}}
+\index{get\_component@{get\_component}!thegrill::Entity@{thegrill::Entity}}
+\doxysubsubsection{\texorpdfstring{get\_component()}{get\_component()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_entity_a599b17c8234e05d335621e444e10b83c} 
+template$<$typename T$>$ \\
+std\+::shared\+\_\+ptr$<$ T $>$ thegrill\+::\+Entity\+::get\+\_\+component (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structthegrill_1_1_entity_a0d61abf56f3729a63cbd180bcc2386f3}\index{thegrill::Entity@{thegrill::Entity}!get\_components@{get\_components}}
+\index{get\_components@{get\_components}!thegrill::Entity@{thegrill::Entity}}
+\doxysubsubsection{\texorpdfstring{get\_components()}{get\_components()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_entity_a0d61abf56f3729a63cbd180bcc2386f3} 
+template$<$typename T$>$ \\
+void thegrill\+::\+Entity\+::get\+\_\+components (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ T $>$ $>$ \&}]{\+\_\+components}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{structthegrill_1_1_entity_af82a7443a4db2494a9a9665183bffb4d}\index{thegrill::Entity@{thegrill::Entity}!get\_core@{get\_core}}
+\index{get\_core@{get\_core}!thegrill::Entity@{thegrill::Entity}}
+\doxysubsubsection{\texorpdfstring{get\_core()}{get\_core()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_entity_af82a7443a4db2494a9a9665183bffb4d} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_core}{Core}} $>$ thegrill\+::\+Entity\+::get\+\_\+core (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{structthegrill_1_1_entity_a92870fc2e8ce382d2717367608cf70b0}\index{thegrill::Entity@{thegrill::Entity}!get\_transform@{get\_transform}}
+\index{get\_transform@{get\_transform}!thegrill::Entity@{thegrill::Entity}}
+\doxysubsubsection{\texorpdfstring{get\_transform()}{get\_transform()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_entity_a92870fc2e8ce382d2717367608cf70b0} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_transform}{Transform}} $>$ thegrill\+::\+Entity\+::get\+\_\+transform (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{structthegrill_1_1_entity_ac3cba6c9588b671ef967141e47c1dfd0}\index{thegrill::Entity@{thegrill::Entity}!set\_position@{set\_position}}
+\index{set\_position@{set\_position}!thegrill::Entity@{thegrill::Entity}}
+\doxysubsubsection{\texorpdfstring{set\_position()}{set\_position()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_entity_ac3cba6c9588b671ef967141e47c1dfd0} 
+void thegrill\+::\+Entity\+::set\+\_\+position (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+position}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{structthegrill_1_1_entity_a08ef93418f4fc32cef2ffb3b72f6bd26}\index{thegrill::Entity@{thegrill::Entity}!thegrill::Core@{thegrill::Core}}
+\index{thegrill::Core@{thegrill::Core}!thegrill::Entity@{thegrill::Entity}}
+\doxysubsubsection{\texorpdfstring{thegrill::Core}{thegrill::Core}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_entity_a08ef93418f4fc32cef2ffb3b72f6bd26} 
+friend struct \mbox{\hyperlink{structthegrill_1_1_core}{thegrill\+::\+Core}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/thegrill/\mbox{\hyperlink{_entity_8h}{Entity.\+h}}\item 
+src/thegrill/\mbox{\hyperlink{_entity_8cpp}{Entity.\+cpp}}\end{DoxyCompactItemize}

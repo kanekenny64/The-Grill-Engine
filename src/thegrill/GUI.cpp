@@ -5,6 +5,7 @@
 #include "Input.h"
 #include "Mouse.h"
 #include "Window.h"
+#include "Texture.h"
 
 namespace thegrill {
 
@@ -37,7 +38,7 @@ namespace thegrill {
 	{
 	}
 
-	void GUI::image(std::shared_ptr<renderer::Texture> _tex, float _x, float _y, float _w, float _h)
+	void GUI::image(std::shared_ptr<Texture> _tex, float _x, float _y, float _w, float _h)
 	{
 		glm::mat4 projection = glm::ortho(0.0f, 800.0f, 0.0f, 800.0f, 0.0f, 1.0f);
 		mShader->setUniform("u_Projection", projection);
@@ -53,14 +54,14 @@ namespace thegrill {
 
 		mShader->setUniform("in_View", view);
 
-		mShader->setUniform("in_Texture", _tex, 1);
+		mShader->setUniform("in_Texture", _tex->get_texture(), 1);
 
 		mShader->draw(mShader->programId, mRect->vao_id(), mRect->vertex_count(), false);
 
 	}
 
 	//Return 0 for no click, 1 for hover, 2 for click
-	int GUI::button(std::shared_ptr<renderer::Texture> _tex, float _x, float _y, float _w, float _h)
+	int GUI::button(std::shared_ptr<Texture> _tex, float _x, float _y, float _w, float _h)
 	{
 
 		glm::vec2 mp = glm::vec2(m_core.lock()->input()->mouse()->getXPos(), m_core.lock()->input()->mouse()->getYPos());
@@ -86,7 +87,7 @@ namespace thegrill {
 
 		mShader->setUniform("in_View", view);
 
-		mShader->setUniform("in_Texture", _tex, 1);
+		mShader->setUniform("in_Texture", _tex->get_texture(), 1);
 
 		mShader->draw(mShader->programId, mRect->vao_id(), mRect->vertex_count(), false);
 

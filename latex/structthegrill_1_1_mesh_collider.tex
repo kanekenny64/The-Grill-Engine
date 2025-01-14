@@ -1,0 +1,95 @@
+\doxysection{thegrill\+::Mesh\+Collider Struct Reference}
+\hypertarget{structthegrill_1_1_mesh_collider}{}\label{structthegrill_1_1_mesh_collider}\index{thegrill::MeshCollider@{thegrill::MeshCollider}}
+
+
+{\ttfamily \#include $<$Mesh\+Collider.\+h$>$}
+
+Inheritance diagram for thegrill\+::Mesh\+Collider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{structthegrill_1_1_mesh_collider}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structthegrill_1_1_mesh_collider_a2d736ba950c846eb2d295b378a808285}{on\+\_\+initialize}} ()
+\item 
+void \mbox{\hyperlink{structthegrill_1_1_mesh_collider_aeead617b4c985e5e82f30ab66c0799f0}{on\+\_\+tick}} ()
+\item 
+bool \mbox{\hyperlink{structthegrill_1_1_mesh_collider_a22ac16897d328f3bd5357065dd4bcea2}{colliding}} (const \mbox{\hyperlink{structthegrill_1_1_box_collider}{Box\+Collider}} \&\+\_\+other)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structthegrill_1_1_component}{thegrill\+::\+Component}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{structthegrill_1_1_component_a79a3c7b6cf9b91e1930335a4e40f3bcd}{on\+\_\+render}} ()
+\item 
+virtual void \mbox{\hyperlink{structthegrill_1_1_component_a413f6325ab19b1f736491631ae0b8b23}{on\+\_\+gui}} ()
+\item 
+virtual void \mbox{\hyperlink{structthegrill_1_1_component_a46ad55d544999dc701a971718fe62763}{on\+\_\+destroy}} ()
+\item 
+void \mbox{\hyperlink{structthegrill_1_1_component_a57bcf963c4117fcb7186b88b129c03c0}{tick}} ()
+\item 
+void \mbox{\hyperlink{structthegrill_1_1_component_a9c633af8c14b3b472bd4f2b7b9e1b947}{render}} ()
+\item 
+void \mbox{\hyperlink{structthegrill_1_1_component_a607b69880281b63ebce2692898fd04a2}{gui}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_entity}{Entity}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_acc754d2dc8e9915ebf5b5eb666409d51}{get\+\_\+entity}} () const
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_keyboard}{Keyboard}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a572dc42b03bbe17422671f03b334721f}{get\+\_\+keyboard}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_core}{Core}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a9336bcaea73cfe54b76200b54d454223}{get\+\_\+core}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_transform}{Transform}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a079f00434c0077e4356f45f2bdd92c17}{get\+\_\+transform}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a4b0f91fe01d2f5dbfe7a2da769cf4e53}{Component\+::get\+\_\+gui}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structrenderer_1_1_model_1_1_face}{renderer\+::\+Model\+::\+Face}} $>$ \mbox{\hyperlink{structthegrill_1_1_mesh_collider_a28fe5c0bba10cf6650f8ca10e03620a1}{m\+\_\+faces}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{structthegrill_1_1_mesh_collider_a22ac16897d328f3bd5357065dd4bcea2}\index{thegrill::MeshCollider@{thegrill::MeshCollider}!colliding@{colliding}}
+\index{colliding@{colliding}!thegrill::MeshCollider@{thegrill::MeshCollider}}
+\doxysubsubsection{\texorpdfstring{colliding()}{colliding()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_mesh_collider_a22ac16897d328f3bd5357065dd4bcea2} 
+bool thegrill\+::\+Mesh\+Collider\+::colliding (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structthegrill_1_1_box_collider}{Box\+Collider}} \&}]{\+\_\+other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structthegrill_1_1_mesh_collider_a2d736ba950c846eb2d295b378a808285}\index{thegrill::MeshCollider@{thegrill::MeshCollider}!on\_initialize@{on\_initialize}}
+\index{on\_initialize@{on\_initialize}!thegrill::MeshCollider@{thegrill::MeshCollider}}
+\doxysubsubsection{\texorpdfstring{on\_initialize()}{on\_initialize()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_mesh_collider_a2d736ba950c846eb2d295b378a808285} 
+void thegrill\+::\+Mesh\+Collider\+::on\+\_\+initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{structthegrill_1_1_component_a3bea71129c378ed65415b5b02ee890a6}{thegrill\+::\+Component}}.
+
+\Hypertarget{structthegrill_1_1_mesh_collider_aeead617b4c985e5e82f30ab66c0799f0}\index{thegrill::MeshCollider@{thegrill::MeshCollider}!on\_tick@{on\_tick}}
+\index{on\_tick@{on\_tick}!thegrill::MeshCollider@{thegrill::MeshCollider}}
+\doxysubsubsection{\texorpdfstring{on\_tick()}{on\_tick()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_mesh_collider_aeead617b4c985e5e82f30ab66c0799f0} 
+void thegrill\+::\+Mesh\+Collider\+::on\+\_\+tick (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{structthegrill_1_1_component_ab2f4198b8755856e77eb0181754b290b}{thegrill\+::\+Component}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structthegrill_1_1_mesh_collider_a28fe5c0bba10cf6650f8ca10e03620a1}\index{thegrill::MeshCollider@{thegrill::MeshCollider}!m\_faces@{m\_faces}}
+\index{m\_faces@{m\_faces}!thegrill::MeshCollider@{thegrill::MeshCollider}}
+\doxysubsubsection{\texorpdfstring{m\_faces}{m\_faces}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_mesh_collider_a28fe5c0bba10cf6650f8ca10e03620a1} 
+std\+::vector$<$\mbox{\hyperlink{structrenderer_1_1_model_1_1_face}{renderer\+::\+Model\+::\+Face}}$>$ thegrill\+::\+Mesh\+Collider\+::m\+\_\+faces}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/thegrill/\mbox{\hyperlink{_mesh_collider_8h}{Mesh\+Collider.\+h}}\item 
+src/thegrill/\mbox{\hyperlink{_mesh_collider_8cpp}{Mesh\+Collider.\+cpp}}\end{DoxyCompactItemize}
