@@ -76,8 +76,6 @@ private:
 	
 
 	void on_tick() {
-		//std::cout << "Position: " << get_entity()->get_transform()->get_position().x << ", " << get_entity()->get_transform()->get_position().y << ", " << get_entity()->get_transform()->get_position().z << std::endl;
-
 		if (get_keyboard()->isKeyDown(KEY_A)) {
 			//move left
 			//get_entity()->destroy();

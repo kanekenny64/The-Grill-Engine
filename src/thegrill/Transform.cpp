@@ -64,6 +64,7 @@ namespace thegrill {
 			return m_rotation;
 		}
 	}
+
 	//iteratively get the scale of the parent and add the scale of the child
 	glm::vec3 Transform::get_scale()
 	{
