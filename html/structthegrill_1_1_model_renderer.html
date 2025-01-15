@@ -31,6 +31,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="thegrilllogo.png"/></td>
   <td id="projectalign">
    <div id="projectname">thegrill
    </div>
@@ -109,6 +110,9 @@ $(function(){initNavTree('structthegrill_1_1_model_renderer.html',''); initResiz
 </div><!--header-->
 <div class="contents">
 
+<p>The <a class="el" href="structthegrill_1_1_model_renderer.html" title="The ModelRenderer class is a component responsible for rendering models with textures.">ModelRenderer</a> class is a component responsible for rendering models with textures.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_model_renderer_8h_source.html">ModelRenderer.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for thegrill::ModelRenderer:</div>
@@ -116,7 +120,7 @@ Inheritance diagram for thegrill::ModelRenderer:</div>
  <div class="center">
   <img src="structthegrill_1_1_model_renderer.png" usemap="#thegrill::ModelRenderer_map" alt=""/>
   <map id="thegrill::ModelRenderer_map" name="thegrill::ModelRenderer_map">
-<area href="structthegrill_1_1_component.html" alt="thegrill::Component" shape="rect" coords="0,0,144,24"/>
+<area href="structthegrill_1_1_component.html" title="Base class for all components in the engine." alt="thegrill::Component" shape="rect" coords="0,0,144,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -124,8 +128,6 @@ Inheritance diagram for thegrill::ModelRenderer:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aaea672f7f481d50b4728f8fb03f4a229" id="r_aaea672f7f481d50b4728f8fb03f4a229"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaea672f7f481d50b4728f8fb03f4a229">ModelRenderer</a> ()</td></tr>
 <tr class="separator:aaea672f7f481d50b4728f8fb03f4a229"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64924d8ef78bfbf8cc0fd224edcc38dc" id="r_a64924d8ef78bfbf8cc0fd224edcc38dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64924d8ef78bfbf8cc0fd224edcc38dc">OnInit</a> ()</td></tr>
-<tr class="separator:a64924d8ef78bfbf8cc0fd224edcc38dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac08355f4132b51574456b2d1ad21a30d" id="r_ac08355f4132b51574456b2d1ad21a30d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac08355f4132b51574456b2d1ad21a30d">set_texture</a> (std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_texture.html">Texture</a> &gt; _tex)</td></tr>
 <tr class="separator:ac08355f4132b51574456b2d1ad21a30d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc85a860c9184dca8c93075c576b33a9" id="r_abc85a860c9184dca8c93075c576b33a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc85a860c9184dca8c93075c576b33a9">set_model</a> (std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_model.html">Model</a> &gt; _model)</td></tr>
@@ -136,6 +138,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3bea71129c378ed65415b5b02ee890a6 inherit pub_methods_structthegrill_1_1_component" id="r_a3bea71129c378ed65415b5b02ee890a6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthegrill_1_1_component.html#a3bea71129c378ed65415b5b02ee890a6">on_initialize</a> ()</td></tr>
 <tr class="separator:a3bea71129c378ed65415b5b02ee890a6 inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2f4198b8755856e77eb0181754b290b inherit pub_methods_structthegrill_1_1_component" id="r_ab2f4198b8755856e77eb0181754b290b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthegrill_1_1_component.html#ab2f4198b8755856e77eb0181754b290b">on_tick</a> ()</td></tr>
+<tr class="memdesc:ab2f4198b8755856e77eb0181754b290b inherit pub_methods_structthegrill_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called every frame to update the component.  <br /></td></tr>
 <tr class="separator:ab2f4198b8755856e77eb0181754b290b inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a413f6325ab19b1f736491631ae0b8b23 inherit pub_methods_structthegrill_1_1_component" id="r_a413f6325ab19b1f736491631ae0b8b23"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthegrill_1_1_component.html#a413f6325ab19b1f736491631ae0b8b23">on_gui</a> ()</td></tr>
 <tr class="separator:a413f6325ab19b1f736491631ae0b8b23 inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,10 +158,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9336bcaea73cfe54b76200b54d454223 inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a079f00434c0077e4356f45f2bdd92c17 inherit pub_methods_structthegrill_1_1_component" id="r_a079f00434c0077e4356f45f2bdd92c17"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_transform.html">Transform</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthegrill_1_1_component.html#a079f00434c0077e4356f45f2bdd92c17">get_transform</a> ()</td></tr>
 <tr class="separator:a079f00434c0077e4356f45f2bdd92c17 inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b0f91fe01d2f5dbfe7a2da769cf4e53 inherit pub_methods_structthegrill_1_1_component" id="r_a4b0f91fe01d2f5dbfe7a2da769cf4e53"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_g_u_i.html">GUI</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthegrill_1_1_component.html#a4b0f91fe01d2f5dbfe7a2da769cf4e53">Component::get_gui</a> ()</td></tr>
-<tr class="separator:a4b0f91fe01d2f5dbfe7a2da769cf4e53 inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d32c2c0c657629f821720628b3bdd8 inherit pub_methods_structthegrill_1_1_component" id="r_ad2d32c2c0c657629f821720628b3bdd8"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_g_u_i.html">GUI</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthegrill_1_1_component.html#ad2d32c2c0c657629f821720628b3bdd8">get_gui</a> ()</td></tr>
+<tr class="separator:ad2d32c2c0c657629f821720628b3bdd8 inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="structthegrill_1_1_model_renderer.html" title="The ModelRenderer class is a component responsible for rendering models with textures.">ModelRenderer</a> class is a component responsible for rendering models with textures. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aaea672f7f481d50b4728f8fb03f4a229" name="aaea672f7f481d50b4728f8fb03f4a229"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaea672f7f481d50b4728f8fb03f4a229">&#9670;&#160;</a></span>ModelRenderer()</h2>
 
@@ -198,23 +203,6 @@ Public Member Functions</h2></td></tr>
 <span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a64924d8ef78bfbf8cc0fd224edcc38dc" name="a64924d8ef78bfbf8cc0fd224edcc38dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64924d8ef78bfbf8cc0fd224edcc38dc">&#9670;&#160;</a></span>OnInit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void thegrill::ModelRenderer::OnInit </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
 </div><div class="memdoc">
 
 </div>

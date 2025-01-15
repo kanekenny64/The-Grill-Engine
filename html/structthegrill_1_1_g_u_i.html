@@ -31,6 +31,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="thegrilllogo.png"/></td>
   <td id="projectalign">
    <div id="projectname">thegrill
    </div>
@@ -110,17 +111,23 @@ $(function(){initNavTree('structthegrill_1_1_g_u_i.html',''); initResizable(true
 </div><!--header-->
 <div class="contents">
 
+<p>The <a class="el" href="structthegrill_1_1_g_u_i.html" title="The GUI system handles rendering of GUI elements.">GUI</a> system handles rendering of <a class="el" href="structthegrill_1_1_g_u_i.html" title="The GUI system handles rendering of GUI elements.">GUI</a> elements.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_g_u_i_8h_source.html">GUI.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac8e91d96ea6119f484fb70568f574edc" id="r_ac8e91d96ea6119f484fb70568f574edc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8e91d96ea6119f484fb70568f574edc">GUI</a> (std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_core.html">Core</a> &gt; _core)</td></tr>
+<tr class="memdesc:ac8e91d96ea6119f484fb70568f574edc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="structthegrill_1_1_g_u_i.html" title="The GUI system handles rendering of GUI elements.">GUI</a> instance.  <br /></td></tr>
 <tr class="separator:ac8e91d96ea6119f484fb70568f574edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f70b2c60b4306ea82ba3279653a6437" id="r_a4f70b2c60b4306ea82ba3279653a6437"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4f70b2c60b4306ea82ba3279653a6437">~GUI</a> ()</td></tr>
 <tr class="separator:a4f70b2c60b4306ea82ba3279653a6437"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60f90f92a2be068b898710aa60e6ea47" id="r_a60f90f92a2be068b898710aa60e6ea47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60f90f92a2be068b898710aa60e6ea47">image</a> (std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_texture.html">Texture</a> &gt; _tex, float _x, float _y, float _w, float _h)</td></tr>
+<tr class="memdesc:a60f90f92a2be068b898710aa60e6ea47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders an image on the screen.  <br /></td></tr>
 <tr class="separator:a60f90f92a2be068b898710aa60e6ea47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ab223fbda9bca79e688381b9419d2db" id="r_a6ab223fbda9bca79e688381b9419d2db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ab223fbda9bca79e688381b9419d2db">button</a> (std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_texture.html">Texture</a> &gt; _tex, float _x, float _y, float _w, float _h)</td></tr>
+<tr class="memdesc:a6ab223fbda9bca79e688381b9419d2db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders a button on the screen.  <br /></td></tr>
 <tr class="separator:a6ab223fbda9bca79e688381b9419d2db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
@@ -128,7 +135,9 @@ Friends</h2></td></tr>
 <tr class="memitem:a08ef93418f4fc32cef2ffb3b72f6bd26" id="r_a08ef93418f4fc32cef2ffb3b72f6bd26"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08ef93418f4fc32cef2ffb3b72f6bd26">thegrill::Core</a></td></tr>
 <tr class="separator:a08ef93418f4fc32cef2ffb3b72f6bd26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="structthegrill_1_1_g_u_i.html" title="The GUI system handles rendering of GUI elements.">GUI</a> system handles rendering of <a class="el" href="structthegrill_1_1_g_u_i.html" title="The GUI system handles rendering of GUI elements.">GUI</a> elements. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac8e91d96ea6119f484fb70568f574edc" name="ac8e91d96ea6119f484fb70568f574edc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac8e91d96ea6119f484fb70568f574edc">&#9670;&#160;</a></span>GUI()</h2>
 
@@ -143,6 +152,14 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="structthegrill_1_1_g_u_i.html" title="The GUI system handles rendering of GUI elements.">GUI</a> instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_core</td><td>A shared pointer to the core engine instance. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -198,6 +215,19 @@ Friends</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Renders a button on the screen. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_tex</td><td>A shared pointer to the texture to render. </td></tr>
+    <tr><td class="paramname">_x</td><td>The x-coordinate of the button. </td></tr>
+    <tr><td class="paramname">_y</td><td>The y-coordinate of the button. </td></tr>
+    <tr><td class="paramname">_w</td><td>The width of the button. </td></tr>
+    <tr><td class="paramname">_h</td><td>The height of the button. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An integer indicating the button state. </dd></dl>
+
 </div>
 </div>
 <a id="a60f90f92a2be068b898710aa60e6ea47" name="a60f90f92a2be068b898710aa60e6ea47"></a>
@@ -233,6 +263,18 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Renders an image on the screen. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_tex</td><td>A shared pointer to the texture to render. </td></tr>
+    <tr><td class="paramname">_x</td><td>The x-coordinate of the image. </td></tr>
+    <tr><td class="paramname">_y</td><td>The y-coordinate of the image. </td></tr>
+    <tr><td class="paramname">_w</td><td>The width of the image. </td></tr>
+    <tr><td class="paramname">_h</td><td>The height of the image. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

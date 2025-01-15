@@ -1,7 +1,5 @@
 #include "Component.h"
 #include <memory>
-
-
 #include "SoundSystem.h"
 
 
@@ -13,7 +11,7 @@ namespace thegrill {
 
 		void on_initialize();
 
-		void setAudio(std::shared_ptr<Audio> _audio);
+		void set_audio(std::shared_ptr<Audio> _audio);
 
 		void on_tick();
 

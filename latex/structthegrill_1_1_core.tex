@@ -2,13 +2,18 @@
 \hypertarget{structthegrill_1_1_core}{}\label{structthegrill_1_1_core}\index{thegrill::Core@{thegrill::Core}}
 
 
+The \doxylink{structthegrill_1_1_core}{Core} class is the main engine class that manages the game loop and core systems.  
+
+
+
+
 {\ttfamily \#include $<$Core.\+h$>$}
 
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{structthegrill_1_1_core_adc31313e6c0543ef1dec298eff3c211a}{run}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Runs the main game loop. \end{DoxyCompactList}\item 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_entity}{Entity}} $>$ \mbox{\hyperlink{structthegrill_1_1_core_a522d882f9856a74d59de726c46767fc2}{add\+\_\+entity}} ()
 \item 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_window}{Window}} $>$ \mbox{\hyperlink{structthegrill_1_1_core_abec138913cbf650e41f555b3dd7a41b4}{window}} () const
@@ -23,21 +28,21 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_camera}{Camera}} $
 \item 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ \mbox{\hyperlink{structthegrill_1_1_core_a501dacf59f9969d5113f08b57464262a}{gui}} ()
 \item 
+void \mbox{\hyperlink{structthegrill_1_1_core_aa7bcbc36c00321b77c353ee86dc1621f}{set\+\_\+current\+\_\+cam}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_camera}{Camera}} $>$ \+\_\+cam)
+\begin{DoxyCompactList}\small\item\em Sets the current active camera. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{structthegrill_1_1_core_abd61fe1003580a504ee4aa8cb5a938b7}{Delta\+Time}} ()
 \item 
 {\footnotesize template$<$typename T$>$ }\\void \mbox{\hyperlink{structthegrill_1_1_core_a40cb2b5c177d4c1f4a9315e94ed9f458}{find}} (std\+::vector$<$ std\+::shared\+\_\+ptr$<$ T $>$ $>$ \&\+\_\+out)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Finds all components of a given type. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_core}{Core}} $>$ \mbox{\hyperlink{structthegrill_1_1_core_a330cfd79db5cb850f659473a8720b7a0}{initialize}} ()
-\end{DoxyCompactItemize}
-\doxysubsubsection*{Friends}
-\begin{DoxyCompactItemize}
-\item 
-struct \mbox{\hyperlink{structthegrill_1_1_core_a086c6b9a86b2d619a96b8b1c3633cfa2}{thegrill\+::\+Camera}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Initializes the core engine instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+The \doxylink{structthegrill_1_1_core}{Core} class is the main engine class that manages the game loop and core systems. 
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{structthegrill_1_1_core_a522d882f9856a74d59de726c46767fc2}\index{thegrill::Core@{thegrill::Core}!add\_entity@{add\_entity}}
@@ -65,6 +70,20 @@ float thegrill\+::\+Core\+::\+Delta\+Time (\begin{DoxyParamCaption}{}{}\end{Doxy
 template$<$typename T$>$ \\
 void thegrill\+::\+Core\+::find (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ T $>$ $>$ \&}]{\+\_\+out}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Finds all components of a given type. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of component to find. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+out} & A vector to store found components. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{structthegrill_1_1_core_a412d5251500e151762e793ae939d290f}\index{thegrill::Core@{thegrill::Core}!get\_resources@{get\_resources}}
 \index{get\_resources@{get\_resources}!thegrill::Core@{thegrill::Core}}
 \doxysubsubsection{\texorpdfstring{get\_resources()}{get\_resources()}}
@@ -83,6 +102,15 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ t
 {\footnotesize\ttfamily \label{structthegrill_1_1_core_a330cfd79db5cb850f659473a8720b7a0} 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_core}{Core}} $>$ thegrill\+::\+Core\+::initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+Initializes the core engine instance. 
+
+\begin{DoxyReturn}{Returns}
+A shared pointer to the initialized core engine instance.
+
+Shared pointer to the initialised instance of core. 
+\end{DoxyReturn}
 \Hypertarget{structthegrill_1_1_core_a7f8c8107e3d1de804169dd4f2c3ca364}\index{thegrill::Core@{thegrill::Core}!input@{input}}
 \index{input@{input}!thegrill::Core@{thegrill::Core}}
 \doxysubsubsection{\texorpdfstring{input()}{input()}}
@@ -95,6 +123,25 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_input}{Input}} $>$
 {\footnotesize\ttfamily \label{structthegrill_1_1_core_adc31313e6c0543ef1dec298eff3c211a} 
 void thegrill\+::\+Core\+::run (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
+
+
+Runs the main game loop. 
+
+\Hypertarget{structthegrill_1_1_core_aa7bcbc36c00321b77c353ee86dc1621f}\index{thegrill::Core@{thegrill::Core}!set\_current\_cam@{set\_current\_cam}}
+\index{set\_current\_cam@{set\_current\_cam}!thegrill::Core@{thegrill::Core}}
+\doxysubsubsection{\texorpdfstring{set\_current\_cam()}{set\_current\_cam()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_core_aa7bcbc36c00321b77c353ee86dc1621f} 
+void thegrill\+::\+Core\+::set\+\_\+current\+\_\+cam (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_camera}{Camera}} $>$}]{\+\_\+cam}{}\end{DoxyParamCaption})}
+
+
+
+Sets the current active camera. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+cam} & A shared pointer to the camera to set as the current active camera. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{structthegrill_1_1_core_ab6bf9d1162f503300c2190c4c64ac25f}\index{thegrill::Core@{thegrill::Core}!sound\_system@{sound\_system}}
 \index{sound\_system@{sound\_system}!thegrill::Core@{thegrill::Core}}
 \doxysubsubsection{\texorpdfstring{sound\_system()}{sound\_system()}}
@@ -106,15 +153,6 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_sound_system}{Soun
 \doxysubsubsection{\texorpdfstring{window()}{window()}}
 {\footnotesize\ttfamily \label{structthegrill_1_1_core_abec138913cbf650e41f555b3dd7a41b4} 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_window}{Window}} $>$ thegrill\+::\+Core\+::window (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
-
-
-
-\doxysubsection{Friends And Related Symbol Documentation}
-\Hypertarget{structthegrill_1_1_core_a086c6b9a86b2d619a96b8b1c3633cfa2}\index{thegrill::Core@{thegrill::Core}!thegrill::Camera@{thegrill::Camera}}
-\index{thegrill::Camera@{thegrill::Camera}!thegrill::Core@{thegrill::Core}}
-\doxysubsubsection{\texorpdfstring{thegrill::Camera}{thegrill::Camera}}
-{\footnotesize\ttfamily \label{structthegrill_1_1_core_a086c6b9a86b2d619a96b8b1c3633cfa2} 
-friend struct \mbox{\hyperlink{structthegrill_1_1_camera}{thegrill\+::\+Camera}}\hspace{0.3cm}{\ttfamily [friend]}}
 
 
 

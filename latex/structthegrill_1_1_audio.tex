@@ -2,6 +2,11 @@
 \hypertarget{structthegrill_1_1_audio}{}\label{structthegrill_1_1_audio}\index{thegrill::Audio@{thegrill::Audio}}
 
 
+The \doxylink{structthegrill_1_1_audio}{Audio} class represents an audio resource that can be loaded and managed within the sound system.  
+
+
+
+
 {\ttfamily \#include $<$Audio.\+h$>$}
 
 Inheritance diagram for thegrill\+::Audio\+:\begin{figure}[H]
@@ -16,7 +21,7 @@ Inheritance diagram for thegrill\+::Audio\+:\begin{figure}[H]
 \mbox{\hyperlink{structthegrill_1_1_audio_ac438bae8fb406af1baba45459673487c}{\texorpdfstring{$\sim$}{\string~}\+Audio}} ()
 \item 
 void \mbox{\hyperlink{structthegrill_1_1_audio_a0c4a507934194694554e5fb6c0fc0c8b}{load\+\_\+ogg}} (const std\+::string \&\+\_\+path, std\+::vector$<$ unsigned char $>$ \&\+\_\+buffer, ALenum \&\+\_\+format, ALsizei \&\+\_\+freq)
-\item 
+\begin{DoxyCompactList}\small\item\em Loads an OGG audio file into a buffer. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structthegrill_1_1_audio_a85161d7794b264783043e0cf4fbb0529}{on\+Load}} ()
 \item 
 void \mbox{\hyperlink{structthegrill_1_1_audio_a91b5fd288fe04278f96e35b5d169e2ec}{on\+Unload}} ()
@@ -32,6 +37,9 @@ std\+::string \mbox{\hyperlink{structthegrill_1_1_resource_abe1d671e2e8bc2e2d33d
 ALuint \mbox{\hyperlink{structthegrill_1_1_audio_a82211be7c1f91948fb18fd49718d1d73}{m\+\_\+\+Id}}
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+The \doxylink{structthegrill_1_1_audio}{Audio} class represents an audio resource that can be loaded and managed within the sound system. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{structthegrill_1_1_audio_ac438bae8fb406af1baba45459673487c}\index{thegrill::Audio@{thegrill::Audio}!````~Audio@{\texorpdfstring{$\sim$}{\string~}Audio}}
@@ -49,6 +57,23 @@ thegrill\+::\+Audio\+::\texorpdfstring{$\sim$}{\string~}\+Audio (\begin{DoxyPara
 {\footnotesize\ttfamily \label{structthegrill_1_1_audio_a0c4a507934194694554e5fb6c0fc0c8b} 
 void thegrill\+::\+Audio\+::load\+\_\+ogg (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{\+\_\+path}{, }\item[{std\+::vector$<$ unsigned char $>$ \&}]{\+\_\+buffer}{, }\item[{ALenum \&}]{\+\_\+format}{, }\item[{ALsizei \&}]{\+\_\+freq}{}\end{DoxyParamCaption})}
 
+
+
+Loads an OGG audio file into a buffer. 
+
+This function reads the audio data from the specified file path and creates the buffer, format, and frequency variables.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+path} & The path to the OGG audio file. \\
+\hline
+{\em \+\_\+buffer} & A reference to a vector that will hold the audio data. \\
+\hline
+{\em \+\_\+format} & A reference to an ALenum variable that stores the audio format. \\
+\hline
+{\em \+\_\+freq} & A reference to an ALsizei variable that stores the audio frequency. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{structthegrill_1_1_audio_a85161d7794b264783043e0cf4fbb0529}\index{thegrill::Audio@{thegrill::Audio}!onLoad@{onLoad}}
 \index{onLoad@{onLoad}!thegrill::Audio@{thegrill::Audio}}
 \doxysubsubsection{\texorpdfstring{onLoad()}{onLoad()}}

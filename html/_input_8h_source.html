@@ -31,6 +31,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="thegrilllogo.png"/></td>
   <td id="projectalign">
    <div id="projectname">thegrill
    </div>
@@ -106,41 +107,40 @@ $(function(){initNavTree('_input_8h_source.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 <a href="_input_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;SDL2/SDL.h&gt;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;GL/glew.h&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="_input_8h.html#afdebd5d771ee260c703a74f459767c09">    5</a></span><span class="preprocessor">#define KEY_W SDLK_w</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="_input_8h.html#a024e62650f02bfd64a4ce2b158ec2dd7">    6</a></span><span class="preprocessor">#define KEY_A SDLK_a</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="_input_8h.html#a6f09e2899747f5db41369ce1dae11ebd">    7</a></span><span class="preprocessor">#define KEY_S SDLK_s</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="_input_8h.html#ad2017b35fcff527a10050ab7c9af2d5c">    8</a></span><span class="preprocessor">#define KEY_D SDLK_d</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacethegrill.html">thegrill</a> {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">struct </span>Keyboard;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">struct </span>Mouse;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structthegrill_1_1_input.html">   14</a></span>    <span class="keyword">struct </span><a class="code hl_function" href="structthegrill_1_1_input.html#ac5e5f4c64ada8e4b2e9d9180540122ff">Input</a></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <a class="code hl_function" href="structthegrill_1_1_input.html#ac5e5f4c64ada8e4b2e9d9180540122ff">Input</a>();</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="structthegrill_1_1_input.html#a736deb6d5c6f2c40c497c3d77e25778a">Update</a>();</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        std::shared_ptr&lt;Keyboard&gt; <a class="code hl_function" href="structthegrill_1_1_input.html#a7c0dca6615b54f1ecbcb0ef5f2bba167">keyboard</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        std::shared_ptr&lt;Mouse&gt; <a class="code hl_function" href="structthegrill_1_1_input.html#a0a16c48299b6ecd07581a140d858d307">mouse</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structthegrill_1_1_input.html#acd0789873af2006e142a579250891ce8">   24</a></span>        <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code hl_friend" href="structthegrill_1_1_input.html#acd0789873af2006e142a579250891ce8">Core</a>;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        std::shared_ptr&lt;Keyboard&gt; m_keyboard;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        std::shared_ptr&lt;Mouse&gt; m_mouse;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    };</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="_input_8h.html#afdebd5d771ee260c703a74f459767c09">    4</a></span><span class="preprocessor">#define KEY_W SDLK_w</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="_input_8h.html#a024e62650f02bfd64a4ce2b158ec2dd7">    5</a></span><span class="preprocessor">#define KEY_A SDLK_a</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="_input_8h.html#a6f09e2899747f5db41369ce1dae11ebd">    6</a></span><span class="preprocessor">#define KEY_S SDLK_s</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="_input_8h.html#ad2017b35fcff527a10050ab7c9af2d5c">    7</a></span><span class="preprocessor">#define KEY_D SDLK_d</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacethegrill.html">thegrill</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">struct </span>Keyboard;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">struct </span>Mouse;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structthegrill_1_1_input.html">   13</a></span>    <span class="keyword">struct </span><a class="code hl_function" href="structthegrill_1_1_input.html#ac5e5f4c64ada8e4b2e9d9180540122ff">Input</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <a class="code hl_function" href="structthegrill_1_1_input.html#ac5e5f4c64ada8e4b2e9d9180540122ff">Input</a>();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="structthegrill_1_1_input.html#a736deb6d5c6f2c40c497c3d77e25778a">Update</a>();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        std::shared_ptr&lt;Keyboard&gt; <a class="code hl_function" href="structthegrill_1_1_input.html#a7c0dca6615b54f1ecbcb0ef5f2bba167">keyboard</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        std::shared_ptr&lt;Mouse&gt; <a class="code hl_function" href="structthegrill_1_1_input.html#a0a16c48299b6ecd07581a140d858d307">mouse</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="structthegrill_1_1_input.html#acd0789873af2006e142a579250891ce8">   23</a></span>        <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code hl_friend" href="structthegrill_1_1_input.html#acd0789873af2006e142a579250891ce8">Core</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        std::shared_ptr&lt;Keyboard&gt; m_keyboard;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        std::shared_ptr&lt;Mouse&gt; m_mouse;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    };</div>
 </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
-<div class="ttc" id="anamespacethegrill_html"><div class="ttname"><a href="namespacethegrill.html">thegrill</a></div><div class="ttdef"><b>Definition</b> AnimationController.cpp:11</div></div>
-<div class="ttc" id="astructthegrill_1_1_input_html_a0a16c48299b6ecd07581a140d858d307"><div class="ttname"><a href="structthegrill_1_1_input.html#a0a16c48299b6ecd07581a140d858d307">thegrill::Input::mouse</a></div><div class="ttdeci">std::shared_ptr&lt; Mouse &gt; mouse() const</div><div class="ttdef"><b>Definition</b> Input.cpp:58</div></div>
-<div class="ttc" id="astructthegrill_1_1_input_html_a736deb6d5c6f2c40c497c3d77e25778a"><div class="ttname"><a href="structthegrill_1_1_input.html#a736deb6d5c6f2c40c497c3d77e25778a">thegrill::Input::Update</a></div><div class="ttdeci">bool Update()</div><div class="ttdef"><b>Definition</b> Input.cpp:13</div></div>
-<div class="ttc" id="astructthegrill_1_1_input_html_a7c0dca6615b54f1ecbcb0ef5f2bba167"><div class="ttname"><a href="structthegrill_1_1_input.html#a7c0dca6615b54f1ecbcb0ef5f2bba167">thegrill::Input::keyboard</a></div><div class="ttdeci">std::shared_ptr&lt; Keyboard &gt; keyboard() const</div><div class="ttdef"><b>Definition</b> Input.cpp:53</div></div>
-<div class="ttc" id="astructthegrill_1_1_input_html_ac5e5f4c64ada8e4b2e9d9180540122ff"><div class="ttname"><a href="structthegrill_1_1_input.html#ac5e5f4c64ada8e4b2e9d9180540122ff">thegrill::Input::Input</a></div><div class="ttdeci">Input()</div><div class="ttdef"><b>Definition</b> Input.cpp:8</div></div>
-<div class="ttc" id="astructthegrill_1_1_input_html_acd0789873af2006e142a579250891ce8"><div class="ttname"><a href="structthegrill_1_1_input.html#acd0789873af2006e142a579250891ce8">thegrill::Input::Core</a></div><div class="ttdeci">friend struct Core</div><div class="ttdef"><b>Definition</b> Input.h:24</div></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+<div class="ttc" id="anamespacethegrill_html"><div class="ttname"><a href="namespacethegrill.html">thegrill</a></div><div class="ttdoc">The Collider class acts as a parent for other colliders to inherit from.</div><div class="ttdef"><b>Definition</b> AnimationController.cpp:11</div></div>
+<div class="ttc" id="astructthegrill_1_1_input_html_a0a16c48299b6ecd07581a140d858d307"><div class="ttname"><a href="structthegrill_1_1_input.html#a0a16c48299b6ecd07581a140d858d307">thegrill::Input::mouse</a></div><div class="ttdeci">std::shared_ptr&lt; Mouse &gt; mouse() const</div><div class="ttdef"><b>Definition</b> Input.cpp:60</div></div>
+<div class="ttc" id="astructthegrill_1_1_input_html_a736deb6d5c6f2c40c497c3d77e25778a"><div class="ttname"><a href="structthegrill_1_1_input.html#a736deb6d5c6f2c40c497c3d77e25778a">thegrill::Input::Update</a></div><div class="ttdeci">bool Update()</div><div class="ttdef"><b>Definition</b> Input.cpp:15</div></div>
+<div class="ttc" id="astructthegrill_1_1_input_html_a7c0dca6615b54f1ecbcb0ef5f2bba167"><div class="ttname"><a href="structthegrill_1_1_input.html#a7c0dca6615b54f1ecbcb0ef5f2bba167">thegrill::Input::keyboard</a></div><div class="ttdeci">std::shared_ptr&lt; Keyboard &gt; keyboard() const</div><div class="ttdef"><b>Definition</b> Input.cpp:55</div></div>
+<div class="ttc" id="astructthegrill_1_1_input_html_ac5e5f4c64ada8e4b2e9d9180540122ff"><div class="ttname"><a href="structthegrill_1_1_input.html#ac5e5f4c64ada8e4b2e9d9180540122ff">thegrill::Input::Input</a></div><div class="ttdeci">Input()</div><div class="ttdef"><b>Definition</b> Input.cpp:10</div></div>
+<div class="ttc" id="astructthegrill_1_1_input_html_acd0789873af2006e142a579250891ce8"><div class="ttname"><a href="structthegrill_1_1_input.html#acd0789873af2006e142a579250891ce8">thegrill::Input::Core</a></div><div class="ttdeci">friend struct Core</div><div class="ttdef"><b>Definition</b> Input.h:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

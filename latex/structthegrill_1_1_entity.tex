@@ -2,17 +2,22 @@
 \hypertarget{structthegrill_1_1_entity}{}\label{structthegrill_1_1_entity}\index{thegrill::Entity@{thegrill::Entity}}
 
 
+The \doxylink{structthegrill_1_1_entity}{Entity} class represents an object in the game world.  
+
+
+
+
 {\ttfamily \#include $<$Entity.\+h$>$}
 
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 {\footnotesize template$<$typename T$>$ }\\std\+::shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{structthegrill_1_1_entity_a31ef5d9668aaf5e624f132395184819c}{add\+\_\+component}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Adds a new component of type T to the entity. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename T$>$ }\\std\+::shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{structthegrill_1_1_entity_a599b17c8234e05d335621e444e10b83c}{get\+\_\+component}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets a component of type T from the entity. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename T$>$ }\\void \mbox{\hyperlink{structthegrill_1_1_entity_a0d61abf56f3729a63cbd180bcc2386f3}{get\+\_\+components}} (std\+::vector$<$ std\+::shared\+\_\+ptr$<$ T $>$ $>$ \&\+\_\+components) const
-\item 
+\begin{DoxyCompactList}\small\item\em Gets all components of type T from the entity. \end{DoxyCompactList}\item 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_transform}{Transform}} $>$ \mbox{\hyperlink{structthegrill_1_1_entity_a92870fc2e8ce382d2717367608cf70b0}{get\+\_\+transform}} () const
 \item 
 void \mbox{\hyperlink{structthegrill_1_1_entity_ac3cba6c9588b671ef967141e47c1dfd0}{set\+\_\+position}} (glm\+::vec3 \+\_\+position)
@@ -29,6 +34,11 @@ void \mbox{\hyperlink{structthegrill_1_1_entity_a746454f26a1d4fa0182ec0b918df04c
 struct \mbox{\hyperlink{structthegrill_1_1_entity_a08ef93418f4fc32cef2ffb3b72f6bd26}{thegrill\+::\+Core}}
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+The \doxylink{structthegrill_1_1_entity}{Entity} class represents an object in the game world. 
+
+Entities can have multiple components attached to them and are stored within core. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{structthegrill_1_1_entity_a083955b7d9e901c1a62386d205dd942b}\index{thegrill::Entity@{thegrill::Entity}!````~Entity@{\texorpdfstring{$\sim$}{\string~}Entity}}
@@ -47,6 +57,18 @@ thegrill\+::\+Entity\+::\texorpdfstring{$\sim$}{\string~}\+Entity (\begin{DoxyPa
 template$<$typename T$>$ \\
 std\+::shared\+\_\+ptr$<$ T $>$ thegrill\+::\+Entity\+::add\+\_\+component (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Adds a new component of type T to the entity. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of component to add. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+A shared pointer to the newly added component. 
+\end{DoxyReturn}
 \Hypertarget{structthegrill_1_1_entity_a746454f26a1d4fa0182ec0b918df04c1}\index{thegrill::Entity@{thegrill::Entity}!destroy@{destroy}}
 \index{destroy@{destroy}!thegrill::Entity@{thegrill::Entity}}
 \doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
@@ -60,6 +82,23 @@ void thegrill\+::\+Entity\+::destroy (\begin{DoxyParamCaption}{}{}\end{DoxyParam
 template$<$typename T$>$ \\
 std\+::shared\+\_\+ptr$<$ T $>$ thegrill\+::\+Entity\+::get\+\_\+component (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Gets a component of type T from the entity. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of component to get. \\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+A shared pointer to the component. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & if the component is not found. \\
+\hline
+\end{DoxyExceptions}
 \Hypertarget{structthegrill_1_1_entity_a0d61abf56f3729a63cbd180bcc2386f3}\index{thegrill::Entity@{thegrill::Entity}!get\_components@{get\_components}}
 \index{get\_components@{get\_components}!thegrill::Entity@{thegrill::Entity}}
 \doxysubsubsection{\texorpdfstring{get\_components()}{get\_components()}}
@@ -67,6 +106,25 @@ std\+::shared\+\_\+ptr$<$ T $>$ thegrill\+::\+Entity\+::get\+\_\+component (\beg
 template$<$typename T$>$ \\
 void thegrill\+::\+Entity\+::get\+\_\+components (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ T $>$ $>$ \&}]{\+\_\+components}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Gets all components of type T from the entity. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of components to get. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+components} & A vector to store the found components. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & if the component is not found. \\
+\hline
+\end{DoxyExceptions}
 \Hypertarget{structthegrill_1_1_entity_af82a7443a4db2494a9a9665183bffb4d}\index{thegrill::Entity@{thegrill::Entity}!get\_core@{get\_core}}
 \index{get\_core@{get\_core}!thegrill::Entity@{thegrill::Entity}}
 \doxysubsubsection{\texorpdfstring{get\_core()}{get\_core()}}

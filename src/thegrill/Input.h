@@ -1,6 +1,5 @@
 #include <memory>
-#include <SDL2/SDL.h>
-#include <GL/glew.h>
+
 
 #define KEY_W SDLK_w
 #define KEY_A SDLK_a

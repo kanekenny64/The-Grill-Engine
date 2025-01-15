@@ -37,7 +37,7 @@ namespace thegrill {
 		std::shared_ptr<Keyboard> get_keyboard();
 		std::shared_ptr<Core> get_core();
 		std::shared_ptr<Transform> get_transform();
-		std::shared_ptr<GUI> Component::get_gui();
+		std::shared_ptr<GUI> get_gui();
 
 
 	private:

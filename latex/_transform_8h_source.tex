@@ -16,38 +16,36 @@
 \DoxyCodeLine{00012\ }
 \DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structthegrill_1_1_entity}{Entity}};}
 \DoxyCodeLine{00014\ }
-\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structthegrill_1_1_transform}{Transform}}\ :\ \mbox{\hyperlink{structthegrill_1_1_component}{Component}}}
-\DoxyCodeLine{00016\ \ \ \ \ \{}
-\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ glm::mat4\ \mbox{\hyperlink{structthegrill_1_1_transform_a0b75ab9c275a3b9e6bf5c40303da4e48}{get\_model}}()\ ;}
 \DoxyCodeLine{00018\ }
-\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ glm::vec3\ \mbox{\hyperlink{structthegrill_1_1_transform_ac99de02e31790fe6bbecee649dd372f8}{get\_position}}()\ \textcolor{keyword}{const};}
-\DoxyCodeLine{00020\ }
-\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structthegrill_1_1_transform_ae4fadbcb1d96a500acc8a01c2b68b369}{set\_position}}(glm::vec3\ \_position)\ \{}
-\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ m\_position\ =\ \_position;}
-\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00024\ }
-\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ glm::vec3\ \mbox{\hyperlink{structthegrill_1_1_transform_a22c7931a2877a2997f32b18a106bd178}{get\_rotation}}()\ \{}
-\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ m\_rotation;}
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \}}
-\DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ std::shared\_ptr<Entity>\ \mbox{\hyperlink{structthegrill_1_1_transform_a14f572ae5df664f1755162ed1055d979}{get\_parent}}();}
-\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structthegrill_1_1_transform_a2e9623c2083674cb781cd1a782c4e966}{set\_parent}}(std::shared\_ptr<Entity>\ \_parent);}
-\DoxyCodeLine{00031\ }
-\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structthegrill_1_1_transform_a235cd4f4651331387cc17a86627338d5}{Move}}(glm::vec3\ \_amount);}
-\DoxyCodeLine{00033\ }
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ glm::vec3\ m\_position\ =\ \{\ 0.0,0.0,-\/10.0\ \};}
-\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ glm::vec3\ m\_rotation\ =\ \{\ 0.0,0.0,0.0\ \};}
-\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ glm::vec3\ m\_scale\ =\ \{\ 1.0,1.0,1.0\ \};}
-\DoxyCodeLine{00039\ }
-\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ std::weak\_ptr<Entity>\ m\_Parent;}
-\DoxyCodeLine{00041\ \ \ \ \ \};}
-\DoxyCodeLine{00042\ }
-\DoxyCodeLine{00043\ \ \ \ \ }
-\DoxyCodeLine{00044\ \ \ \ \ }
-\DoxyCodeLine{00045\ \}}
-\DoxyCodeLine{00046\ }
-\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !THEGRILL\_TRANSFORM\_H}}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structthegrill_1_1_transform}{Transform}}\ :\ \mbox{\hyperlink{structthegrill_1_1_component}{Component}}}
+\DoxyCodeLine{00020\ \ \ \ \ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ glm::mat4\ \mbox{\hyperlink{structthegrill_1_1_transform_a0b75ab9c275a3b9e6bf5c40303da4e48}{get\_model}}()\ ;}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structthegrill_1_1_transform_a1fef7ca814558dcdb5a727dca5e55b6b}{set\_rotation}}(glm::vec3\ \_rotation);}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structthegrill_1_1_transform_ae4fadbcb1d96a500acc8a01c2b68b369}{set\_position}}(glm::vec3\ \_position);}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structthegrill_1_1_transform_a235cd4f4651331387cc17a86627338d5}{Move}}(glm::vec3\ \_amount);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ glm::vec3\ \mbox{\hyperlink{structthegrill_1_1_transform_a81722ad1176f94f64a4e5469cca49322}{get\_position}}();}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ glm::vec3\ \mbox{\hyperlink{structthegrill_1_1_transform_a22c7931a2877a2997f32b18a106bd178}{get\_rotation}}();}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ glm::vec3\ \mbox{\hyperlink{structthegrill_1_1_transform_a9310268aa587691d8cb294dcf86a06d6}{get\_scale}}();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ std::shared\_ptr<Entity>\ \mbox{\hyperlink{structthegrill_1_1_transform_a14f572ae5df664f1755162ed1055d979}{get\_parent}}();}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structthegrill_1_1_transform_a2e9623c2083674cb781cd1a782c4e966}{set\_parent}}(std::shared\_ptr<Entity>\ \_parent);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ glm::vec3\ m\_position\ =\ \{\ 0.0,0.0,-\/10.0\ \};}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ glm::vec3\ m\_rotation\ =\ \{\ 0.0,0.0,0.0\ \};}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ glm::vec3\ m\_scale\ =\ \{\ 1.0,1.0,1.0\ \};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ std::weak\_ptr<Entity>\ m\_Parent;}
+\DoxyCodeLine{00054\ \ \ \ \ \};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ }
+\DoxyCodeLine{00057\ \ \ \ \ }
+\DoxyCodeLine{00058\ \}}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !THEGRILL\_TRANSFORM\_H}}
 
 \end{DoxyCode}

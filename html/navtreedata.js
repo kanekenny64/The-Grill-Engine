@@ -53,8 +53,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_animation_controller_8cpp.html",
-"structthegrill_1_1_animation_track.html#a0a7dfc38c94cd04dae48f17552208919",
-"structthegrill_1_1_timer.html#a35cd1d004ba026f00981048bde6720bf"
+"structthegrill_1_1_audio.html#a0c4a507934194694554e5fb6c0fc0c8b",
+"structthegrill_1_1_transform.html#a235cd4f4651331387cc17a86627338d5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

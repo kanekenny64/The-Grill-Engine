@@ -33,7 +33,6 @@ add_library(thegrill
 	src/thegrill/Transform.h src/thegrill/Transform.cpp
 	src/thegrill/Timer.h src/thegrill/Timer.cpp
 	src/thegrill/ModelRenderer.h src/thegrill/ModelRenderer.cpp
-	src/thegrill/NonCopyable.h
 	src/thegrill/Window.h src/thegrill/Window.cpp
 	src/thegrill/Resource.h src/thegrill/Resource.cpp
 	src/thegrill/Resources.h src/thegrill/Resources.cpp

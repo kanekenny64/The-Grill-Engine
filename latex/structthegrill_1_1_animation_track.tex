@@ -2,6 +2,11 @@
 \hypertarget{structthegrill_1_1_animation_track}{}\label{structthegrill_1_1_animation_track}\index{thegrill::AnimationTrack@{thegrill::AnimationTrack}}
 
 
+The \doxylink{structthegrill_1_1_animation_track}{Animation\+Track} class holds data for an animation track, including keyframes.  
+
+
+
+
 {\ttfamily \#include $<$Animation\+Track.\+h$>$}
 
 Inheritance diagram for thegrill\+::Animation\+Track\+:\begin{figure}[H]
@@ -18,14 +23,14 @@ Inheritance diagram for thegrill\+::Animation\+Track\+:\begin{figure}[H]
 \mbox{\hyperlink{structthegrill_1_1_animation_track_a08375d6bb1c8f71a797fd116c1c961de}{\texorpdfstring{$\sim$}{\string~}\+Animation\+Track}} ()=default
 \item 
 void \mbox{\hyperlink{structthegrill_1_1_animation_track_a8103906304b27cafe775bae2dd0e77bb}{create}} (const std\+::string \&\+\_\+path, int \+\_\+num\+Frames)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Creates the animation track by loading keyframes from a specified path and continuing for a specified number of frames. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structthegrill_1_1_component}{thegrill\+::\+Component}}}
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{structthegrill_1_1_component_a3bea71129c378ed65415b5b02ee890a6}{on\+\_\+initialize}} ()
 \item 
 virtual void \mbox{\hyperlink{structthegrill_1_1_component_ab2f4198b8755856e77eb0181754b290b}{on\+\_\+tick}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Called every frame to update the component. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{structthegrill_1_1_component_a79a3c7b6cf9b91e1930335a4e40f3bcd}{on\+\_\+render}} ()
 \item 
 virtual void \mbox{\hyperlink{structthegrill_1_1_component_a413f6325ab19b1f736491631ae0b8b23}{on\+\_\+gui}} ()
@@ -46,16 +51,19 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_core}{Core}} $>$ \
 \item 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_transform}{Transform}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a079f00434c0077e4356f45f2bdd92c17}{get\+\_\+transform}} ()
 \item 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a4b0f91fe01d2f5dbfe7a2da769cf4e53}{Component\+::get\+\_\+gui}} ()
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_ad2d32c2c0c657629f821720628b3bdd8}{get\+\_\+gui}} ()
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{structthegrill_1_1_animation_track_a21221e0698276e618a4d2843ceed9735}{start\+Frame}}
-\item 
+\begin{DoxyCompactList}\small\item\em The index of the first frame in the animation. \end{DoxyCompactList}\item 
 std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_model}{Model}} $>$ $>$ \mbox{\hyperlink{structthegrill_1_1_animation_track_a0a7dfc38c94cd04dae48f17552208919}{m\+\_\+key\+Frames}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A vector of shared pointers to the keyframes of the animation track. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+The \doxylink{structthegrill_1_1_animation_track}{Animation\+Track} class holds data for an animation track, including keyframes. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{structthegrill_1_1_animation_track_ae63bf416575443467b7ba9d18e003532}\index{thegrill::AnimationTrack@{thegrill::AnimationTrack}!AnimationTrack@{AnimationTrack}}
@@ -81,6 +89,29 @@ void thegrill\+::\+Animation\+Track\+::create (\begin{DoxyParamCaption}\item[{co
 
 
 
+Creates the animation track by loading keyframes from a specified path and continuing for a specified number of frames. 
+
+Creates the animation track by loading keyframes from a specified path.\hypertarget{structthegrill_1_1_animation_track_Uses}{}\doxysubsubsection{\texorpdfstring{Blender\textquotesingle{}s naming convention for .obj files outputted from animations.}{Blender\textquotesingle{}s naming convention for .obj files outputted from animations.}}\label{structthegrill_1_1_animation_track_Uses}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+path} & The file path to load the animation data from. \\
+\hline
+{\em \+\_\+num\+Frames} & The number of frames to create in the animation track.\\
+\hline
+\end{DoxyParams}
+This function takes the name of the first .obj file in the animation sequence and looks for the rest of the files in the sequence based on Blender\textquotesingle{}s default naming convention (e.\+g., example0001.\+obj, example0002.\+obj, etc.).
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+path} & The file path to the first model in the sequence. \\
+\hline
+{\em \+\_\+num\+Frames} & The total number of frames to create in the animation track. \\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Load the first model.
+
+\texorpdfstring{$<$}{<} Load the subsequent models.
+
 \doxysubsection{Member Data Documentation}
 \Hypertarget{structthegrill_1_1_animation_track_a0a7dfc38c94cd04dae48f17552208919}\index{thegrill::AnimationTrack@{thegrill::AnimationTrack}!m\_keyFrames@{m\_keyFrames}}
 \index{m\_keyFrames@{m\_keyFrames}!thegrill::AnimationTrack@{thegrill::AnimationTrack}}
@@ -88,11 +119,19 @@ void thegrill\+::\+Animation\+Track\+::create (\begin{DoxyParamCaption}\item[{co
 {\footnotesize\ttfamily \label{structthegrill_1_1_animation_track_a0a7dfc38c94cd04dae48f17552208919} 
 std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{structthegrill_1_1_model}{Model}}$>$ $>$ thegrill\+::\+Animation\+Track\+::m\+\_\+key\+Frames}
 
+
+
+A vector of shared pointers to the keyframes of the animation track. 
+
 \Hypertarget{structthegrill_1_1_animation_track_a21221e0698276e618a4d2843ceed9735}\index{thegrill::AnimationTrack@{thegrill::AnimationTrack}!startFrame@{startFrame}}
 \index{startFrame@{startFrame}!thegrill::AnimationTrack@{thegrill::AnimationTrack}}
 \doxysubsubsection{\texorpdfstring{startFrame}{startFrame}}
 {\footnotesize\ttfamily \label{structthegrill_1_1_animation_track_a21221e0698276e618a4d2843ceed9735} 
 int thegrill\+::\+Animation\+Track\+::start\+Frame}
+
+
+
+The index of the first frame in the animation. 
 
 
 

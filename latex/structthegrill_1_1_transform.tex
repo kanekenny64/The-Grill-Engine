@@ -2,6 +2,11 @@
 \hypertarget{structthegrill_1_1_transform}{}\label{structthegrill_1_1_transform}\index{thegrill::Transform@{thegrill::Transform}}
 
 
+The \doxylink{structthegrill_1_1_transform}{Transform} compoenent represents the position, rotation, and scale of an entity.  
+
+
+
+
 {\ttfamily \#include $<$Transform.\+h$>$}
 
 Inheritance diagram for thegrill\+::Transform\+:\begin{figure}[H]
@@ -15,17 +20,21 @@ Inheritance diagram for thegrill\+::Transform\+:\begin{figure}[H]
 \item 
 glm\+::mat4 \mbox{\hyperlink{structthegrill_1_1_transform_a0b75ab9c275a3b9e6bf5c40303da4e48}{get\+\_\+model}} ()
 \item 
-glm\+::vec3 \mbox{\hyperlink{structthegrill_1_1_transform_ac99de02e31790fe6bbecee649dd372f8}{get\+\_\+position}} () const
+void \mbox{\hyperlink{structthegrill_1_1_transform_a1fef7ca814558dcdb5a727dca5e55b6b}{set\+\_\+rotation}} (glm\+::vec3 \+\_\+rotation)
 \item 
 void \mbox{\hyperlink{structthegrill_1_1_transform_ae4fadbcb1d96a500acc8a01c2b68b369}{set\+\_\+position}} (glm\+::vec3 \+\_\+position)
 \item 
-glm\+::vec3 \mbox{\hyperlink{structthegrill_1_1_transform_a22c7931a2877a2997f32b18a106bd178}{get\+\_\+rotation}} ()
+void \mbox{\hyperlink{structthegrill_1_1_transform_a235cd4f4651331387cc17a86627338d5}{Move}} (glm\+::vec3 \+\_\+amount)
 \item 
+glm\+::vec3 \mbox{\hyperlink{structthegrill_1_1_transform_a81722ad1176f94f64a4e5469cca49322}{get\+\_\+position}} ()
+\begin{DoxyCompactList}\small\item\em Gets the position of the transform recursively including the position of parents if found. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{structthegrill_1_1_transform_a22c7931a2877a2997f32b18a106bd178}{get\+\_\+rotation}} ()
+\begin{DoxyCompactList}\small\item\em Gets the rotation of the transform recursively including the rotation of parents if found. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{structthegrill_1_1_transform_a9310268aa587691d8cb294dcf86a06d6}{get\+\_\+scale}} ()
+\begin{DoxyCompactList}\small\item\em Gets the scale of the transform recursively including the scale of parents if found. \end{DoxyCompactList}\item 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_entity}{Entity}} $>$ \mbox{\hyperlink{structthegrill_1_1_transform_a14f572ae5df664f1755162ed1055d979}{get\+\_\+parent}} ()
 \item 
 void \mbox{\hyperlink{structthegrill_1_1_transform_a2e9623c2083674cb781cd1a782c4e966}{set\+\_\+parent}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_entity}{Entity}} $>$ \+\_\+parent)
-\item 
-void \mbox{\hyperlink{structthegrill_1_1_transform_a235cd4f4651331387cc17a86627338d5}{Move}} (glm\+::vec3 \+\_\+amount)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structthegrill_1_1_component}{thegrill\+::\+Component}}}
 \begin{DoxyCompactItemize}
@@ -33,7 +42,7 @@ void \mbox{\hyperlink{structthegrill_1_1_transform_a235cd4f4651331387cc17a866273
 virtual void \mbox{\hyperlink{structthegrill_1_1_component_a3bea71129c378ed65415b5b02ee890a6}{on\+\_\+initialize}} ()
 \item 
 virtual void \mbox{\hyperlink{structthegrill_1_1_component_ab2f4198b8755856e77eb0181754b290b}{on\+\_\+tick}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Called every frame to update the component. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{structthegrill_1_1_component_a79a3c7b6cf9b91e1930335a4e40f3bcd}{on\+\_\+render}} ()
 \item 
 virtual void \mbox{\hyperlink{structthegrill_1_1_component_a413f6325ab19b1f736491631ae0b8b23}{on\+\_\+gui}} ()
@@ -54,9 +63,12 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_core}{Core}} $>$ \
 \item 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_transform}{Transform}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a079f00434c0077e4356f45f2bdd92c17}{get\+\_\+transform}} ()
 \item 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a4b0f91fe01d2f5dbfe7a2da769cf4e53}{Component\+::get\+\_\+gui}} ()
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_ad2d32c2c0c657629f821720628b3bdd8}{get\+\_\+gui}} ()
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+The \doxylink{structthegrill_1_1_transform}{Transform} compoenent represents the position, rotation, and scale of an entity. 
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{structthegrill_1_1_transform_a0b75ab9c275a3b9e6bf5c40303da4e48}\index{thegrill::Transform@{thegrill::Transform}!get\_model@{get\_model}}
@@ -71,18 +83,45 @@ glm\+::mat4 thegrill\+::\+Transform\+::get\+\_\+model (\begin{DoxyParamCaption}{
 {\footnotesize\ttfamily \label{structthegrill_1_1_transform_a14f572ae5df664f1755162ed1055d979} 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_entity}{Entity}} $>$ thegrill\+::\+Transform\+::get\+\_\+parent (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
-\Hypertarget{structthegrill_1_1_transform_ac99de02e31790fe6bbecee649dd372f8}\index{thegrill::Transform@{thegrill::Transform}!get\_position@{get\_position}}
+\Hypertarget{structthegrill_1_1_transform_a81722ad1176f94f64a4e5469cca49322}\index{thegrill::Transform@{thegrill::Transform}!get\_position@{get\_position}}
 \index{get\_position@{get\_position}!thegrill::Transform@{thegrill::Transform}}
 \doxysubsubsection{\texorpdfstring{get\_position()}{get\_position()}}
-{\footnotesize\ttfamily \label{structthegrill_1_1_transform_ac99de02e31790fe6bbecee649dd372f8} 
-glm\+::vec3 thegrill\+::\+Transform\+::get\+\_\+position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \label{structthegrill_1_1_transform_a81722ad1176f94f64a4e5469cca49322} 
+glm\+::vec3 thegrill\+::\+Transform\+::get\+\_\+position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
+
+
+Gets the position of the transform recursively including the position of parents if found. 
+
+\begin{DoxyReturn}{Returns}
+The position. 
+\end{DoxyReturn}
 \Hypertarget{structthegrill_1_1_transform_a22c7931a2877a2997f32b18a106bd178}\index{thegrill::Transform@{thegrill::Transform}!get\_rotation@{get\_rotation}}
 \index{get\_rotation@{get\_rotation}!thegrill::Transform@{thegrill::Transform}}
 \doxysubsubsection{\texorpdfstring{get\_rotation()}{get\_rotation()}}
 {\footnotesize\ttfamily \label{structthegrill_1_1_transform_a22c7931a2877a2997f32b18a106bd178} 
-glm\+::vec3 thegrill\+::\+Transform\+::get\+\_\+rotation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+glm\+::vec3 thegrill\+::\+Transform\+::get\+\_\+rotation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
+
+
+Gets the rotation of the transform recursively including the rotation of parents if found. 
+
+\begin{DoxyReturn}{Returns}
+The rotation. 
+\end{DoxyReturn}
+\Hypertarget{structthegrill_1_1_transform_a9310268aa587691d8cb294dcf86a06d6}\index{thegrill::Transform@{thegrill::Transform}!get\_scale@{get\_scale}}
+\index{get\_scale@{get\_scale}!thegrill::Transform@{thegrill::Transform}}
+\doxysubsubsection{\texorpdfstring{get\_scale()}{get\_scale()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_transform_a9310268aa587691d8cb294dcf86a06d6} 
+glm\+::vec3 thegrill\+::\+Transform\+::get\+\_\+scale (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Gets the scale of the transform recursively including the scale of parents if found. 
+
+\begin{DoxyReturn}{Returns}
+The scale. 
+\end{DoxyReturn}
 \Hypertarget{structthegrill_1_1_transform_a235cd4f4651331387cc17a86627338d5}\index{thegrill::Transform@{thegrill::Transform}!Move@{Move}}
 \index{Move@{Move}!thegrill::Transform@{thegrill::Transform}}
 \doxysubsubsection{\texorpdfstring{Move()}{Move()}}
@@ -99,7 +138,13 @@ void thegrill\+::\+Transform\+::set\+\_\+parent (\begin{DoxyParamCaption}\item[{
 \index{set\_position@{set\_position}!thegrill::Transform@{thegrill::Transform}}
 \doxysubsubsection{\texorpdfstring{set\_position()}{set\_position()}}
 {\footnotesize\ttfamily \label{structthegrill_1_1_transform_ae4fadbcb1d96a500acc8a01c2b68b369} 
-void thegrill\+::\+Transform\+::set\+\_\+position (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+position}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+void thegrill\+::\+Transform\+::set\+\_\+position (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+position}{}\end{DoxyParamCaption})}
+
+\Hypertarget{structthegrill_1_1_transform_a1fef7ca814558dcdb5a727dca5e55b6b}\index{thegrill::Transform@{thegrill::Transform}!set\_rotation@{set\_rotation}}
+\index{set\_rotation@{set\_rotation}!thegrill::Transform@{thegrill::Transform}}
+\doxysubsubsection{\texorpdfstring{set\_rotation()}{set\_rotation()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_transform_a1fef7ca814558dcdb5a727dca5e55b6b} 
+void thegrill\+::\+Transform\+::set\+\_\+rotation (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{\+\_\+rotation}{}\end{DoxyParamCaption})}
 
 
 

@@ -1,7 +1,6 @@
 #include <renderer/Shader.h>
 #include <renderer/Mesh.h>
 #include "ModelRenderer.h"
-#include <iostream>
 #include <glm/ext.hpp>
 #include "Texture.h"
 #include "Model.h"
@@ -15,6 +14,7 @@ namespace thegrill {
 	ModelRenderer::ModelRenderer():
 		m_shader(renderer::Shader(false))
 	{}
+
 	void ModelRenderer::set_texture(std::shared_ptr<Texture> _tex)
 	{
 		m_tex = _tex->get_texture();
@@ -25,9 +25,16 @@ namespace thegrill {
 	}
 	void ModelRenderer::on_render()
 	{
+
+		// Check if m_tex and m_model are valid
+		if (!m_tex || !m_model)
+		{
+			throw std::runtime_error("ModelRenderer Error: Failed to find valid Texture or Model");
+			return;
+		}
+
 		int height, width;
-		get_entity()->get_core()->window()->getDimensions(width, height);
-		//printf("Drawing\n");
+		get_entity()->get_core()->window()->get_dimensions(width, height);
 		glm::mat4 projection = glm::perspective(glm::radians(45.0f), float(width) / float(height), 0.1f, 100.f);
 		m_shader.setUniform("u_Projection", projection);
 
@@ -45,9 +52,6 @@ namespace thegrill {
 
 		m_shader.setUniform("u_Texture", m_tex, 1);
 
-		m_shader.setUniform("in_LightPos", glm::vec3(1, 10, 1));
-
-		//m_shader.setUniform("in_LightPos", glm::vec3(-20, 10, -20));
 		m_shader.draw(m_shader.programId, m_model->vao_id(), m_model->vertex_count(), true);
 	}
 }

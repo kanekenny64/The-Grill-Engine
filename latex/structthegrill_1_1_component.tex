@@ -2,6 +2,11 @@
 \hypertarget{structthegrill_1_1_component}{}\label{structthegrill_1_1_component}\index{thegrill::Component@{thegrill::Component}}
 
 
+Base class for all components in the engine.  
+
+
+
+
 {\ttfamily \#include $<$Component.\+h$>$}
 
 Inheritance diagram for thegrill\+::Component\+:\begin{figure}[H]
@@ -16,7 +21,7 @@ Inheritance diagram for thegrill\+::Component\+:\begin{figure}[H]
 virtual void \mbox{\hyperlink{structthegrill_1_1_component_a3bea71129c378ed65415b5b02ee890a6}{on\+\_\+initialize}} ()
 \item 
 virtual void \mbox{\hyperlink{structthegrill_1_1_component_ab2f4198b8755856e77eb0181754b290b}{on\+\_\+tick}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Called every frame to update the component. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{structthegrill_1_1_component_a79a3c7b6cf9b91e1930335a4e40f3bcd}{on\+\_\+render}} ()
 \item 
 virtual void \mbox{\hyperlink{structthegrill_1_1_component_a413f6325ab19b1f736491631ae0b8b23}{on\+\_\+gui}} ()
@@ -37,7 +42,7 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_core}{Core}} $>$ \
 \item 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_transform}{Transform}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a079f00434c0077e4356f45f2bdd92c17}{get\+\_\+transform}} ()
 \item 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a4b0f91fe01d2f5dbfe7a2da769cf4e53}{Component\+::get\+\_\+gui}} ()
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_ad2d32c2c0c657629f821720628b3bdd8}{get\+\_\+gui}} ()
 \end{DoxyCompactItemize}
 \doxysubsubsection*{Friends}
 \begin{DoxyCompactItemize}
@@ -46,13 +51,12 @@ struct \mbox{\hyperlink{structthegrill_1_1_component_a3ec9a65ffa9e705b063f5d28f4
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Member Function Documentation}
-\Hypertarget{structthegrill_1_1_component_a4b0f91fe01d2f5dbfe7a2da769cf4e53}\index{thegrill::Component@{thegrill::Component}!Component::get\_gui@{Component::get\_gui}}
-\index{Component::get\_gui@{Component::get\_gui}!thegrill::Component@{thegrill::Component}}
-\doxysubsubsection{\texorpdfstring{Component::get\_gui()}{Component::get\_gui()}}
-{\footnotesize\ttfamily \label{structthegrill_1_1_component_a4b0f91fe01d2f5dbfe7a2da769cf4e53} 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ thegrill\+::\+Component\+::\+Component\+::get\+\_\+gui (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+\doxysubsection{Detailed Description}
+Base class for all components in the engine. 
 
+This class provides the basic interface and functionality for all components. 
+
+\doxysubsection{Member Function Documentation}
 \Hypertarget{structthegrill_1_1_component_a9336bcaea73cfe54b76200b54d454223}\index{thegrill::Component@{thegrill::Component}!get\_core@{get\_core}}
 \index{get\_core@{get\_core}!thegrill::Component@{thegrill::Component}}
 \doxysubsubsection{\texorpdfstring{get\_core()}{get\_core()}}
@@ -64,6 +68,12 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_core}{Core}} $>$ t
 \doxysubsubsection{\texorpdfstring{get\_entity()}{get\_entity()}}
 {\footnotesize\ttfamily \label{structthegrill_1_1_component_acc754d2dc8e9915ebf5b5eb666409d51} 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_entity}{Entity}} $>$ thegrill\+::\+Component\+::get\+\_\+entity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+\Hypertarget{structthegrill_1_1_component_ad2d32c2c0c657629f821720628b3bdd8}\index{thegrill::Component@{thegrill::Component}!get\_gui@{get\_gui}}
+\index{get\_gui@{get\_gui}!thegrill::Component@{thegrill::Component}}
+\doxysubsubsection{\texorpdfstring{get\_gui()}{get\_gui()}}
+{\footnotesize\ttfamily \label{structthegrill_1_1_component_ad2d32c2c0c657629f821720628b3bdd8} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ thegrill\+::\+Component\+::get\+\_\+gui (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 \Hypertarget{structthegrill_1_1_component_a572dc42b03bbe17422671f03b334721f}\index{thegrill::Component@{thegrill::Component}!get\_keyboard@{get\_keyboard}}
 \index{get\_keyboard@{get\_keyboard}!thegrill::Component@{thegrill::Component}}
@@ -124,6 +134,10 @@ void thegrill\+::\+Component\+::on\+\_\+render (\begin{DoxyParamCaption}{}{}\end
 \doxysubsubsection{\texorpdfstring{on\_tick()}{on\_tick()}}
 {\footnotesize\ttfamily \label{structthegrill_1_1_component_ab2f4198b8755856e77eb0181754b290b} 
 void thegrill\+::\+Component\+::on\+\_\+tick (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Called every frame to update the component. 
 
 
 

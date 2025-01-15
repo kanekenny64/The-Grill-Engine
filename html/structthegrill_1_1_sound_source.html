@@ -31,6 +31,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="thegrilllogo.png"/></td>
   <td id="projectalign">
    <div id="projectname">thegrill
    </div>
@@ -116,7 +117,7 @@ Inheritance diagram for thegrill::SoundSource:</div>
  <div class="center">
   <img src="structthegrill_1_1_sound_source.png" usemap="#thegrill::SoundSource_map" alt=""/>
   <map id="thegrill::SoundSource_map" name="thegrill::SoundSource_map">
-<area href="structthegrill_1_1_component.html" alt="thegrill::Component" shape="rect" coords="0,0,133,24"/>
+<area href="structthegrill_1_1_component.html" title="Base class for all components in the engine." alt="thegrill::Component" shape="rect" coords="0,0,133,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -129,6 +130,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3b093b3c93f7d7f3fa496878f0891287" id="r_a3b093b3c93f7d7f3fa496878f0891287"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b093b3c93f7d7f3fa496878f0891287">setAudio</a> (std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_audio.html">Audio</a> &gt; _audio)</td></tr>
 <tr class="separator:a3b093b3c93f7d7f3fa496878f0891287"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a619b553e05c5d4ef97a00c49491be588" id="r_a619b553e05c5d4ef97a00c49491be588"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a619b553e05c5d4ef97a00c49491be588">on_tick</a> ()</td></tr>
+<tr class="memdesc:a619b553e05c5d4ef97a00c49491be588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called every frame to update the component.  <br /></td></tr>
 <tr class="separator:a619b553e05c5d4ef97a00c49491be588"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adad71d65f6e2458f2f8cc6edc04582b6" id="r_adad71d65f6e2458f2f8cc6edc04582b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adad71d65f6e2458f2f8cc6edc04582b6">play</a> ()</td></tr>
 <tr class="separator:adad71d65f6e2458f2f8cc6edc04582b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,8 +155,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9336bcaea73cfe54b76200b54d454223 inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a079f00434c0077e4356f45f2bdd92c17 inherit pub_methods_structthegrill_1_1_component" id="r_a079f00434c0077e4356f45f2bdd92c17"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_transform.html">Transform</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthegrill_1_1_component.html#a079f00434c0077e4356f45f2bdd92c17">get_transform</a> ()</td></tr>
 <tr class="separator:a079f00434c0077e4356f45f2bdd92c17 inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b0f91fe01d2f5dbfe7a2da769cf4e53 inherit pub_methods_structthegrill_1_1_component" id="r_a4b0f91fe01d2f5dbfe7a2da769cf4e53"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_g_u_i.html">GUI</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthegrill_1_1_component.html#a4b0f91fe01d2f5dbfe7a2da769cf4e53">Component::get_gui</a> ()</td></tr>
-<tr class="separator:a4b0f91fe01d2f5dbfe7a2da769cf4e53 inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d32c2c0c657629f821720628b3bdd8 inherit pub_methods_structthegrill_1_1_component" id="r_ad2d32c2c0c657629f821720628b3bdd8"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_g_u_i.html">GUI</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthegrill_1_1_component.html#ad2d32c2c0c657629f821720628b3bdd8">get_gui</a> ()</td></tr>
+<tr class="separator:ad2d32c2c0c657629f821720628b3bdd8 inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a40bd24051c7cf62714e8ba3e0ee9cb7f" name="a40bd24051c7cf62714e8ba3e0ee9cb7f"></a>
@@ -224,6 +226,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Called every frame to update the component. </p>
 
 <p>Reimplemented from <a class="el" href="structthegrill_1_1_component.html#ab2f4198b8755856e77eb0181754b290b">thegrill::Component</a>.</p>
 

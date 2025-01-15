@@ -31,6 +31,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="thegrilllogo.png"/></td>
   <td id="projectalign">
    <div id="projectname">thegrill
    </div>
@@ -110,6 +111,9 @@ $(function(){initNavTree('structthegrill_1_1_component.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 
+<p>Base class for all components in the engine.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_component_8h_source.html">Component.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for thegrill::Component:</div>
@@ -120,14 +124,14 @@ Inheritance diagram for thegrill::Component:</div>
 <area href="struct_child.html" alt="Child" shape="rect" coords="177,56,344,80"/>
 <area href="struct_player.html" alt="Player" shape="rect" coords="177,112,344,136"/>
 <area href="structthegrill_1_1_animation_controller.html" title="The AnimationController class is responsible for managing and controlling the playback of animation t..." alt="thegrill::AnimationController" shape="rect" coords="177,168,344,192"/>
-<area href="structthegrill_1_1_animation_track.html" alt="thegrill::AnimationTrack" shape="rect" coords="177,224,344,248"/>
-<area href="structthegrill_1_1_audio_listener.html" alt="thegrill::AudioListener" shape="rect" coords="177,280,344,304"/>
-<area href="structthegrill_1_1_camera.html" alt="thegrill::Camera" shape="rect" coords="177,336,344,360"/>
+<area href="structthegrill_1_1_animation_track.html" title="The AnimationTrack class holds data for an animation track, including keyframes." alt="thegrill::AnimationTrack" shape="rect" coords="177,224,344,248"/>
+<area href="structthegrill_1_1_audio_listener.html" title="The Audio Listener is a component used to control where audio is heard from." alt="thegrill::AudioListener" shape="rect" coords="177,280,344,304"/>
+<area href="structthegrill_1_1_camera.html" title="The BoxCollider class is used to control the position of the camera to be used in rendering pipeline." alt="thegrill::Camera" shape="rect" coords="177,336,344,360"/>
 <area href="structthegrill_1_1_collider.html" alt="thegrill::Collider" shape="rect" coords="177,392,344,416"/>
-<area href="structthegrill_1_1_model_renderer.html" alt="thegrill::ModelRenderer" shape="rect" coords="177,448,344,472"/>
+<area href="structthegrill_1_1_model_renderer.html" title="The ModelRenderer class is a component responsible for rendering models with textures." alt="thegrill::ModelRenderer" shape="rect" coords="177,448,344,472"/>
 <area href="structthegrill_1_1_rigid_body.html" alt="thegrill::RigidBody" shape="rect" coords="177,504,344,528"/>
 <area href="structthegrill_1_1_sound_source.html" alt="thegrill::SoundSource" shape="rect" coords="177,560,344,584"/>
-<area href="structthegrill_1_1_transform.html" alt="thegrill::Transform" shape="rect" coords="177,616,344,640"/>
+<area href="structthegrill_1_1_transform.html" title="The Transform compoenent represents the position, rotation, and scale of an entity." alt="thegrill::Transform" shape="rect" coords="177,616,344,640"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -136,6 +140,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3bea71129c378ed65415b5b02ee890a6" id="r_a3bea71129c378ed65415b5b02ee890a6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3bea71129c378ed65415b5b02ee890a6">on_initialize</a> ()</td></tr>
 <tr class="separator:a3bea71129c378ed65415b5b02ee890a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2f4198b8755856e77eb0181754b290b" id="r_ab2f4198b8755856e77eb0181754b290b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2f4198b8755856e77eb0181754b290b">on_tick</a> ()</td></tr>
+<tr class="memdesc:ab2f4198b8755856e77eb0181754b290b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called every frame to update the component.  <br /></td></tr>
 <tr class="separator:ab2f4198b8755856e77eb0181754b290b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79a3c7b6cf9b91e1930335a4e40f3bcd" id="r_a79a3c7b6cf9b91e1930335a4e40f3bcd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79a3c7b6cf9b91e1930335a4e40f3bcd">on_render</a> ()</td></tr>
 <tr class="separator:a79a3c7b6cf9b91e1930335a4e40f3bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,32 +162,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9336bcaea73cfe54b76200b54d454223"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a079f00434c0077e4356f45f2bdd92c17" id="r_a079f00434c0077e4356f45f2bdd92c17"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_transform.html">Transform</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a079f00434c0077e4356f45f2bdd92c17">get_transform</a> ()</td></tr>
 <tr class="separator:a079f00434c0077e4356f45f2bdd92c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b0f91fe01d2f5dbfe7a2da769cf4e53" id="r_a4b0f91fe01d2f5dbfe7a2da769cf4e53"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_g_u_i.html">GUI</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b0f91fe01d2f5dbfe7a2da769cf4e53">Component::get_gui</a> ()</td></tr>
-<tr class="separator:a4b0f91fe01d2f5dbfe7a2da769cf4e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d32c2c0c657629f821720628b3bdd8" id="r_ad2d32c2c0c657629f821720628b3bdd8"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_g_u_i.html">GUI</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2d32c2c0c657629f821720628b3bdd8">get_gui</a> ()</td></tr>
+<tr class="separator:ad2d32c2c0c657629f821720628b3bdd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
 <tr class="memitem:a3ec9a65ffa9e705b063f5d28f45bf980" id="r_a3ec9a65ffa9e705b063f5d28f45bf980"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ec9a65ffa9e705b063f5d28f45bf980">thegrill::Entity</a></td></tr>
 <tr class="separator:a3ec9a65ffa9e705b063f5d28f45bf980"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4b0f91fe01d2f5dbfe7a2da769cf4e53" name="a4b0f91fe01d2f5dbfe7a2da769cf4e53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b0f91fe01d2f5dbfe7a2da769cf4e53">&#9670;&#160;</a></span>Component::get_gui()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_g_u_i.html">GUI</a> &gt; thegrill::Component::Component::get_gui </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base class for all components in the engine. </p>
+<p>This class provides the basic interface and functionality for all components. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9336bcaea73cfe54b76200b54d454223" name="a9336bcaea73cfe54b76200b54d454223"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9336bcaea73cfe54b76200b54d454223">&#9670;&#160;</a></span>get_core()</h2>
 
@@ -211,6 +202,23 @@ Friends</h2></td></tr>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2d32c2c0c657629f821720628b3bdd8" name="ad2d32c2c0c657629f821720628b3bdd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2d32c2c0c657629f821720628b3bdd8">&#9670;&#160;</a></span>get_gui()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_g_u_i.html">GUI</a> &gt; thegrill::Component::get_gui </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -396,6 +404,8 @@ Friends</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Called every frame to update the component. </p>
 
 <p>Reimplemented in <a class="el" href="structthegrill_1_1_animation_controller.html#a0a17b97437953a31dde203fba8c772ec">thegrill::AnimationController</a>, <a class="el" href="structthegrill_1_1_audio_listener.html#acde6f3622d7769a47a4819b8882b8038">thegrill::AudioListener</a>, <a class="el" href="structthegrill_1_1_mesh_collider.html#aeead617b4c985e5e82f30ab66c0799f0">thegrill::MeshCollider</a>, <a class="el" href="structthegrill_1_1_rigid_body.html#a2b90524a38f8ae79024405bd132117d0">thegrill::RigidBody</a>, and <a class="el" href="structthegrill_1_1_sound_source.html#a619b553e05c5d4ef97a00c49491be588">thegrill::SoundSource</a>.</p>
 

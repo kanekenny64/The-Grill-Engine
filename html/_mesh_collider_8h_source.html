@@ -31,6 +31,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="thegrilllogo.png"/></td>
   <td id="projectalign">
    <div id="projectname">thegrill
    </div>
@@ -105,45 +106,39 @@ $(function(){initNavTree('_mesh_collider_8h_source.html',''); initResizable(true
   <div class="headertitle"><div class="title">MeshCollider.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_mesh_collider_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;glm/glm.hpp&gt;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_component_8h.html">Component.h</a>&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_entity_8h.html">Entity.h</a>&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_renderer_8h.html">renderer/Renderer.h</a>&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_collider_8h.html">Collider.h</a>&quot;</span></div>
+<a href="_mesh_collider_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_renderer_8h.html">renderer/Renderer.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_collider_8h.html">Collider.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacethegrill.html">thegrill</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structthegrill_1_1_box_collider.html">BoxCollider</a>;</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacethegrill.html">thegrill</a> {</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structthegrill_1_1_box_collider.html">BoxCollider</a>;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="structthegrill_1_1_mesh_collider.html">   14</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structthegrill_1_1_mesh_collider.html">MeshCollider</a> : <a class="code hl_struct" href="structthegrill_1_1_collider.html">Collider</a></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="structthegrill_1_1_mesh_collider.html#a2d736ba950c846eb2d295b378a808285">on_initialize</a>();</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="structthegrill_1_1_mesh_collider.html#aeead617b4c985e5e82f30ab66c0799f0">on_tick</a>();</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="structthegrill_1_1_mesh_collider.html#a22ac16897d328f3bd5357065dd4bcea2">colliding</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structthegrill_1_1_box_collider.html">BoxCollider</a>&amp; _other);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structthegrill_1_1_mesh_collider.html#a28fe5c0bba10cf6650f8ca10e03620a1">   21</a></span>        std::vector&lt;renderer::Model::Face&gt; <a class="code hl_variable" href="structthegrill_1_1_mesh_collider.html#a28fe5c0bba10cf6650f8ca10e03620a1">m_faces</a>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    };</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="structthegrill_1_1_mesh_collider.html">   10</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structthegrill_1_1_mesh_collider.html">MeshCollider</a> : <a class="code hl_struct" href="structthegrill_1_1_collider.html">Collider</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="structthegrill_1_1_mesh_collider.html#a2d736ba950c846eb2d295b378a808285">on_initialize</a>();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="structthegrill_1_1_mesh_collider.html#aeead617b4c985e5e82f30ab66c0799f0">on_tick</a>();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="structthegrill_1_1_mesh_collider.html#a22ac16897d328f3bd5357065dd4bcea2">colliding</a>(<span class="keyword">const</span> <a class="code hl_struct" href="structthegrill_1_1_box_collider.html">BoxCollider</a>&amp; _other);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        std::vector&lt;renderer::Model::Face&gt; m_faces;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    };</div>
 </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
 <div class="ttc" id="a_collider_8h_html"><div class="ttname"><a href="_collider_8h.html">Collider.h</a></div></div>
-<div class="ttc" id="a_component_8h_html"><div class="ttname"><a href="_component_8h.html">Component.h</a></div></div>
-<div class="ttc" id="a_entity_8h_html"><div class="ttname"><a href="_entity_8h.html">Entity.h</a></div></div>
 <div class="ttc" id="a_renderer_8h_html"><div class="ttname"><a href="_renderer_8h.html">Renderer.h</a></div></div>
-<div class="ttc" id="anamespacethegrill_html"><div class="ttname"><a href="namespacethegrill.html">thegrill</a></div><div class="ttdef"><b>Definition</b> AnimationController.cpp:11</div></div>
-<div class="ttc" id="astructthegrill_1_1_box_collider_html"><div class="ttname"><a href="structthegrill_1_1_box_collider.html">thegrill::BoxCollider</a></div><div class="ttdef"><b>Definition</b> BoxCollider.h:11</div></div>
-<div class="ttc" id="astructthegrill_1_1_collider_html"><div class="ttname"><a href="structthegrill_1_1_collider.html">thegrill::Collider</a></div><div class="ttdef"><b>Definition</b> Collider.h:8</div></div>
-<div class="ttc" id="astructthegrill_1_1_mesh_collider_html"><div class="ttname"><a href="structthegrill_1_1_mesh_collider.html">thegrill::MeshCollider</a></div><div class="ttdef"><b>Definition</b> MeshCollider.h:15</div></div>
-<div class="ttc" id="astructthegrill_1_1_mesh_collider_html_a22ac16897d328f3bd5357065dd4bcea2"><div class="ttname"><a href="structthegrill_1_1_mesh_collider.html#a22ac16897d328f3bd5357065dd4bcea2">thegrill::MeshCollider::colliding</a></div><div class="ttdeci">bool colliding(const BoxCollider &amp;_other)</div><div class="ttdef"><b>Definition</b> MeshCollider.cpp:20</div></div>
-<div class="ttc" id="astructthegrill_1_1_mesh_collider_html_a28fe5c0bba10cf6650f8ca10e03620a1"><div class="ttname"><a href="structthegrill_1_1_mesh_collider.html#a28fe5c0bba10cf6650f8ca10e03620a1">thegrill::MeshCollider::m_faces</a></div><div class="ttdeci">std::vector&lt; renderer::Model::Face &gt; m_faces</div><div class="ttdef"><b>Definition</b> MeshCollider.h:21</div></div>
-<div class="ttc" id="astructthegrill_1_1_mesh_collider_html_a2d736ba950c846eb2d295b378a808285"><div class="ttname"><a href="structthegrill_1_1_mesh_collider.html#a2d736ba950c846eb2d295b378a808285">thegrill::MeshCollider::on_initialize</a></div><div class="ttdeci">void on_initialize()</div><div class="ttdef"><b>Definition</b> MeshCollider.cpp:10</div></div>
-<div class="ttc" id="astructthegrill_1_1_mesh_collider_html_aeead617b4c985e5e82f30ab66c0799f0"><div class="ttname"><a href="structthegrill_1_1_mesh_collider.html#aeead617b4c985e5e82f30ab66c0799f0">thegrill::MeshCollider::on_tick</a></div><div class="ttdeci">void on_tick()</div><div class="ttdef"><b>Definition</b> MeshCollider.cpp:16</div></div>
+<div class="ttc" id="anamespacethegrill_html"><div class="ttname"><a href="namespacethegrill.html">thegrill</a></div><div class="ttdoc">The Collider class acts as a parent for other colliders to inherit from.</div><div class="ttdef"><b>Definition</b> AnimationController.cpp:11</div></div>
+<div class="ttc" id="astructthegrill_1_1_box_collider_html"><div class="ttname"><a href="structthegrill_1_1_box_collider.html">thegrill::BoxCollider</a></div><div class="ttdoc">The BoxCollider class represents a rectangular collider used to test for collision with other collide...</div><div class="ttdef"><b>Definition</b> BoxCollider.h:14</div></div>
+<div class="ttc" id="astructthegrill_1_1_collider_html"><div class="ttname"><a href="structthegrill_1_1_collider.html">thegrill::Collider</a></div><div class="ttdef"><b>Definition</b> Collider.h:14</div></div>
+<div class="ttc" id="astructthegrill_1_1_mesh_collider_html"><div class="ttname"><a href="structthegrill_1_1_mesh_collider.html">thegrill::MeshCollider</a></div><div class="ttdef"><b>Definition</b> MeshCollider.h:11</div></div>
+<div class="ttc" id="astructthegrill_1_1_mesh_collider_html_a22ac16897d328f3bd5357065dd4bcea2"><div class="ttname"><a href="structthegrill_1_1_mesh_collider.html#a22ac16897d328f3bd5357065dd4bcea2">thegrill::MeshCollider::colliding</a></div><div class="ttdeci">bool colliding(const BoxCollider &amp;_other)</div><div class="ttdef"><b>Definition</b> MeshCollider.cpp:26</div></div>
+<div class="ttc" id="astructthegrill_1_1_mesh_collider_html_a2d736ba950c846eb2d295b378a808285"><div class="ttname"><a href="structthegrill_1_1_mesh_collider.html#a2d736ba950c846eb2d295b378a808285">thegrill::MeshCollider::on_initialize</a></div><div class="ttdeci">void on_initialize()</div><div class="ttdef"><b>Definition</b> MeshCollider.cpp:12</div></div>
+<div class="ttc" id="astructthegrill_1_1_mesh_collider_html_aeead617b4c985e5e82f30ab66c0799f0"><div class="ttname"><a href="structthegrill_1_1_mesh_collider.html#aeead617b4c985e5e82f30ab66c0799f0">thegrill::MeshCollider::on_tick</a></div><div class="ttdeci">void on_tick()</div><div class="ttdoc">Called every frame to update the component.</div><div class="ttdef"><b>Definition</b> MeshCollider.cpp:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

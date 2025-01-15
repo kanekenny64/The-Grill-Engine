@@ -31,6 +31,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="thegrilllogo.png"/></td>
   <td id="projectalign">
    <div id="projectname">thegrill
    </div>
@@ -109,6 +110,9 @@ $(function(){initNavTree('structthegrill_1_1_transform.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 
+<p>The <a class="el" href="structthegrill_1_1_transform.html" title="The Transform compoenent represents the position, rotation, and scale of an entity.">Transform</a> compoenent represents the position, rotation, and scale of an entity.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_transform_8h_source.html">Transform.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for thegrill::Transform:</div>
@@ -116,7 +120,7 @@ Inheritance diagram for thegrill::Transform:</div>
  <div class="center">
   <img src="structthegrill_1_1_transform.png" usemap="#thegrill::Transform_map" alt=""/>
   <map id="thegrill::Transform_map" name="thegrill::Transform_map">
-<area href="structthegrill_1_1_component.html" alt="thegrill::Component" shape="rect" coords="0,0,119,24"/>
+<area href="structthegrill_1_1_component.html" title="Base class for all components in the engine." alt="thegrill::Component" shape="rect" coords="0,0,119,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -124,22 +128,30 @@ Inheritance diagram for thegrill::Transform:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0b75ab9c275a3b9e6bf5c40303da4e48" id="r_a0b75ab9c275a3b9e6bf5c40303da4e48"><td class="memItemLeft" align="right" valign="top">glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b75ab9c275a3b9e6bf5c40303da4e48">get_model</a> ()</td></tr>
 <tr class="separator:a0b75ab9c275a3b9e6bf5c40303da4e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac99de02e31790fe6bbecee649dd372f8" id="r_ac99de02e31790fe6bbecee649dd372f8"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac99de02e31790fe6bbecee649dd372f8">get_position</a> () const</td></tr>
-<tr class="separator:ac99de02e31790fe6bbecee649dd372f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fef7ca814558dcdb5a727dca5e55b6b" id="r_a1fef7ca814558dcdb5a727dca5e55b6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1fef7ca814558dcdb5a727dca5e55b6b">set_rotation</a> (glm::vec3 _rotation)</td></tr>
+<tr class="separator:a1fef7ca814558dcdb5a727dca5e55b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4fadbcb1d96a500acc8a01c2b68b369" id="r_ae4fadbcb1d96a500acc8a01c2b68b369"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae4fadbcb1d96a500acc8a01c2b68b369">set_position</a> (glm::vec3 _position)</td></tr>
 <tr class="separator:ae4fadbcb1d96a500acc8a01c2b68b369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a235cd4f4651331387cc17a86627338d5" id="r_a235cd4f4651331387cc17a86627338d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a235cd4f4651331387cc17a86627338d5">Move</a> (glm::vec3 _amount)</td></tr>
+<tr class="separator:a235cd4f4651331387cc17a86627338d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81722ad1176f94f64a4e5469cca49322" id="r_a81722ad1176f94f64a4e5469cca49322"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81722ad1176f94f64a4e5469cca49322">get_position</a> ()</td></tr>
+<tr class="memdesc:a81722ad1176f94f64a4e5469cca49322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the position of the transform recursively including the position of parents if found.  <br /></td></tr>
+<tr class="separator:a81722ad1176f94f64a4e5469cca49322"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22c7931a2877a2997f32b18a106bd178" id="r_a22c7931a2877a2997f32b18a106bd178"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22c7931a2877a2997f32b18a106bd178">get_rotation</a> ()</td></tr>
+<tr class="memdesc:a22c7931a2877a2997f32b18a106bd178"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the rotation of the transform recursively including the rotation of parents if found.  <br /></td></tr>
 <tr class="separator:a22c7931a2877a2997f32b18a106bd178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9310268aa587691d8cb294dcf86a06d6" id="r_a9310268aa587691d8cb294dcf86a06d6"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9310268aa587691d8cb294dcf86a06d6">get_scale</a> ()</td></tr>
+<tr class="memdesc:a9310268aa587691d8cb294dcf86a06d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the scale of the transform recursively including the scale of parents if found.  <br /></td></tr>
+<tr class="separator:a9310268aa587691d8cb294dcf86a06d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14f572ae5df664f1755162ed1055d979" id="r_a14f572ae5df664f1755162ed1055d979"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_entity.html">Entity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14f572ae5df664f1755162ed1055d979">get_parent</a> ()</td></tr>
 <tr class="separator:a14f572ae5df664f1755162ed1055d979"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e9623c2083674cb781cd1a782c4e966" id="r_a2e9623c2083674cb781cd1a782c4e966"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e9623c2083674cb781cd1a782c4e966">set_parent</a> (std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_entity.html">Entity</a> &gt; _parent)</td></tr>
 <tr class="separator:a2e9623c2083674cb781cd1a782c4e966"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a235cd4f4651331387cc17a86627338d5" id="r_a235cd4f4651331387cc17a86627338d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a235cd4f4651331387cc17a86627338d5">Move</a> (glm::vec3 _amount)</td></tr>
-<tr class="separator:a235cd4f4651331387cc17a86627338d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structthegrill_1_1_component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_structthegrill_1_1_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structthegrill_1_1_component.html">thegrill::Component</a></td></tr>
 <tr class="memitem:a3bea71129c378ed65415b5b02ee890a6 inherit pub_methods_structthegrill_1_1_component" id="r_a3bea71129c378ed65415b5b02ee890a6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthegrill_1_1_component.html#a3bea71129c378ed65415b5b02ee890a6">on_initialize</a> ()</td></tr>
 <tr class="separator:a3bea71129c378ed65415b5b02ee890a6 inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2f4198b8755856e77eb0181754b290b inherit pub_methods_structthegrill_1_1_component" id="r_ab2f4198b8755856e77eb0181754b290b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthegrill_1_1_component.html#ab2f4198b8755856e77eb0181754b290b">on_tick</a> ()</td></tr>
+<tr class="memdesc:ab2f4198b8755856e77eb0181754b290b inherit pub_methods_structthegrill_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called every frame to update the component.  <br /></td></tr>
 <tr class="separator:ab2f4198b8755856e77eb0181754b290b inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79a3c7b6cf9b91e1930335a4e40f3bcd inherit pub_methods_structthegrill_1_1_component" id="r_a79a3c7b6cf9b91e1930335a4e40f3bcd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthegrill_1_1_component.html#a79a3c7b6cf9b91e1930335a4e40f3bcd">on_render</a> ()</td></tr>
 <tr class="separator:a79a3c7b6cf9b91e1930335a4e40f3bcd inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,10 +173,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9336bcaea73cfe54b76200b54d454223 inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a079f00434c0077e4356f45f2bdd92c17 inherit pub_methods_structthegrill_1_1_component" id="r_a079f00434c0077e4356f45f2bdd92c17"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_transform.html">Transform</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthegrill_1_1_component.html#a079f00434c0077e4356f45f2bdd92c17">get_transform</a> ()</td></tr>
 <tr class="separator:a079f00434c0077e4356f45f2bdd92c17 inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b0f91fe01d2f5dbfe7a2da769cf4e53 inherit pub_methods_structthegrill_1_1_component" id="r_a4b0f91fe01d2f5dbfe7a2da769cf4e53"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_g_u_i.html">GUI</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthegrill_1_1_component.html#a4b0f91fe01d2f5dbfe7a2da769cf4e53">Component::get_gui</a> ()</td></tr>
-<tr class="separator:a4b0f91fe01d2f5dbfe7a2da769cf4e53 inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d32c2c0c657629f821720628b3bdd8 inherit pub_methods_structthegrill_1_1_component" id="r_ad2d32c2c0c657629f821720628b3bdd8"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_g_u_i.html">GUI</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthegrill_1_1_component.html#ad2d32c2c0c657629f821720628b3bdd8">get_gui</a> ()</td></tr>
+<tr class="separator:ad2d32c2c0c657629f821720628b3bdd8 inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="structthegrill_1_1_transform.html" title="The Transform compoenent represents the position, rotation, and scale of an entity.">Transform</a> compoenent represents the position, rotation, and scale of an entity. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0b75ab9c275a3b9e6bf5c40303da4e48" name="a0b75ab9c275a3b9e6bf5c40303da4e48"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0b75ab9c275a3b9e6bf5c40303da4e48">&#9670;&#160;</a></span>get_model()</h2>
 
@@ -199,8 +213,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac99de02e31790fe6bbecee649dd372f8" name="ac99de02e31790fe6bbecee649dd372f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac99de02e31790fe6bbecee649dd372f8">&#9670;&#160;</a></span>get_position()</h2>
+<a id="a81722ad1176f94f64a4e5469cca49322" name="a81722ad1176f94f64a4e5469cca49322"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81722ad1176f94f64a4e5469cca49322">&#9670;&#160;</a></span>get_position()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -209,10 +223,13 @@ Public Member Functions</h2></td></tr>
           <td class="memname">glm::vec3 thegrill::Transform::get_position </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Gets the position of the transform recursively including the position of parents if found. </p>
+<dl class="section return"><dt>Returns</dt><dd>The position. </dd></dl>
 
 </div>
 </div>
@@ -221,9 +238,6 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">glm::vec3 thegrill::Transform::get_rotation </td>
@@ -232,12 +246,30 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>Gets the rotation of the transform recursively including the rotation of parents if found. </p>
+<dl class="section return"><dt>Returns</dt><dd>The rotation. </dd></dl>
+
+</div>
+</div>
+<a id="a9310268aa587691d8cb294dcf86a06d6" name="a9310268aa587691d8cb294dcf86a06d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9310268aa587691d8cb294dcf86a06d6">&#9670;&#160;</a></span>get_scale()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::vec3 thegrill::Transform::get_scale </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the scale of the transform recursively including the scale of parents if found. </p>
+<dl class="section return"><dt>Returns</dt><dd>The scale. </dd></dl>
 
 </div>
 </div>
@@ -280,9 +312,6 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void thegrill::Transform::set_position </td>
@@ -291,11 +320,23 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
-  </tr>
-</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1fef7ca814558dcdb5a727dca5e55b6b" name="a1fef7ca814558dcdb5a727dca5e55b6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fef7ca814558dcdb5a727dca5e55b6b">&#9670;&#160;</a></span>set_rotation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void thegrill::Transform::set_rotation </td>
+          <td>(</td>
+          <td class="paramtype">glm::vec3</td>          <td class="paramname"><span class="paramname"><em>_rotation</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>

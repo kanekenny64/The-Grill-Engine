@@ -1,30 +1,35 @@
 \doxysection{thegrill Namespace Reference}
 \hypertarget{namespacethegrill}{}\label{namespacethegrill}\index{thegrill@{thegrill}}
+
+
+The \doxylink{structthegrill_1_1_collider}{Collider} class acts as a parent for other colliders to inherit from.  
+
+
 \doxysubsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structthegrill_1_1_animation_controller}{Animation\+Controller}}
 \begin{DoxyCompactList}\small\item\em The \doxylink{structthegrill_1_1_animation_controller}{Animation\+Controller} class is responsible for managing and controlling the playback of animation tracks. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structthegrill_1_1_animation_track}{Animation\+Track}}
-\item 
+\begin{DoxyCompactList}\small\item\em The \doxylink{structthegrill_1_1_animation_track}{Animation\+Track} class holds data for an animation track, including keyframes. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structthegrill_1_1_audio}{Audio}}
-\item 
+\begin{DoxyCompactList}\small\item\em The \doxylink{structthegrill_1_1_audio}{Audio} class represents an audio resource that can be loaded and managed within the sound system. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structthegrill_1_1_audio_listener}{Audio\+Listener}}
-\item 
+\begin{DoxyCompactList}\small\item\em The \doxylink{structthegrill_1_1_audio}{Audio} Listener is a component used to control where audio is heard from. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structthegrill_1_1_box_collider}{Box\+Collider}}
-\item 
+\begin{DoxyCompactList}\small\item\em The \doxylink{structthegrill_1_1_box_collider}{Box\+Collider} class represents a rectangular collider used to test for collision with other colliders. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structthegrill_1_1_camera}{Camera}}
-\item 
+\begin{DoxyCompactList}\small\item\em The \doxylink{structthegrill_1_1_box_collider}{Box\+Collider} class is used to control the position of the camera to be used in rendering pipeline. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structthegrill_1_1_collider}{Collider}}
 \item 
 struct \mbox{\hyperlink{structthegrill_1_1_component}{Component}}
-\item 
+\begin{DoxyCompactList}\small\item\em Base class for all components in the engine. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structthegrill_1_1_core}{Core}}
-\item 
+\begin{DoxyCompactList}\small\item\em The \doxylink{structthegrill_1_1_core}{Core} class is the main engine class that manages the game loop and core systems. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structthegrill_1_1_entity}{Entity}}
-\item 
+\begin{DoxyCompactList}\small\item\em The \doxylink{structthegrill_1_1_entity}{Entity} class represents an object in the game world. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}}
-\item 
+\begin{DoxyCompactList}\small\item\em The \doxylink{structthegrill_1_1_g_u_i}{GUI} system handles rendering of \doxylink{structthegrill_1_1_g_u_i}{GUI} elements. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structthegrill_1_1_input}{Input}}
 \item 
 struct \mbox{\hyperlink{structthegrill_1_1_keyboard}{Keyboard}}
@@ -34,10 +39,8 @@ struct \mbox{\hyperlink{structthegrill_1_1_mesh_collider}{Mesh\+Collider}}
 struct \mbox{\hyperlink{structthegrill_1_1_model}{Model}}
 \item 
 struct \mbox{\hyperlink{structthegrill_1_1_model_renderer}{Model\+Renderer}}
-\item 
+\begin{DoxyCompactList}\small\item\em The \doxylink{structthegrill_1_1_model_renderer}{Model\+Renderer} class is a component responsible for rendering models with textures. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structthegrill_1_1_mouse}{Mouse}}
-\item 
-class \mbox{\hyperlink{classthegrill_1_1_non_copyable}{Non\+Copyable}}
 \item 
 struct \mbox{\hyperlink{structthegrill_1_1_resource}{Resource}}
 \item 
@@ -54,6 +57,12 @@ struct \mbox{\hyperlink{structthegrill_1_1_texture}{Texture}}
 struct \mbox{\hyperlink{structthegrill_1_1_timer}{Timer}}
 \item 
 struct \mbox{\hyperlink{structthegrill_1_1_transform}{Transform}}
-\item 
+\begin{DoxyCompactList}\small\item\em The \doxylink{structthegrill_1_1_transform}{Transform} compoenent represents the position, rotation, and scale of an entity. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structthegrill_1_1_window}{Window}}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{structthegrill_1_1_collider}{Collider} class acts as a parent for other colliders to inherit from. 
+
+It does not contain any data or functions, but can be used to identify colliders in the engine. 

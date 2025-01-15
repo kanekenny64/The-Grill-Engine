@@ -14,7 +14,7 @@ namespace thegrill {
 		m_duration = 0;
 		looping = true;
 		m_currentTime = 0;
-		
+
 	}
 
 	/**
@@ -22,7 +22,7 @@ namespace thegrill {
 	 */
 	void AnimationController::on_initialize()
 	{
-		
+
 		m_renderer = get_entity()->get_component<ModelRenderer>();
 		m_lastTime = get_core()->DeltaTime();
 	}
@@ -37,13 +37,13 @@ namespace thegrill {
 		if (m_currentTime - m_lastTime >= timePerFrame)
 		{
 			m_currentFrame++; ///< Move to the next frame.
-			
+
 			m_lastTime = m_currentTime; ///< Update last time to current time.
 
 			if (looping) {
 				if (m_currentFrame >= m_track->m_keyFrames.size())
 				{
-					
+
 					m_currentFrame = 0; ///< Loop back to the first frame.
 				}
 			}
@@ -56,7 +56,7 @@ namespace thegrill {
 
 		}
 
-		
+
 		m_renderer->set_model(m_track->m_keyFrames[m_currentFrame]); ///< Set the model to the current frame's model.
 	}
 	void AnimationController::set_track(std::shared_ptr<AnimationTrack> _track)

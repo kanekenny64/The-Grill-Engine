@@ -11,7 +11,7 @@ namespace thegrill {
 
 		void Update();
 
-		void getDimensions(int& _w, int& _h);
+		void get_dimensions(int& _w, int& _h);
 
 	private:
 		friend struct thegrill::Core;

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vertex_0',['Vertex',['../structrenderer_1_1_model_1_1_vertex.html',1,'renderer::Model::Vertex'],['../structrenderer_1_1_vertex.html',1,'renderer::Vertex']]]
+  ['window_0',['Window',['../structthegrill_1_1_window.html',1,'thegrill']]]
 ];

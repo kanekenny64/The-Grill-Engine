@@ -31,6 +31,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="thegrilllogo.png"/></td>
   <td id="projectalign">
    <div id="projectname">thegrill
    </div>
@@ -110,18 +111,24 @@ $(function(){initNavTree('structthegrill_1_1_entity.html',''); initResizable(tru
 </div><!--header-->
 <div class="contents">
 
+<p>The <a class="el" href="structthegrill_1_1_entity.html" title="The Entity class represents an object in the game world.">Entity</a> class represents an object in the game world.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_entity_8h_source.html">Entity.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a31ef5d9668aaf5e624f132395184819c" id="r_a31ef5d9668aaf5e624f132395184819c"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:a31ef5d9668aaf5e624f132395184819c"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a31ef5d9668aaf5e624f132395184819c">add_component</a> ()</td></tr>
+<tr class="memdesc:a31ef5d9668aaf5e624f132395184819c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new component of type T to the entity.  <br /></td></tr>
 <tr class="separator:a31ef5d9668aaf5e624f132395184819c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a599b17c8234e05d335621e444e10b83c" id="r_a599b17c8234e05d335621e444e10b83c"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:a599b17c8234e05d335621e444e10b83c"><td class="memTemplItemLeft" align="right" valign="top">std::shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a599b17c8234e05d335621e444e10b83c">get_component</a> () const</td></tr>
+<tr class="memdesc:a599b17c8234e05d335621e444e10b83c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a component of type T from the entity.  <br /></td></tr>
 <tr class="separator:a599b17c8234e05d335621e444e10b83c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d61abf56f3729a63cbd180bcc2386f3" id="r_a0d61abf56f3729a63cbd180bcc2386f3"><td class="memTemplParams" colspan="2">template&lt;typename T&gt; </td></tr>
 <tr class="memitem:a0d61abf56f3729a63cbd180bcc2386f3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0d61abf56f3729a63cbd180bcc2386f3">get_components</a> (std::vector&lt; std::shared_ptr&lt; T &gt; &gt; &amp;_components) const</td></tr>
+<tr class="memdesc:a0d61abf56f3729a63cbd180bcc2386f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets all components of type T from the entity.  <br /></td></tr>
 <tr class="separator:a0d61abf56f3729a63cbd180bcc2386f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92870fc2e8ce382d2717367608cf70b0" id="r_a92870fc2e8ce382d2717367608cf70b0"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_transform.html">Transform</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92870fc2e8ce382d2717367608cf70b0">get_transform</a> () const</td></tr>
 <tr class="separator:a92870fc2e8ce382d2717367608cf70b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,7 +146,10 @@ Friends</h2></td></tr>
 <tr class="memitem:a08ef93418f4fc32cef2ffb3b72f6bd26" id="r_a08ef93418f4fc32cef2ffb3b72f6bd26"><td class="memItemLeft" align="right" valign="top">struct&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08ef93418f4fc32cef2ffb3b72f6bd26">thegrill::Core</a></td></tr>
 <tr class="separator:a08ef93418f4fc32cef2ffb3b72f6bd26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="structthegrill_1_1_entity.html" title="The Entity class represents an object in the game world.">Entity</a> class represents an object in the game world. </p>
+<p>Entities can have multiple components attached to them and are stored within core. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a083955b7d9e901c1a62386d205dd942b" name="a083955b7d9e901c1a62386d205dd942b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a083955b7d9e901c1a62386d205dd942b">&#9670;&#160;</a></span>~Entity()</h2>
 
@@ -182,6 +192,15 @@ template&lt;typename T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Adds a new component of type T to the entity. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Type of component to add. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A shared pointer to the newly added component. </dd></dl>
 
 </div>
 </div>
@@ -227,6 +246,21 @@ template&lt;typename T&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Gets a component of type T from the entity. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Type of component to get. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A shared pointer to the component. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>if the component is not found. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a0d61abf56f3729a63cbd180bcc2386f3" name="a0d61abf56f3729a63cbd180bcc2386f3"></a>
@@ -253,6 +287,26 @@ template&lt;typename T&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Gets all components of type T from the entity. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>The type of components to get. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_components</td><td>A vector to store the found components. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>if the component is not found. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

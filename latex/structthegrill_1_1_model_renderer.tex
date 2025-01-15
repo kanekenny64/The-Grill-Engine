@@ -2,6 +2,11 @@
 \hypertarget{structthegrill_1_1_model_renderer}{}\label{structthegrill_1_1_model_renderer}\index{thegrill::ModelRenderer@{thegrill::ModelRenderer}}
 
 
+The \doxylink{structthegrill_1_1_model_renderer}{Model\+Renderer} class is a component responsible for rendering models with textures.  
+
+
+
+
 {\ttfamily \#include $<$Model\+Renderer.\+h$>$}
 
 Inheritance diagram for thegrill\+::Model\+Renderer\+:\begin{figure}[H]
@@ -15,8 +20,6 @@ Inheritance diagram for thegrill\+::Model\+Renderer\+:\begin{figure}[H]
 \item 
 \mbox{\hyperlink{structthegrill_1_1_model_renderer_aaea672f7f481d50b4728f8fb03f4a229}{Model\+Renderer}} ()
 \item 
-void \mbox{\hyperlink{structthegrill_1_1_model_renderer_a64924d8ef78bfbf8cc0fd224edcc38dc}{On\+Init}} ()
-\item 
 void \mbox{\hyperlink{structthegrill_1_1_model_renderer_ac08355f4132b51574456b2d1ad21a30d}{set\+\_\+texture}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_texture}{Texture}} $>$ \+\_\+tex)
 \item 
 void \mbox{\hyperlink{structthegrill_1_1_model_renderer_abc85a860c9184dca8c93075c576b33a9}{set\+\_\+model}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_model}{Model}} $>$ \+\_\+model)
@@ -29,7 +32,7 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structrenderer_1_1_model}{renderer\+:
 virtual void \mbox{\hyperlink{structthegrill_1_1_component_a3bea71129c378ed65415b5b02ee890a6}{on\+\_\+initialize}} ()
 \item 
 virtual void \mbox{\hyperlink{structthegrill_1_1_component_ab2f4198b8755856e77eb0181754b290b}{on\+\_\+tick}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Called every frame to update the component. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{structthegrill_1_1_component_a413f6325ab19b1f736491631ae0b8b23}{on\+\_\+gui}} ()
 \item 
 virtual void \mbox{\hyperlink{structthegrill_1_1_component_a46ad55d544999dc701a971718fe62763}{on\+\_\+destroy}} ()
@@ -48,9 +51,12 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_core}{Core}} $>$ \
 \item 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_transform}{Transform}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a079f00434c0077e4356f45f2bdd92c17}{get\+\_\+transform}} ()
 \item 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a4b0f91fe01d2f5dbfe7a2da769cf4e53}{Component\+::get\+\_\+gui}} ()
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_ad2d32c2c0c657629f821720628b3bdd8}{get\+\_\+gui}} ()
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+The \doxylink{structthegrill_1_1_model_renderer}{Model\+Renderer} class is a component responsible for rendering models with textures. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{structthegrill_1_1_model_renderer_aaea672f7f481d50b4728f8fb03f4a229}\index{thegrill::ModelRenderer@{thegrill::ModelRenderer}!ModelRenderer@{ModelRenderer}}
@@ -67,12 +73,6 @@ thegrill\+::\+Model\+Renderer\+::\+Model\+Renderer (\begin{DoxyParamCaption}{}{}
 \doxysubsubsection{\texorpdfstring{get\_model()}{get\_model()}}
 {\footnotesize\ttfamily \label{structthegrill_1_1_model_renderer_afbbb382224243e04a439e23eca2ae9ee} 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structrenderer_1_1_model}{renderer\+::\+Model}} $>$ thegrill\+::\+Model\+Renderer\+::get\+\_\+model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-\Hypertarget{structthegrill_1_1_model_renderer_a64924d8ef78bfbf8cc0fd224edcc38dc}\index{thegrill::ModelRenderer@{thegrill::ModelRenderer}!OnInit@{OnInit}}
-\index{OnInit@{OnInit}!thegrill::ModelRenderer@{thegrill::ModelRenderer}}
-\doxysubsubsection{\texorpdfstring{OnInit()}{OnInit()}}
-{\footnotesize\ttfamily \label{structthegrill_1_1_model_renderer_a64924d8ef78bfbf8cc0fd224edcc38dc} 
-void thegrill\+::\+Model\+Renderer\+::\+On\+Init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 \Hypertarget{structthegrill_1_1_model_renderer_abc85a860c9184dca8c93075c576b33a9}\index{thegrill::ModelRenderer@{thegrill::ModelRenderer}!set\_model@{set\_model}}
 \index{set\_model@{set\_model}!thegrill::ModelRenderer@{thegrill::ModelRenderer}}

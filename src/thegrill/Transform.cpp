@@ -23,6 +23,23 @@ namespace thegrill {
 		return rtn;
 	}
 
+	void Transform::set_rotation(glm::vec3 _rotation)
+	{
+		m_rotation = _rotation;
+	}
+
+	void Transform::set_position(glm::vec3 _position)
+	{
+		m_position = _position;
+	}
+
+	void Transform::Move(glm::vec3 _amount)
+	{
+		m_position += _amount;
+	}
+
+
+
 	glm::vec3 Transform::get_position()
 	{
 		if (auto Parent = m_Parent.lock())
@@ -70,8 +87,5 @@ namespace thegrill {
 	{
 		m_Parent = _parent;
 	}
-	void Transform::Move(glm::vec3 _amount)
-	{
-		m_position += _amount;
-	}
+	
 }

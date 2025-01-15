@@ -1,5 +1,4 @@
 #include "Component.h"
-#include "NonCopyable.h"
 #include "renderer/Renderer.h"
 #include <memory>
 
@@ -13,12 +12,13 @@ namespace thegrill {
 	struct Model;
 	struct Texture;
 
-	
+	/**
+	 * @brief The ModelRenderer class is a component responsible for rendering models with textures.
+	 */
 
 	struct ModelRenderer :public Component {
 	public:
 		ModelRenderer();
-		void OnInit();
 
 		void set_texture(std::shared_ptr<Texture> _tex);
 		void set_model(std::shared_ptr<Model> _model);

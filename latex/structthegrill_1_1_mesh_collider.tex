@@ -16,7 +16,7 @@ Inheritance diagram for thegrill\+::Mesh\+Collider\+:\begin{figure}[H]
 void \mbox{\hyperlink{structthegrill_1_1_mesh_collider_a2d736ba950c846eb2d295b378a808285}{on\+\_\+initialize}} ()
 \item 
 void \mbox{\hyperlink{structthegrill_1_1_mesh_collider_aeead617b4c985e5e82f30ab66c0799f0}{on\+\_\+tick}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Called every frame to update the component. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{structthegrill_1_1_mesh_collider_a22ac16897d328f3bd5357065dd4bcea2}{colliding}} (const \mbox{\hyperlink{structthegrill_1_1_box_collider}{Box\+Collider}} \&\+\_\+other)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structthegrill_1_1_component}{thegrill\+::\+Component}}}
@@ -42,12 +42,7 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_core}{Core}} $>$ \
 \item 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_transform}{Transform}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a079f00434c0077e4356f45f2bdd92c17}{get\+\_\+transform}} ()
 \item 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a4b0f91fe01d2f5dbfe7a2da769cf4e53}{Component\+::get\+\_\+gui}} ()
-\end{DoxyCompactItemize}
-\doxysubsubsection*{Public Attributes}
-\begin{DoxyCompactItemize}
-\item 
-std\+::vector$<$ \mbox{\hyperlink{structrenderer_1_1_model_1_1_face}{renderer\+::\+Model\+::\+Face}} $>$ \mbox{\hyperlink{structthegrill_1_1_mesh_collider_a28fe5c0bba10cf6650f8ca10e03620a1}{m\+\_\+faces}}
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_ad2d32c2c0c657629f821720628b3bdd8}{get\+\_\+gui}} ()
 \end{DoxyCompactItemize}
 
 
@@ -76,16 +71,11 @@ void thegrill\+::\+Mesh\+Collider\+::on\+\_\+tick (\begin{DoxyParamCaption}{}{}\
 
 
 
+Called every frame to update the component. 
+
+
+
 Reimplemented from \mbox{\hyperlink{structthegrill_1_1_component_ab2f4198b8755856e77eb0181754b290b}{thegrill\+::\+Component}}.
-
-
-
-\doxysubsection{Member Data Documentation}
-\Hypertarget{structthegrill_1_1_mesh_collider_a28fe5c0bba10cf6650f8ca10e03620a1}\index{thegrill::MeshCollider@{thegrill::MeshCollider}!m\_faces@{m\_faces}}
-\index{m\_faces@{m\_faces}!thegrill::MeshCollider@{thegrill::MeshCollider}}
-\doxysubsubsection{\texorpdfstring{m\_faces}{m\_faces}}
-{\footnotesize\ttfamily \label{structthegrill_1_1_mesh_collider_a28fe5c0bba10cf6650f8ca10e03620a1} 
-std\+::vector$<$\mbox{\hyperlink{structrenderer_1_1_model_1_1_face}{renderer\+::\+Model\+::\+Face}}$>$ thegrill\+::\+Mesh\+Collider\+::m\+\_\+faces}
 
 
 

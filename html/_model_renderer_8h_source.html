@@ -31,6 +31,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="thegrilllogo.png"/></td>
   <td id="projectalign">
    <div id="projectname">thegrill
    </div>
@@ -106,27 +107,24 @@ $(function(){initNavTree('_model_renderer_8h_source.html',''); initResizable(tru
 </div><!--header-->
 <div class="contents">
 <a href="_model_renderer_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="_component_8h.html">Component.h</a>&quot;</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_non_copyable_8h.html">NonCopyable.h</a>&quot;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_renderer_8h.html">renderer/Renderer.h</a>&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_renderer_8h.html">renderer/Renderer.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacethegrill.html">thegrill</a> {</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">struct </span>Shader;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">struct </span>Mesh;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structthegrill_1_1_model.html">Model</a>;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structthegrill_1_1_texture.html">Texture</a>;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structthegrill_1_1_model_renderer.html">   18</a></span>    <span class="keyword">struct </span><a class="code hl_function" href="structthegrill_1_1_model_renderer.html#aaea672f7f481d50b4728f8fb03f4a229">ModelRenderer</a> :<span class="keyword">public</span> <a class="code hl_struct" href="structthegrill_1_1_component.html">Component</a> {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <a class="code hl_function" href="structthegrill_1_1_model_renderer.html#aaea672f7f481d50b4728f8fb03f4a229">ModelRenderer</a>();</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="structthegrill_1_1_model_renderer.html#a64924d8ef78bfbf8cc0fd224edcc38dc">   21</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="structthegrill_1_1_model_renderer.html#a64924d8ef78bfbf8cc0fd224edcc38dc">OnInit</a>();</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacethegrill.html">thegrill</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">struct </span>Shader;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">struct </span>Mesh;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structthegrill_1_1_model.html">Model</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structthegrill_1_1_texture.html">Texture</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="structthegrill_1_1_model_renderer.html">   19</a></span>    <span class="keyword">struct </span><a class="code hl_function" href="structthegrill_1_1_model_renderer.html#aaea672f7f481d50b4728f8fb03f4a229">ModelRenderer</a> :<span class="keyword">public</span> <a class="code hl_struct" href="structthegrill_1_1_component.html">Component</a> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <a class="code hl_function" href="structthegrill_1_1_model_renderer.html#aaea672f7f481d50b4728f8fb03f4a229">ModelRenderer</a>();</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="structthegrill_1_1_model_renderer.html#ac08355f4132b51574456b2d1ad21a30d">set_texture</a>(std::shared_ptr&lt;Texture&gt; _tex);</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="structthegrill_1_1_model_renderer.html#abc85a860c9184dca8c93075c576b33a9">set_model</a>(std::shared_ptr&lt;Model&gt; _model);</div>
@@ -147,14 +145,12 @@ $(function(){initNavTree('_model_renderer_8h_source.html',''); initResizable(tru
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
 <div class="ttc" id="a_component_8h_html"><div class="ttname"><a href="_component_8h.html">Component.h</a></div></div>
-<div class="ttc" id="a_non_copyable_8h_html"><div class="ttname"><a href="_non_copyable_8h.html">NonCopyable.h</a></div></div>
 <div class="ttc" id="a_renderer_8h_html"><div class="ttname"><a href="_renderer_8h.html">Renderer.h</a></div></div>
-<div class="ttc" id="anamespacethegrill_html"><div class="ttname"><a href="namespacethegrill.html">thegrill</a></div><div class="ttdef"><b>Definition</b> AnimationController.cpp:11</div></div>
+<div class="ttc" id="anamespacethegrill_html"><div class="ttname"><a href="namespacethegrill.html">thegrill</a></div><div class="ttdoc">The Collider class acts as a parent for other colliders to inherit from.</div><div class="ttdef"><b>Definition</b> AnimationController.cpp:11</div></div>
 <div class="ttc" id="astructrenderer_1_1_shader_html"><div class="ttname"><a href="structrenderer_1_1_shader.html">renderer::Shader</a></div><div class="ttdef"><b>Definition</b> Shader.h:14</div></div>
-<div class="ttc" id="astructthegrill_1_1_component_html"><div class="ttname"><a href="structthegrill_1_1_component.html">thegrill::Component</a></div><div class="ttdef"><b>Definition</b> Component.h:16</div></div>
+<div class="ttc" id="astructthegrill_1_1_component_html"><div class="ttname"><a href="structthegrill_1_1_component.html">thegrill::Component</a></div><div class="ttdoc">Base class for all components in the engine.</div><div class="ttdef"><b>Definition</b> Component.h:21</div></div>
 <div class="ttc" id="astructthegrill_1_1_model_html"><div class="ttname"><a href="structthegrill_1_1_model.html">thegrill::Model</a></div><div class="ttdef"><b>Definition</b> Model.h:6</div></div>
-<div class="ttc" id="astructthegrill_1_1_model_renderer_html_a64924d8ef78bfbf8cc0fd224edcc38dc"><div class="ttname"><a href="structthegrill_1_1_model_renderer.html#a64924d8ef78bfbf8cc0fd224edcc38dc">thegrill::ModelRenderer::OnInit</a></div><div class="ttdeci">void OnInit()</div></div>
-<div class="ttc" id="astructthegrill_1_1_model_renderer_html_aaea672f7f481d50b4728f8fb03f4a229"><div class="ttname"><a href="structthegrill_1_1_model_renderer.html#aaea672f7f481d50b4728f8fb03f4a229">thegrill::ModelRenderer::ModelRenderer</a></div><div class="ttdeci">ModelRenderer()</div><div class="ttdef"><b>Definition</b> ModelRenderer.cpp:15</div></div>
+<div class="ttc" id="astructthegrill_1_1_model_renderer_html_aaea672f7f481d50b4728f8fb03f4a229"><div class="ttname"><a href="structthegrill_1_1_model_renderer.html#aaea672f7f481d50b4728f8fb03f4a229">thegrill::ModelRenderer::ModelRenderer</a></div><div class="ttdeci">ModelRenderer()</div><div class="ttdef"><b>Definition</b> ModelRenderer.cpp:14</div></div>
 <div class="ttc" id="astructthegrill_1_1_model_renderer_html_abc85a860c9184dca8c93075c576b33a9"><div class="ttname"><a href="structthegrill_1_1_model_renderer.html#abc85a860c9184dca8c93075c576b33a9">thegrill::ModelRenderer::set_model</a></div><div class="ttdeci">void set_model(std::shared_ptr&lt; Model &gt; _model)</div><div class="ttdef"><b>Definition</b> ModelRenderer.cpp:22</div></div>
 <div class="ttc" id="astructthegrill_1_1_model_renderer_html_ac08355f4132b51574456b2d1ad21a30d"><div class="ttname"><a href="structthegrill_1_1_model_renderer.html#ac08355f4132b51574456b2d1ad21a30d">thegrill::ModelRenderer::set_texture</a></div><div class="ttdeci">void set_texture(std::shared_ptr&lt; Texture &gt; _tex)</div><div class="ttdef"><b>Definition</b> ModelRenderer.cpp:18</div></div>
 <div class="ttc" id="astructthegrill_1_1_model_renderer_html_afbbb382224243e04a439e23eca2ae9ee"><div class="ttname"><a href="structthegrill_1_1_model_renderer.html#afbbb382224243e04a439e23eca2ae9ee">thegrill::ModelRenderer::get_model</a></div><div class="ttdeci">std::shared_ptr&lt; renderer::Model &gt; get_model()</div><div class="ttdef"><b>Definition</b> ModelRenderer.h:26</div></div>

@@ -1,7 +1,9 @@
 #include "Input.h"
 #include "Keyboard.h"
 #include "Mouse.h"
-#include <iostream>
+
+#include <SDL2/SDL.h>
+#include <GL/glew.h>
 
 namespace thegrill
 {

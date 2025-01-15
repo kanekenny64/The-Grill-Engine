@@ -21,13 +21,13 @@ Inheritance diagram for thegrill\+::Animation\+Controller\+:\begin{figure}[H]
 \mbox{\hyperlink{structthegrill_1_1_animation_controller_ab24b2fd561d9e39db5555aae4f20b36b}{Animation\+Controller}} ()
 \item 
 void \mbox{\hyperlink{structthegrill_1_1_animation_controller_a99a865c8b8a9af0f97dc45c2c034bf85}{on\+\_\+initialize}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Initializes the \doxylink{structthegrill_1_1_animation_controller}{Animation\+Controller}. This function retrieves the \doxylink{structthegrill_1_1_model_renderer}{Model\+Renderer} component from the associated entity. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structthegrill_1_1_animation_controller_a0a17b97437953a31dde203fba8c772ec}{on\+\_\+tick}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Updates the \doxylink{structthegrill_1_1_animation_controller}{Animation\+Controller} each tick. This function advances the animation based on the elapsed time. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structthegrill_1_1_animation_controller_aed66790be263ec794b701f378633a4fd}{set\+\_\+looping}} (bool \+\_\+looping)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets whether the animation should loop. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structthegrill_1_1_animation_controller_a8c16ec8887c1d0851ae8e238ee5875d7}{set\+\_\+track}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_animation_track}{Animation\+Track}} $>$ \+\_\+track)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the animation track to be used by the \doxylink{structthegrill_1_1_animation_controller}{Animation\+Controller}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{structthegrill_1_1_animation_controller_a019cc26dabc762b51607dfd5f74280d6}{set\+\_\+duration}} (float \+\_\+duration)
 \end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structthegrill_1_1_component}{thegrill\+::\+Component}}}
@@ -53,7 +53,7 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_core}{Core}} $>$ \
 \item 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_transform}{Transform}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a079f00434c0077e4356f45f2bdd92c17}{get\+\_\+transform}} ()
 \item 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a4b0f91fe01d2f5dbfe7a2da769cf4e53}{Component\+::get\+\_\+gui}} ()
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_ad2d32c2c0c657629f821720628b3bdd8}{get\+\_\+gui}} ()
 \end{DoxyCompactItemize}
 
 
@@ -78,6 +78,10 @@ void thegrill\+::\+Animation\+Controller\+::on\+\_\+initialize (\begin{DoxyParam
 
 
 
+Initializes the \doxylink{structthegrill_1_1_animation_controller}{Animation\+Controller}. This function retrieves the \doxylink{structthegrill_1_1_model_renderer}{Model\+Renderer} component from the associated entity. 
+
+
+
 Reimplemented from \mbox{\hyperlink{structthegrill_1_1_component_a3bea71129c378ed65415b5b02ee890a6}{thegrill\+::\+Component}}.
 
 \Hypertarget{structthegrill_1_1_animation_controller_a0a17b97437953a31dde203fba8c772ec}\index{thegrill::AnimationController@{thegrill::AnimationController}!on\_tick@{on\_tick}}
@@ -87,6 +91,20 @@ Reimplemented from \mbox{\hyperlink{structthegrill_1_1_component_a3bea71129c378e
 void thegrill\+::\+Animation\+Controller\+::on\+\_\+tick (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
+
+Updates the \doxylink{structthegrill_1_1_animation_controller}{Animation\+Controller} each tick. This function advances the animation based on the elapsed time. 
+
+\texorpdfstring{$<$}{<} Update the current time with the delta time.
+
+\texorpdfstring{$<$}{<} Move to the next frame.
+
+\texorpdfstring{$<$}{<} Update last time to current time.
+
+\texorpdfstring{$<$}{<} Loop back to the first frame.
+
+\texorpdfstring{$<$}{<} Stay at the last frame.
+
+\texorpdfstring{$<$}{<} Set the model to the current frame\textquotesingle{}s model.
 
 Reimplemented from \mbox{\hyperlink{structthegrill_1_1_component_ab2f4198b8755856e77eb0181754b290b}{thegrill\+::\+Component}}.
 
@@ -102,12 +120,30 @@ void thegrill\+::\+Animation\+Controller\+::set\+\_\+duration (\begin{DoxyParamC
 {\footnotesize\ttfamily \label{structthegrill_1_1_animation_controller_aed66790be263ec794b701f378633a4fd} 
 void thegrill\+::\+Animation\+Controller\+::set\+\_\+looping (\begin{DoxyParamCaption}\item[{bool}]{\+\_\+looping}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+
+
+Sets whether the animation should loop. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+looping} & A boolean indicating if the animation should loop. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{structthegrill_1_1_animation_controller_a8c16ec8887c1d0851ae8e238ee5875d7}\index{thegrill::AnimationController@{thegrill::AnimationController}!set\_track@{set\_track}}
 \index{set\_track@{set\_track}!thegrill::AnimationController@{thegrill::AnimationController}}
 \doxysubsubsection{\texorpdfstring{set\_track()}{set\_track()}}
 {\footnotesize\ttfamily \label{structthegrill_1_1_animation_controller_a8c16ec8887c1d0851ae8e238ee5875d7} 
 void thegrill\+::\+Animation\+Controller\+::set\+\_\+track (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_animation_track}{Animation\+Track}} $>$}]{\+\_\+track}{}\end{DoxyParamCaption})}
 
+
+
+Sets the animation track to be used by the \doxylink{structthegrill_1_1_animation_controller}{Animation\+Controller}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+track} & A shared pointer to the \doxylink{structthegrill_1_1_animation_track}{Animation\+Track} to be set. \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}

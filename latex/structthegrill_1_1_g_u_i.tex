@@ -2,25 +2,33 @@
 \hypertarget{structthegrill_1_1_g_u_i}{}\label{structthegrill_1_1_g_u_i}\index{thegrill::GUI@{thegrill::GUI}}
 
 
+The \doxylink{structthegrill_1_1_g_u_i}{GUI} system handles rendering of \doxylink{structthegrill_1_1_g_u_i}{GUI} elements.  
+
+
+
+
 {\ttfamily \#include $<$GUI.\+h$>$}
 
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structthegrill_1_1_g_u_i_ac8e91d96ea6119f484fb70568f574edc}{GUI}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_core}{Core}} $>$ \+\_\+core)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{structthegrill_1_1_g_u_i}{GUI} instance. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structthegrill_1_1_g_u_i_a4f70b2c60b4306ea82ba3279653a6437}{\texorpdfstring{$\sim$}{\string~}\+GUI}} ()
 \item 
 void \mbox{\hyperlink{structthegrill_1_1_g_u_i_a60f90f92a2be068b898710aa60e6ea47}{image}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_texture}{Texture}} $>$ \+\_\+tex, float \+\_\+x, float \+\_\+y, float \+\_\+w, float \+\_\+h)
-\item 
+\begin{DoxyCompactList}\small\item\em Renders an image on the screen. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{structthegrill_1_1_g_u_i_a6ab223fbda9bca79e688381b9419d2db}{button}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_texture}{Texture}} $>$ \+\_\+tex, float \+\_\+x, float \+\_\+y, float \+\_\+w, float \+\_\+h)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Renders a button on the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structthegrill_1_1_g_u_i_a08ef93418f4fc32cef2ffb3b72f6bd26}{thegrill\+::\+Core}}
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+The \doxylink{structthegrill_1_1_g_u_i}{GUI} system handles rendering of \doxylink{structthegrill_1_1_g_u_i}{GUI} elements. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{structthegrill_1_1_g_u_i_ac8e91d96ea6119f484fb70568f574edc}\index{thegrill::GUI@{thegrill::GUI}!GUI@{GUI}}
@@ -29,6 +37,15 @@ struct \mbox{\hyperlink{structthegrill_1_1_g_u_i_a08ef93418f4fc32cef2ffb3b72f6bd
 {\footnotesize\ttfamily \label{structthegrill_1_1_g_u_i_ac8e91d96ea6119f484fb70568f574edc} 
 thegrill\+::\+GUI\+::\+GUI (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_core}{Core}} $>$}]{\+\_\+core}{}\end{DoxyParamCaption})}
 
+
+
+Constructs a \doxylink{structthegrill_1_1_g_u_i}{GUI} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+core} & A shared pointer to the core engine instance. \\
+\hline
+\end{DoxyParams}
 \Hypertarget{structthegrill_1_1_g_u_i_a4f70b2c60b4306ea82ba3279653a6437}\index{thegrill::GUI@{thegrill::GUI}!````~GUI@{\texorpdfstring{$\sim$}{\string~}GUI}}
 \index{````~GUI@{\texorpdfstring{$\sim$}{\string~}GUI}!thegrill::GUI@{thegrill::GUI}}
 \doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}GUI()}{\string~GUI()}}
@@ -44,12 +61,49 @@ thegrill\+::\+GUI\+::\texorpdfstring{$\sim$}{\string~}\+GUI (\begin{DoxyParamCap
 {\footnotesize\ttfamily \label{structthegrill_1_1_g_u_i_a6ab223fbda9bca79e688381b9419d2db} 
 int thegrill\+::\+GUI\+::button (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_texture}{Texture}} $>$}]{\+\_\+tex}{, }\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{float}]{\+\_\+w}{, }\item[{float}]{\+\_\+h}{}\end{DoxyParamCaption})}
 
+
+
+Renders a button on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+tex} & A shared pointer to the texture to render. \\
+\hline
+{\em \+\_\+x} & The x-\/coordinate of the button. \\
+\hline
+{\em \+\_\+y} & The y-\/coordinate of the button. \\
+\hline
+{\em \+\_\+w} & The width of the button. \\
+\hline
+{\em \+\_\+h} & The height of the button. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An integer indicating the button state. 
+\end{DoxyReturn}
 \Hypertarget{structthegrill_1_1_g_u_i_a60f90f92a2be068b898710aa60e6ea47}\index{thegrill::GUI@{thegrill::GUI}!image@{image}}
 \index{image@{image}!thegrill::GUI@{thegrill::GUI}}
 \doxysubsubsection{\texorpdfstring{image()}{image()}}
 {\footnotesize\ttfamily \label{structthegrill_1_1_g_u_i_a60f90f92a2be068b898710aa60e6ea47} 
 void thegrill\+::\+GUI\+::image (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_texture}{Texture}} $>$}]{\+\_\+tex}{, }\item[{float}]{\+\_\+x}{, }\item[{float}]{\+\_\+y}{, }\item[{float}]{\+\_\+w}{, }\item[{float}]{\+\_\+h}{}\end{DoxyParamCaption})}
 
+
+
+Renders an image on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+tex} & A shared pointer to the texture to render. \\
+\hline
+{\em \+\_\+x} & The x-\/coordinate of the image. \\
+\hline
+{\em \+\_\+y} & The y-\/coordinate of the image. \\
+\hline
+{\em \+\_\+w} & The width of the image. \\
+\hline
+{\em \+\_\+h} & The height of the image. \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Friends And Related Symbol Documentation}

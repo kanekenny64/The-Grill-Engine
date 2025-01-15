@@ -1,16 +1,12 @@
 #include <vector>
 
 namespace thegrill {
-
-
 	struct Input;
 
 	struct Keyboard {
 
 	public:
 		
-
-
 		void update();
 		
 		bool isKey(int key);

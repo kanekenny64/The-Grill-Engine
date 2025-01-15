@@ -31,6 +31,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="thegrilllogo.png"/></td>
   <td id="projectalign">
    <div id="projectname">thegrill
    </div>
@@ -105,43 +106,43 @@ $(function(){initNavTree('_g_u_i_8h_source.html',''); initResizable(true); });
   <div class="headertitle"><div class="title">GUI.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="_g_u_i_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_mesh_8h.html">Renderer/Mesh.h</a>&quot;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_shader_8h.html">Renderer/Shader.h</a>&quot;</span></div>
+<a href="_g_u_i_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="_mesh_8h.html">Renderer/Mesh.h</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_shader_8h.html">Renderer/Shader.h</a>&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacethegrill.html">thegrill</a> {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structthegrill_1_1_core.html">Core</a>;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structthegrill_1_1_texture.html">Texture</a>;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="structthegrill_1_1_g_u_i.html">   11</a></span>    <span class="keyword">struct </span><a class="code hl_function" href="structthegrill_1_1_g_u_i.html#ac8e91d96ea6119f484fb70568f574edc">GUI</a></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <a class="code hl_function" href="structthegrill_1_1_g_u_i.html#ac8e91d96ea6119f484fb70568f574edc">GUI</a>(std::shared_ptr&lt;Core&gt; _core);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <a class="code hl_function" href="structthegrill_1_1_g_u_i.html#a4f70b2c60b4306ea82ba3279653a6437">~GUI</a>();</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="structthegrill_1_1_g_u_i.html#a60f90f92a2be068b898710aa60e6ea47">image</a>(std::shared_ptr&lt;Texture&gt; _tex, <span class="keywordtype">float</span> _x, <span class="keywordtype">float</span> _y, <span class="keywordtype">float</span> _w, <span class="keywordtype">float</span> _h);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keywordtype">int</span> <a class="code hl_function" href="structthegrill_1_1_g_u_i.html#a6ab223fbda9bca79e688381b9419d2db">button</a>(std::shared_ptr&lt;Texture&gt; _tex, <span class="keywordtype">float</span> _x, <span class="keywordtype">float</span> _y, <span class="keywordtype">float</span> _w, <span class="keywordtype">float</span> _h);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structthegrill_1_1_g_u_i.html#a08ef93418f4fc32cef2ffb3b72f6bd26">   20</a></span>        <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code hl_struct" href="structthegrill_1_1_core.html">thegrill::Core</a>;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        std::weak_ptr&lt;Core&gt; m_core;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        std::shared_ptr&lt;renderer::Shader&gt; mShader;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        std::shared_ptr&lt;renderer::Mesh&gt; mRect;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    };</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacethegrill.html">thegrill</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structthegrill_1_1_core.html">Core</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">struct </span><a class="code hl_struct" href="structthegrill_1_1_texture.html">Texture</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span></div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structthegrill_1_1_g_u_i.html">   13</a></span>    <span class="keyword">struct </span><a class="code hl_function" href="structthegrill_1_1_g_u_i.html#ac8e91d96ea6119f484fb70568f574edc">GUI</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <a class="code hl_function" href="structthegrill_1_1_g_u_i.html#ac8e91d96ea6119f484fb70568f574edc">GUI</a>(std::shared_ptr&lt;Core&gt; _core);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <a class="code hl_function" href="structthegrill_1_1_g_u_i.html#a4f70b2c60b4306ea82ba3279653a6437">~GUI</a>();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="structthegrill_1_1_g_u_i.html#a60f90f92a2be068b898710aa60e6ea47">image</a>(std::shared_ptr&lt;Texture&gt; _tex, <span class="keywordtype">float</span> _x, <span class="keywordtype">float</span> _y, <span class="keywordtype">float</span> _w, <span class="keywordtype">float</span> _h);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keywordtype">int</span> <a class="code hl_function" href="structthegrill_1_1_g_u_i.html#a6ab223fbda9bca79e688381b9419d2db">button</a>(std::shared_ptr&lt;Texture&gt; _tex, <span class="keywordtype">float</span> _x, <span class="keywordtype">float</span> _y, <span class="keywordtype">float</span> _w, <span class="keywordtype">float</span> _h);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="structthegrill_1_1_g_u_i.html#a08ef93418f4fc32cef2ffb3b72f6bd26">   44</a></span>        <span class="keyword">friend</span> <span class="keyword">struct </span><a class="code hl_struct" href="structthegrill_1_1_core.html">thegrill::Core</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        std::weak_ptr&lt;Core&gt; m_core;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        std::shared_ptr&lt;renderer::Shader&gt; mShader;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        std::shared_ptr&lt;renderer::Mesh&gt; mRect;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    };</div>
 </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
 <div class="ttc" id="a_mesh_8h_html"><div class="ttname"><a href="_mesh_8h.html">Mesh.h</a></div></div>
 <div class="ttc" id="a_shader_8h_html"><div class="ttname"><a href="_shader_8h.html">Shader.h</a></div></div>
-<div class="ttc" id="anamespacethegrill_html"><div class="ttname"><a href="namespacethegrill.html">thegrill</a></div><div class="ttdef"><b>Definition</b> AnimationController.cpp:11</div></div>
-<div class="ttc" id="astructthegrill_1_1_core_html"><div class="ttname"><a href="structthegrill_1_1_core.html">thegrill::Core</a></div><div class="ttdef"><b>Definition</b> Core.h:17</div></div>
+<div class="ttc" id="anamespacethegrill_html"><div class="ttname"><a href="namespacethegrill.html">thegrill</a></div><div class="ttdoc">The Collider class acts as a parent for other colliders to inherit from.</div><div class="ttdef"><b>Definition</b> AnimationController.cpp:11</div></div>
+<div class="ttc" id="astructthegrill_1_1_core_html"><div class="ttname"><a href="structthegrill_1_1_core.html">thegrill::Core</a></div><div class="ttdoc">The Core class is the main engine class that manages the game loop and core systems.</div><div class="ttdef"><b>Definition</b> Core.h:19</div></div>
 <div class="ttc" id="astructthegrill_1_1_g_u_i_html_a4f70b2c60b4306ea82ba3279653a6437"><div class="ttname"><a href="structthegrill_1_1_g_u_i.html#a4f70b2c60b4306ea82ba3279653a6437">thegrill::GUI::~GUI</a></div><div class="ttdeci">~GUI()</div><div class="ttdef"><b>Definition</b> GUI.cpp:37</div></div>
-<div class="ttc" id="astructthegrill_1_1_g_u_i_html_a60f90f92a2be068b898710aa60e6ea47"><div class="ttname"><a href="structthegrill_1_1_g_u_i.html#a60f90f92a2be068b898710aa60e6ea47">thegrill::GUI::image</a></div><div class="ttdeci">void image(std::shared_ptr&lt; Texture &gt; _tex, float _x, float _y, float _w, float _h)</div><div class="ttdef"><b>Definition</b> GUI.cpp:41</div></div>
-<div class="ttc" id="astructthegrill_1_1_g_u_i_html_a6ab223fbda9bca79e688381b9419d2db"><div class="ttname"><a href="structthegrill_1_1_g_u_i.html#a6ab223fbda9bca79e688381b9419d2db">thegrill::GUI::button</a></div><div class="ttdeci">int button(std::shared_ptr&lt; Texture &gt; _tex, float _x, float _y, float _w, float _h)</div><div class="ttdef"><b>Definition</b> GUI.cpp:64</div></div>
-<div class="ttc" id="astructthegrill_1_1_g_u_i_html_ac8e91d96ea6119f484fb70568f574edc"><div class="ttname"><a href="structthegrill_1_1_g_u_i.html#ac8e91d96ea6119f484fb70568f574edc">thegrill::GUI::GUI</a></div><div class="ttdeci">GUI(std::shared_ptr&lt; Core &gt; _core)</div><div class="ttdef"><b>Definition</b> GUI.cpp:12</div></div>
+<div class="ttc" id="astructthegrill_1_1_g_u_i_html_a60f90f92a2be068b898710aa60e6ea47"><div class="ttname"><a href="structthegrill_1_1_g_u_i.html#a60f90f92a2be068b898710aa60e6ea47">thegrill::GUI::image</a></div><div class="ttdeci">void image(std::shared_ptr&lt; Texture &gt; _tex, float _x, float _y, float _w, float _h)</div><div class="ttdoc">Renders an image on the screen.</div><div class="ttdef"><b>Definition</b> GUI.cpp:41</div></div>
+<div class="ttc" id="astructthegrill_1_1_g_u_i_html_a6ab223fbda9bca79e688381b9419d2db"><div class="ttname"><a href="structthegrill_1_1_g_u_i.html#a6ab223fbda9bca79e688381b9419d2db">thegrill::GUI::button</a></div><div class="ttdeci">int button(std::shared_ptr&lt; Texture &gt; _tex, float _x, float _y, float _w, float _h)</div><div class="ttdoc">Renders a button on the screen.</div><div class="ttdef"><b>Definition</b> GUI.cpp:62</div></div>
+<div class="ttc" id="astructthegrill_1_1_g_u_i_html_ac8e91d96ea6119f484fb70568f574edc"><div class="ttname"><a href="structthegrill_1_1_g_u_i.html#ac8e91d96ea6119f484fb70568f574edc">thegrill::GUI::GUI</a></div><div class="ttdeci">GUI(std::shared_ptr&lt; Core &gt; _core)</div><div class="ttdoc">Constructs a GUI instance.</div><div class="ttdef"><b>Definition</b> GUI.cpp:12</div></div>
 <div class="ttc" id="astructthegrill_1_1_texture_html"><div class="ttname"><a href="structthegrill_1_1_texture.html">thegrill::Texture</a></div><div class="ttdef"><b>Definition</b> Texture.h:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

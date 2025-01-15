@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['planeboxoverlap_0',['planeBoxOverlap',['../tribox3_8h.html#ad73e2347c99ef1bda7e767f069382087',1,'tribox3.h']]],
-  ['play_1',['play',['../structthegrill_1_1_sound_source.html#adad71d65f6e2458f2f8cc6edc04582b6',1,'thegrill::SoundSource']]]
+  ['render_0',['render',['../structthegrill_1_1_component.html#a9c633af8c14b3b472bd4f2b7b9e1b947',1,'thegrill::Component']]],
+  ['reset_1',['reset',['../structthegrill_1_1_timer.html#a4bfcd21338fc4cd23e4215b184899375',1,'thegrill::Timer']]],
+  ['run_2',['run',['../structthegrill_1_1_core.html#adc31313e6c0543ef1dec298eff3c211a',1,'thegrill::Core']]]
 ];

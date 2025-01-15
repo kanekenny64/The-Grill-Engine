@@ -26,7 +26,6 @@ var hierarchy =
     [ "renderer::Mesh", "structrenderer_1_1_mesh.html", null ],
     [ "renderer::Model", "structrenderer_1_1_model.html", null ],
     [ "thegrill::Mouse", "structthegrill_1_1_mouse.html", null ],
-    [ "thegrill::NonCopyable", "classthegrill_1_1_non_copyable.html", null ],
     [ "thegrill::Resource", "structthegrill_1_1_resource.html", [
       [ "thegrill::Audio", "structthegrill_1_1_audio.html", null ],
       [ "thegrill::Model", "structthegrill_1_1_model.html", null ],

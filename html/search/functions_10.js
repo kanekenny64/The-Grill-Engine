@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['texture_0',['Texture',['../structrenderer_1_1_texture.html#a66f7c9efa11fcd848bd2d1822ec7248f',1,'renderer::Texture::Texture(const std::string &amp;_path)'],['../structrenderer_1_1_texture.html#a5549be819cd15d08e411cb218316ea86',1,'renderer::Texture::Texture()']]],
-  ['tick_1',['tick',['../structthegrill_1_1_component.html#a57bcf963c4117fcb7186b88b129c03c0',1,'thegrill::Component']]],
-  ['timer_2',['Timer',['../structthegrill_1_1_timer.html#a35cd1d004ba026f00981048bde6720bf',1,'thegrill::Timer']]],
-  ['triboxoverlap_3',['triBoxOverlap',['../tribox3_8h.html#a1d05ae6a2797f7196e4d253976e1c3ab',1,'tribox3.h']]]
+  ['unload_0',['unload',['../structrenderer_1_1_model.html#a10a2b23d497dcf3ffb7a03ae6ffc0901',1,'renderer::Model::unload()'],['../structrenderer_1_1_texture.html#ab741e13e0f20b8ec7cc0443c9b5c620b',1,'renderer::Texture::unload()']]],
+  ['update_1',['Update',['../structthegrill_1_1_input.html#a736deb6d5c6f2c40c497c3d77e25778a',1,'thegrill::Input::Update()'],['../structthegrill_1_1_resources.html#a32f2973d1b0f1c80f0d62d8e7ab49d3b',1,'thegrill::Resources::Update()'],['../structthegrill_1_1_window.html#aeab40d55f941f9a9892a59a0b4613cc9',1,'thegrill::Window::Update()']]],
+  ['update_2',['update',['../structthegrill_1_1_keyboard.html#afac098b19012702aedb1e1218d9eaeeb',1,'thegrill::Keyboard::update()'],['../structthegrill_1_1_mouse.html#a155fffa1a550bac848f34ffafea782f4',1,'thegrill::Mouse::update()']]]
 ];

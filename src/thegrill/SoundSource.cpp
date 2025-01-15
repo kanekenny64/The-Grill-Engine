@@ -21,7 +21,7 @@ namespace thegrill {
     }
 
 
-    void SoundSource::setAudio(std::shared_ptr<Audio> _audio)
+    void SoundSource::set_audio(std::shared_ptr<Audio> _audio)
     {
         m_audio = _audio;
         alSourcei(m_Id, AL_BUFFER, m_audio->m_Id);
@@ -29,24 +29,26 @@ namespace thegrill {
 
     void SoundSource::on_tick()
     {
+        if (!m_audio)
+        {
+            throw std::runtime_error("SoundSource Error: No audio set");
+            return;
+        }
+
         int state = 0;
-        alSource3f(m_Id, AL_POSITION, get_entity()->get_transform()->get_position().x,
-            get_entity()->get_transform()->get_position().y,
-                get_entity()->get_transform()->get_position().z);
+
+        Transform& transform = *get_entity()->get_transform();
+
+        alSource3f(m_Id, AL_POSITION, transform.get_position().x, transform.get_position().y, transform.get_position().z);
         alGetSourcei(m_Id, AL_SOURCE_STATE, &state);
         if (state != AL_PLAYING) {
             play();
         }
-
-            
-        
-
     }
 
 
     void SoundSource::play()
     {
-   
         alSourcePlay(m_Id);
     }
 

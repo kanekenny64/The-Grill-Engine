@@ -50,8 +50,6 @@ namespace thegrill {
 
 		glm::mat4 view(1);
 
-		//mShader->setUniform("in_LightPos", glm::vec3(1, 1, 3));
-
 		mShader->setUniform("in_View", view);
 
 		mShader->setUniform("in_Texture", _tex->get_texture(), 1);
@@ -67,11 +65,7 @@ namespace thegrill {
 		glm::vec2 mp = glm::vec2(m_core.lock()->input()->mouse()->getXPos(), m_core.lock()->input()->mouse()->getYPos());
 
 		int height, width;
-		m_core.lock()->window()->getDimensions(width, height);
-
-		//adjust position to centre 
-		/*_y = _y - _h / 2;
-		_x = _x - _w / 2;*/
+		m_core.lock()->window()->get_dimensions(width, height);
 
 		glm::mat4 projection = glm::ortho(0.0f, float(width), 0.0f, float(height), 0.0f, 1.0f);
 		mShader->setUniform("u_Projection", projection);
@@ -83,16 +77,12 @@ namespace thegrill {
 
 		glm::mat4 view(1);
 
-		//mShader->setUniform("in_LightPos", glm::vec3(1, 1, 1));
-
 		mShader->setUniform("in_View", view);
 
 		mShader->setUniform("in_Texture", _tex->get_texture(), 1);
 
 		mShader->draw(mShader->programId, mRect->vao_id(), mRect->vertex_count(), false);
 
-		//std::cout << "Mouse Pos: " << mp.x << " " << mp.y << std::endl;
-		//std::cout << "Button Pos: " << _x << " " << _y << std::endl;
 
 		//invert y axis
 		mp.y = height - mp.y;

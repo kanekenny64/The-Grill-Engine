@@ -31,6 +31,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="thegrilllogo.png"/></td>
   <td id="projectalign">
    <div id="projectname">thegrill
    </div>
@@ -109,6 +110,9 @@ $(function(){initNavTree('structthegrill_1_1_camera.html',''); initResizable(tru
 </div><!--header-->
 <div class="contents">
 
+<p>The <a class="el" href="structthegrill_1_1_box_collider.html" title="The BoxCollider class represents a rectangular collider used to test for collision with other collide...">BoxCollider</a> class is used to control the position of the camera to be used in rendering pipeline.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_camera_8h_source.html">Camera.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for thegrill::Camera:</div>
@@ -116,16 +120,18 @@ Inheritance diagram for thegrill::Camera:</div>
  <div class="center">
   <img src="structthegrill_1_1_camera.png" usemap="#thegrill::Camera_map" alt=""/>
   <map id="thegrill::Camera_map" name="thegrill::Camera_map">
-<area href="structthegrill_1_1_component.html" alt="thegrill::Component" shape="rect" coords="0,0,119,24"/>
+<area href="structthegrill_1_1_component.html" title="Base class for all components in the engine." alt="thegrill::Component" shape="rect" coords="0,0,119,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a53790c1db79f7bcbe586aba87a0a91bf" id="r_a53790c1db79f7bcbe586aba87a0a91bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a53790c1db79f7bcbe586aba87a0a91bf">on_initialize</a> ()</td></tr>
+<tr class="memdesc:a53790c1db79f7bcbe586aba87a0a91bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the camera component.  <br /></td></tr>
 <tr class="separator:a53790c1db79f7bcbe586aba87a0a91bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structthegrill_1_1_component"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_structthegrill_1_1_component')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structthegrill_1_1_component.html">thegrill::Component</a></td></tr>
 <tr class="memitem:ab2f4198b8755856e77eb0181754b290b inherit pub_methods_structthegrill_1_1_component" id="r_ab2f4198b8755856e77eb0181754b290b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthegrill_1_1_component.html#ab2f4198b8755856e77eb0181754b290b">on_tick</a> ()</td></tr>
+<tr class="memdesc:ab2f4198b8755856e77eb0181754b290b inherit pub_methods_structthegrill_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called every frame to update the component.  <br /></td></tr>
 <tr class="separator:ab2f4198b8755856e77eb0181754b290b inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79a3c7b6cf9b91e1930335a4e40f3bcd inherit pub_methods_structthegrill_1_1_component" id="r_a79a3c7b6cf9b91e1930335a4e40f3bcd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthegrill_1_1_component.html#a79a3c7b6cf9b91e1930335a4e40f3bcd">on_render</a> ()</td></tr>
 <tr class="separator:a79a3c7b6cf9b91e1930335a4e40f3bcd inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,10 +153,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9336bcaea73cfe54b76200b54d454223 inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a079f00434c0077e4356f45f2bdd92c17 inherit pub_methods_structthegrill_1_1_component" id="r_a079f00434c0077e4356f45f2bdd92c17"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_transform.html">Transform</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthegrill_1_1_component.html#a079f00434c0077e4356f45f2bdd92c17">get_transform</a> ()</td></tr>
 <tr class="separator:a079f00434c0077e4356f45f2bdd92c17 inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b0f91fe01d2f5dbfe7a2da769cf4e53 inherit pub_methods_structthegrill_1_1_component" id="r_a4b0f91fe01d2f5dbfe7a2da769cf4e53"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_g_u_i.html">GUI</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthegrill_1_1_component.html#a4b0f91fe01d2f5dbfe7a2da769cf4e53">Component::get_gui</a> ()</td></tr>
-<tr class="separator:a4b0f91fe01d2f5dbfe7a2da769cf4e53 inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d32c2c0c657629f821720628b3bdd8 inherit pub_methods_structthegrill_1_1_component" id="r_ad2d32c2c0c657629f821720628b3bdd8"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_g_u_i.html">GUI</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthegrill_1_1_component.html#ad2d32c2c0c657629f821720628b3bdd8">get_gui</a> ()</td></tr>
+<tr class="separator:ad2d32c2c0c657629f821720628b3bdd8 inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="structthegrill_1_1_box_collider.html" title="The BoxCollider class represents a rectangular collider used to test for collision with other collide...">BoxCollider</a> class is used to control the position of the camera to be used in rendering pipeline. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a53790c1db79f7bcbe586aba87a0a91bf" name="a53790c1db79f7bcbe586aba87a0a91bf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a53790c1db79f7bcbe586aba87a0a91bf">&#9670;&#160;</a></span>on_initialize()</h2>
 
@@ -173,6 +181,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Initializes the camera component. </p>
+<p>This function is called to initialize the camera component. It sets the current camera in the core to this camera instance. </p>
 
 <p>Reimplemented from <a class="el" href="structthegrill_1_1_component.html#a3bea71129c378ed65415b5b02ee890a6">thegrill::Component</a>.</p>
 

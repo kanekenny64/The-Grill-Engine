@@ -31,6 +31,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="thegrilllogo.png"/></td>
   <td id="projectalign">
    <div id="projectname">thegrill
    </div>
@@ -122,7 +123,6 @@ $(function(){initNavTree('functions_func.html',''); initResizable(true); });
 
 <h3><a id="index_c" name="index_c"></a>- c -</h3><ul>
 <li>colliding()&#160;:&#160;<a class="el" href="structthegrill_1_1_box_collider.html#a816a4181e4d315a8e548b1e31e2fbba0">thegrill::BoxCollider</a>, <a class="el" href="structthegrill_1_1_mesh_collider.html#a22ac16897d328f3bd5357065dd4bcea2">thegrill::MeshCollider</a></li>
-<li>Component::get_gui()&#160;:&#160;<a class="el" href="structthegrill_1_1_component.html#a4b0f91fe01d2f5dbfe7a2da769cf4e53">thegrill::Component</a></li>
 <li>create()&#160;:&#160;<a class="el" href="structthegrill_1_1_animation_track.html#a8103906304b27cafe775bae2dd0e77bb">thegrill::AnimationTrack</a></li>
 <li>current_camera()&#160;:&#160;<a class="el" href="structthegrill_1_1_core.html#a75d7a4379256854384247b29892f6bea">thegrill::Core</a></li>
 </ul>
@@ -151,13 +151,15 @@ $(function(){initNavTree('functions_func.html',''); initResizable(true); });
 <li>get_components()&#160;:&#160;<a class="el" href="structthegrill_1_1_entity.html#a0d61abf56f3729a63cbd180bcc2386f3">thegrill::Entity</a></li>
 <li>get_core()&#160;:&#160;<a class="el" href="structthegrill_1_1_component.html#a9336bcaea73cfe54b76200b54d454223">thegrill::Component</a>, <a class="el" href="structthegrill_1_1_entity.html#af82a7443a4db2494a9a9665183bffb4d">thegrill::Entity</a></li>
 <li>get_entity()&#160;:&#160;<a class="el" href="structthegrill_1_1_component.html#acc754d2dc8e9915ebf5b5eb666409d51">thegrill::Component</a></li>
+<li>get_gui()&#160;:&#160;<a class="el" href="structthegrill_1_1_component.html#ad2d32c2c0c657629f821720628b3bdd8">thegrill::Component</a></li>
 <li>get_keyboard()&#160;:&#160;<a class="el" href="structthegrill_1_1_component.html#a572dc42b03bbe17422671f03b334721f">thegrill::Component</a></li>
 <li>get_model()&#160;:&#160;<a class="el" href="structthegrill_1_1_model.html#a5ca1ec26200d11088a7056ea5c1139b0">thegrill::Model</a>, <a class="el" href="structthegrill_1_1_model_renderer.html#afbbb382224243e04a439e23eca2ae9ee">thegrill::ModelRenderer</a>, <a class="el" href="structthegrill_1_1_transform.html#a0b75ab9c275a3b9e6bf5c40303da4e48">thegrill::Transform</a></li>
 <li>get_offset()&#160;:&#160;<a class="el" href="structthegrill_1_1_box_collider.html#a052de1af572e0ec5fafb6e0c8fd5f1c5">thegrill::BoxCollider</a></li>
 <li>get_parent()&#160;:&#160;<a class="el" href="structthegrill_1_1_transform.html#a14f572ae5df664f1755162ed1055d979">thegrill::Transform</a></li>
-<li>get_position()&#160;:&#160;<a class="el" href="structthegrill_1_1_transform.html#ac99de02e31790fe6bbecee649dd372f8">thegrill::Transform</a></li>
+<li>get_position()&#160;:&#160;<a class="el" href="structthegrill_1_1_transform.html#a81722ad1176f94f64a4e5469cca49322">thegrill::Transform</a></li>
 <li>get_resources()&#160;:&#160;<a class="el" href="structthegrill_1_1_core.html#a412d5251500e151762e793ae939d290f">thegrill::Core</a></li>
 <li>get_rotation()&#160;:&#160;<a class="el" href="structthegrill_1_1_transform.html#a22c7931a2877a2997f32b18a106bd178">thegrill::Transform</a></li>
+<li>get_scale()&#160;:&#160;<a class="el" href="structthegrill_1_1_transform.html#a9310268aa587691d8cb294dcf86a06d6">thegrill::Transform</a></li>
 <li>get_size()&#160;:&#160;<a class="el" href="structthegrill_1_1_box_collider.html#ade381f2e487df991a0aae263940467d8">thegrill::BoxCollider</a></li>
 <li>get_texture()&#160;:&#160;<a class="el" href="structthegrill_1_1_texture.html#ab3587670b613182254602020faca1c63">thegrill::Texture</a></li>
 <li>get_transform()&#160;:&#160;<a class="el" href="structthegrill_1_1_component.html#a079f00434c0077e4356f45f2bdd92c17">thegrill::Component</a>, <a class="el" href="structthegrill_1_1_entity.html#a92870fc2e8ce382d2717367608cf70b0">thegrill::Entity</a></li>
@@ -208,18 +210,12 @@ $(function(){initNavTree('functions_func.html',''); initResizable(true); });
 </ul>
 
 
-<h3><a id="index_n" name="index_n"></a>- n -</h3><ul>
-<li>NonCopyable()&#160;:&#160;<a class="el" href="classthegrill_1_1_non_copyable.html#a6d3db4bf52be4e7212f2e5efb605f9a0">thegrill::NonCopyable</a></li>
-</ul>
-
-
 <h3><a id="index_o" name="index_o"></a>- o -</h3><ul>
 <li>on_destroy()&#160;:&#160;<a class="el" href="struct_child.html#a6401b83b8ec2a0eb8fddccdfa485dfb6">Child</a>, <a class="el" href="struct_player.html#a2f3020b877ea323783d37caf679efaec">Player</a>, <a class="el" href="structthegrill_1_1_component.html#a46ad55d544999dc701a971718fe62763">thegrill::Component</a></li>
 <li>on_gui()&#160;:&#160;<a class="el" href="struct_player.html#aa8fb0f52af0b29d4e47260dec618a963">Player</a>, <a class="el" href="structthegrill_1_1_component.html#a413f6325ab19b1f736491631ae0b8b23">thegrill::Component</a></li>
 <li>on_initialize()&#160;:&#160;<a class="el" href="struct_child.html#a7d3150559bb97ec570a7cfab15880de7">Child</a>, <a class="el" href="struct_player.html#ab24178844b96f9ec0c07c5c9a4c69b2c">Player</a>, <a class="el" href="structthegrill_1_1_animation_controller.html#a99a865c8b8a9af0f97dc45c2c034bf85">thegrill::AnimationController</a>, <a class="el" href="structthegrill_1_1_box_collider.html#a83315f792a411f1768513005ace8d5f8">thegrill::BoxCollider</a>, <a class="el" href="structthegrill_1_1_camera.html#a53790c1db79f7bcbe586aba87a0a91bf">thegrill::Camera</a>, <a class="el" href="structthegrill_1_1_component.html#a3bea71129c378ed65415b5b02ee890a6">thegrill::Component</a>, <a class="el" href="structthegrill_1_1_mesh_collider.html#a2d736ba950c846eb2d295b378a808285">thegrill::MeshCollider</a>, <a class="el" href="structthegrill_1_1_sound_source.html#aac0101c8191d23f9ebd4d4d17594d909">thegrill::SoundSource</a></li>
 <li>on_render()&#160;:&#160;<a class="el" href="structthegrill_1_1_component.html#a79a3c7b6cf9b91e1930335a4e40f3bcd">thegrill::Component</a></li>
 <li>on_tick()&#160;:&#160;<a class="el" href="structthegrill_1_1_animation_controller.html#a0a17b97437953a31dde203fba8c772ec">thegrill::AnimationController</a>, <a class="el" href="structthegrill_1_1_audio_listener.html#acde6f3622d7769a47a4819b8882b8038">thegrill::AudioListener</a>, <a class="el" href="structthegrill_1_1_component.html#ab2f4198b8755856e77eb0181754b290b">thegrill::Component</a>, <a class="el" href="structthegrill_1_1_mesh_collider.html#aeead617b4c985e5e82f30ab66c0799f0">thegrill::MeshCollider</a>, <a class="el" href="structthegrill_1_1_rigid_body.html#a2b90524a38f8ae79024405bd132117d0">thegrill::RigidBody</a>, <a class="el" href="structthegrill_1_1_sound_source.html#a619b553e05c5d4ef97a00c49491be588">thegrill::SoundSource</a></li>
-<li>OnInit()&#160;:&#160;<a class="el" href="structthegrill_1_1_model_renderer.html#a64924d8ef78bfbf8cc0fd224edcc38dc">thegrill::ModelRenderer</a></li>
 <li>onLoad()&#160;:&#160;<a class="el" href="structthegrill_1_1_audio.html#a85161d7794b264783043e0cf4fbb0529">thegrill::Audio</a></li>
 <li>onUnload()&#160;:&#160;<a class="el" href="structthegrill_1_1_audio.html#a91b5fd288fe04278f96e35b5d169e2ec">thegrill::Audio</a></li>
 <li>operator=()&#160;:&#160;<a class="el" href="structrenderer_1_1_model.html#a2efeb09e6fd05f38502f0e87494b8ff3">renderer::Model</a></li>
@@ -239,12 +235,14 @@ $(function(){initNavTree('functions_func.html',''); initResizable(true); });
 
 
 <h3><a id="index_s" name="index_s"></a>- s -</h3><ul>
+<li>set_current_cam()&#160;:&#160;<a class="el" href="structthegrill_1_1_core.html#aa7bcbc36c00321b77c353ee86dc1621f">thegrill::Core</a></li>
 <li>set_duration()&#160;:&#160;<a class="el" href="structthegrill_1_1_animation_controller.html#a019cc26dabc762b51607dfd5f74280d6">thegrill::AnimationController</a></li>
 <li>set_looping()&#160;:&#160;<a class="el" href="structthegrill_1_1_animation_controller.html#aed66790be263ec794b701f378633a4fd">thegrill::AnimationController</a></li>
 <li>set_model()&#160;:&#160;<a class="el" href="structthegrill_1_1_model_renderer.html#abc85a860c9184dca8c93075c576b33a9">thegrill::ModelRenderer</a></li>
 <li>set_offset()&#160;:&#160;<a class="el" href="structthegrill_1_1_box_collider.html#a0e3b54ce394176ee07e10802fba54c93">thegrill::BoxCollider</a></li>
 <li>set_parent()&#160;:&#160;<a class="el" href="structthegrill_1_1_transform.html#a2e9623c2083674cb781cd1a782c4e966">thegrill::Transform</a></li>
 <li>set_position()&#160;:&#160;<a class="el" href="structthegrill_1_1_entity.html#ac3cba6c9588b671ef967141e47c1dfd0">thegrill::Entity</a>, <a class="el" href="structthegrill_1_1_transform.html#ae4fadbcb1d96a500acc8a01c2b68b369">thegrill::Transform</a></li>
+<li>set_rotation()&#160;:&#160;<a class="el" href="structthegrill_1_1_transform.html#a1fef7ca814558dcdb5a727dca5e55b6b">thegrill::Transform</a></li>
 <li>set_size()&#160;:&#160;<a class="el" href="structthegrill_1_1_box_collider.html#a111eda62329e3f826dcb3cbc99e7ea04">thegrill::BoxCollider</a></li>
 <li>set_texture()&#160;:&#160;<a class="el" href="structthegrill_1_1_model_renderer.html#ac08355f4132b51574456b2d1ad21a30d">thegrill::ModelRenderer</a></li>
 <li>set_track()&#160;:&#160;<a class="el" href="structthegrill_1_1_animation_controller.html#a8c16ec8887c1d0851ae8e238ee5875d7">thegrill::AnimationController</a></li>
@@ -266,7 +264,7 @@ $(function(){initNavTree('functions_func.html',''); initResizable(true); });
 
 <h3><a id="index_u" name="index_u"></a>- u -</h3><ul>
 <li>unload()&#160;:&#160;<a class="el" href="structrenderer_1_1_model.html#a10a2b23d497dcf3ffb7a03ae6ffc0901">renderer::Model</a>, <a class="el" href="structrenderer_1_1_texture.html#ab741e13e0f20b8ec7cc0443c9b5c620b">renderer::Texture</a></li>
-<li>Update()&#160;:&#160;<a class="el" href="structthegrill_1_1_input.html#a736deb6d5c6f2c40c497c3d77e25778a">thegrill::Input</a>, <a class="el" href="structthegrill_1_1_resources.html#a32f2973d1b0f1c80f0d62d8e7ab49d3b">thegrill::Resources</a></li>
+<li>Update()&#160;:&#160;<a class="el" href="structthegrill_1_1_input.html#a736deb6d5c6f2c40c497c3d77e25778a">thegrill::Input</a>, <a class="el" href="structthegrill_1_1_resources.html#a32f2973d1b0f1c80f0d62d8e7ab49d3b">thegrill::Resources</a>, <a class="el" href="structthegrill_1_1_window.html#aeab40d55f941f9a9892a59a0b4613cc9">thegrill::Window</a></li>
 <li>update()&#160;:&#160;<a class="el" href="structthegrill_1_1_keyboard.html#afac098b19012702aedb1e1218d9eaeeb">thegrill::Keyboard</a>, <a class="el" href="structthegrill_1_1_mouse.html#a155fffa1a550bac848f34ffafea782f4">thegrill::Mouse</a></li>
 </ul>
 
@@ -290,7 +288,6 @@ $(function(){initNavTree('functions_func.html',''); initResizable(true); });
 <li>~Entity()&#160;:&#160;<a class="el" href="structthegrill_1_1_entity.html#a083955b7d9e901c1a62386d205dd942b">thegrill::Entity</a></li>
 <li>~GUI()&#160;:&#160;<a class="el" href="structthegrill_1_1_g_u_i.html#a4f70b2c60b4306ea82ba3279653a6437">thegrill::GUI</a></li>
 <li>~Model()&#160;:&#160;<a class="el" href="structrenderer_1_1_model.html#a51260a2458c67f5c3003d754883ef893">renderer::Model</a></li>
-<li>~NonCopyable()&#160;:&#160;<a class="el" href="classthegrill_1_1_non_copyable.html#a84038f9707a2af10a8330a407b77a0bf">thegrill::NonCopyable</a></li>
 <li>~Shader()&#160;:&#160;<a class="el" href="structrenderer_1_1_shader.html#a69c98d7086d47adbc4ab9da67158792c">renderer::Shader</a></li>
 <li>~SoundSystem()&#160;:&#160;<a class="el" href="structthegrill_1_1_sound_system.html#a34c8f61842b264669d82b06f0afe3bc1">thegrill::SoundSystem</a></li>
 <li>~Texture()&#160;:&#160;<a class="el" href="structrenderer_1_1_texture.html#aed7f4f761281baa365e00c96a67c1e8a">renderer::Texture</a></li>

@@ -2,6 +2,11 @@
 \hypertarget{structthegrill_1_1_box_collider}{}\label{structthegrill_1_1_box_collider}\index{thegrill::BoxCollider@{thegrill::BoxCollider}}
 
 
+The \doxylink{structthegrill_1_1_box_collider}{Box\+Collider} class represents a rectangular collider used to test for collision with other colliders.  
+
+
+
+
 {\ttfamily \#include $<$Box\+Collider.\+h$>$}
 
 Inheritance diagram for thegrill\+::Box\+Collider\+:\begin{figure}[H]
@@ -14,13 +19,13 @@ Inheritance diagram for thegrill\+::Box\+Collider\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{structthegrill_1_1_box_collider_a83315f792a411f1768513005ace8d5f8}{on\+\_\+initialize}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Initializes the \doxylink{structthegrill_1_1_box_collider}{Box\+Collider} with a default size and offset. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{structthegrill_1_1_box_collider_a816a4181e4d315a8e548b1e31e2fbba0}{colliding}} (const \mbox{\hyperlink{structthegrill_1_1_box_collider}{Box\+Collider}} \&\+\_\+other)
-\item 
+\begin{DoxyCompactList}\small\item\em Checks for a collision with another \doxylink{structthegrill_1_1_box_collider}{Box\+Collider}. \end{DoxyCompactList}\item 
 glm\+::vec3 \mbox{\hyperlink{structthegrill_1_1_box_collider_ab7e6b3189b59618f5ee783f2bdfe8846}{get\+\_\+collision\+Response}} (\mbox{\hyperlink{structthegrill_1_1_box_collider}{Box\+Collider}} \&\+\_\+other)
-\item 
+\begin{DoxyCompactList}\small\item\em Calculates the collision response vector when colliding with another \doxylink{structthegrill_1_1_box_collider}{Box\+Collider}. \end{DoxyCompactList}\item 
 glm\+::vec3 \mbox{\hyperlink{structthegrill_1_1_box_collider_a55bb210a99df700449cb9ccaccd19615}{get\+\_\+collision\+Response}} (\mbox{\hyperlink{structthegrill_1_1_mesh_collider}{Mesh\+Collider}} \&\+\_\+other)
-\item 
+\begin{DoxyCompactList}\small\item\em Calculates the collision response vector when colliding with a \doxylink{structthegrill_1_1_mesh_collider}{Mesh\+Collider}. \end{DoxyCompactList}\item 
 glm\+::vec3 \mbox{\hyperlink{structthegrill_1_1_box_collider_a052de1af572e0ec5fafb6e0c8fd5f1c5}{get\+\_\+offset}} () const
 \item 
 glm\+::vec3 \mbox{\hyperlink{structthegrill_1_1_box_collider_ade381f2e487df991a0aae263940467d8}{get\+\_\+size}} () const
@@ -33,7 +38,7 @@ void \mbox{\hyperlink{structthegrill_1_1_box_collider_a111eda62329e3f826dcb3cbc9
 \begin{DoxyCompactItemize}
 \item 
 virtual void \mbox{\hyperlink{structthegrill_1_1_component_ab2f4198b8755856e77eb0181754b290b}{on\+\_\+tick}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Called every frame to update the component. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{structthegrill_1_1_component_a79a3c7b6cf9b91e1930335a4e40f3bcd}{on\+\_\+render}} ()
 \item 
 virtual void \mbox{\hyperlink{structthegrill_1_1_component_a413f6325ab19b1f736491631ae0b8b23}{on\+\_\+gui}} ()
@@ -54,9 +59,12 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_core}{Core}} $>$ \
 \item 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_transform}{Transform}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a079f00434c0077e4356f45f2bdd92c17}{get\+\_\+transform}} ()
 \item 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a4b0f91fe01d2f5dbfe7a2da769cf4e53}{Component\+::get\+\_\+gui}} ()
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_ad2d32c2c0c657629f821720628b3bdd8}{get\+\_\+gui}} ()
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+The \doxylink{structthegrill_1_1_box_collider}{Box\+Collider} class represents a rectangular collider used to test for collision with other colliders. 
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{structthegrill_1_1_box_collider_a816a4181e4d315a8e548b1e31e2fbba0}\index{thegrill::BoxCollider@{thegrill::BoxCollider}!colliding@{colliding}}
@@ -65,18 +73,84 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ \
 {\footnotesize\ttfamily \label{structthegrill_1_1_box_collider_a816a4181e4d315a8e548b1e31e2fbba0} 
 bool thegrill\+::\+Box\+Collider\+::colliding (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structthegrill_1_1_box_collider}{Box\+Collider}} \&}]{\+\_\+other}{}\end{DoxyParamCaption})}
 
+
+
+Checks for a collision with another \doxylink{structthegrill_1_1_box_collider}{Box\+Collider}. 
+
+Checks if this \doxylink{structthegrill_1_1_box_collider}{Box\+Collider} is colliding with another \doxylink{structthegrill_1_1_box_collider}{Box\+Collider}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+other} & The other \doxylink{structthegrill_1_1_box_collider}{Box\+Collider} to check for collision. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if a collision occurs, false otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+other} & The other \doxylink{structthegrill_1_1_box_collider}{Box\+Collider} to check collision against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if colliding, false otherwise. 
+\end{DoxyReturn}
 \Hypertarget{structthegrill_1_1_box_collider_ab7e6b3189b59618f5ee783f2bdfe8846}\index{thegrill::BoxCollider@{thegrill::BoxCollider}!get\_collisionResponse@{get\_collisionResponse}}
 \index{get\_collisionResponse@{get\_collisionResponse}!thegrill::BoxCollider@{thegrill::BoxCollider}}
 \doxysubsubsection{\texorpdfstring{get\_collisionResponse()}{get\_collisionResponse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \label{structthegrill_1_1_box_collider_ab7e6b3189b59618f5ee783f2bdfe8846} 
 glm\+::vec3 thegrill\+::\+Box\+Collider\+::get\+\_\+collision\+Response (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structthegrill_1_1_box_collider}{Box\+Collider}} \&}]{\+\_\+other}{}\end{DoxyParamCaption})}
 
+
+
+Calculates the collision response vector when colliding with another \doxylink{structthegrill_1_1_box_collider}{Box\+Collider}. 
+
+Calculates the collision response for this \doxylink{structthegrill_1_1_box_collider}{Box\+Collider} against another \doxylink{structthegrill_1_1_box_collider}{Box\+Collider}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+other} & The other \doxylink{structthegrill_1_1_box_collider}{Box\+Collider} to calculate the response against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The collision response vector.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+other} & Reference to the other \doxylink{structthegrill_1_1_box_collider}{Box\+Collider} to calculate the collision response against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new position after resolving the collision. 
+\end{DoxyReturn}
 \Hypertarget{structthegrill_1_1_box_collider_a55bb210a99df700449cb9ccaccd19615}\index{thegrill::BoxCollider@{thegrill::BoxCollider}!get\_collisionResponse@{get\_collisionResponse}}
 \index{get\_collisionResponse@{get\_collisionResponse}!thegrill::BoxCollider@{thegrill::BoxCollider}}
 \doxysubsubsection{\texorpdfstring{get\_collisionResponse()}{get\_collisionResponse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{structthegrill_1_1_box_collider_a55bb210a99df700449cb9ccaccd19615} 
 glm\+::vec3 thegrill\+::\+Box\+Collider\+::get\+\_\+collision\+Response (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structthegrill_1_1_mesh_collider}{Mesh\+Collider}} \&}]{\+\_\+other}{}\end{DoxyParamCaption})}
 
+
+
+Calculates the collision response vector when colliding with a \doxylink{structthegrill_1_1_mesh_collider}{Mesh\+Collider}. 
+
+Calculates the collision response for this \doxylink{structthegrill_1_1_box_collider}{Box\+Collider} against a \doxylink{structthegrill_1_1_mesh_collider}{Mesh\+Collider}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+other} & The \doxylink{structthegrill_1_1_mesh_collider}{Mesh\+Collider} to calculate the response against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The collision response vector.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+other} & Reference to the \doxylink{structthegrill_1_1_mesh_collider}{Mesh\+Collider} to calculate the collision response against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new position after resolving the collision. 
+\end{DoxyReturn}
 \Hypertarget{structthegrill_1_1_box_collider_a052de1af572e0ec5fafb6e0c8fd5f1c5}\index{thegrill::BoxCollider@{thegrill::BoxCollider}!get\_offset@{get\_offset}}
 \index{get\_offset@{get\_offset}!thegrill::BoxCollider@{thegrill::BoxCollider}}
 \doxysubsubsection{\texorpdfstring{get\_offset()}{get\_offset()}}
@@ -94,6 +168,10 @@ glm\+::vec3 thegrill\+::\+Box\+Collider\+::get\+\_\+size (\begin{DoxyParamCaptio
 \doxysubsubsection{\texorpdfstring{on\_initialize()}{on\_initialize()}}
 {\footnotesize\ttfamily \label{structthegrill_1_1_box_collider_a83315f792a411f1768513005ace8d5f8} 
 void thegrill\+::\+Box\+Collider\+::on\+\_\+initialize (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Initializes the \doxylink{structthegrill_1_1_box_collider}{Box\+Collider} with a default size and offset. 
 
 
 

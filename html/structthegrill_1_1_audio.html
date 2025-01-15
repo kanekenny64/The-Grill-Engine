@@ -31,6 +31,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="thegrilllogo.png"/></td>
   <td id="projectalign">
    <div id="projectname">thegrill
    </div>
@@ -110,6 +111,9 @@ $(function(){initNavTree('structthegrill_1_1_audio.html',''); initResizable(true
 </div><!--header-->
 <div class="contents">
 
+<p>The <a class="el" href="structthegrill_1_1_audio.html" title="The Audio class represents an audio resource that can be loaded and managed within the sound system.">Audio</a> class represents an audio resource that can be loaded and managed within the sound system.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_audio_8h_source.html">Audio.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for thegrill::Audio:</div>
@@ -126,6 +130,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac438bae8fb406af1baba45459673487c" id="r_ac438bae8fb406af1baba45459673487c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac438bae8fb406af1baba45459673487c">~Audio</a> ()</td></tr>
 <tr class="separator:ac438bae8fb406af1baba45459673487c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c4a507934194694554e5fb6c0fc0c8b" id="r_a0c4a507934194694554e5fb6c0fc0c8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c4a507934194694554e5fb6c0fc0c8b">load_ogg</a> (const std::string &amp;_path, std::vector&lt; unsigned char &gt; &amp;_buffer, ALenum &amp;_format, ALsizei &amp;_freq)</td></tr>
+<tr class="memdesc:a0c4a507934194694554e5fb6c0fc0c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads an OGG audio file into a buffer.  <br /></td></tr>
 <tr class="separator:a0c4a507934194694554e5fb6c0fc0c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85161d7794b264783043e0cf4fbb0529" id="r_a85161d7794b264783043e0cf4fbb0529"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85161d7794b264783043e0cf4fbb0529">onLoad</a> ()</td></tr>
 <tr class="separator:a85161d7794b264783043e0cf4fbb0529"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,7 +145,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a82211be7c1f91948fb18fd49718d1d73" id="r_a82211be7c1f91948fb18fd49718d1d73"><td class="memItemLeft" align="right" valign="top">ALuint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82211be7c1f91948fb18fd49718d1d73">m_Id</a></td></tr>
 <tr class="separator:a82211be7c1f91948fb18fd49718d1d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="structthegrill_1_1_audio.html" title="The Audio class represents an audio resource that can be loaded and managed within the sound system.">Audio</a> class represents an audio resource that can be loaded and managed within the sound system. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac438bae8fb406af1baba45459673487c" name="ac438bae8fb406af1baba45459673487c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac438bae8fb406af1baba45459673487c">&#9670;&#160;</a></span>~Audio()</h2>
 
@@ -187,6 +194,18 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Loads an OGG audio file into a buffer. </p>
+<p>This function reads the audio data from the specified file path and creates the buffer, format, and frequency variables.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_path</td><td>The path to the OGG audio file. </td></tr>
+    <tr><td class="paramname">_buffer</td><td>A reference to a vector that will hold the audio data. </td></tr>
+    <tr><td class="paramname">_format</td><td>A reference to an ALenum variable that stores the audio format. </td></tr>
+    <tr><td class="paramname">_freq</td><td>A reference to an ALsizei variable that stores the audio frequency. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

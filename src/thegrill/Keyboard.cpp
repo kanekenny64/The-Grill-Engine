@@ -1,5 +1,4 @@
 #include "Keyboard.h"
-#include <iostream>
 
 namespace thegrill {
 
@@ -27,7 +26,6 @@ namespace thegrill {
 		
 		for (int i = 0; i < pressedKeys.size(); i++)
 		{
-			std::cout << pressedKeys[i] << std::endl;
 			if (pressedKeys[i] == key)
 			{
 				return true;

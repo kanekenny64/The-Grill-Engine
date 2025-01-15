@@ -2,7 +2,6 @@
 #include <string>
 #include <vector>
 #include "Resource.h"
-#include <iostream>
 
 namespace thegrill {
 	struct Resources
@@ -20,7 +19,6 @@ namespace thegrill {
 				}
 			}
 			// Create new instance, construct it and add to cache
-			//std::cout << "Loading: " << _path << std::endl;
 			std::shared_ptr<T> rtn = std::make_shared<T>();
 			rtn->m_path = "../assets/" + _path;
 			rtn->load();

@@ -4,6 +4,8 @@
 #include "BoxCollider.h"
 #include "Transform.h"
 #include "ModelRenderer.h"
+#include "Component.h"
+#include "Entity.h"
 
 
 namespace thegrill {
@@ -11,6 +13,10 @@ namespace thegrill {
 	{
 		//This could cause an issue if an entity has no model or multiple models
 		m_faces = get_entity()->get_component<ModelRenderer>()->get_model()->getFaces();
+		if (m_faces.empty())
+		{
+			throw std::runtime_error("MeshCollider Intialisation error: Failed to find mesh for meshrenderer to use");
+		}
 	}
 
 	void MeshCollider::on_tick()

@@ -17,7 +17,6 @@ var namespacethegrill =
     [ "Model", "structthegrill_1_1_model.html", "structthegrill_1_1_model" ],
     [ "ModelRenderer", "structthegrill_1_1_model_renderer.html", "structthegrill_1_1_model_renderer" ],
     [ "Mouse", "structthegrill_1_1_mouse.html", "structthegrill_1_1_mouse" ],
-    [ "NonCopyable", "classthegrill_1_1_non_copyable.html", "classthegrill_1_1_non_copyable" ],
     [ "Resource", "structthegrill_1_1_resource.html", "structthegrill_1_1_resource" ],
     [ "Resources", "structthegrill_1_1_resources.html", "structthegrill_1_1_resources" ],
     [ "RigidBody", "structthegrill_1_1_rigid_body.html", "structthegrill_1_1_rigid_body" ],

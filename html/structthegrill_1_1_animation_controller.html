@@ -31,6 +31,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="thegrilllogo.png"/></td>
   <td id="projectalign">
    <div id="projectname">thegrill
    </div>
@@ -119,7 +120,7 @@ Inheritance diagram for thegrill::AnimationController:</div>
  <div class="center">
   <img src="structthegrill_1_1_animation_controller.png" usemap="#thegrill::AnimationController_map" alt=""/>
   <map id="thegrill::AnimationController_map" name="thegrill::AnimationController_map">
-<area href="structthegrill_1_1_component.html" alt="thegrill::Component" shape="rect" coords="0,0,167,24"/>
+<area href="structthegrill_1_1_component.html" title="Base class for all components in the engine." alt="thegrill::Component" shape="rect" coords="0,0,167,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -128,12 +129,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab24b2fd561d9e39db5555aae4f20b36b" id="r_ab24b2fd561d9e39db5555aae4f20b36b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab24b2fd561d9e39db5555aae4f20b36b">AnimationController</a> ()</td></tr>
 <tr class="separator:ab24b2fd561d9e39db5555aae4f20b36b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99a865c8b8a9af0f97dc45c2c034bf85" id="r_a99a865c8b8a9af0f97dc45c2c034bf85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99a865c8b8a9af0f97dc45c2c034bf85">on_initialize</a> () override</td></tr>
+<tr class="memdesc:a99a865c8b8a9af0f97dc45c2c034bf85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="structthegrill_1_1_animation_controller.html" title="The AnimationController class is responsible for managing and controlling the playback of animation t...">AnimationController</a>. This function retrieves the <a class="el" href="structthegrill_1_1_model_renderer.html" title="The ModelRenderer class is a component responsible for rendering models with textures.">ModelRenderer</a> component from the associated entity.  <br /></td></tr>
 <tr class="separator:a99a865c8b8a9af0f97dc45c2c034bf85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a17b97437953a31dde203fba8c772ec" id="r_a0a17b97437953a31dde203fba8c772ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a17b97437953a31dde203fba8c772ec">on_tick</a> ()</td></tr>
+<tr class="memdesc:a0a17b97437953a31dde203fba8c772ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the <a class="el" href="structthegrill_1_1_animation_controller.html" title="The AnimationController class is responsible for managing and controlling the playback of animation t...">AnimationController</a> each tick. This function advances the animation based on the elapsed time.  <br /></td></tr>
 <tr class="separator:a0a17b97437953a31dde203fba8c772ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed66790be263ec794b701f378633a4fd" id="r_aed66790be263ec794b701f378633a4fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed66790be263ec794b701f378633a4fd">set_looping</a> (bool _looping)</td></tr>
+<tr class="memdesc:aed66790be263ec794b701f378633a4fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the animation should loop.  <br /></td></tr>
 <tr class="separator:aed66790be263ec794b701f378633a4fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c16ec8887c1d0851ae8e238ee5875d7" id="r_a8c16ec8887c1d0851ae8e238ee5875d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c16ec8887c1d0851ae8e238ee5875d7">set_track</a> (std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_animation_track.html">AnimationTrack</a> &gt; _track)</td></tr>
+<tr class="memdesc:a8c16ec8887c1d0851ae8e238ee5875d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the animation track to be used by the <a class="el" href="structthegrill_1_1_animation_controller.html" title="The AnimationController class is responsible for managing and controlling the playback of animation t...">AnimationController</a>.  <br /></td></tr>
 <tr class="separator:a8c16ec8887c1d0851ae8e238ee5875d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a019cc26dabc762b51607dfd5f74280d6" id="r_a019cc26dabc762b51607dfd5f74280d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a019cc26dabc762b51607dfd5f74280d6">set_duration</a> (float _duration)</td></tr>
 <tr class="separator:a019cc26dabc762b51607dfd5f74280d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,8 +163,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9336bcaea73cfe54b76200b54d454223 inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a079f00434c0077e4356f45f2bdd92c17 inherit pub_methods_structthegrill_1_1_component" id="r_a079f00434c0077e4356f45f2bdd92c17"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_transform.html">Transform</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthegrill_1_1_component.html#a079f00434c0077e4356f45f2bdd92c17">get_transform</a> ()</td></tr>
 <tr class="separator:a079f00434c0077e4356f45f2bdd92c17 inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b0f91fe01d2f5dbfe7a2da769cf4e53 inherit pub_methods_structthegrill_1_1_component" id="r_a4b0f91fe01d2f5dbfe7a2da769cf4e53"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_g_u_i.html">GUI</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthegrill_1_1_component.html#a4b0f91fe01d2f5dbfe7a2da769cf4e53">Component::get_gui</a> ()</td></tr>
-<tr class="separator:a4b0f91fe01d2f5dbfe7a2da769cf4e53 inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2d32c2c0c657629f821720628b3bdd8 inherit pub_methods_structthegrill_1_1_component" id="r_ad2d32c2c0c657629f821720628b3bdd8"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structthegrill_1_1_g_u_i.html">GUI</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structthegrill_1_1_component.html#ad2d32c2c0c657629f821720628b3bdd8">get_gui</a> ()</td></tr>
+<tr class="separator:ad2d32c2c0c657629f821720628b3bdd8 inherit pub_methods_structthegrill_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="structthegrill_1_1_animation_controller.html" title="The AnimationController class is responsible for managing and controlling the playback of animation t...">AnimationController</a> class is responsible for managing and controlling the playback of animation tracks. </p>
@@ -205,6 +210,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Initializes the <a class="el" href="structthegrill_1_1_animation_controller.html" title="The AnimationController class is responsible for managing and controlling the playback of animation t...">AnimationController</a>. This function retrieves the <a class="el" href="structthegrill_1_1_model_renderer.html" title="The ModelRenderer class is a component responsible for rendering models with textures.">ModelRenderer</a> component from the associated entity. </p>
+
 <p>Reimplemented from <a class="el" href="structthegrill_1_1_component.html#a3bea71129c378ed65415b5b02ee890a6">thegrill::Component</a>.</p>
 
 </div>
@@ -231,6 +238,14 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Updates the <a class="el" href="structthegrill_1_1_animation_controller.html" title="The AnimationController class is responsible for managing and controlling the playback of animation t...">AnimationController</a> each tick. This function advances the animation based on the elapsed time. </p>
+<p>&lt; Update the current time with the delta time.</p>
+<p>&lt; Move to the next frame.</p>
+<p>&lt; Update last time to current time.</p>
+<p>&lt; Loop back to the first frame.</p>
+<p>&lt; Stay at the last frame.</p>
+<p>&lt; Set the model to the current frame's model.</p>
 
 <p>Reimplemented from <a class="el" href="structthegrill_1_1_component.html#ab2f4198b8755856e77eb0181754b290b">thegrill::Component</a>.</p>
 
@@ -284,6 +299,14 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Sets whether the animation should loop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_looping</td><td>A boolean indicating if the animation should loop. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a8c16ec8887c1d0851ae8e238ee5875d7" name="a8c16ec8887c1d0851ae8e238ee5875d7"></a>
@@ -300,6 +323,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Sets the animation track to be used by the <a class="el" href="structthegrill_1_1_animation_controller.html" title="The AnimationController class is responsible for managing and controlling the playback of animation t...">AnimationController</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">_track</td><td>A shared pointer to the <a class="el" href="structthegrill_1_1_animation_track.html" title="The AnimationTrack class holds data for an animation track, including keyframes.">AnimationTrack</a> to be set. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

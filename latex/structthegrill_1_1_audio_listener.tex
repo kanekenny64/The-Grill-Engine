@@ -2,6 +2,11 @@
 \hypertarget{structthegrill_1_1_audio_listener}{}\label{structthegrill_1_1_audio_listener}\index{thegrill::AudioListener@{thegrill::AudioListener}}
 
 
+The \doxylink{structthegrill_1_1_audio}{Audio} Listener is a component used to control where audio is heard from.  
+
+
+
+
 {\ttfamily \#include $<$Audio\+Listener.\+h$>$}
 
 Inheritance diagram for thegrill\+::Audio\+Listener\+:\begin{figure}[H]
@@ -16,7 +21,7 @@ Inheritance diagram for thegrill\+::Audio\+Listener\+:\begin{figure}[H]
 \mbox{\hyperlink{structthegrill_1_1_audio_listener_a9037da78f4a8b2c3bdb66f1cbd5d84cd}{Audio\+Listener}} ()
 \item 
 void \mbox{\hyperlink{structthegrill_1_1_audio_listener_acde6f3622d7769a47a4819b8882b8038}{on\+\_\+tick}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Each frame the audio listener updates its position to match the entity it is attached to. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{structthegrill_1_1_component}{thegrill\+::\+Component}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -42,9 +47,12 @@ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_core}{Core}} $>$ \
 \item 
 std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_transform}{Transform}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a079f00434c0077e4356f45f2bdd92c17}{get\+\_\+transform}} ()
 \item 
-std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_a4b0f91fe01d2f5dbfe7a2da769cf4e53}{Component\+::get\+\_\+gui}} ()
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structthegrill_1_1_g_u_i}{GUI}} $>$ \mbox{\hyperlink{structthegrill_1_1_component_ad2d32c2c0c657629f821720628b3bdd8}{get\+\_\+gui}} ()
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+The \doxylink{structthegrill_1_1_audio}{Audio} Listener is a component used to control where audio is heard from. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{structthegrill_1_1_audio_listener_a9037da78f4a8b2c3bdb66f1cbd5d84cd}\index{thegrill::AudioListener@{thegrill::AudioListener}!AudioListener@{AudioListener}}
@@ -61,6 +69,10 @@ thegrill\+::\+Audio\+Listener\+::\+Audio\+Listener (\begin{DoxyParamCaption}{}{}
 \doxysubsubsection{\texorpdfstring{on\_tick()}{on\_tick()}}
 {\footnotesize\ttfamily \label{structthegrill_1_1_audio_listener_acde6f3622d7769a47a4819b8882b8038} 
 void thegrill\+::\+Audio\+Listener\+::on\+\_\+tick (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Each frame the audio listener updates its position to match the entity it is attached to. 
 
 
 

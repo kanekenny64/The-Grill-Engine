@@ -31,6 +31,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="thegrilllogo.png"/></td>
   <td id="projectalign">
    <div id="projectname">thegrill
    </div>
@@ -109,31 +110,34 @@ $(function(){initNavTree('_audio_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_sound_system_8h.html">SoundSystem.h</a>&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacethegrill.html">thegrill</a> {</div>
-<div class="foldopen" id="foldopen00005" data-start="{" data-end="};">
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="structthegrill_1_1_audio.html">    5</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structthegrill_1_1_audio.html">Audio</a> : <a class="code hl_struct" href="structthegrill_1_1_resource.html">Resource</a> {</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>        <a class="code hl_function" href="structthegrill_1_1_audio.html#ac438bae8fb406af1baba45459673487c">~Audio</a>();</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="structthegrill_1_1_audio.html#a0c4a507934194694554e5fb6c0fc0c8b">load_ogg</a>(<span class="keyword">const</span> std::string&amp; _path, std::vector&lt;unsigned char&gt;&amp; _buffer, ALenum&amp; _format, ALsizei&amp; _freq);</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="structthegrill_1_1_audio.html#a85161d7794b264783043e0cf4fbb0529">onLoad</a>();</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="structthegrill_1_1_audio.html#a91b5fd288fe04278f96e35b5d169e2ec">onUnload</a>();</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="structthegrill_1_1_audio.html#a82211be7c1f91948fb18fd49718d1d73">   13</a></span>        ALuint <a class="code hl_variable" href="structthegrill_1_1_audio.html#a82211be7c1f91948fb18fd49718d1d73">m_Id</a>;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        ALenum format = 0;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        ALsizei freq = 0;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        std::vector&lt;unsigned char&gt; bufferData;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    };</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="structthegrill_1_1_audio.html">   10</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="structthegrill_1_1_audio.html">Audio</a> : <a class="code hl_struct" href="structthegrill_1_1_resource.html">Resource</a> {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <a class="code hl_function" href="structthegrill_1_1_audio.html#ac438bae8fb406af1baba45459673487c">~Audio</a>();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="structthegrill_1_1_audio.html#a0c4a507934194694554e5fb6c0fc0c8b">load_ogg</a>(<span class="keyword">const</span> std::string&amp; _path, std::vector&lt;unsigned char&gt;&amp; _buffer, ALenum&amp; _format, ALsizei&amp; _freq);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="structthegrill_1_1_audio.html#a85161d7794b264783043e0cf4fbb0529">onLoad</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="structthegrill_1_1_audio.html#a91b5fd288fe04278f96e35b5d169e2ec">onUnload</a>();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structthegrill_1_1_audio.html#a82211be7c1f91948fb18fd49718d1d73">   30</a></span>        ALuint <a class="code hl_variable" href="structthegrill_1_1_audio.html#a82211be7c1f91948fb18fd49718d1d73">m_Id</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        ALenum format = 0;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        ALsizei freq = 0;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        std::vector&lt;unsigned char&gt; bufferData;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    };</div>
 </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
 <div class="ttc" id="a_resource_8h_html"><div class="ttname"><a href="_resource_8h.html">Resource.h</a></div></div>
 <div class="ttc" id="a_sound_system_8h_html"><div class="ttname"><a href="_sound_system_8h.html">SoundSystem.h</a></div></div>
-<div class="ttc" id="anamespacethegrill_html"><div class="ttname"><a href="namespacethegrill.html">thegrill</a></div><div class="ttdef"><b>Definition</b> AnimationController.cpp:11</div></div>
-<div class="ttc" id="astructthegrill_1_1_audio_html"><div class="ttname"><a href="structthegrill_1_1_audio.html">thegrill::Audio</a></div><div class="ttdef"><b>Definition</b> Audio.h:5</div></div>
-<div class="ttc" id="astructthegrill_1_1_audio_html_a0c4a507934194694554e5fb6c0fc0c8b"><div class="ttname"><a href="structthegrill_1_1_audio.html#a0c4a507934194694554e5fb6c0fc0c8b">thegrill::Audio::load_ogg</a></div><div class="ttdeci">void load_ogg(const std::string &amp;_path, std::vector&lt; unsigned char &gt; &amp;_buffer, ALenum &amp;_format, ALsizei &amp;_freq)</div><div class="ttdef"><b>Definition</b> Audio.cpp:28</div></div>
-<div class="ttc" id="astructthegrill_1_1_audio_html_a82211be7c1f91948fb18fd49718d1d73"><div class="ttname"><a href="structthegrill_1_1_audio.html#a82211be7c1f91948fb18fd49718d1d73">thegrill::Audio::m_Id</a></div><div class="ttdeci">ALuint m_Id</div><div class="ttdef"><b>Definition</b> Audio.h:13</div></div>
+<div class="ttc" id="anamespacethegrill_html"><div class="ttname"><a href="namespacethegrill.html">thegrill</a></div><div class="ttdoc">The Collider class acts as a parent for other colliders to inherit from.</div><div class="ttdef"><b>Definition</b> AnimationController.cpp:11</div></div>
+<div class="ttc" id="astructthegrill_1_1_audio_html"><div class="ttname"><a href="structthegrill_1_1_audio.html">thegrill::Audio</a></div><div class="ttdoc">The Audio class represents an audio resource that can be loaded and managed within the sound system.</div><div class="ttdef"><b>Definition</b> Audio.h:10</div></div>
+<div class="ttc" id="astructthegrill_1_1_audio_html_a0c4a507934194694554e5fb6c0fc0c8b"><div class="ttname"><a href="structthegrill_1_1_audio.html#a0c4a507934194694554e5fb6c0fc0c8b">thegrill::Audio::load_ogg</a></div><div class="ttdeci">void load_ogg(const std::string &amp;_path, std::vector&lt; unsigned char &gt; &amp;_buffer, ALenum &amp;_format, ALsizei &amp;_freq)</div><div class="ttdoc">Loads an OGG audio file into a buffer.</div><div class="ttdef"><b>Definition</b> Audio.cpp:28</div></div>
+<div class="ttc" id="astructthegrill_1_1_audio_html_a82211be7c1f91948fb18fd49718d1d73"><div class="ttname"><a href="structthegrill_1_1_audio.html#a82211be7c1f91948fb18fd49718d1d73">thegrill::Audio::m_Id</a></div><div class="ttdeci">ALuint m_Id</div><div class="ttdef"><b>Definition</b> Audio.h:30</div></div>
 <div class="ttc" id="astructthegrill_1_1_audio_html_a85161d7794b264783043e0cf4fbb0529"><div class="ttname"><a href="structthegrill_1_1_audio.html#a85161d7794b264783043e0cf4fbb0529">thegrill::Audio::onLoad</a></div><div class="ttdeci">void onLoad()</div><div class="ttdef"><b>Definition</b> Audio.cpp:5</div></div>
 <div class="ttc" id="astructthegrill_1_1_audio_html_a91b5fd288fe04278f96e35b5d169e2ec"><div class="ttname"><a href="structthegrill_1_1_audio.html#a91b5fd288fe04278f96e35b5d169e2ec">thegrill::Audio::onUnload</a></div><div class="ttdeci">void onUnload()</div><div class="ttdef"><b>Definition</b> Audio.cpp:63</div></div>
 <div class="ttc" id="astructthegrill_1_1_audio_html_ac438bae8fb406af1baba45459673487c"><div class="ttname"><a href="structthegrill_1_1_audio.html#ac438bae8fb406af1baba45459673487c">thegrill::Audio::~Audio</a></div><div class="ttdeci">~Audio()</div><div class="ttdef"><b>Definition</b> Audio.cpp:22</div></div>
