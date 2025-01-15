@@ -71,7 +71,7 @@ namespace renderer {
 			"float diff = max(dot(N, lightDir), 0.0);                         " \
 			"vec3 diffuse = diffuseColor * diff;                         " \
 			"vec3 lighting = diffuse;                         " \
-			" gl_FragColor =  vec4(lighting, 1) * tex; " \
+			" gl_FragColor =  tex; " \
 			"                         " \
 			"                         " \
 			"                         " \
@@ -128,7 +128,7 @@ namespace renderer {
 
 			"vec3 lighting = diffuse + specular; "\
 
-			"gl_FragColor = vec4(lighting, 1) * tex; "\
+			"gl_FragColor = tex; "\
 			"}                                      "\
 			;
 

@@ -50,7 +50,7 @@ namespace thegrill {
 
 		glm::mat4 view(1);
 
-		mShader->setUniform("in_LightPos", glm::vec3(1, 1, 1));
+		//mShader->setUniform("in_LightPos", glm::vec3(1, 1, 3));
 
 		mShader->setUniform("in_View", view);
 
@@ -83,7 +83,7 @@ namespace thegrill {
 
 		glm::mat4 view(1);
 
-		mShader->setUniform("in_LightPos", glm::vec3(1, 1, 1));
+		//mShader->setUniform("in_LightPos", glm::vec3(1, 1, 1));
 
 		mShader->setUniform("in_View", view);
 

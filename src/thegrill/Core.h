@@ -12,11 +12,20 @@ namespace thegrill
 	struct Camera;
 	struct GUI;
 
-
+	/**
+	 * @brief The Core class is the main engine class that manages the game loop and core systems.
+	 */
 	struct Core
 	{
+		/**
+		 * @brief Initializes the core engine instance.
+		 * @return A shared pointer to the initialized core engine instance.
+		 */
 		static std::shared_ptr<Core> initialize();
 		
+		/**
+		 * @brief Runs the main game loop.
+		 */
 		void run();
 
 		
@@ -28,9 +37,15 @@ namespace thegrill
 		std::shared_ptr<Camera> current_camera();
 		std::shared_ptr<GUI> gui();
 
+		void set_current_cam(std::shared_ptr<Camera> _cam);
+
 		float DeltaTime();
 
-
+		/**
+		 * @brief Finds all components of a given type.
+		 * @tparam T The type of component to find.
+		 * @param _out A vector to store found components.
+		 */
 		template <typename T>
 		void find(std::vector<std::shared_ptr<T> >& _out)
 		{
@@ -57,8 +72,6 @@ namespace thegrill
 
 		 
 	private:
-		friend struct thegrill::Camera;
-
 		std::shared_ptr<Window> m_window;
 		std::shared_ptr<SoundSystem> m_sound_system;
 		std::shared_ptr<Input> m_input;

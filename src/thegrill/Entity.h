@@ -11,8 +11,18 @@ namespace thegrill {
 	struct Component;
 	struct Transform;
 
+	/**
+	 * @brief The Entity class represents an object in the game world.
+	 *
+	 * Entities can have multiple components attached to them and are stored within core.
+	 */
 	struct Entity {
 
+		/**
+		 * @brief Adds a new component of type T to the entity.
+		 * @tparam T Type of component to add.
+		 * @return A shared pointer to the newly added component.
+		 */
 		template <typename T>
 		std::shared_ptr<T> add_component() 
 		{
@@ -29,6 +39,12 @@ namespace thegrill {
 			return rtn;
 		}
 
+		/**
+		 * @brief Gets a component of type T from the entity.
+		 * @tparam T Type of component to get.
+		 * @return A shared pointer to the component.
+		 * @throws std::runtime_error if the component is not found.
+		 */
 		template <typename T>
 		std::shared_ptr<T> get_component() const
 		{
@@ -45,6 +61,13 @@ namespace thegrill {
 			throw std::runtime_error("Failed to find specified component");
 		}
 
+		/**
+		 * @brief Gets all components of type T from the entity.
+		 * @tparam T The type of components to get.
+		 * @param _components A vector to store the found components.
+		 * @throws std::runtime_error if the component is not found.
+		 */
+
 		template <typename T>
 		void get_components(std::vector<std::shared_ptr<T> >& _components) const
 		{
@@ -58,6 +81,11 @@ namespace thegrill {
 				{
 					_components.push_back(cast);
 				}
+			}
+
+			if (_components.empty())
+			{
+				throw std::runtime_error("Failed to find specified component");
 			}
 		}
 
@@ -73,17 +101,17 @@ namespace thegrill {
 private:
 	friend struct thegrill::Core;
 
-		std::weak_ptr<Core> m_core;
-		std::weak_ptr<Entity> m_self;
-		std::weak_ptr<Transform> m_transform;
+		std::weak_ptr<Core> m_core; ///< Weak pointer to the core engine instance.
+		std::weak_ptr<Entity> m_self; ///< Weak pointer to this entity.
+		std::weak_ptr<Transform> m_transform; ///< Weak pointer to the transform component.
 
-		std::vector<std::shared_ptr<Component> > m_components;
+		std::vector<std::shared_ptr<Component> > m_components; ///< List of components attached to the entity.
 
 		void OnTick();
 		void OnRender();
 		void OnGUI();
 
-		bool alive = true;
+		bool alive = true; ///< Indicates whether the entity is alive.
 	};
 
 }

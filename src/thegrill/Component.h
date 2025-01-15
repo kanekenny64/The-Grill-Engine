@@ -4,7 +4,6 @@
 
 #include <memory>
 
-
 namespace thegrill {
 	struct Entity;
 	struct Keyboard;
@@ -12,10 +11,19 @@ namespace thegrill {
 	struct Transform;
 	struct GUI;
 
+
+	/**
+	 * @brief Base class for all components in the engine.
+	 *
+	 * This class provides the basic interface and functionality for all components.
+	 */
 	struct Component
 	{
 	public:
 		virtual void on_initialize();
+		/**
+		 * @brief Called every frame to update the component.
+		 */
 		virtual void on_tick();
 		virtual void on_render();
 		virtual void on_gui();
@@ -35,7 +43,7 @@ namespace thegrill {
 	private:
 		friend struct thegrill::Entity;
 
-		std::weak_ptr<Entity> m_entity;
+		std::weak_ptr<Entity> m_entity; ///< Weak pointer to the entity that this component is attached to.
 	};
 }
 

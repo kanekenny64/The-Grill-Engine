@@ -131,7 +131,7 @@ int main()
 		std::shared_ptr<RigidBody> rigidBody2 = entity2->add_component<RigidBody>();
 		std::shared_ptr<AnimationTrack> AnimTrack1 = entity2->add_component<AnimationTrack>();
 		std::shared_ptr<AnimationController> AnimController1 = entity2->add_component<AnimationController>();
-		AnimTrack1->create("models/guppy40001", 8);
+		AnimTrack1->create("models/guppy40001", 48);
 		AnimController1->set_track(AnimTrack1);
 		AnimController1->set_duration(10.5f);
 		r2->set_texture(tex);
@@ -141,7 +141,7 @@ int main()
 
 		entity2->set_position(vec3(5, 0, -15));;
 
-		entity2->get_transform()->set_parent(entity);
+		//entity2->get_transform()->set_parent(entity);
 
 		std::shared_ptr<Entity> map1 = core->add_entity();
 		std::shared_ptr<ModelRenderer> r3 = map1->add_component<ModelRenderer>();

@@ -16,6 +16,10 @@
 
 namespace thegrill {
 
+	/**
+	 * @brief Initializes the core engine instance.
+	 * @return Shared pointer to the initialised instance of core.
+	 */
 
 	std::shared_ptr<Core> Core::initialize()
 	{
@@ -77,6 +81,16 @@ namespace thegrill {
 		return m_gui;
 	}
 
+	/**
+	* @brief Sets the current active camera.
+	* @param _cam A shared pointer to the camera to set as the current active camera.
+	*/
+	void Core::set_current_cam(std::shared_ptr<Camera> _cam)
+	{
+		m_current_cam = _cam;
+
+	}
+
 	float Core::DeltaTime()
 	{
 		return deltaTime;
@@ -113,7 +127,7 @@ namespace thegrill {
 
 			window()->Update();
 
-			//SDL_GL_ClearWindow(m_window->m_raw);
+			
 
 			//Before rendering, check for a valid camera component
 			if (!m_current_cam.lock()) {
