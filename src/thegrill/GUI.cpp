@@ -14,7 +14,7 @@ namespace thegrill {
 		mShader = std::make_shared<renderer::Shader>(true);
 		mRect = std::make_shared<renderer::Mesh>();
 		
-		
+		//Populate the mesh with a rectangle
 		renderer::Face face;
 		face.a.position = glm::vec3(1.0f, 0.0f, 0.0f);
 		face.b.position = glm::vec3(0.0f, 1.0f, 0.0f);
@@ -61,9 +61,11 @@ namespace thegrill {
 	//Return 0 for no click, 1 for hover, 2 for click
 	int GUI::button(std::shared_ptr<Texture> _tex, float _x, float _y, float _w, float _h)
 	{
-
+		//Get mouse position
 		glm::vec2 mp = glm::vec2(m_core.lock()->input()->mouse()->getXPos(), m_core.lock()->input()->mouse()->getYPos());
 
+
+		//Draw the button
 		int height, width;
 		m_core.lock()->window()->get_dimensions(width, height);
 
@@ -83,11 +85,10 @@ namespace thegrill {
 
 		mShader->draw(mShader->programId, mRect->vao_id(), mRect->vertex_count(), false);
 
+		//Test for button click or hover
 
 		//invert y axis
 		mp.y = height - mp.y;
-
-		
 
 		if (mp.x > _x && mp.x < _x + _w &&
 			mp.y > _y && mp.y < _y + _h)

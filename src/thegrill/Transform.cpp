@@ -39,7 +39,7 @@ namespace thegrill {
 	}
 
 
-
+	//iteratively get the position of the parent and add the position of the child
 	glm::vec3 Transform::get_position()
 	{
 		if (auto Parent = m_Parent.lock())
@@ -52,6 +52,7 @@ namespace thegrill {
 		}
 	}
 
+	//iteratively get the rotation of the parent and add the rotation of the child
 	glm::vec3 Transform::get_rotation()
 	{
 		if (auto Parent = m_Parent.lock())
@@ -63,7 +64,7 @@ namespace thegrill {
 			return m_rotation;
 		}
 	}
-
+	//iteratively get the scale of the parent and add the scale of the child
 	glm::vec3 Transform::get_scale()
 	{
 		if (auto Parent = m_Parent.lock())

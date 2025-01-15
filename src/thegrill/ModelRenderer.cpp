@@ -33,6 +33,7 @@ namespace thegrill {
 			return;
 		}
 
+		//Set uniforms for the shader
 		int height, width;
 		get_entity()->get_core()->window()->get_dimensions(width, height);
 		glm::mat4 projection = glm::perspective(glm::radians(45.0f), float(width) / float(height), 0.1f, 100.f);

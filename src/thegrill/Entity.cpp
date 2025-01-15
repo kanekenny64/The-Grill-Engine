@@ -17,6 +17,9 @@ namespace thegrill {
 	{
 		return m_core.lock();
 	}
+
+	//When destroy is called, first check if its already destroyed
+	//If it is not destroyed, set alive to false and call on_destroy for all components
 	void Entity::destroy()
 	{
 		if (alive)
