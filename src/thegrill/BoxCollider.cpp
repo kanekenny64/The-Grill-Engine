@@ -78,7 +78,7 @@ namespace thegrill {
 				return false;
 			}
 		}
-
+		isColliding = true;
 		return true;
 		
 	}
@@ -92,6 +92,7 @@ namespace thegrill {
 
 	glm::vec3 BoxCollider::get_collisionResponse(BoxCollider& _other)
 	{
+
 		float amount = 0.1f;
 		float step = 0.1f;
 		glm::vec3 position = get_entity()->get_transform()->get_position();

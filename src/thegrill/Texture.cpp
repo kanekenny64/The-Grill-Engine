@@ -10,11 +10,21 @@ namespace thegrill
 	}
 
 	void Texture::onLoad() {
-		m_texture = std::make_shared<renderer::Texture>(getPath() + ".png");
+		//Try to load the texture, if it fails, load the default texture
+		try {
+			m_texture = std::make_shared<renderer::Texture>(getPath() + ".png");
+			if (!m_texture) {
+				throw std::runtime_error("Failed to load texture: " + getPath() + ".png");
+			}
+		}
+		catch (const std::exception& e) {
+			std::cout << "Error loading texture at:" << getPath() << std::endl;
+			m_texture = std::make_shared<renderer::Texture>("../assets/textures/default.png");
+		}
 	}
 
 	void Texture::onUnload() {
-		std::cout << "Texture::onUnload()" << std::endl;
+		
 		m_texture->unload();
 	}
 }

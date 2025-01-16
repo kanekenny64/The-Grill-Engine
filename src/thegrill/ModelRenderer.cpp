@@ -23,6 +23,12 @@ namespace thegrill {
 	{
 		m_model = _model->get_model();
 	}
+	void ModelRenderer::on_destroy()
+	{
+		m_tex->unload();
+		m_model->unload();
+
+	}
 	void ModelRenderer::on_render()
 	{
 

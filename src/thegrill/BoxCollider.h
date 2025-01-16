@@ -40,9 +40,15 @@ namespace thegrill {
 		void set_offset(glm::vec3 _offset);
 		void set_size(glm::vec3 _size);
 
+		
+
+		
+
 	private:
 		glm::vec3 m_size; ///< The size of the BoxCollider.
 		glm::vec3 m_offset; ///< The offset of the BoxCollider.
+
+		
 		
 	};
 

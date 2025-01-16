@@ -11,5 +11,14 @@
 
 namespace thegrill {
 	struct Collider : Component
-	{ };
+	{ 
+		void set_trigger(bool _trigger) { trigger = _trigger; }
+		bool get_trigger() { return trigger; }
+		bool get_isColliding() { return isColliding; }
+
+	protected:
+		bool isColliding = false;
+		bool trigger = false;
+	
+	};
 }

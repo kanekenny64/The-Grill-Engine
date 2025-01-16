@@ -8,5 +8,6 @@ namespace thegrill
 
 	struct Camera : public Component {
 		void on_initialize();
+		void on_destroy();
 	};
 }

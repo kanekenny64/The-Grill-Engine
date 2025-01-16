@@ -39,9 +39,10 @@ namespace thegrill {
 
         Transform& transform = *get_entity()->get_transform();
 
+		// Set the position of the sound source to the position of the entity
         alSource3f(m_Id, AL_POSITION, transform.get_position().x, transform.get_position().y, transform.get_position().z);
         alGetSourcei(m_Id, AL_SOURCE_STATE, &state);
-        if (state != AL_PLAYING) {
+        if (state != AL_PLAYING && looping) {
             play();
         }
     }

@@ -49,7 +49,7 @@ namespace thegrill {
 				newPath = oldPath + "000" + std::to_string(i);
 			}
 
-			std::cout << newPath << std::endl;
+			
 
 			m_keyFrames.push_back(get_core()->get_resources()->load<Model>(newPath)); ///< Load the subsequent models.
 		}

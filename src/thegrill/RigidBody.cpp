@@ -35,7 +35,11 @@ namespace thegrill {
 				}
 
 				if (thisBoxCollider[i]->colliding(*worldBoxColliders[j])) {
-					get_entity()->get_transform()->set_position(thisBoxCollider[i]->get_collisionResponse(*worldBoxColliders[j]) - thisBoxCollider[i]->get_offset());
+					if (!thisBoxCollider[i]->get_trigger() && !worldBoxColliders[j]->get_trigger())
+					{
+						get_entity()->get_transform()->set_position(thisBoxCollider[i]->get_collisionResponse(*worldBoxColliders[j]) - thisBoxCollider[i]->get_offset());
+					}
+					
 				}
 				
 			}
@@ -46,7 +50,10 @@ namespace thegrill {
 			for (int j = 0; j < worldBoxColliders.size(); j++) {
 				if ( thisMeshColliders[i]->colliding(*worldBoxColliders[j]))
 				{
-					worldBoxColliders[j]->get_entity()->get_transform()->set_position(worldBoxColliders[j]->get_collisionResponse(*thisMeshColliders[i]));
+					if (!thisMeshColliders[i]->get_trigger())
+					{
+						worldBoxColliders[j]->get_entity()->get_transform()->set_position(worldBoxColliders[j]->get_collisionResponse(*thisMeshColliders[i]));
+					}
 				}
 			}
 		}

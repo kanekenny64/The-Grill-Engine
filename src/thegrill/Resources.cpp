@@ -14,6 +14,8 @@ namespace thegrill {
 	{
 		for (size_t i = 0; i < m_resources.size(); ++i)
 		{
+			//Check if resource is no longer in use
+			//Check with timer if it isnt being used so it's not unloaded unnecessarily
 			if (m_resources.at(i).use_count() == 1) {
 				m_resources.at(i)->m_timeout -= m_core.lock()->DeltaTime();
 				if (m_resources.at(i)->m_timeout <= 0)
@@ -24,7 +26,7 @@ namespace thegrill {
 			}
 			else
 			{
-				m_resources.at(i)->m_timeout = 10;
+				m_resources.at(i)->m_timeout = 0.00010;
 			}
 		}
 	}

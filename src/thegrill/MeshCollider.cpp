@@ -35,6 +35,7 @@ namespace thegrill {
 												{m_faces[i].c.position.x, m_faces[i].c.position.y, m_faces[i].c.position.z} };
 			if (triBoxOverlap(boxCentre, boxHalfSize, triVerts) == 1)
 			{
+				isColliding = true;
 				return true;
 			}
 		}

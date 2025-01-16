@@ -26,6 +26,7 @@ namespace thegrill {
 		std::shared_ptr<renderer::Model> get_model() { return m_model; }
 	private:
 		
+		void on_destroy();
 
 		void on_render();
 

@@ -35,11 +35,18 @@ namespace thegrill
 		std::shared_ptr<Resources> get_resources();
 		std::shared_ptr<Input> input();
 		std::shared_ptr<Camera> current_camera();
+		std::vector<std::shared_ptr<Camera> > cameras();
 		std::shared_ptr<GUI> gui();
 
 		void set_current_cam(std::shared_ptr<Camera> _cam);
+		void add_camera(std::shared_ptr<Camera> _cam);
+		void remove_camera(std::shared_ptr<Camera> _cam);
 
 		float DeltaTime();
+
+		void DestroyAllEntities();
+
+		void Quit();
 
 		/**
 		 * @brief Finds all components of a given type.
@@ -79,9 +86,11 @@ namespace thegrill
 		std::vector<std::shared_ptr<Entity> > m_entities;
 		std::vector<std::shared_ptr<Camera> > m_cameras;
 		std::shared_ptr<GUI> m_gui;
-		std::weak_ptr<Camera> m_current_cam;
+		std::shared_ptr<Camera> m_current_cam;
 		std::weak_ptr<Core> m_self;
 		
+		bool quit = false;
 		float deltaTime = 0.0f;
+		bool validCam = false;
 	};
 }

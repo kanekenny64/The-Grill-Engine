@@ -6,9 +6,7 @@
 namespace renderer {
     Mesh::Mesh()
         : m_dirty(false), m_vboid(0), m_vaoid(0)
-    {
-        std::cout << "mesh created" << std::endl;
-    }
+    {}
 
     void Mesh::add(const Face& _face)
     {

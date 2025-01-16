@@ -40,7 +40,10 @@ namespace thegrill {
 
 	void GUI::image(std::shared_ptr<Texture> _tex, float _x, float _y, float _w, float _h)
 	{
-		glm::mat4 projection = glm::ortho(0.0f, 800.0f, 0.0f, 800.0f, 0.0f, 1.0f);
+		int height, width;
+		m_core.lock()->window()->get_dimensions(width, height);
+
+		glm::mat4 projection = glm::ortho(0.0f, float(width), 0.0f, float(height), 0.0f, 1.0f);
 		mShader->setUniform("u_Projection", projection);
 
 		glm::mat4 model(1.0f);
@@ -93,10 +96,9 @@ namespace thegrill {
 		if (mp.x > _x && mp.x < _x + _w &&
 			mp.y > _y && mp.y < _y + _h)
 		{
-			//std::cout << "hover" << std::endl;
+			
 			if (m_core.lock()->input()->mouse()->isButtonDown(SDL_BUTTON_LEFT))
 			{
-				std::cout << "Click" << std::endl;
 				return 2;
 			}
 			else
@@ -104,7 +106,7 @@ namespace thegrill {
 				return 1;
 			}
 		}
-		//std::cout << "no hover" << std::endl;
+		
 		return 0;
 	}
 

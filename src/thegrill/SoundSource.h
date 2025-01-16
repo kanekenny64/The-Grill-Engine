@@ -17,6 +17,10 @@ namespace thegrill {
 
 		void play();
 
+		void set_looping(bool _looping) {
+			looping = _looping;
+		}
+
 	private:
 		std::shared_ptr<Audio> m_audio;
 		ALuint m_Id;

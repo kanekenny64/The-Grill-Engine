@@ -25,6 +25,8 @@ namespace renderer {
 
 		void draw(GLuint _VAOID, GLuint _VBOID, GLsizei _size, bool depth_testing);
 
+		void clean_up();
+
 
 		GLuint programId;
 		GLint modelLoc;

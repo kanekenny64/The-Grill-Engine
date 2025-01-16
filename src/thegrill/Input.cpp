@@ -14,6 +14,7 @@ namespace thegrill
 	}
 	bool Input::Update()
 	{
+		//Call the update function for the keyboard and mouse
 		m_keyboard->update();
 		m_mouse->update();
 

@@ -1,0 +1,365 @@
+commit 918916bc695112c893623c3c3f346c5c469e13b6
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Thu Jan 16 16:06:49 2025 +0000
+
+    Resource unloading
+
+commit 924bacd8c47516319d6ec8fef20143fe6cf432a0
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Wed Jan 15 20:51:31 2025 +0000
+
+    Removing commented lines
+
+commit c863bbf749ee25ad6fef7592f60fdeb43a42c8d0
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Wed Jan 15 20:46:18 2025 +0000
+
+    More commenting
+
+commit f2f50e879011a82bd2ef4d13c2a808737debe0a2
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Wed Jan 15 20:40:39 2025 +0000
+
+    UML and Logo
+
+commit 7b5cbac21bed1d78c4672a09fb27eb0eee629cd8
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Wed Jan 15 20:13:11 2025 +0000
+
+    renderer background colour change
+
+commit bc1a6a5bba8a589380121f7083733989695078f7
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Wed Jan 15 17:54:52 2025 +0000
+
+    doxygen done
+
+commit f01f8538f29756762f79e9d6ca5666980f77d95e
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Wed Jan 15 13:54:13 2025 +0000
+
+    comments
+
+commit 4f1a4a36e709151bed160effe25369df06611e65
+Author: KaneKenny0 <149970975+KaneKenny0@users.noreply.github.com>
+Date:   Tue Jan 14 23:53:17 2025 +0000
+
+    comments
+
+commit 247dd0db1ebfc5f884162fefd02f85a37b5d18fb
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Tue Jan 14 14:44:59 2025 +0000
+
+    lots of stuff
+
+commit 9c8495ee3cf985ae44718b52cdab3d77df9abf99
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Mon Jan 13 18:34:46 2025 +0000
+
+    Mesh Collision almost there
+
+commit d99f0b31a7537a8b929dc90b73ce4aaf3ef48569
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Mon Jan 13 14:49:39 2025 +0000
+
+    unloading stuff :-1:
+
+commit 1ef5aef323f68086fe6cb1eeadedcb2ed946d534
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Mon Jan 13 12:53:17 2025 +0000
+
+    Default camera creation
+
+commit 11e17ec2268d9343f151ff5b2d20d6adb5261248
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Sun Jan 12 18:14:34 2025 +0000
+
+    Camera rotation in view matrix
+
+commit 8388e039a06d9558a096fbe3d3087ca6cd8279b9
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Sun Jan 12 17:55:53 2025 +0000
+
+    Parent System and destruction system :+1:
+
+commit 4dac89bf26f20d6d0cddd862212af51c8de60278
+Author: KaneKenny0 <149970975+KaneKenny0@users.noreply.github.com>
+Date:   Sun Jan 12 13:34:20 2025 +0000
+
+    animation system
+
+commit 71ea35578a9702a8c3e435a49d93afe6deb7b66f
+Author: KaneKenny0 <149970975+KaneKenny0@users.noreply.github.com>
+Date:   Tue Jan 7 16:01:11 2025 +0000
+
+    naming conventions and assets folder 👍
+
+commit b52b2b2a079bcda9430fa0a921bfb906c8355cfe
+Author: KaneKenny0 <149970975+KaneKenny0@users.noreply.github.com>
+Date:   Tue Jan 7 15:33:40 2025 +0000
+
+    GUI button fix 👍
+
+commit 6765b046de07c0d4ad5433ca4d165407b309f179
+Author: KaneKenny0 <149970975+KaneKenny0@users.noreply.github.com>
+Date:   Tue Jan 7 13:53:59 2025 +0000
+
+    the clicker 👍
+
+commit 37b9619e14c33719a8cfa75f7a7215b657b35ca6
+Author: KaneKenny0 <149970975+KaneKenny0@users.noreply.github.com>
+Date:   Mon Jan 6 01:00:52 2025 +0000
+
+    tr
+
+commit 10c591e7f0bccc28fc097283f9d4c8e534877fd8
+Author: KaneKenny0 <149970975+KaneKenny0@users.noreply.github.com>
+Date:   Sun Jan 5 18:55:17 2025 +0000
+
+    memory leak fixed
+
+commit 1f09e8df801969afa624e28269bf699bea647155
+Author: KaneKenny0 <149970975+KaneKenny0@users.noreply.github.com>
+Date:   Sun Jan 5 02:10:51 2025 +0000
+
+    Gui sort of working no textures
+
+commit 4abf4d1f4a1b7d2d60c2b4f616a60b23f07b6ae4
+Author: KaneKenny0 <149970975+KaneKenny0@users.noreply.github.com>
+Date:   Sat Jan 4 18:27:58 2025 +0000
+
+    GUI stuff
+
+commit d9e389846dc90d27be01751f50c0c2f6e7254dc1
+Author: KaneKenny0 <149970975+KaneKenny0@users.noreply.github.com>
+Date:   Fri Jan 3 21:51:40 2025 +0000
+
+    Mesh Collider start
+
+commit ae0e4ecc659c3ec60f18a882d3451b6849e2c7d6
+Author: KaneKenny0 <149970975+KaneKenny0@users.noreply.github.com>
+Date:   Tue Dec 31 16:48:32 2024 +0000
+
+    audio listener
+
+commit 83979be66aa77e1558630eaf27cf4cf9392e8bbe
+Author: KaneKenny0 <149970975+KaneKenny0@users.noreply.github.com>
+Date:   Tue Dec 31 12:45:37 2024 +0000
+
+    AudioListener
+
+commit 4382d776ac9651be21fa931a0836d870d2676591
+Author: KaneKenny0 <149970975+KaneKenny0@users.noreply.github.com>
+Date:   Fri Dec 27 17:40:18 2024 +0000
+
+    camera class 👍
+
+commit c64ca502322325754629b1ae792504924e54b6ad
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Fri Dec 13 14:05:04 2024 +0000
+
+    Movement
+
+commit f1c0528079a122876ff166af165f7ec7ba7fac8b
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Thu Dec 12 14:17:39 2024 +0000
+
+    collision response working :+1:
+
+commit e3f41f2b1cfa02a4d24bd045fc535fada589c414
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Wed Dec 11 17:20:09 2024 +0000
+
+    collision :+1:
+
+commit 5a4e3862d1b9056cbe14fdf36295813008577bb3
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Sat Dec 7 18:10:43 2024 +0000
+
+    Rigidbody stuff
+
+commit d49b1eee0b4ccd75364a275c82f01cf4b45b6d97
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Sat Dec 7 18:00:03 2024 +0000
+
+    Box collision groundwork
+
+commit 94ea94d1f9dc81fa75e27db078511d0bd1b83465
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Fri Dec 6 12:44:40 2024 +0000
+
+    Audio working :+1:
+
+commit 92fe1558dc472dc7d36612a821e0e42e3f2e981f
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Thu Dec 5 23:13:41 2024 +0000
+
+    Sound ground work :-1:
+
+commit ea39ece3341bf8a471510d1227bde1404d64c6b0
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Thu Dec 5 21:27:02 2024 +0000
+
+    audio
+
+commit b45d73c786ac706e4e9824611f2a9720d94433b6
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Thu Dec 5 14:41:05 2024 +0000
+
+    working input :+1:
+
+commit e55172a8d50a3bc172639900296e1f554268a902
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Thu Dec 5 14:28:56 2024 +0000
+
+    input
+
+commit c6e593346480e583504bd28f61ad0ee29f6a291d
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Wed Dec 4 15:00:31 2024 +0000
+
+    input stuff
+
+commit 619b0c111fcaab2949a763a5d7d93f9f14d165a0
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Fri Nov 29 13:13:06 2024 +0000
+
+    input groundwork
+
+commit 917d440b214a5568091421d976a59729711926c6
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Thu Nov 28 14:55:21 2024 +0000
+
+    transforms
+
+commit db55b91e527c9fdec9cf5f5a5807aad40a39a755
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Wed Nov 27 15:51:49 2024 +0000
+
+    audio and transform stuff
+
+commit afde0e524e94e4f518a737cce5299cd73c35c823
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Thu Nov 21 12:59:23 2024 +0000
+
+    resources working for texture and model
+
+commit 9fa4f9b36f3293ea3fc966be641906569e557daf
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Thu Nov 14 14:21:58 2024 +0000
+
+    resources
+
+commit b4800e9fa6d38803505f5d4f46011e6ac0f0a0eb
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Thu Nov 14 13:01:14 2024 +0000
+
+    resource loaded
+
+commit 61e01d4502c66198e783d4eec618424d659cb2da
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Tue Nov 12 12:58:27 2024 +0000
+
+    artefacts issue fix
+
+commit 44eb4b12da72025d5b2857eef1215058c214bf5c
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Tue Nov 12 12:37:43 2024 +0000
+
+    texture fix
+
+commit 1b4af8e3f3ab9970aa235f0d266fe99a90833eab
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Wed Nov 6 12:51:42 2024 +0000
+
+    model renderer working
+
+commit 30513adb843a7470a826f6bb8443e7cee6bcfb49
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Tue Nov 5 16:44:48 2024 +0000
+
+    lab work still on triangle renderer
+
+commit 26b5266111b7c21d8c1ffcdb3a719972290dafca
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Fri Nov 1 15:59:30 2024 +0000
+
+    triangle renderer and namespace stuff
+
+commit 9353b3d1af8a6457cb900e6ac268e3c695a1c5a2
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Thu Oct 31 13:16:03 2024 +0000
+
+    colour window working
+
+commit a1486e7aff0dcfa40e3072edba3ed2d8150b75da
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Mon Oct 28 14:54:22 2024 +0000
+
+    renderererer
+
+commit 4fbbdf26868d59d542b681bf47976db0b967f7ba
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Sun Oct 27 16:52:13 2024 +0000
+
+    triangle renderer work
+
+commit 404f4b06823c07d22da1ef2aff4dae24b90ff3ec
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Thu Oct 24 13:02:12 2024 +0100
+
+    lab work
+
+commit dfabe1fc82bfcb03633fbec33a597e7503b88cbf
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Thu Oct 17 13:02:21 2024 +0100
+
+    defaort
+
+commit aeabf2d8a64221be2a477573cf46946ba268b3c9
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Thu Oct 17 12:59:51 2024 +0100
+
+    glm added
+
+commit 19774092b42bbc22f67f72dfdf26c6d86ca5d9c5
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Thu Oct 10 12:57:25 2024 +0100
+
+    ECS basics
+
+commit 6aaac2ef5348c33a284cf0014dbec1c986617de9
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Thu Oct 3 12:36:33 2024 +0100
+
+    gone
+
+commit a77087624b83985e45beccad8a43e8ae9a9b0e38
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Thu Oct 3 12:35:34 2024 +0100
+
+    ignore
+
+commit 8de4bac61f44811d05587b5fadcc2500e932b8cb
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Thu Oct 3 12:34:11 2024 +0100
+
+    ignore
+
+commit d15922c0d0214d2a94c5f4f7f340a582b7aa05ac
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Thu Oct 3 12:33:16 2024 +0100
+
+    gitignore
+
+commit eb03953fa22a74067c41519894a61ca011d8e003
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Thu Oct 3 12:20:17 2024 +0100
+
+    initial import
+
+commit d78cab90a35dfd0588a626d6e1c096fbbaa6f614
+Author: Kane Kenny (s5512001) <s5512001@bournemouth.ac.uk>
+Date:   Thu Oct 3 12:09:41 2024 +0100
+
+    Initial commit

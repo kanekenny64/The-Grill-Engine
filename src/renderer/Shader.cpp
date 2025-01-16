@@ -175,11 +175,11 @@ namespace renderer {
 
 	void Shader::draw(GLuint _VAOID, GLuint _VBOID, GLsizei _vCount, bool depth_testing)
 	{
-		//std::cout << "Drawing" << std::endl;
+		
 		// Instruct OpenGL to use our shader program and our VAO
 		glUseProgram(programId);
 		glBindVertexArray(_VBOID);
-		//	std::cout << programId << " " << ortho << std::endl;
+
 			// Draw 3 vertices (a triangle)
 		glDrawArrays(GL_TRIANGLES, 0, _vCount);
 
@@ -194,7 +194,13 @@ namespace renderer {
 		glBindVertexArray(0);
 		glUseProgram(0);
 		//print vertex shader
-	//	std::cout << "Fram Shader: " << fragmentShaderSrc << std::endl;
+	
+	}
+
+	void Shader::clean_up()
+	{
+		glDeleteProgram(programId);
+		
 	}
 
 

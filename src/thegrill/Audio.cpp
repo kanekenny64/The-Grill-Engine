@@ -31,6 +31,7 @@ namespace thegrill {
         int sampleRate = 0;
         short* output = NULL;
 
+		// Load the OGG file into memory
         size_t samples = stb_vorbis_decode_filename(_path.c_str(),
             &channels, &sampleRate, &output);
 

@@ -5,8 +5,8 @@
 namespace thegrill {
 	Window::Window()
 	{
-		m_width = 800;
-		m_height = 600;
+		m_width = 960;
+		m_height = 720;
 
 		m_raw = SDL_CreateWindow("Triangle",
 			SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,

@@ -33,7 +33,7 @@ namespace thegrill {
 		}
 	}
 	Entity::~Entity() {
-		std::cout << "Entity Destroyed" << std::endl;
+		
 	}
 
 	void Entity::OnTick() {
