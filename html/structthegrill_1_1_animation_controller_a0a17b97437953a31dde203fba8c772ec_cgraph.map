@@ -1,0 +1,9 @@
+<map id="thegrill::AnimationController::on_tick" name="thegrill::AnimationController::on_tick">
+<area shape="rect" id="Node000001" title="Updates the AnimationController each tick. This function advances the animation based on the elapsed ..." alt="" coords="5,39,187,81"/>
+<area shape="rect" id="Node000002" href="$structthegrill_1_1_component.html#a9336bcaea73cfe54b76200b54d454223" title=" " alt="" coords="245,5,380,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="187,43,230,37,231,42,188,49"/>
+<area shape="rect" id="Node000004" href="$structthegrill_1_1_model_renderer.html#abc85a860c9184dca8c93075c576b33a9" title=" " alt="" coords="235,72,390,115"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="188,71,220,76,219,82,187,77"/>
+<area shape="rect" id="Node000003" href="$structthegrill_1_1_component.html#acc754d2dc8e9915ebf5b5eb666409d51" title=" " alt="" coords="438,5,572,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="380,24,423,24,423,29,380,29"/>
+</map>

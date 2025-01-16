@@ -1,0 +1,13 @@
+<map id="src/thegrill/BoxCollider.h" name="src/thegrill/BoxCollider.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="33,5,197,32"/>
+<area shape="rect" id="Node000002" href="$_component_8h.html" title=" " alt="" coords="5,155,105,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="103,34,83,55,67,81,59,111,57,140,51,139,54,110,62,79,79,52,99,30"/>
+<area shape="rect" id="Node000004" href="$_collider_8h.html" title=" " alt="" coords="77,80,153,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="118,33,118,64,112,64,112,33"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="137,155,229,181"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="131,31,150,52,168,79,179,109,184,139,178,140,173,111,163,81,146,55,127,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="21,229,89,256"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="58,182,58,214,52,214,52,182"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="107,109,77,145,73,141,103,106"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="129,105,163,141,159,145,125,109"/>
+</map>

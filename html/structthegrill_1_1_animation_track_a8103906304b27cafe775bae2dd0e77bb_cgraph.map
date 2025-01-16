@@ -1,0 +1,7 @@
+<map id="thegrill::AnimationTrack::create" name="thegrill::AnimationTrack::create">
+<area shape="rect" id="Node000001" title="Creates the animation track by loading keyframes from a specified path and continuing for a specified..." alt="" coords="5,5,164,48"/>
+<area shape="rect" id="Node000002" href="$structthegrill_1_1_component.html#a9336bcaea73cfe54b76200b54d454223" title=" " alt="" coords="212,5,346,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,24,196,24,196,29,164,29"/>
+<area shape="rect" id="Node000003" href="$structthegrill_1_1_component.html#acc754d2dc8e9915ebf5b5eb666409d51" title=" " alt="" coords="394,5,528,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="347,24,379,24,379,29,347,29"/>
+</map>

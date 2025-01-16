@@ -1,0 +1,5 @@
+<map id="thegrill::Component::tick" name="thegrill::Component::tick">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,140,48"/>
+<area shape="rect" id="Node000002" href="$structthegrill_1_1_component.html#ab2f4198b8755856e77eb0181754b290b" title="Called every frame to update the component." alt="" coords="188,5,322,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,24,172,24,172,29,140,29"/>
+</map>

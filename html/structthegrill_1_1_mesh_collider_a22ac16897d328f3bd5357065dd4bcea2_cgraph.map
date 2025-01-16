@@ -1,0 +1,11 @@
+<map id="thegrill::MeshCollider::colliding" name="thegrill::MeshCollider::colliding">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,72,149,115"/>
+<area shape="rect" id="Node000002" href="$structthegrill_1_1_component.html#acc754d2dc8e9915ebf5b5eb666409d51" title=" " alt="" coords="197,5,331,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="138,69,187,51,189,56,140,74"/>
+<area shape="rect" id="Node000003" href="$structthegrill_1_1_box_collider.html#ade381f2e487df991a0aae263940467d8" title=" " alt="" coords="197,72,331,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,91,181,91,181,96,149,96"/>
+<area shape="rect" id="Node000004" href="$tribox3_8h.html#a1d05ae6a2797f7196e4d253976e1c3ab" title=" " alt="" coords="214,139,314,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="148,113,206,131,204,136,146,118"/>
+<area shape="rect" id="Node000005" href="$tribox3_8h.html#ad73e2347c99ef1bda7e767f069382087" title=" " alt="" coords="379,139,499,165"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="315,149,364,149,364,155,315,155"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="thegrill::SoundSource::play" name="thegrill::SoundSource::play">
+<area shape="rect" id="Node000001" title=" " alt="" coords="199,5,344,48"/>
+<area shape="rect" id="Node000002" href="$structthegrill_1_1_sound_source.html#a619b553e05c5d4ef97a00c49491be588" title="Called every frame to update the component." alt="" coords="5,5,151,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,29,151,29,151,24,183,24"/>
+</map>

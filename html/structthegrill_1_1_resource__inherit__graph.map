@@ -1,0 +1,9 @@
+<map id="thegrill::Resource" name="thegrill::Resource">
+<area shape="rect" id="Node000001" title=" " alt="" coords="119,5,242,32"/>
+<area shape="rect" id="Node000002" href="$structthegrill_1_1_audio.html" title="The Audio class represents an audio resource that can be loaded and managed within the sound system." alt="" coords="5,80,106,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,42,79,82,76,77,145,38"/>
+<area shape="rect" id="Node000003" href="$structthegrill_1_1_model.html" title=" " alt="" coords="130,80,232,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="184,48,184,80,178,80,178,48"/>
+<area shape="rect" id="Node000004" href="$structthegrill_1_1_texture.html" title=" " alt="" coords="256,80,367,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="218,38,290,77,287,82,216,42"/>
+</map>

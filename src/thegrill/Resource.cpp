@@ -6,6 +6,7 @@ namespace thegrill {
 	}
 
 	void Resource::load() {
+		m_timeout = 0;
 		onLoad();
 	}
 

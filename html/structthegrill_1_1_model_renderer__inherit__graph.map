@@ -1,0 +1,5 @@
+<map id="thegrill::ModelRenderer" name="thegrill::ModelRenderer">
+<area shape="rect" id="Node000001" title="The ModelRenderer class is a component responsible for rendering models with textures." alt="" coords="5,80,161,107"/>
+<area shape="rect" id="Node000002" href="$structthegrill_1_1_component.html" title="Base class for all components in the engine." alt="" coords="16,5,150,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,48,86,80,80,80,80,48"/>
+</map>

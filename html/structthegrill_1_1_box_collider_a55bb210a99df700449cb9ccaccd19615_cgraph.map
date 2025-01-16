@@ -1,0 +1,21 @@
+<map id="thegrill::BoxCollider::get_collisionResponse" name="thegrill::BoxCollider::get_collisionResponse">
+<area shape="rect" id="Node000001" title="Calculates the collision response vector when colliding with a MeshCollider." alt="" coords="5,123,166,165"/>
+<area shape="rect" id="Node000002" href="$structthegrill_1_1_mesh_collider.html#a22ac16897d328f3bd5357065dd4bcea2" title=" " alt="" coords="214,189,357,232"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,163,206,181,204,186,151,168"/>
+<area shape="rect" id="Node000003" href="$structthegrill_1_1_component.html#acc754d2dc8e9915ebf5b5eb666409d51" title=" " alt="" coords="405,64,539,107"/>
+<area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="162,119,213,108,304,95,389,87,389,93,305,100,214,113,163,125"/>
+<area shape="rect" id="Node000007" href="$structthegrill_1_1_transform.html#a81722ad1176f94f64a4e5469cca49322" title="Gets the position of the transform recursively including the position of parents if found." alt="" coords="222,123,348,165"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="166,141,207,141,207,147,166,147"/>
+<area shape="rect" id="Node000008" href="$structthegrill_1_1_component.html#a079f00434c0077e4356f45f2bdd92c17" title=" " alt="" coords="218,5,352,48"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="121,120,212,64,231,54,233,58,215,69,124,124"/>
+<area shape="rect" id="Node000009" href="$structthegrill_1_1_transform.html#ae4fadbcb1d96a500acc8a01c2b68b369" title=" " alt="" coords="222,256,348,299"/>
+<area shape="poly" id="edge10_Node000001_Node000009" title=" " alt="" coords="113,164,159,202,215,242,222,246,220,251,212,246,156,206,109,168"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="335,186,356,175,397,146,434,115,438,119,401,150,358,180,338,191"/>
+<area shape="rect" id="Node000004" href="$structthegrill_1_1_box_collider.html#ade381f2e487df991a0aae263940467d8" title=" " alt="" coords="405,160,539,203"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="357,197,389,192,390,197,358,202"/>
+<area shape="rect" id="Node000005" href="$tribox3_8h.html#a1d05ae6a2797f7196e4d253976e1c3ab" title=" " alt="" coords="422,227,522,253"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="358,219,407,227,406,232,357,225"/>
+<area shape="rect" id="Node000006" href="$tribox3_8h.html#ad73e2347c99ef1bda7e767f069382087" title=" " alt="" coords="587,227,708,253"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="523,237,572,237,572,243,523,243"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="354,45,391,57,389,62,352,50"/>
+</map>

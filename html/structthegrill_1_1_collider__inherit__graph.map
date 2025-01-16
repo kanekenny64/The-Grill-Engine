@@ -1,0 +1,9 @@
+<map id="thegrill::Collider" name="thegrill::Collider">
+<area shape="rect" id="Node000001" title=" " alt="" coords="98,80,210,107"/>
+<area shape="rect" id="Node000003" href="$structthegrill_1_1_box_collider.html" title="The BoxCollider class represents a rectangular collider used to test for collision with other collide..." alt="" coords="5,155,140,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="130,119,88,156,85,152,127,115"/>
+<area shape="rect" id="Node000004" href="$structthegrill_1_1_mesh_collider.html" title=" " alt="" coords="164,155,307,181"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="181,115,223,152,219,156,177,119"/>
+<area shape="rect" id="Node000002" href="$structthegrill_1_1_component.html" title="Base class for all components in the engine." alt="" coords="87,5,221,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="156,48,156,80,151,80,151,48"/>
+</map>

@@ -27,7 +27,7 @@ namespace thegrill {
 
 		std::shared_ptr<Core> rtn = std::make_shared<Core>();
 		rtn->m_window = std::make_shared<Window>();
-		rtn->m_resources = std::make_shared<Resources>();
+		rtn->m_resources = std::make_shared<Resources>(rtn);
 		rtn->m_input = std::make_shared<Input>();
 		rtn->m_sound_system = std::make_shared<SoundSystem>();
 		rtn->m_gui = std::make_shared<GUI>(rtn);
@@ -120,7 +120,7 @@ namespace thegrill {
 				}
 			}
 
-			m_resources->Update();
+			
 
 			//clear keyboard vectors
 			quit = m_input->Update();
@@ -154,9 +154,11 @@ namespace thegrill {
 				m_entities.at(i)->OnGUI();
 			}
 
-
+			m_resources->Update();
 
 			SDL_GL_SwapWindow(m_window->m_raw);
+
+			timer.reset();
 		}
 	}
 

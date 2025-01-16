@@ -16,7 +16,5 @@ namespace thegrill {
 
 	private:
 		std::vector<renderer::Model::Face> m_faces;
-
-		
 	};
 }

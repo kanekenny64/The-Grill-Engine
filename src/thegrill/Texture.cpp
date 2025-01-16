@@ -5,6 +5,7 @@ namespace thegrill
 {
 	std::shared_ptr<renderer::Texture> Texture::get_texture()
 	{
+		m_timeout = 10;
 		return m_texture;
 	}
 

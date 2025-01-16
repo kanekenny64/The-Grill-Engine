@@ -1,0 +1,10 @@
+<map id="Player::on_gui" name="Player::on_gui">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,13,110,40"/>
+<area shape="rect" id="Node000002" href="$structthegrill_1_1_component.html#a9336bcaea73cfe54b76200b54d454223" title=" " alt="" coords="340,5,474,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,22,158,20,292,20,324,21,324,26,292,25,158,25,110,27"/>
+<area shape="rect" id="Node000004" href="$structthegrill_1_1_component.html#ad2d32c2c0c657629f821720628b3bdd8" title=" " alt="" coords="158,35,292,77"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="110,33,143,39,142,44,110,38"/>
+<area shape="rect" id="Node000003" href="$structthegrill_1_1_component.html#acc754d2dc8e9915ebf5b5eb666409d51" title=" " alt="" coords="522,5,657,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="475,24,507,24,507,29,475,29"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="292,43,324,37,325,43,293,48"/>
+</map>

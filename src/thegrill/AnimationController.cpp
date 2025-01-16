@@ -45,19 +45,23 @@ namespace thegrill {
 				{
 
 					m_currentFrame = 0; ///< Loop back to the first frame.
+					m_renderer->set_model(m_track->m_keyFrames[m_currentFrame]); ///< Set the model to the current frame's model.
 				}
+				m_renderer->set_model(m_track->m_keyFrames[m_currentFrame]); ///< Set the model to the current frame's model.
 			}
 			else {
 				if (m_currentFrame >= m_track->m_keyFrames.size())
 				{
 					m_currentFrame = m_track->m_keyFrames.size() - 1; ///< Stay at the last frame.
+					m_renderer->set_model(m_track->m_keyFrames[m_currentFrame]); ///< Set the model to the current frame's model.
 				}
+
 			}
 
 		}
 
 
-		m_renderer->set_model(m_track->m_keyFrames[m_currentFrame]); ///< Set the model to the current frame's model.
+		
 	}
 	void AnimationController::set_track(std::shared_ptr<AnimationTrack> _track)
 	{

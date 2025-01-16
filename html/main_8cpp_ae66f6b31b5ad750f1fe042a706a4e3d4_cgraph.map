@@ -1,0 +1,9 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,64,55,91"/>
+<area shape="rect" id="Node000002" href="$structthegrill_1_1_core.html#a330cfd79db5cb850f659473a8720b7a0" title="Initializes the core engine instance." alt="" coords="118,5,268,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,63,102,42,122,34,124,39,104,46,56,68"/>
+<area shape="rect" id="Node000003" href="$structthegrill_1_1_model_renderer.html#ac08355f4132b51574456b2d1ad21a30d" title=" " alt="" coords="116,56,271,99"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="55,75,100,75,100,80,55,80"/>
+<area shape="rect" id="Node000004" href="$structthegrill_1_1_animation_controller.html#a8c16ec8887c1d0851ae8e238ee5875d7" title="Sets the animation track to be used by the AnimationController." alt="" coords="103,123,284,165"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="56,86,104,108,118,114,116,119,102,113,54,91"/>
+</map>

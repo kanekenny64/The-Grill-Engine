@@ -15,6 +15,9 @@ namespace thegrill {
 		void unload();
 
 		std::string m_path;
+
+	protected:
+		float m_timeout;
 	};
 
 

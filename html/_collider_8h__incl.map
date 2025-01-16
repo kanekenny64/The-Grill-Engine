@@ -1,0 +1,9 @@
+<map id="src/thegrill/Collider.h" name="src/thegrill/Collider.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="45,5,185,32"/>
+<area shape="rect" id="Node000002" href="$_component_8h.html" title=" " alt="" coords="5,80,105,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,34,77,70,73,66,103,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="129,80,221,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="127,31,157,66,153,70,123,34"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="21,155,89,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="58,107,58,139,52,139,52,107"/>
+</map>

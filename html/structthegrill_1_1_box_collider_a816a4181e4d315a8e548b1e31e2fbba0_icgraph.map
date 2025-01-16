@@ -1,0 +1,5 @@
+<map id="thegrill::BoxCollider::colliding" name="thegrill::BoxCollider::colliding">
+<area shape="rect" id="Node000001" title="Checks for a collision with another BoxCollider." alt="" coords="214,5,348,48"/>
+<area shape="rect" id="Node000002" href="$structthegrill_1_1_box_collider.html#ab7e6b3189b59618f5ee783f2bdfe8846" title="Calculates the collision response vector when colliding with another BoxCollider." alt="" coords="5,5,166,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,29,166,29,166,24,198,24"/>
+</map>

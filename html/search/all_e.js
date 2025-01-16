@@ -8,7 +8,7 @@ var searchData=
   ['resource_5',['Resource',['../structthegrill_1_1_resource.html',1,'thegrill']]],
   ['resource_2ecpp_6',['Resource.cpp',['../_resource_8cpp.html',1,'']]],
   ['resource_2eh_7',['Resource.h',['../_resource_8h.html',1,'']]],
-  ['resources_8',['Resources',['../structthegrill_1_1_resources.html',1,'thegrill']]],
+  ['resources_8',['Resources',['../structthegrill_1_1_resources.html',1,'thegrill::Resources'],['../structthegrill_1_1_resources.html#ab85165b435eab9a9de006f3d60c2b3e5',1,'thegrill::Resources::Resources()']]],
   ['resources_2ecpp_9',['Resources.cpp',['../_resources_8cpp.html',1,'']]],
   ['resources_2eh_10',['Resources.h',['../_resources_8h.html',1,'']]],
   ['rigidbody_11',['RigidBody',['../structthegrill_1_1_rigid_body.html',1,'thegrill']]],

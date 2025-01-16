@@ -1,0 +1,5 @@
+<map id="thegrill::ModelRenderer::set_model" name="thegrill::ModelRenderer::set_model">
+<area shape="rect" id="Node000001" title=" " alt="" coords="235,5,390,48"/>
+<area shape="rect" id="Node000002" href="$structthegrill_1_1_animation_controller.html#a0a17b97437953a31dde203fba8c772ec" title="Updates the AnimationController each tick. This function advances the animation based on the elapsed ..." alt="" coords="5,5,187,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,29,187,29,187,24,219,24"/>
+</map>

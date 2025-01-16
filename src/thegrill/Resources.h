@@ -4,8 +4,12 @@
 #include "Resource.h"
 
 namespace thegrill {
+	struct Core;
 	struct Resources
 	{
+
+		Resources(std::shared_ptr<Core> _core);
+
 		template <typename T>
 		std::shared_ptr<T> load(const std::string& _path)
 		{
@@ -27,11 +31,13 @@ namespace thegrill {
 		}
 
 		std::vector<std::shared_ptr<Resource> > getResources();
+		
 
 		void Update();
 
 	private:
 		std::vector<std::shared_ptr<Resource> > m_resources;
+		std::weak_ptr<Core> m_core;
 	};
 
 

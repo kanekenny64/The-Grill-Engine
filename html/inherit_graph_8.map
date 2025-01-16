@@ -1,0 +1,29 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$structthegrill_1_1_component.html" title="Base class for all components in the engine." alt="" coords="5,259,140,285"/>
+<area shape="rect" id="Node000001" href="$struct_child.html" title=" " alt="" coords="253,5,304,32"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="78,243,91,198,112,144,143,89,163,64,186,42,219,25,252,18,253,23,220,30,189,46,167,68,148,92,117,147,96,200,83,244"/>
+<area shape="rect" id="Node000002" href="$struct_player.html" title=" " alt="" coords="249,56,308,83"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="82,243,97,209,120,168,150,127,186,92,217,77,248,70,249,75,219,82,189,97,154,131,124,171,102,211,87,245"/>
+<area shape="rect" id="Node000003" href="$structthegrill_1_1_animation_controller.html" title="The AnimationController class is responsible for managing and controlling the playback of animation t..." alt="" coords="188,107,369,133"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="89,244,129,193,156,166,186,143,210,132,212,136,189,148,160,170,133,196,93,247"/>
+<area shape="rect" id="Node000004" href="$structthegrill_1_1_animation_track.html" title="The AnimationTrack class holds data for an animation track, including keyframes." alt="" coords="199,157,358,184"/>
+<area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="101,247,141,219,187,194,217,182,219,187,189,198,143,224,104,251"/>
+<area shape="rect" id="Node000005" href="$structthegrill_1_1_audio_listener.html" title="The Audio Listener is a component used to control where audio is heard from." alt="" coords="205,208,352,235"/>
+<area shape="poly" id="edge5_Node000000_Node000005" title=" " alt="" coords="144,252,220,233,222,238,145,257"/>
+<area shape="rect" id="Node000006" href="$structthegrill_1_1_camera.html" title="The BoxCollider class is used to control the position of the camera to be used in rendering pipeline." alt="" coords="222,259,335,285"/>
+<area shape="poly" id="edge6_Node000000_Node000006" title=" " alt="" coords="155,269,222,269,222,275,155,275"/>
+<area shape="rect" id="Node000007" href="$structthegrill_1_1_collider.html" title=" " alt="" coords="223,309,334,336"/>
+<area shape="poly" id="edge7_Node000000_Node000007" title=" " alt="" coords="145,287,223,306,222,312,144,292"/>
+<area shape="rect" id="Node000010" href="$structthegrill_1_1_model_renderer.html" title="The ModelRenderer class is a component responsible for rendering models with textures." alt="" coords="201,360,356,387"/>
+<area shape="poly" id="edge10_Node000000_Node000010" title=" " alt="" coords="104,293,143,320,189,346,219,357,217,362,187,350,141,325,101,297"/>
+<area shape="rect" id="Node000011" href="$structthegrill_1_1_rigid_body.html" title=" " alt="" coords="215,411,342,437"/>
+<area shape="poly" id="edge11_Node000000_Node000011" title=" " alt="" coords="93,297,133,348,160,374,189,396,215,409,213,413,186,401,156,378,129,351,89,300"/>
+<area shape="rect" id="Node000012" href="$structthegrill_1_1_sound_source.html" title=" " alt="" coords="206,461,351,488"/>
+<area shape="poly" id="edge12_Node000000_Node000012" title=" " alt="" coords="87,299,102,333,124,373,154,413,189,447,210,458,207,463,186,451,150,417,120,376,97,335,82,301"/>
+<area shape="rect" id="Node000013" href="$structthegrill_1_1_transform.html" title="The Transform compoenent represents the position, rotation, and scale of an entity." alt="" coords="215,512,342,539"/>
+<area shape="poly" id="edge13_Node000000_Node000013" title=" " alt="" coords="83,300,96,344,117,397,148,452,167,476,189,498,216,513,213,517,186,502,163,480,143,455,112,400,91,346,78,301"/>
+<area shape="rect" id="Node000008" href="$structthegrill_1_1_box_collider.html" title="The BoxCollider class represents a rectangular collider used to test for collision with other collide..." alt="" coords="422,284,556,311"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="349,312,421,303,421,308,349,317"/>
+<area shape="rect" id="Node000009" href="$structthegrill_1_1_mesh_collider.html" title=" " alt="" coords="417,335,560,361"/>
+<area shape="poly" id="edge9_Node000007_Node000009" title=" " alt="" coords="349,328,417,337,416,342,349,334"/>
+</map>

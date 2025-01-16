@@ -1,0 +1,5 @@
+<map id="thegrill::Camera" name="thegrill::Camera">
+<area shape="rect" id="Node000001" title="The BoxCollider class is used to control the position of the camera to be used in rendering pipeline." alt="" coords="16,80,129,107"/>
+<area shape="rect" id="Node000002" href="$structthegrill_1_1_component.html" title="Base class for all components in the engine." alt="" coords="5,5,140,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,48,75,80,70,80,70,48"/>
+</map>

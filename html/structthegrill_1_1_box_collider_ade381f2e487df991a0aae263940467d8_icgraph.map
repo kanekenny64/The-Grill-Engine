@@ -1,0 +1,7 @@
+<map id="thegrill::BoxCollider::get_size" name="thegrill::BoxCollider::get_size">
+<area shape="rect" id="Node000001" title=" " alt="" coords="405,5,539,48"/>
+<area shape="rect" id="Node000002" href="$structthegrill_1_1_mesh_collider.html#a22ac16897d328f3bd5357065dd4bcea2" title=" " alt="" coords="214,5,357,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="389,29,357,29,357,24,389,24"/>
+<area shape="rect" id="Node000003" href="$structthegrill_1_1_box_collider.html#a55bb210a99df700449cb9ccaccd19615" title="Calculates the collision response vector when colliding with a MeshCollider." alt="" coords="5,5,166,48"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="198,29,166,29,166,24,198,24"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$structthegrill_1_1_resource.html" title=" " alt="" coords="5,56,129,83"/>
+<area shape="rect" id="Node000001" href="$structthegrill_1_1_audio.html" title="The Audio class represents an audio resource that can be loaded and managed within the sound system." alt="" coords="182,5,282,32"/>
+<area shape="poly" id="edge14_Node000000_Node000001" title=" " alt="" coords="127,48,185,30,187,35,128,53"/>
+<area shape="rect" id="Node000002" href="$structthegrill_1_1_model.html" title=" " alt="" coords="181,56,283,83"/>
+<area shape="poly" id="edge15_Node000000_Node000002" title=" " alt="" coords="144,67,180,67,180,72,144,72"/>
+<area shape="rect" id="Node000003" href="$structthegrill_1_1_texture.html" title=" " alt="" coords="177,107,287,133"/>
+<area shape="poly" id="edge16_Node000000_Node000003" title=" " alt="" coords="128,85,187,104,185,109,127,90"/>
+</map>

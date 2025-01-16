@@ -1,0 +1,18 @@
+<map id="thegrill::Component::get_core" name="thegrill::Component::get_core">
+<area shape="rect" id="Node000001" title=" " alt="" coords="387,189,521,232"/>
+<area shape="rect" id="Node000002" href="$structthegrill_1_1_animation_track.html#a8103906304b27cafe775bae2dd0e77bb" title="Creates the animation track by loading keyframes from a specified path and continuing for a specified..." alt="" coords="169,5,328,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="432,177,393,118,367,88,337,62,319,51,322,46,341,58,371,85,397,115,437,174"/>
+<area shape="rect" id="Node000003" href="$structthegrill_1_1_component.html#ad2d32c2c0c657629f821720628b3bdd8" title=" " alt="" coords="181,72,316,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="410,182,338,136,302,118,304,113,340,131,413,178"/>
+<area shape="rect" id="Node000004" href="$struct_player.html#aa8fb0f52af0b29d4e47260dec618a963" title=" " alt="" coords="5,109,110,136"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="372,189,338,180,216,153,110,134,111,129,217,148,340,175,373,184"/>
+<area shape="rect" id="Node000005" href="$structthegrill_1_1_animation_controller.html#a99a865c8b8a9af0f97dc45c2c034bf85" title="Initializes the AnimationController. This function retrieves the ModelRenderer component from the ass..." alt="" coords="158,189,339,232"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="372,213,339,213,339,208,372,208"/>
+<area shape="rect" id="Node000006" href="$structthegrill_1_1_camera.html#a53790c1db79f7bcbe586aba87a0a91bf" title="Initializes the camera component." alt="" coords="181,256,316,299"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="374,239,317,258,316,253,372,234"/>
+<area shape="rect" id="Node000007" href="$structthegrill_1_1_animation_controller.html#a0a17b97437953a31dde203fba8c772ec" title="Updates the AnimationController each tick. This function advances the animation based on the elapsed ..." alt="" coords="158,323,339,365"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="424,245,386,280,340,313,318,324,316,320,338,308,383,276,421,241"/>
+<area shape="rect" id="Node000008" href="$structthegrill_1_1_rigid_body.html#a2b90524a38f8ae79024405bd132117d0" title="Called every frame to update the component." alt="" coords="185,389,312,432"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="439,247,400,314,373,349,341,379,314,395,311,391,337,375,369,345,396,311,435,245"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="166,109,110,117,109,112,165,103"/>
+</map>
